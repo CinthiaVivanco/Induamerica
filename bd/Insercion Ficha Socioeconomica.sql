@@ -1,0 +1,73 @@
+------------------------INSERCIONES DE LA FICHA SOCIOECONÓMICA
+
+--TIPO VIVIENDA
+GO
+INSERT INTO tipoviviendas(id, descripcion) VALUES
+('ARCHICEN000000000001','Propia'),
+('ARCHICEN000000000002',  'Alquilada'),
+('ARCHICEN000000000003', 'Departamento en Edificio '),
+('ARCHICEN000000000004', 'Alojado en Casa de un Familia'),
+('ARCHICEN000000000005', 'Cuarto'),
+('ARCHICEN000000000006', 'Otros');
+
+--PARTES DE LA CASA
+GO
+INSERT INTO casapartes(id, descripcion) VALUES
+('ARCHICEN000000000001','Sala'),
+('ARCHICEN000000000002',  'Comedor'),
+('ARCHICEN000000000003', 'Habitaciones'),
+('ARCHICEN000000000004', 'Cocina'),
+('ARCHICEN000000000005', 'Servicios Higiénicos');
+
+--MATERIALES DE CONSTRUCCIÓN
+GO
+INSERT INTO construccionmateriales(id, descripcion) VALUES
+('ARCHICEN000000000001','Ladrillo'),
+('ARCHICEN000000000002',  'Adobe'),
+('ARCHICEN000000000003', 'Madera'),
+('ARCHICEN000000000004', 'Otros');
+
+
+--SERVICIOS DE LA CASA
+GO
+INSERT INTO servicios(id, descripcion) VALUES
+('ARCHICEN000000000001','Agua'),
+('ARCHICEN000000000002',  'Desagüe'),
+('ARCHICEN000000000003', 'Luz Eléctrica'),
+('ARCHICEN000000000004', 'Teléfono'),
+('ARCHICEN000000000005', 'Internet'),
+('ARCHICEN000000000006', 'Cable');
+
+--CENTRO MÉDICO DÓNDE SE ATIENDE
+GO
+INSERT INTO centromedicos(id, descripcion) VALUES
+('ARCHICEN000000000001','EsSalud'),
+('ARCHICEN000000000002',  'Posta Médica'),
+('ARCHICEN000000000003', 'Médico Particular');
+
+--FRECUENCIA QUE VA AL MÉDICO
+GO
+INSERT INTO frecuenciamedicos(id, descripcion) VALUES
+('ARCHICEN000000000001','Una vez por semana'),
+('ARCHICEN000000000002','Mensualmente'),
+('ARCHICEN000000000003',  'Anualmente'),
+('ARCHICEN000000000004', 'Cuando se enferma');
+
+--FRECUENCIA QUE SE REALIZA EXAMENES
+GO
+INSERT INTO frecuenciaexamenes(id, descripcion) VALUES
+('ARCHICEN000000000001','Mensualmente'),
+('ARCHICEN000000000002',  'Anualmente'),
+('ARCHICEN000000000003', 'Cuando se enferma');
+
+
+
+--PADECE DE ALGUNA ENFERMEDAD
+GO
+INSERT INTO enfermedades(id, descripcion) VALUES
+('ARCHICEN000000000001','Respiratorias'),
+('ARCHICEN000000000002',  'cardiovascular'),
+('ARCHICEN000000000003', 'Hipertensión'),
+('ARCHICEN000000000004', 'Diabetes'),
+('ARCHICEN000000000005', 'Migraña'),
+('ARCHICEN000000000006', 'Otras');
