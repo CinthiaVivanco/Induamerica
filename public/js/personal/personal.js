@@ -64,6 +64,37 @@ $(document).ready(function(){
 
     });
 
+
+    $(".editfs").on('click','#btnmodificarfs', function() {
+
+        
+        var id              = $(this).attr('name');
+        var idopcion        = $(this).attr('data_opcion');
+        var idtrabajador    = $(this).attr('data_trabajador');
+        
+        var _token          = $('#token').val();
+
+        $.ajax({
+            type    :   "POST",
+            url     :   "/induamerica/ajax-form-fichasocioeconomica",
+            data    :   {
+                            _token          : _token,
+                            id              : id,
+                            idopcion        : idopcion,
+                            idtrabajador    : idtrabajador                                                       
+                        },
+            success: function (data) {
+
+                $(".ajaxformfs").html(data);
+
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+
+    });
     
 
 

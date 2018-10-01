@@ -15,7 +15,7 @@
               </div>
 
               <div class="process-step tabmenu2">
-               <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-briefcase fa-2x"></i></button>
+               <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-users fa-2x"></i></button>
                <p><small>Datos<br />Familiares</small></p>
                <div class='errortab'>
                  <i class="fa fa-exclamation" aria-hidden="true"></i> 

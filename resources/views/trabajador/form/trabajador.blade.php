@@ -638,7 +638,7 @@
                                             ]) !!}
                         </div>
                     </div>
-
+                    
 
 
 
@@ -651,7 +651,7 @@
                                                 'class'       => 'form-control control input-sm' ,
                                                 'id'          => 'provincia_id',
                                                 'required'    => '',
-                                                'data-aw'     => '11'
+                                                'data-aw'     => '10'
                                               ]) !!}
                           </div>
                     </div>

@@ -1,5 +1,8 @@
+.main-content {
+    padding: 8px;
+}
 
-.col-sm-3{
+.col-sm-3 {
 font-family:Titillium, Arial, sans-serif;
 font-weight:550;
 font-size:12px;
@@ -193,11 +196,19 @@ tbody .mdi-close{
 
 
 
-
-
-
+@media (min-width: 768px){
+    .form-horizontal .labelleft {
+        text-align: left !important;
+     
+    }
+}
 
 @media (max-width:767px){
+    .form-horizontal .labelleft {
+        text-align: left !important;
+    }
+    
+
 	.alert-icon{
 		width: 100%;
 	}
@@ -263,5 +274,10 @@ tbody .mdi-close{
 
 .panel-heading-divider {
     border-bottom: 0px;
+
+}
+
+.abajocaja{
+        width: 80%;
 
 }

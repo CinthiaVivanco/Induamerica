@@ -5,8 +5,9 @@
 
 
 .cont_princ_lists  ul  li  {
+  align-content: center;
   position: relative;
-  width: 100%; 
+  width: 196%; 
   height: 75px;
   background-color: #F1F1EF;
   list-style: none;
@@ -15,10 +16,10 @@
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  margin-left: 200px;
 }
 
-
-.cont_princ_lists .detdni p{
+.cont_princ_lists .detid p{
   margin-top: 25px;
   padding-left: 5px;
   border-left: 4px solid #e45;

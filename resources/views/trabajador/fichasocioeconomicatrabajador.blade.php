@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/datetimepicker/css/bootstrap-datetimepicker.min.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/select2/css/select2.min.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/bootstrap-slider/css/bootstrap-slider.css') }} "/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/personal/derechohabiente.css') }} "/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/personal/fichasocioeconomica.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/select2/css/select2.min.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/bootsnipp.css') }} "/>
 
@@ -15,7 +15,7 @@
 
     <h2 class="panel-heading">Ficha Socioeconómica del Trabajador :  {{$trabajador->apellidopaterno}} {{$trabajador->apellidomaterno}} {{$trabajador->nombres}}</h2>
   </div>
-  <div class="main-content container-fluid editdh">
+  <div class="main-content container-fluid editfs">
     
     <div class="row">
 
@@ -31,9 +31,25 @@
 
                       <div class="col-sm-4 detid"> 
 
-                          <p>{{$item->id}}</p>
+                          <p>{{$item->trabajador->dni}}</p>
                       
                       </div>
+
+                      <div class="col-sm-6 detnombres">
+                          <h2 class="panel-heading">Ficha Socioeconómica</h2>
+
+
+                      </div>
+                      <div class="col-sm-2 detmodificar"> 
+
+                          <div class="icon"><span 
+                                          class="mdi mdi-edit" 
+                                          id='btnmodificarfs'
+                                          name='{{$item->id}}' 
+                                          data_opcion='{{$idopcion}}'
+                                          data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
+                                          ></span></div>
+                      </div>                      
 
                   </li>
                 </ul>
@@ -56,8 +72,9 @@
               
               <div class="panel-body">
 
-                <div class="main-content container-fluid ajaxformdh">
-                  <form method="POST" action="{{ url('/derecho-habiente-trabajador/'.$idopcion.'/'.Hashids::encode(substr($trabajador->id, -12))) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed"> 
+                <div class="main-content container-fluid ajaxformfs">
+
+                  <form method="POST" action="{{ url('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.Hashids::encode(substr($trabajador->id, -12))) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed"> 
                                     {{ csrf_field() }}
                         @include('trabajador.form.fichasocioeconomica')
                   </form>

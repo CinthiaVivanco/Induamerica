@@ -55,7 +55,7 @@ class Fichasocioeconomica extends Model
 
     public function trabajador()
     {
-        return $this->belongsTo('App\Trabajadores');
+        return $this->belongsTo('App\Trabajador');
     }
 
 

@@ -28,7 +28,6 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->enfermedad_id   			 = 	$request['enfermedad_id'];
 			$cabecera->religion   			 	 = 	$request['religion'];
 			$cabecera->gruposanguineo 		 	 = 	$request['gruposanguineo'];
-			$cabecera->afiliado 		 		 =	$request['afiliado'];
 			$cabecera->tallapantalon 		 	 =	$request['tallapantalon'];
 			$cabecera->tallacamisa 		 		 =	$request['tallacamisa'];
 			$cabecera->tallapolo 	 	 		 = 	$request['tallapolo'];
@@ -44,10 +43,9 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->estadoconstruccion 	 	 = 	$request['estadoconstruccion'];
 			$cabecera->laboratorioclinico 	 	 = 	$request['laboratorioclinico'];
 			$cabecera->observacion 	 	         = 	$request['observacion'];
-			$cabecera->activo 		 	 		 = 	$request['activo'];
 			$cabecera->save();
 
- 			return Redirect::to('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.$idtrabajador)->with('bienhecho', 'FichaSocioeconomica'.$request['nombre'].' '.$request['apellidopaterno'].' Modificado con ésxito');
+ 			return Redirect::to('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.$idtrabajador)->with('bienhecho', 'FichaSocioeconomica'.$request['nombre'].' '.$request['apellidopaterno'].' Modificado con éxito');
 	}
 
 
@@ -68,7 +66,9 @@ class FichaSocioeconomicaController extends Controller
 
 			$idfichasocioeconomica 		 	     = $this->funciones->getCreateId('fichasocioeconomicas');
 			
-			$cabecera            	 	 		 =	Fichasocioeconomica::find($idfichasocioeconomica);
+			$cabecera            	 	 		 =	new Fichasocioeconomica;
+			$cabecera->id 	     	 	 		 =  $idfichasocioeconomica;
+			$cabecera->trabajador_id  		 	 = 	$idtrabajador;
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
 			$cabecera->casaparte_id 	     	 =  $request['casaparte_id'];
 			$cabecera->construccionmaterial_id 	 =  $request['construccionmaterial_id'];
@@ -79,7 +79,6 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->enfermedad_id   			 = 	$request['enfermedad_id'];
 			$cabecera->religion   			 	 = 	$request['religion'];
 			$cabecera->gruposanguineo 		 	 = 	$request['gruposanguineo'];
-			$cabecera->afiliado 		 		 =	$request['afiliado'];
 			$cabecera->tallapantalon 		 	 =	$request['tallapantalon'];
 			$cabecera->tallacamisa 		 		 =	$request['tallacamisa'];
 			$cabecera->tallapolo 	 	 		 = 	$request['tallapolo'];
@@ -95,7 +94,6 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->estadoconstruccion 	 	 = 	$request['estadoconstruccion'];
 			$cabecera->laboratorioclinico 	 	 = 	$request['laboratorioclinico'];
 			$cabecera->observacion 	 	         = 	$request['observacion'];
-			$cabecera->activo 		 	 		 = 	$request['activo'];
 
 			$cabecera->save();
  			return Redirect::to('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.$idtrabajadorsd)->with('bienhecho', 'FichaSocioeconomica'.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
@@ -107,28 +105,28 @@ class FichaSocioeconomicaController extends Controller
 		    $trabajador 					= Trabajador::where('id', $idtrabajador)->first();
 		    
 			$tipovivienda 				 	= DB::table('tipoviviendas')->pluck('descripcion','id')->toArray();
-			$combotipovivienda 		 	    = array('' => "Seleccione Tipo Vivienda") + $tipovivienda;
+			$combotipovivienda 		 	    = array('' => "Seleccione:") + $tipovivienda;
 
 			$casaparte 				        = DB::table('casapartes')->pluck('descripcion','id')->toArray();
-			$combocasaparte 		 	    = array('' => "Cuenta con:") + $casaparte;
+			$combocasaparte 		 	    = array('' => "Seleccione:") + $casaparte;
 
 			$construccionmaterial 		    = DB::table('construccionmateriales')->pluck('descripcion','id')->toArray();
-			$comboconstruccionmaterial	    = array('' => "Material de Construccciòn") + $construccionmaterial;
+			$comboconstruccionmaterial	    = array('' => "Seleccione:") + $construccionmaterial;
 
 			$servicio 					 	= DB::table('servicios')->pluck('descripcion','id')->toArray();
-			$comboservicio					= array('' => "Servicios") + $servicio;
+			$comboservicio					= array('' => "Seleccione:") + $servicio;
 
 			$centromedico 					= DB::table('centromedicos')->pluck('descripcion','id')->toArray();
-			$combocentromedico				= array('' => "¿Dònde se atiende?") + $centromedico;
+			$combocentromedico				= array('' => "Seleccione centro médico") + $centromedico;
 
 			$frecuenciamedico 			    = DB::table('frecuenciamedicos')->pluck('descripcion','id')->toArray();
-			$combofrecuenciamedico			= array('' => "Frecuencia con la que asiste al médico") + $frecuenciamedico;
+			$combofrecuenciamedico			= array('' => "Seleccione:") + $frecuenciamedico;
 
 			$frecuenciaexamen 				= DB::table('frecuenciaexamenes')->pluck('descripcion','id')->toArray();
-			$combofrecuenciaexamen		    = array('' => "Con que frecuencia realiza exámenes de laboratorio clínico") + $frecuenciaexamen;
+			$combofrecuenciaexamen		    = array('' => "Seleccione:") + $frecuenciaexamen;
 
 			$enfermedad 					= DB::table('enfermedades')->pluck('descripcion','id')->toArray();
-			$comboenfermedad				= array('' => "¿Dònde se atiende?") + $enfermedad;
+			$comboenfermedad				= array('' => "Seleccione enfermedad:") + $enfermedad;
 
 
 	        return View::make('trabajador/fichasocioeconomicatrabajador', 
@@ -141,8 +139,8 @@ class FichaSocioeconomicaController extends Controller
 	        					'combocasaparte'  	    				=> $combocasaparte,
 	        					'comboconstruccionmaterial'  	    	=> $comboconstruccionmaterial,
 	        					'comboservicio'  	    				=> $comboservicio,
-	        					'combocentromedico' 					=> $combocentromedico,					 
-						  		'combofrecuenciamedico' 				=> $combofrecuenciamedico,
+	        					'combocentromedico' 					=> $combocentromedico,
+	        					'combofrecuenciamedico' 				=> $combofrecuenciamedico,
 						  		'combofrecuenciaexamen' 				=> $combofrecuenciaexamen,
 						  		'comboenfermedad' 						=> $comboenfermedad,
 						  		
@@ -156,7 +154,6 @@ class FichaSocioeconomicaController extends Controller
 		$id   							= $request['id'];
 		$idopcion   					= $request['idopcion'];
 		$idtrabajador   				= $request['idtrabajador'];
-
 
 		$fichasocioeconomica 		    = Fichasocioeconomica::where('id','=' , $id)->first();
 
@@ -185,7 +182,9 @@ class FichaSocioeconomicaController extends Controller
 		$enfermedad 					= DB::table('enfermedades')->pluck('descripcion','id')->toArray();
 		$comboenfermedad				= array($fichasocioeconomica->enfermedad_id => $fichasocioeconomica->enfermedad->descripcion) + $enfermedad;
 
-		return View::make('trabajador/ajax/editdh',
+
+
+		return View::make('trabajador/ajax/editfs',
 						 [
 	        					'id'  	    							=> $id,
 	        					'idopcion'  	    					=> $idopcion,
@@ -198,6 +197,8 @@ class FichaSocioeconomicaController extends Controller
 						  		'combofrecuenciamedico' 				=> $combofrecuenciamedico,
 						  		'combofrecuenciaexamen' 				=> $combofrecuenciaexamen,
 						  		'comboenfermedad' 						=> $comboenfermedad,
+						  		'fichasocioeconomica' 					=> $fichasocioeconomica,
+						  		
 						 ]);
 	}	
 }
