@@ -58,11 +58,9 @@
                </div>
               </div>
 
-
               <div class="process-step">
-               <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu6"><i class="fa fa-check fa-2x"></i></button>
-               <p><small>Guardar<br />Ficha</small></p>
-
+                 <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu6"><i class="fa fa-check fa-2x"></i></button>
+                 <p><small>Guardar<br />Ficha</small></p>
               </div>
 
            </div>
@@ -90,7 +88,7 @@
                           </div>
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Grupo Sanguineo <span class="required">*</span></label>
+                              <label class="col-sm-3 control-label">Grupo Sanguíneo <span class="required">*</span></label>
                               <div class="col-sm-8">
 
                                 <input  type="text"
@@ -568,7 +566,7 @@
 
              <div id="menu6" class="tab-pane fade">
                 <h3></h3>
-                <center><p>¿Seguro que desea guardar esta Ficha Socioeconómica?</p></center>
+                <center><p>¿Seguro que desea guardas esta Ficha Socioeconómica?</p></center>
 
                 <ul class="list-unstyled list-inline pull-right">
                     <p class="text-center">

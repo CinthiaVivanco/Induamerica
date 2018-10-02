@@ -53,14 +53,6 @@ INSERT INTO tipovias (id,  tipo, tipozona_id) VALUES
 ('ARCHICEN000000000020','TROCHA CARROZABLE','ARCHICEN000000000001'),
 ('ARCHICEN000000000099','OTROS','ARCHICEN000000000001');
 
---TIPO DE CONTRATO
-
-GO
-INSERT INTO tipocontratotrabajadores(id,  descripcion) VALUES
-('ARCHICEN000000000001','Contrato Indefinido'),
-('ARCHICEN000000000002','Contrato Temporal'),
-('ARCHICEN000000000003','Contrato en prácticas');
-
 --MOTIVO DE BAJAS
 GO
 INSERT INTO motivobajas (id, codigo, descripcion, descripcionabreviada) VALUES

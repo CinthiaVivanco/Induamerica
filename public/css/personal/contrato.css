@@ -1,0 +1,51 @@
+.cont_princ_lists  ul{
+  padding-left: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.cont_princ_lists  ul  li  {
+  align-content: center;
+  position: relative;
+  width: 196%; 
+  height: 75px;
+  background-color: #F1F1EF;
+  list-style: none;
+  box-shadow: 1px 10px 20px 0px rgba(218, 215, 206,0.8);
+  z-index: 2;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-left: 200px;
+}
+
+.cont_princ_lists .detid p{
+  margin-top: 25px;
+  padding-left: 5px;
+  border-left: 4px solid #e45;
+  color: #e45;
+  font-weight: bold;
+}
+.cont_princ_lists .detnombres .detnombre{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-style: italic;
+}  
+.cont_princ_lists .detnombres .detapellido{
+    margin-top: 5px;
+    color: #999;
+    font-size: 1em;   
+}
+
+.cont_princ_lists .mdi-edit{
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-left: 6px;
+    font-size: 1.6em;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px solid #999;
+}

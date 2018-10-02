@@ -59,6 +59,9 @@
                                   <a href="{{ url('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
                                     Ficha SocioEconomica
                                   </a>
+                                  <a href="{{ url('/ficha-contrato-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
+                                    Contrato
+                                  </a>
                                   <a href="{{ url('/modificar-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
                                     Modificar
                                   </a>

@@ -95,6 +95,38 @@ $(document).ready(function(){
         });
 
     });
+
+
+    $(".editc").on('click','#btnmodificarc', function() {
+
+        
+        var id              = $(this).attr('name');
+        var idopcion        = $(this).attr('data_opcion');
+        var idtrabajador    = $(this).attr('data_trabajador');
+        
+        var _token          = $('#token').val();
+
+        $.ajax({
+            type    :   "POST",
+            url     :   "/induamerica/ajax-form-contrato",
+            data    :   {
+                            _token          : _token,
+                            id              : id,
+                            idopcion        : idopcion,
+                            idtrabajador    : idtrabajador                                                       
+                        },
+            success: function (data) {
+
+                $(".ajaxformc").html(data);
+
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+
+    });
     
 
 

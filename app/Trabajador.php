@@ -17,6 +17,10 @@ class Trabajador extends Model
     {
         return $this->belongsTo('App\Tipodocumento');
     }
+    public function contrato()
+    {
+        return $this->belongsTo('App\Contrato');
+    }
 
     public function estadocivil()
     {
@@ -46,6 +50,11 @@ class Trabajador extends Model
     public function tipozona()
     {
         return $this->belongsTo('App\Tipozona');
+    }
+
+    public function tipocontratotrabajador()
+    {
+        return $this->belongsTo('App\Tipocontratotrabajador');
     }
 
      public function area()
