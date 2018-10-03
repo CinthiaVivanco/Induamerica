@@ -318,3 +318,47 @@ tbody .mdi-close{
         width: 80%;
 
 }
+
+.singlebutton{
+    background-color: pink;
+    height: 5px;
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*
+.col-md-4 {
+font-family:Titillium, Arial, sans-serif;
+font-weight:550;
+font-size:14px;
+display:block;
+font-style:normal;
+height:24px;
+line-height:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:12px;
+padding-bottom:6px;
+padding-left:-10px;
+padding-right:0px;
+padding-top:0px;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+padding-bottom:6px;
+padding-left:-10px;
+padding-right:0px;
+padding-top:0px;
+}
+*/

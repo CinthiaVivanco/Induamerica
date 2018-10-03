@@ -1,5 +1,6 @@
 @extends('template')
 @section('style')
+
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/datatables/css/dataTables.bootstrap.min.css') }} "/>
 @stop
 @section('section')
@@ -97,6 +98,7 @@
 	<script src="{{ asset('public/lib/datatables/plugins/buttons/js/buttons.colVis.js') }}" type="text/javascript"></script>
 	<script src="{{ asset('public/lib/datatables/plugins/buttons/js/buttons.bootstrap.js') }}" type="text/javascript"></script>
 	<script src="{{ asset('public/js/app-tables-datatables.js') }}" type="text/javascript"></script>
+
     <script type="text/javascript">
       $(document).ready(function(){
         //initialize the javascript

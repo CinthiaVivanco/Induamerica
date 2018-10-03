@@ -140,6 +140,7 @@ class UserController extends Controller
 
 
 
+
 	public function actionModificarUsuario($idopcion,$idusuario,Request $request)
 	{
 		/******************* validar url **********************/
@@ -197,6 +198,9 @@ class UserController extends Controller
 		        				]);
 		}
 	}
+
+
+
 
 
 	public function actionListarRoles($idopcion)
