@@ -17,7 +17,7 @@ class Tipocontratotrabajador extends Model
 
     public function trabajador()
     {
-        return $this->hasMany('App\Trabajador');
+        return $this->hasMany('App\Contrato');
     }
 
 

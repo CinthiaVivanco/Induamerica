@@ -68,7 +68,7 @@ class ContratoController extends Controller
 		    $trabajador 					= Trabajador::where('id', $idtrabajador)->first();
 		    
 			$tipocontratotrabajador 		= DB::table('tipocontratotrabajadores')->pluck('descripcion','id')->toArray();
-			$combotipocontratotrabajador  	= array('' => "Seleccione Tipo Contrato") + $contrato;
+			$combotipocontratotrabajador  	= array('' => "Seleccione Tipo Contrato") + $tipocontratotrabajador;
 
 
 	        return View::make('trabajador/contratotrabajador', 
@@ -93,9 +93,8 @@ class ContratoController extends Controller
 
 		$contrato 		    						= Contrato::where('id','=' , $id)->first();
 
-		$tipocontratotrabajador 				 	= DB::table('tipocontratotrabajadores')->pluck('descripcionabreviado','id')->toArray();
+		$tipocontratotrabajador 				 	= DB::table('tipocontratotrabajadores')->pluck('descripcion','id')->toArray();
 		$combotipocontratotrabajador  		 		= array($contrato->tipocontratotrabajador_id => $contrato->tipocontratotrabajador->descripcion) + $tipocontratotrabajador;
-
 
 
 		return View::make('trabajador/ajax/editc',
@@ -103,8 +102,8 @@ class ContratoController extends Controller
 	        					'id'  	    							=> $id,
 	        					'idopcion'  	    					=> $idopcion,
 	        					'idtrabajador'  	    				=> $idtrabajador,
+	        					'combotipocontratotrabajador'  			=> $combotipocontratotrabajador,
 	        					'contrato'  	    					=> $contrato,
-	        					'combotipocontratotrabajador'  	=> $combotipocontratotrabajador,
 						 ]);
 	}	
 }

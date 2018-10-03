@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
     $(function(){
         $('.btn-circle').on('click',function(){
             $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
@@ -105,6 +103,8 @@ $(document).ready(function(){
         var idtrabajador    = $(this).attr('data_trabajador');
         
         var _token          = $('#token').val();
+
+
 
         $.ajax({
             type    :   "POST",

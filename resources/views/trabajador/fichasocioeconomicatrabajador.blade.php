@@ -49,6 +49,7 @@
                                           data_opcion='{{$idopcion}}'
                                           data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
                                           ></span></div>
+                          
                       </div>                      
 
                   </li>
@@ -130,7 +131,6 @@
                     $(".tab"+menu+' .errortab').css("display", "block");
                     $(".tab"+menu+' .bientab').css("display", "none");
                 }
-
 
 
 

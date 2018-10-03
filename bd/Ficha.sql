@@ -577,25 +577,6 @@ CREATE TABLE locales(
 )  ;
 GO
 
-CREATE TABLE tipocontratotrabajadores(
-	[id] varchar(20) NOT NULL,
-	[descripcion] varchar(50) NOT NULL,
-    PRIMARY KEY ([id])
-)  ;
-GO
-
-CREATE TABLE contratos(
-	[id] varchar(20) NOT NULL,
-	[fechainicio] date NOT NULL,
-	[fechafin] date NOT NULL,
-	[empresa] varchar(50) NULL,
-	[observacion] varchar(50) NULL,
-	[estado]  int NOT NULL default 1,
-    PRIMARY KEY ([id]),
-	[tipocontratotrabajador_id] varchar(20) NULL,
-	FOREIGN KEY (tipocontratotrabajador_id) REFERENCES tipocontratotrabajadores(id)
-)  ;
-GO
 
 /*
 CREATE TABLE establecimientolaborals (
@@ -674,8 +655,6 @@ CREATE TABLE trabajadores (
   FOREIGN KEY (motivobaja_id) REFERENCES motivobajas(id),
   [tipocontrato_id] varchar(20) NOT NULL,
   FOREIGN KEY (tipocontrato_id) REFERENCES tipocontratos(id),
-  [tipocontratotrabajador_id] varchar(20) NULL,
-  FOREIGN KEY (tipocontratotrabajador_id) REFERENCES tipocontratotrabajadores(id),
   [tipopago_id] varchar(20) NOT NULL,
   FOREIGN KEY (tipopago_id) REFERENCES tipopagos(id),
   [periodicidad_id] varchar(20) NOT NULL,
@@ -712,8 +691,6 @@ CREATE TABLE trabajadores (
   FOREIGN KEY (ocupacion_id) REFERENCES ocupaciones(id),
   [situacionespecial_id] varchar(20) NOT NULL,
   FOREIGN KEY (situacionespecial_id) REFERENCES situacionespeciales(id),
-  [contrato_id] varchar(20) NULL,
-  FOREIGN KEY (contrato_id) REFERENCES contratos(id),
   [local_id] varchar(20) NOT NULL,
   FOREIGN KEY (local_id) REFERENCES locales(id)
   /*
@@ -898,6 +875,31 @@ CREATE TABLE fichasocioeconomicas (
   FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id)
 ) ;
 GO
+
+--CONTRATO DEL TRABAJADOR
+
+CREATE TABLE tipocontratotrabajadores(
+	[id] varchar(20) NOT NULL,
+	[descripcion] varchar(50) NOT NULL,
+    PRIMARY KEY ([id])
+)  ;
+GO
+
+CREATE TABLE contratos(
+	[id] varchar(20) NOT NULL,
+	[fechainicio] date NOT NULL,
+	[fechafin] date NOT NULL,
+	[empresa] varchar(50) NULL,
+	[observacion] varchar(50) NULL,
+	[estado]  int NOT NULL default 1,
+    PRIMARY KEY ([id]),
+	[tipocontratotrabajador_id] varchar(20) NULL,
+	FOREIGN KEY (tipocontratotrabajador_id) REFERENCES tipocontratotrabajadores(id),
+	[trabajador_id] varchar(20) NOT NULL,
+    FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id)
+)  ;
+GO
+
 /*
 CREATE TABLE parientes (
   [id] varchar(20) NOT NULL,

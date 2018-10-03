@@ -2,10 +2,9 @@
    <div class="row">
       <div class="process">
            <div class="process-row nav nav-tabs">
-
-              <div class="process-step tabmenu1">
-               <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-file-text fa-2x"></i></button>
-               <p><small>Datos <br />Generales</small></p>
+              <div class="process-step tabmnu1">
+               <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-pencil-square-o fa-2x"></i></button>
+               <p><small>Datos del<br />Contrato</small></p>
                <div class='errortab'>
                  <i class="fa fa-exclamation" aria-hidden="true"></i> 
                </div>
@@ -17,7 +16,7 @@
 
               <div class="process-step">
                  <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-check fa-2x"></i></button>
-                 <p><small>Guardar<br />Ficha</small></p>
+                 <p><small>Guardar<br />Contrato</small></p>
               </div>
 
            </div>
@@ -30,11 +29,11 @@
                     <div class="panel-body">
                          <div class="form-group">
                             <label class="col-sm-3 control-label">
-                              Fecha desde <span class="required">*</span>
+                              Fec Desde <span class="required">*</span>
                             </label> 
                             <div class="col-sm-7">
                               <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
-                                        <input size="16" type="text" value="@if(isset($trabajador)){{old('fechainicio',$trabajador->fechainicio)}}@else{{old('fechainicio')}}@endif" placeholder="Fecha Inicio"
+                                        <input size="16" type="text" value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechainicio')}}@endif" placeholder="Fecha Desde"
                                         id='fechainicio' name='fechainicio' 
                                         required = ""
                                         class="form-control input-sm">
@@ -49,7 +48,7 @@
                             </label> 
                             <div class="col-sm-7">
                               <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
-                                        <input size="16" type="text" value="@if(isset($trabajador)){{old('fechafin',$trabajador->fechafin)}}@else{{old('fechafin')}}@endif" placeholder="Fecha Inicio"
+                                        <input size="16" type="text" value="@if(isset($contrato)){{old('fechafin',$contrato->fechafin)}}@else{{old('fechafin')}}@endif" placeholder="Fecha Hasta"
                                         id='fechafin' name='fechafin' 
                                         required = ""
                                         class="form-control input-sm">
@@ -60,10 +59,10 @@
 
                           <div class="form-group">
                               <label class="col-sm-3 control-label">Empresa <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <div class="col-sm-7">
 
                                 <input  type="text"
-                                        id="empresa" name='empresa' value="@if(isset($fichasocioeconomica)){{old('empresa',$fichasocioeconomica->empresa)}}@else{{old('empresa')}}@endif" placeholder="Empresa"
+                                        id="empresa" name='empresa' value="@if(isset($contrato)){{old('empresa',$contrato->empresa)}}@else{{old('empresa')}}@endif" placeholder="Empresa"
                                         required = ""
                                         autocomplete="off" class="form-control input-sm" data-aw="3"/>
                                         @include('error.erroresvalidate', [ 'id' => $errors->has('empresa')  , 
@@ -86,10 +85,10 @@
 
                           <div class="form-group">
                               <label class="col-sm-3 control-label">Observación <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <div class="col-sm-7">
 
                                 <input  type="text"
-                                        id="observacion" name='observacion' value="@if(isset($fichasocioeconomica)){{old('observacion',$fichasocioeconomica->observacion)}}@else{{old('observacion')}}@endif" placeholder="Observación"
+                                        id="observacion" name='observacion' value="@if(isset($contrato)){{old('observacion',$contrato->observacion)}}@else{{old('observacion')}}@endif" placeholder="Observación"
                                         required = ""
                                         autocomplete="off" class="form-control input-sm" data-aw="3"/>
                                         @include('error.erroresvalidate', [ 'id' => $errors->has('observacion')  , 

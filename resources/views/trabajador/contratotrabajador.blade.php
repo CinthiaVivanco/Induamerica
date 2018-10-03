@@ -42,14 +42,28 @@
                       </div>
                       <div class="col-sm-2 detmodificar"> 
 
-                          <div class="icon"><span 
+                          <div class="iconc"><span 
                                           class="mdi mdi-edit" 
                                           id='btnmodificarc'
                                           name='{{$item->id}}' 
                                           data_opcion='{{$idopcion}}'
                                           data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
                                           ></span></div>
-                      </div>                      
+
+                       
+                      </div> 
+                      <div class="col-sm-2 imprimir detmodificar"> 
+
+                          <div class="iconi"><span 
+                                          class="fa fa-download" 
+                                          id='btnmodificarc'
+                                          name='{{$item->id}}' 
+                                          data_opcion='{{$idopcion}}'
+                                          data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
+                                          ></span></div>
+
+                       
+                      </div>                     
 
                   </li>
                 </ul>
@@ -78,6 +92,7 @@
                                     {{ csrf_field() }}
                         @include('trabajador.form.contrato')
                   </form>
+
                 
               </div>
             </div>
@@ -116,6 +131,7 @@
 
             var $form = $('form');
             $form.parsley().validate()
+
 
             $(".tab-content .tab-pane").each(function(index){
 

@@ -11,12 +11,18 @@ class Contrato extends Model
 
     protected $primaryKey = 'id';
     public $incrementing = false;
-    public $keyType = 'string';
 
-    
-    public function trabajador()
+
+    public function tipocontratotrabajador()
     {
-        return $this->hasMany('App\Trabajador');
+        return $this->belongsTo('App\Tipocontratotrabajador');
     }
 
+    public function trabajador()
+    {
+        return $this->belongsTo('App\Trabajador');
+    }
+
+
+    
 }
