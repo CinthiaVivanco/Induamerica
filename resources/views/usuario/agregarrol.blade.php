@@ -23,14 +23,14 @@
                 <label class="col-sm-3 control-label">Nombres</label>
                 <div class="col-sm-6">
 
-                  <input  type="text"
-                          id="nombre" name='nombre' value="{{ old('nombre') }}" placeholder="Nombres"
-                          required = ""
-                          autocomplete="off" class="form-control" data-aw="1"/>
+                    <input  type="text"
+                            id="nombre" name='nombre' value="{{ old('nombre') }}" placeholder="Nombres"
+                            required = ""
+                            autocomplete="off" class="form-control" data-aw="1"/>
 
-                    @include('error.erroresvalidate', [ 'id' => $errors->has('nombre')  , 
-                                                        'error' => $errors->first('nombre', ':message') , 
-                                                        'data' => '1'])
+                      @include('error.erroresvalidate', [ 'id' => $errors->has('nombre')  , 
+                                                          'error' => $errors->first('nombre', ':message') , 
+                                                          'data' => '1'])
 
                 </div>
               </div>
@@ -47,14 +47,11 @@
                   </p>
                 </div>
               </div>
-
             </form>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
 </div>  
 

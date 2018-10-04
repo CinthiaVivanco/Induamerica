@@ -93,13 +93,18 @@ IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'categoriacup
 DROP TABLE [categoriacupacionals];
 GO
 
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'cargos') AND type in (N'U'))
+DROP TABLE [cargos];
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'cargos') AND type in (N'U'))
+DROP TABLE [unidades];
+GO
+
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'areas') AND type in (N'U'))
 DROP TABLE [areas];
 GO
 
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'cargos') AND type in (N'U'))
-DROP TABLE [cargos];
-GO
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'gerencias') AND type in (N'U'))
 DROP TABLE [gerencias];
 GO
@@ -326,13 +331,6 @@ CREATE TABLE ocupaciontrabajos (
 ) ;
 GO
 
-CREATE TABLE areas (
-  [id]  varchar(20) NOT NULL,
-  [nombre] varchar(200) NOT NULL,
-  PRIMARY KEY  ([id])
-) ;
-GO
-
 CREATE TABLE cargos (
   [id]  varchar(20) NOT NULL,
   [codigo] varchar(20) NOT NULL,
@@ -341,11 +339,31 @@ CREATE TABLE cargos (
 ) ;
 GO
 
+CREATE TABLE unidades (
+  [id]  varchar(20) NOT NULL,
+  [codigo] varchar(20) NOT NULL,
+  [nombre] varchar(200) NOT NULL,
+  PRIMARY KEY  ([id]),
+  [cargo_id] varchar(20) NOT NULL,
+  FOREIGN KEY (cargo_id) REFERENCES cargos(id)
+) ;
+GO
+
+CREATE TABLE areas (
+  [id]  varchar(20) NOT NULL,
+  [nombre] varchar(200) NOT NULL,
+  PRIMARY KEY  ([id]),
+  [unidad_id] varchar(20) NOT NULL,
+  FOREIGN KEY (unidad_id) REFERENCES unidades(id)
+) ;
+GO
 
 CREATE TABLE gerencias (
   [id] varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
-  PRIMARY KEY  ([id])
+  PRIMARY KEY  ([id]),
+  [area_id] varchar(20) NOT NULL,
+  FOREIGN KEY (area_id) REFERENCES areas(id)
 ) ;
 GO
 
@@ -592,11 +610,11 @@ CREATE TABLE establecimientolaborals (
 GO
 
 CREATE TABLE trabajadores (
+  [apellidopaterno] varchar(100) NOT NULL,
+  [apellidomaterno] varchar(100) NOT NULL,
   [id] varchar(20) NOT NULL,
   [dni] varchar(50) NOT NULL,
   [fechanacimiento] date NULL,
-  [apellidopaterno] varchar(100) NOT NULL,
-  [apellidomaterno] varchar(100) NOT NULL,
   [nombres] varchar(100) NOT NULL,
   [sexo] int NOT NULL,
   [telefono] varchar(20) NOT NULL,
@@ -612,6 +630,9 @@ CREATE TABLE trabajadores (
   [sindicalizado] int NOT NULL,
   [departamento_id] varchar(20) NOT NULL,
   [provincia_id] varchar(20) NOT NULL,
+  [gerencia_id] varchar(20) NOT NULL,
+  [area_id] varchar(20) NOT NULL,
+  [unidad_id] varchar(20) NULL,
   [afiliadoeps] int NOT NULL,
   [essaludvida] int NOT NULL,
   [senati] int NOT NULL,
@@ -659,12 +680,8 @@ CREATE TABLE trabajadores (
   FOREIGN KEY (tipopago_id) REFERENCES tipopagos(id),
   [periodicidad_id] varchar(20) NOT NULL,
   FOREIGN KEY (periodicidad_id) REFERENCES periodicidads(id),
-  [area_id] varchar(20) NOT NULL,
-  FOREIGN KEY (area_id) REFERENCES areas(id),
   [cargo_id] varchar(20) NOT NULL,
   FOREIGN KEY (cargo_id) REFERENCES cargos(id),
-  [gerencia_id] varchar(20) NOT NULL,
-  FOREIGN KEY (gerencia_id) REFERENCES gerencias(id),
   [jornadalaboral_id] varchar(20) NOT NULL,
   FOREIGN KEY (jornadalaboral_id) REFERENCES jornadalaborals(id),
   [entidadfinanciera_id] varchar(20) NOT NULL,

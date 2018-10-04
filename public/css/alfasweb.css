@@ -233,6 +233,11 @@ tbody .mdi-close{
         width: 6%; 
     }
 
+    .col-sm-6 {
+     width: 50%;
+     float: left;
+    }
+
 }
 
 @media (max-width:767px){
@@ -333,6 +338,26 @@ tbody .mdi-close{
     outline: none;
     box-shadow: none;
 }
+
+.xs-mb-15 {
+    margin-bottom: 15px !important;
+}
+
+
+
+.col-sm-5 {
+    position: relative;
+    margin-right: !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.input-group[class*="col-"] {
+    float: none;
+    padding-left: 14px;
+    padding-right: 17;
+}
+
 
 
 /*

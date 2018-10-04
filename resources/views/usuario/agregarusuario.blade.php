@@ -20,37 +20,30 @@
             <form method="POST" action="{{ url('/agregar-usuario/'.$idopcion) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed">
                   {{ csrf_field() }}
 
-               <div class="form-group">
-                <label class="col-sm-3 control-label">DNI</label>
-                <div class="col-sm-4">
+              <div class="form-group">
+                  <label class="col-sm-3 control-label">Dni</label>
+                  <div class="col-sm-5 input-group xs-mb-15">
 
-                  <input  type="text"
-                          id="dni" name='dni' value="{{ old('dni') }}" placeholder="Ingrese Datos del Trabajador"
-                          required = "" data-parsley-minlength="8" data-parsley-maxlength="8" data-parsley-type="number"
-                          autocomplete="off" class="form-control input-sm" data-aw="3"/>
-
-                    @include('error.erroresvalidate', [ 'id' => $errors->has('dni')  , 
-                                                        'error' => $errors->first('dni', ':message') , 
-                                                        'data' => '3'])
-
-                </div>
-                <div class="col-auto">
-                    <button class="btn btn-lg btn-success" type="submit">Buscar</button>
-                </div>
+                        <input type="text" class="form-control"><span class="input-group-btn">
+                           <button type="button" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar</font></font></button></span>
+                    
+                  </div>
               </div>
 
-
               <div class="form-group">
-                <label class="col-sm-3 control-label">Nombres</label>
+                <label class="col-sm-3 control-label">Nombre</label>
                 <div class="col-sm-5">
 
                   <input  type="text"
                           id="nombre" name='nombre' value="{{ old('nombre') }}" placeholder="Nombre del Trabajador"
-                          required = ""
+                          required = "" disabled="disabled"
                           autocomplete="off" class="form-control input-sm" data-aw="1"/>
 
                 </div>
               </div>
+
+
+              
 
               <div class="form-group">
                 <label class="col-sm-3 control-label">Usuario</label>

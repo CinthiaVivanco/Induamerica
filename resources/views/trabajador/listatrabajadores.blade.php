@@ -19,6 +19,7 @@
                   </div>
                 </div>
                 <div class="panel-body">
+ok -.-
                   <table id="table1" class="table table-striped table-hover table-fw-widget">
                     <thead>
                       <tr>
