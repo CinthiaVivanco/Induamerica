@@ -19,54 +19,33 @@
             <form method="POST" action="{{ url('/modificar-usuario/'.$idopcion.'/'.Hashids::encode(substr($usuario->id, -12))) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed"> 
                   {{ csrf_field() }}
 
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Nombres</label>
-                <div class="col-sm-6">
+              <div class= 'trabajadorencontrado'>
+                <div class="form-group">
 
-                  <input  type="text" 
-                          id="nombre" name='nombre' value="{{ old( 'nombre', $usuario->nombre) }}" placeholder="Nombres"
-                          required = ""
-                          autocomplete="off" class="form-control" data-aw="1"/>
+                    <label class="col-sm-3 control-label">Nombre</label>
+                    <div class="col-sm-5">
 
-                </div>
-              </div>
+                      <input  type="text"
+                              id="nombre" name='nombre'  placeholder="Nombre del Trabajador"
+                              required = "" disabled="disabled"
+                              autocomplete="off" class="form-control input-sm" data-aw="1"/>
 
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Apellidos</label>
-                <div class="col-sm-6">
+                    </div>
 
-                  <input  type="text"
-                          id="apellido" name='apellido' value="{{ old( 'apellido', $usuario->apellido) }}" placeholder="Apellidos"
-                          required = ""
-                          autocomplete="off" class="form-control" data-aw="2"/>
-
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="col-sm-3 control-label">DNI</label>
-                <div class="col-sm-6">
-
-                  <input  type="text"
-                          id="dni" name='dni' value="{{ old( 'dni', $usuario->dni) }}" placeholder="DNI"
-                          required = "" data-parsley-minlength="8" data-parsley-maxlength="8" data-parsley-type="number"
-                          autocomplete="off" class="form-control" data-aw="3"/>
-
-                    @include('error.erroresvalidate', [ 'id' => $errors->has('dni')  , 
-                                                        'error' => $errors->first('dni', ':message') , 
-                                                        'data' => '3'])
+                    <input  type="hidden"
+                              id="trabajador_id" name='trabajador_id'/>
 
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-sm-3 control-label">Usuario</label>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
 
                   <input  type="text"
                           id="name" name='name' value="{{ old( 'name', $usuario->name) }}" placeholder="Usuario"
                           required = ""
-                          autocomplete="off" class="form-control" data-aw="4"/>
+                          autocomplete="off" class="form-control input-sm" data-aw="4"/>
 
                     @include('error.erroresvalidate', [ 'id' => $errors->has('name')  , 
                                                         'error' => $errors->first('name', ':message') , 
@@ -75,29 +54,16 @@
                 </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Correo Electronico</label>
-                <div class="col-sm-6">
-
-                  <input  type="email"
-                          id="email" name='email' value="{{ old( 'email', $usuario->email) }}" placeholder="Correo Electronico"
-                          required = "" parsley-type="email"
-                          autocomplete="off" class="form-control" data-aw="5"/>
-
-                    @include('error.erroresvalidate', [ 'id' => $errors->has('email')  , 
-                                                        'error' => $errors->first('email', ':message') , 
-                                                        'data' => '5'])
-                </div>
-              </div>
+  
 
               <div class="form-group">
                 <label class="col-sm-3 control-label">Clave ({{Crypt::decrypt($usuario->password)}})</label>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
 
                   <input  type="password"
                           id="password" name='password' value="" placeholder="Clave"
                           required = ""
-                          autocomplete="off" class="form-control" data-aw="6"/>
+                          autocomplete="off" class="form-control input-sm" data-aw="6"/>
 
                 </div>
               </div>
@@ -105,10 +71,10 @@
               <div class="form-group">
 
                 <label class="col-sm-3 control-label">Rol</label>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                   {!! Form::select( 'rol_id', $comborol, array(),
                                     [
-                                      'class'       => 'form-control control' ,
+                                      'class'       => 'form-control control input-sm' ,
                                       'id'          => 'rol_id',
                                       'required'    => '',
                                       'data-aw'     => '7'
@@ -118,7 +84,7 @@
 
               <div class="form-group">
                 <label class="col-sm-3 control-label">Activo</label>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                   <div class="be-radio has-success inline">
                     <input type="radio" value='1' @if($usuario->activo == 1) checked @endif name="activo" id="rad6">
                     <label for="rad6">Activado</label>

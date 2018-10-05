@@ -19,7 +19,7 @@
                   </div>
                 </div>
                 <div class="panel-body">
-ok -.-
+
                   <table id="table1" class="table table-striped table-hover table-fw-widget">
                     <thead>
                       <tr>
@@ -36,42 +36,42 @@ ok -.-
 
                       @foreach($listatrabajadores as $item)
                         <tr>
-                          <td>{{$item->dni}} </td>
-                          <td>{{$item->apellidopaterno}}</td>
-                          <td>{{$item->apellidomaterno}}</td>
-                          <td>{{$item->nombres}}</td>
-                          <td>{{$item->telefono}}</td>
+                            <td>{{$item->dni}} </td>
+                            <td>{{$item->apellidopaterno}}</td>
+                            <td>{{$item->apellidomaterno}}</td>
+                            <td>{{$item->nombres}}</td>
+                            <td>{{$item->telefono}}</td>
 
-                          <td> 
-                            @if($item->activo == 1)  
-                              <span class="icon mdi mdi-check"></span> 
-                            @else 
-                              <span class="icon mdi mdi-close"></span> 
-                            @endif
-                          </td>
+                            <td> 
+                              @if($item->activo == 1)  
+                                <span class="icon mdi mdi-check"></span> 
+                              @else 
+                                <span class="icon mdi mdi-close"></span> 
+                              @endif
+                            </td>
 
-                          <td class="rigth">
-                            <div class="btn-group btn-hspace">
-                              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Acción <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                              <ul role="menu" class="dropdown-menu pull-right">
-                                <li>
-                                  <a href="{{ url('/derecho-habiente-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
-                                    Ficha Derecho Habiente
-                                  </a>
-                                  <a href="{{ url('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
-                                    Ficha SocioEconomica
-                                  </a>
-                                  <a href="{{ url('/ficha-contrato-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
-                                    Contrato
-                                  </a>
-                                  <a href="{{ url('/modificar-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
-                                    Modificar
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-
+                            <td class="rigth">
+                              <div class="btn-group btn-hspace">
+                                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Acción <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                                <ul role="menu" class="dropdown-menu pull-right">
+                                  <li>
+                                    <a href="{{ url('/derecho-habiente-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
+                                      Ficha Derecho Habiente
+                                    </a>
+                                    <a href="{{ url('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
+                                      Ficha SocioEconomica
+                                    </a>
+                                    <a href="{{ url('/ficha-contrato-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
+                                      Contrato
+                                    </a>
+                                    <a href="{{ url('/modificar-trabajador/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
+                                      Modificar
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                            
                         </tr>   
 
                       @endforeach

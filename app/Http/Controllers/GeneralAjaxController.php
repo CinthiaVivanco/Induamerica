@@ -43,6 +43,48 @@ class GeneralAjaxController extends Controller
 						 ]);
 	}	
 
+	public function actionAreaAjax(Request $request)
+	{
+		$gerencia_id   = $request['gerencia_id'];
+
+		$area = DB::table('areas')->where('gerencia_id','=',$gerencia_id)->pluck('nombre','id')->toArray();
+		$comboarea  = array(0 => "Seleccione Área") + $area;
+
+		return View::make('general/ajax/comboarea',
+						 [
+						 'comboarea' => $comboarea
+						
+						 ]);
+	}	
+
+
+	public function actionUnidadAjax(Request $request)
+	{
+		$area_id   = $request['area_id'];
+
+		$unidad = DB::table('unidades')->where('area_id','=',$area_id)->pluck('nombre','id')->toArray();
+		$combounidad  = array(0 => "Seleccione Unidad") + $unidad;
+
+		return View::make('general/ajax/combounidad',
+						 [
+						 'combounidad' => $combounidad
+						
+						 ]);
+	}	
+
+	public function actionCargoAjax(Request $request)
+	{
+		$unidad_id   = $request['unidad_id'];
+
+		$cargo = DB::table('cargos')->where('unidad_id','=',$unidad_id)->pluck('nombre','id')->toArray();
+		$combocargo  = array(0 => "Seleccione Cargo") + $cargo;
+
+		return View::make('general/ajax/combocargo',
+						 [
+						 'combocargo' => $combocargo
+
+						 ]);
+	}
 
 
 

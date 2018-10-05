@@ -65,6 +65,11 @@ class Trabajador extends Model
         return $this->belongsTo('App\Cargo');
     }
 
+    public function unidad()
+    {
+        return $this->belongsTo('App\Unidad');
+    }
+
     public function tipotrabajador()
     {
         return $this->belongsTo('App\Tipotrabajador');

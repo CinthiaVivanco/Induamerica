@@ -331,21 +331,10 @@ CREATE TABLE ocupaciontrabajos (
 ) ;
 GO
 
-CREATE TABLE cargos (
-  [id]  varchar(20) NOT NULL,
-  [codigo] varchar(20) NOT NULL,
-  [nombre] varchar(200) NOT NULL,
-  PRIMARY KEY  ([id])
-) ;
-GO
-
-CREATE TABLE unidades (
-  [id]  varchar(20) NOT NULL,
-  [codigo] varchar(20) NOT NULL,
+CREATE TABLE gerencias (
+  [id] varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
   PRIMARY KEY  ([id]),
-  [cargo_id] varchar(20) NOT NULL,
-  FOREIGN KEY (cargo_id) REFERENCES cargos(id)
 ) ;
 GO
 
@@ -353,19 +342,30 @@ CREATE TABLE areas (
   [id]  varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
   PRIMARY KEY  ([id]),
-  [unidad_id] varchar(20) NOT NULL,
-  FOREIGN KEY (unidad_id) REFERENCES unidades(id)
+  [gerencia_id] varchar(20) NOT NULL,
+  FOREIGN KEY (gerencia_id) REFERENCES gerencias(id)
 ) ;
 GO
 
-CREATE TABLE gerencias (
-  [id] varchar(20) NOT NULL,
+
+CREATE TABLE unidades (
+  [id]  varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
   PRIMARY KEY  ([id]),
   [area_id] varchar(20) NOT NULL,
   FOREIGN KEY (area_id) REFERENCES areas(id)
 ) ;
 GO
+
+CREATE TABLE cargos (
+  [id]  varchar(20) NOT NULL,
+  [nombre] varchar(200) NOT NULL,
+  PRIMARY KEY  ([id]),
+  [unidad_id] varchar(20) NULL,
+  FOREIGN KEY (unidad_id) REFERENCES unidades(id)
+) ;
+GO
+
 
 --MENSUAL, QUINCENAL, SEMANAL, DIARIA, OTROS
 

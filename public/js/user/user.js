@@ -3,6 +3,40 @@ $(document).ready(function(){
 
 	var carpeta = $("#carpeta").val();
 
+
+    $('#buscartrabajador').on('click', function(event){
+
+
+
+    	var dni 	= $("#dni").val();
+    	var _token 	= $('#token').val();
+        abrircargando();
+		$(".trabajadorencontrado").html("");
+
+
+        $.ajax({
+            type	: 	"POST",
+            url		: 	"/induamerica/ajax-dato-del-trabajador",
+            data	: 	{
+            				_token	: _token,
+            				dni 	: dni
+            	 		},
+            success: function (data) {
+            	//console.log(data);
+            	cerrarcargando();
+            	$(".trabajadorencontrado").html(data);
+            },
+            error: function (data) {
+            	cerrarcargando();
+                console.log('Error:', data);
+            }
+        });
+
+    });	
+
+
+
+
     $('.selectrol').on('click', function(event){
     	event.preventDefault();
     	var idrol 	= $(this).attr("id");

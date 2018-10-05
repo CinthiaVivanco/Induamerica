@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Crypt;
-use App\User,App\Grupoopcion,App\Rol,App\RolOpcion,App\Opcion,App\Documento;
+use App\User,App\Grupoopcion,App\Rol,App\RolOpcion,App\Opcion,App\Documento,App\Trabajador;
 use View;
 use Session;
 use Hashids;
@@ -15,6 +15,24 @@ use Hashids;
 
 class UserController extends Controller
 {
+
+ 	public function actionDatoTrabajador(Request $request){
+
+		$dni 			= strtoupper($request['dni']);
+		$trabajador     = Trabajador::where('dni', '=', $dni)->first();
+		$usuario     	= User::where('dni', '=', $dni)->first();
+		
+		return View::make('usuario/ajax/datotrabajador',
+						 [
+						 	'trabajador' => $trabajador,
+						 	'usuario' 	 => $usuario
+						 ]);
+
+
+
+ 	}
+
+	
    public function actionLogin(Request $request)
     {
 		if($_POST)
@@ -78,7 +96,7 @@ class UserController extends Controller
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
-	    $listausuarios = User::where('id','<>','CHI01CEN000000000001')->orderBy('id', 'asc')->get();
+	    $listausuarios = User::where('id','<>','ARCHICEN000000000001')->orderBy('id', 'asc')->get();
 
 		return View::make('usuario/listausuarios',
 						 [
@@ -101,33 +119,39 @@ class UserController extends Controller
 			/**** Validaciones laravel ****/
 			$this->validate($request, [
 	            'name' => 'unique:users',
-	            'email' => 'unique:users',
-	            'dni' => 'unique:users',
+	            'email' => 'unique:users'
 			], [
             	'name.unique' => 'Usuario ya registrado',
-            	'email.unique' => 'Correo Electronico ya registrado',
-            	'dni.unique' => 'DNI ya registrado',
+            	'email.unique' => 'Correo Electronico ya registrado'
         	]);
 			/******************************/
-			$idusers 				 = $this->funciones->getCreateId('users');
+			$trabajador_id 	 		 	= 	$request['trabajador_id'];
+			$trabajador     			=   Trabajador::where('id', '=', $trabajador_id)->first();
+
+
+
+
+			$idusers 				 	=   $this->funciones->getCreateId('users');
 			
-			$cabecera            	 =	new User;
-			$cabecera->id 	     	 =  $idusers;
-			$cabecera->nombre 	     =  $request['nombre'];
-			$cabecera->apellido 	 =  $request['apellido'];
-			$cabecera->dni 	 		 = 	$request['dni'];
-			$cabecera->name  		 =	$request['name'];
-			$cabecera->email 	 	 =  $request['email'];
-			$cabecera->password 	 = 	Crypt::encrypt($request['password']);
-			$cabecera->rol_id 	 	 = 	$request['rol_id'];
+			$cabecera            	 	=	new User;
+			$cabecera->id 	     	 	=   $idusers;
+
+			$cabecera->nombre 	     	=   $trabajador->nombres;
+			$cabecera->apellido 	 	=   $trabajador->apellidopaterno.' '.$trabajador->apellidomaterno;
+			$cabecera->dni 	 		 	= 	$trabajador->dni;
+			$cabecera->name  		 	=	$request['name'];
+			$cabecera->email 	 	 	=  	$trabajador->email;
+			$cabecera->password 	 	= 	Crypt::encrypt($request['password']);
+			$cabecera->rol_id 	 		= 	$request['rol_id'];
+			$cabecera->trabajador_id 	= 	$trabajador->id;
 			$cabecera->save();
  
- 			return Redirect::to('/gestion-de-usuarios/'.$idopcion)->with('bienhecho', 'Usuario '.$request['nombre'].' '.$request['apellido'].' registrado con exito');
+ 			return Redirect::to('/gestion-de-usuarios/'.$idopcion)->with('bienhecho', 'Usuario '.$trabajador->nombres.' '.$trabajador->apellidopaterno.' '.$trabajador->apellidomaterno.' registrado con exito');
 
 		}else{
 
 		
-			$rol 		= DB::table('Rols')->where('id','<>','CHI01CEN000000000001')->pluck('nombre','id')->toArray();
+			$rol 		= DB::table('Rols')->where('id','<>','ARCHICEN000000000001')->pluck('nombre','id')->toArray();
 			$comborol  	= array('' => "Seleccione Rol") + $rol;
 
 			return View::make('usuario/agregarusuario',
@@ -186,7 +210,7 @@ class UserController extends Controller
 
 				$usuario 	= User::where('id', $idusuario)->first();
 
-				$rol 		= DB::table('Rols')->where('id','<>','CHI01CEN000000000001')->pluck('nombre','id')->toArray();
+				$rol 		= DB::table('Rols')->where('id','<>','ARCHICEN000000000001')->pluck('nombre','id')->toArray();
 				$comborol  	= array($usuario->rol_id => $usuario->rol->nombre) + $rol;
 
 
@@ -211,7 +235,7 @@ class UserController extends Controller
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
-	    $listaroles = Rol::where('id','<>','CHI01CEN000000000001')->orderBy('id', 'asc')->get();
+	    $listaroles = Rol::where('id','<>','ARCHICEN000000000001')->orderBy('id', 'asc')->get();
 
 		return View::make('usuario/listaroles',
 						 [
@@ -331,7 +355,7 @@ class UserController extends Controller
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
-	    $listaroles = Rol::where('id','<>','CHI01CEN000000000001')->orderBy('id', 'asc')->get();
+	    $listaroles = Rol::where('id','<>','ARCHICEN000000000001')->orderBy('id', 'asc')->get();
 
 		return View::make('usuario/listapermisos',
 						 [

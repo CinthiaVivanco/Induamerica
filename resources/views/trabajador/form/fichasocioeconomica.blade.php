@@ -300,6 +300,8 @@
 
                                 <div class="form-group">
                                   <label class="col-sm-12 control-label labelleft">Cuenta con otro Ingreso Económico aparte de su Trabajo <span class="required">*</span></label>
+
+
                                   <div class="col-sm-12 abajocaja">
                                     <div class="be-radio has-success inline">
                                       <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 1) checked  @endif @else checked @endif name="otroingreso" id="rad1">
@@ -310,6 +312,7 @@
                                       <label for="rad2">No</label>
                                     </div>
                                   </div>
+
                                 </div>
 
 
@@ -386,6 +389,25 @@
 
                            <div class="form-group">
                              <label class="col-sm-12 control-label labelleft" >Cuenta con <span class="required">*</span></label>
+
+                                <!--
+                                 <div class="col-sm-6">
+                                    <div class="be-checkbox inline">
+                                      <input id="check6" type="checkbox" checked="">
+                                      <label for="check6">Sala</label>
+                                    </div>
+                                    <div class="be-checkbox inline">
+                                      <input id="check7" type="checkbox">
+                                      <label for="check7">Comedor</label>
+                                    </div>
+                                    <div class="be-checkbox inline">
+                                      <input id="check8" type="checkbox">
+                                      <label for="check8">Habitaciones</label>
+                                    </div>
+                                 </div>
+
+                                -->
+                               
                               <div class="col-sm-12 abajocaja">
                                 {!! Form::select( 'casaparte_id', $combocasaparte, array(),
                                                   [
@@ -395,6 +417,8 @@
                                                     'data-aw'     => '1'
                                                   ]) !!}
                               </div>
+                             
+
                             </div>
 
                             <div class="form-group">

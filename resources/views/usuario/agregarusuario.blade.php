@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/select2/css/select2.min.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/bootstrap-slider/css/bootstrap-slider.css') }} "/>
 
+
 @stop
 @section('section')
 
@@ -24,23 +25,39 @@
                   <label class="col-sm-3 control-label">Dni</label>
                   <div class="col-sm-5 input-group xs-mb-15">
 
-                        <input type="text" class="form-control"><span class="input-group-btn">
-                           <button type="button" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar</font></font></button></span>
+                        <input  type="text"
+                          id="dni" name='dni' placeholder="DNI"                          
+                          autocomplete="off" class="form-control " data-aw="1"/>
+
+                            <span class="input-group-btn">
+                           <button id='buscartrabajador' type="button" class="btn btn-primary "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar</font></font></button></span>
                     
                   </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-3 control-label">Nombre</label>
-                <div class="col-sm-5">
 
-                  <input  type="text"
-                          id="nombre" name='nombre' value="{{ old('nombre') }}" placeholder="Nombre del Trabajador"
-                          required = "" disabled="disabled"
-                          autocomplete="off" class="form-control input-sm" data-aw="1"/>
+              <div class= 'trabajadorencontrado'>
+                
+
+                <div class="form-group">
+
+                  <label class="col-sm-3 control-label">Nombre</label>
+                  <div class="col-sm-5">
+
+                    <input  type="text"
+                            id="nombre" name='nombre'  placeholder="Nombre del Trabajador"
+                            required = "" disabled="disabled"
+                            autocomplete="off" class="form-control input-sm" data-aw="1"/>
+
+                  </div>
+
+                  <input  type="hidden"
+                            id="trabajador_id" name='trabajador_id'/>
 
                 </div>
+
               </div>
+
 
 
               
@@ -75,6 +92,20 @@
                 </div>
               </div>
 
+
+              <div class="form-group">
+
+                <label class="col-sm-3 control-label">Rol</label>
+                <div class="col-sm-5">
+                  {!! Form::select( 'rol_id', $comborol, array(),
+                                    [
+                                      'class'       => 'form-control control input-sm' ,
+                                      'id'          => 'rol_id',
+                                      'required'    => '',
+                                      'data-aw'     => '7'
+                                    ]) !!}
+                </div>
+              </div>
 
               <div class="row xs-pt-15">
                 <div class="col-xs-6">
@@ -124,4 +155,6 @@
         $('form').parsley();
       });
     </script> 
+
+    <script src="{{ asset('public/js/user/user.js') }}" type="text/javascript"></script>
 @stop

@@ -818,34 +818,6 @@
 
                       <div class="form-group">
 
-                            <label class="col-sm-3 control-label">Área <span class="required">*</span></label>
-                            <div class="col-sm-7">
-                              {!! Form::select( 'area_id', $comboarea, array(),
-                                                [
-                                                  'class'       => 'form-control control input-sm' ,
-                                                  'id'          => 'area_id',
-                                                  'required'    => '',
-                                                  'data-aw'     => '18'
-                                                ]) !!}
-                            </div>
-                      </div>
-
-                      <div class="form-group">
-
-                            <label class="col-sm-3 control-label">Cargo <span class="required">*</span></label>
-                            <div class="col-sm-7">
-                              {!! Form::select( 'cargo_id', $combocargo, array(),
-                                                [
-                                                  'class'       => 'form-control control input-sm' ,
-                                                  'id'          => 'cargo_id',
-                                                  'required'    => '',
-                                                  'data-aw'     => '18'
-                                                ]) !!}
-                            </div>
-                      </div>
-
-                      <div class="form-group">
-
                             <label class="col-sm-3 control-label">Gerencia <span class="required">*</span></label>
                             <div class="col-sm-7">
                               {!! Form::select( 'gerencia_id', $combogerencia, array(),
@@ -858,21 +830,53 @@
                             </div>
                       </div>
 
-                      <div class="form-group">
 
-                          <label class="col-sm-3 control-label">Jornada Laboral <span class="required">*</span></label>
-                          <div class="col-sm-7">
-                            {!! Form::select( 'jornadalaboral_id', $combojornadalaboral, array(),
-                                              [
-                                                'class'       => 'form-control control input-sm' ,
-                                                'id'          => 'jornadalaboral_id',
-                                                'required'    => '',
-                                                'data-aw'     => '21'
-                                              ]) !!}
-                          </div>
+                      <div class="form-group ajaxarea">
+
+                            <label class="col-sm-3 control-label">Área <span class="required">*</span></label>
+                            <div class="col-sm-7">
+                              {!! Form::select( 'area_id', $comboarea, array(),
+                                                [
+                                                  'class'       => 'form-control control input-sm' ,
+                                                  'id'          => 'area_id',
+                                                  'required'    => '',
+                                                  'data-aw'     => '18'
+                                                ]) !!}
+
+
+                            </div>
+                          
                       </div>
 
 
+
+                      <div class="form-group ajaxunidad">
+
+                            <label class="col-sm-3 control-label">Unidad <span class="required">*</span></label>
+                            <div class="col-sm-7">
+                              {!! Form::select( 'unidad_id', $combounidad, array(),
+                                                [
+                                                  'class'       => 'form-control control input-sm' ,
+                                                  'id'          => 'unidad_id',
+                                                  'required'    => '',
+                                                  'data-aw'     => '18'
+                                                ]) !!}
+                            </div>
+                      </div>
+
+                      <div class="form-group ajaxcargo">
+
+                            <label class="col-sm-3 control-label">Cargo <span class="required">*</span></label>
+                            <div class="col-sm-7">
+                              {!! Form::select( 'cargo_id', $combocargo, array(),
+                                                [
+                                                  'class'       => 'form-control control input-sm' ,
+                                                  'id'          => 'cargo_id',
+                                                  'required'    => '',
+                                                  'data-aw'     => '18'
+                                                ]) !!}
+                            </div>
+                      </div>
                 
                   </div>
                 </div>
@@ -880,6 +884,21 @@
                 <div class="col-sm-6">
 
                     <div class="panel-body">
+
+
+                            <div class="form-group">
+
+                                <label class="col-sm-3 control-label">Jornada Laboral <span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                  {!! Form::select( 'jornadalaboral_id', $combojornadalaboral, array(),
+                                                    [
+                                                      'class'       => 'form-control control input-sm' ,
+                                                      'id'          => 'jornadalaboral_id',
+                                                      'required'    => '',
+                                                      'data-aw'     => '21'
+                                                    ]) !!}
+                                </div>
+                            </div>
 
                             <div class="form-group">
 

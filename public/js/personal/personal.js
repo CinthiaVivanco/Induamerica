@@ -179,6 +179,7 @@ $(document).ready(function(){
     });
 
 
+
 	$(".ajaxpersonal").on('change','#provincia_id', function() {
 
 		var provincia_id = $('#provincia_id').val();
@@ -204,6 +205,91 @@ $(document).ready(function(){
         });
 
     });
+
+
+
+     $(".ajaxpersonal").on('change','#gerencia_id', function() {
+        var gerencia_id = $('#gerencia_id').val();
+        var _token      = $('#token').val();
+
+        $.ajax({
+            
+            type    :   "POST",
+            url     :   "/induamerica/ajax-select-area",
+            data    :   {
+                            _token  : _token,
+                            gerencia_id : gerencia_id
+                        },
+            success: function (data) {
+
+                $(".ajaxarea").html(data);
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+
+
+    });
+     
+
+    $(".ajaxpersonal").on('change','#area_id', function() {
+
+        var area_id = $('#area_id').val();
+
+        var _token      = $('#token').val();
+
+        $.ajax({
+
+            type    :   "POST",
+            url     :   "/induamerica/ajax-select-unidad",
+            data    :   {
+                            _token  : _token,
+                            area_id : area_id
+                        },
+            success: function (data) {
+
+                $(".ajaxunidad").html(data);
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+
+    });
+
+    $(".ajaxpersonal").on('change','#unidad_id', function() {
+
+        var unidad_id = $('#unidad_id').val();
+
+        var _token      = $('#token').val();
+
+        $.ajax({
+
+            type    :   "POST",
+            url     :   "/induamerica/ajax-select-cargo",
+            data    :   {
+                            _token  : _token,
+                            unidad_id : unidad_id
+                        },
+            success: function (data) {
+
+                $(".ajaxcargo").html(data);
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+
+    });
+
+
+
+
+
 
     $(".ajaxpersonal").on('change','#vinculofamiliar_id', function() {
         var vinculofamiliar_id = $('#vinculofamiliar_id').val();
@@ -286,7 +372,6 @@ $(document).ready(function(){
         });
 
     });
-
 
 
 });

@@ -1,3 +1,11 @@
+.errorflotanteajax{
+    position: fixed;
+    top: 78px;
+    z-index: 1100;
+    right: 12px;
+}
+
+
 .main-content {
     padding: 8px;
 }
@@ -237,6 +245,10 @@ tbody .mdi-close{
      width: 50%;
      float: left;
     }
+    .checks {
+     width: 50%;
+     float: left;
+    }
 
 }
 
@@ -354,8 +366,9 @@ tbody .mdi-close{
 
 .input-group[class*="col-"] {
     float: none;
-    padding-left: 14px;
+    padding-left: 13px;
     padding-right: 17;
+    padding-right: 14px;
 }
 
 

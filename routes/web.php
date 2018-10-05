@@ -30,6 +30,9 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/gestion-de-usuarios/{idopcion}', 'UserController@actionListarUsuarios');
 	Route::any('/agregar-usuario/{idopcion}', 'UserController@actionAgregarUsuario');
 	Route::any('/modificar-usuario/{idopcion}/{idusuario}', 'UserController@actionModificarUsuario');
+	Route::any('/ajax-dato-del-trabajador', 'UserController@actionDatoTrabajador');
+
+
 
 	Route::any('/gestion-de-roles/{idopcion}', 'UserController@actionListarRoles');
 	Route::any('/agregar-rol/{idopcion}', 'UserController@actionAgregarRol');
@@ -63,12 +66,18 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/ajax-select-provincia', 'GeneralAjaxController@actionProvinciaAjax');
 	Route::any('/ajax-select-distrito', 'GeneralAjaxController@actionDistritoAjax');
 
+	Route::any('/ajax-select-area', 'GeneralAjaxController@actionAreaAjax');
+	Route::any('/ajax-select-unidad', 'GeneralAjaxController@actionUnidadAjax');
+	Route::any('/ajax-select-cargo', 'GeneralAjaxController@actionCargoAjax');
+
 	Route::any('/ajax-select-tipoinstitucion', 'GeneralAjaxController@actionTipoInstitucionAjax');
 	Route::any('/ajax-select-institucion', 'GeneralAjaxController@actionInstitucionAjax');
 	Route::any('/ajax-select-carrera', 'GeneralAjaxController@actionCarreraAjax');
 
 	/*Route::any('/ajax-select-vinculofamiliar', 'GeneralAjaxController@actionVinculoFamiliarAjax');*/
 	Route::any('/ajax-select-tipodocumentoacredita', 'GeneralAjaxController@actionTipoDocumentoAcreditaAjax');
+
+
 
 
 
