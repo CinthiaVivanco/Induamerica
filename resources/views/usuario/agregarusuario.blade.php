@@ -9,6 +9,7 @@
 @stop
 @section('section')
 
+
 <div class="be-content">
   <div class="main-content container-fluid">
 

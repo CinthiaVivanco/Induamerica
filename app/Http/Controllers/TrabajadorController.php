@@ -277,8 +277,7 @@ class TrabajadorController extends Controller
 						  	'comboocupacion' 				=> $comboocupacion,
 						  	'combolocal'   					=> $combolocal,
 						  	'combosituacionespecial'	    => $combosituacionespecial,
-						  	'ffin'	  					    => $ffin,
-						
+						  	'ffin'	  					    => $ffin,						
 						]);
 
 		}

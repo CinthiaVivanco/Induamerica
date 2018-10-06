@@ -34,28 +34,28 @@
 
                       @foreach($listausuarios as $item)
                         <tr>
-                          <td>{{$item->nombre}} </td>
-                          <td>{{$item->apellido}}</td>
-                          <td>{{$item->rol->nombre}}</td>
-                          <td> 
-                            @if($item->activo == 1)  
-                              <span class="icon mdi mdi-check"></span> 
-                            @else 
-                              <span class="icon mdi mdi-close"></span> 
-                            @endif
-                          </td>
-                          <td class="rigth">
-                            <div class="btn-group btn-hspace">
-                              <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Acción <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                              <ul role="menu" class="dropdown-menu pull-right">
-                                <li>
-                                  <a href="{{ url('/modificar-usuario/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
-                                    Modificar
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
+                            <td>{{$item->nombre}} </td>
+                            <td>{{$item->apellido}}</td>
+                            <td>{{$item->rol->nombre}}</td>
+                            <td> 
+                              @if($item->activo == 1)  
+                                <span class="icon mdi mdi-check"></span> 
+                              @else 
+                                <span class="icon mdi mdi-close"></span> 
+                              @endif
+                            </td>
+                            <td class="rigth">
+                              <div class="btn-group btn-hspace">
+                                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Acción <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                                <ul role="menu" class="dropdown-menu pull-right">
+                                  <li>
+                                    <a href="{{ url('/modificar-usuario/'.$idopcion.'/'.Hashids::encode(substr($item->id, -12))) }}">
+                                      Modificar
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
                         </tr>                    
                       @endforeach
 

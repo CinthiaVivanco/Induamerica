@@ -19,25 +19,23 @@
             <form method="POST" action="{{ url('/modificar-usuario/'.$idopcion.'/'.Hashids::encode(substr($usuario->id, -12))) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed"> 
                   {{ csrf_field() }}
 
-              <div class= 'trabajadorencontrado'>
-                <div class="form-group">
 
-                    <label class="col-sm-3 control-label">Nombre</label>
+              
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Trabajador</label>
                     <div class="col-sm-5">
 
                       <input  type="text"
-                              id="nombre" name='nombre'  placeholder="Nombre del Trabajador"
+                              id="nombre" name='nombre' value="{{ old( 'nombre', $usuario->nombre) }} {{ old( 'apellido', $usuario->apellido) }} " placeholder="Nombre del Trabajador"
                               required = "" disabled="disabled"
                               autocomplete="off" class="form-control input-sm" data-aw="1"/>
 
                     </div>
-
                     <input  type="hidden"
-                              id="trabajador_id" name='trabajador_id'/>
-
+                             id="trabajador_id" name='trabajador_id'/>
                 </div>
-              </div>
-
+            
+            
               <div class="form-group">
                 <label class="col-sm-3 control-label">Usuario</label>
                 <div class="col-sm-5">

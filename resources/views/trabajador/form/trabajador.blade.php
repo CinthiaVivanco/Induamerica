@@ -148,8 +148,7 @@
                 <div class="col-sm-7">
 
                   <input  type="text"
-                          id="nombre" name='nombre' value="@if(isset($trabajador)){{old('nombre',$trabajador->nombres)}}@else{{old('nombre')}}@endif" placeholder="Nombres"
-                          required = ""
+                          id="nombre" name='nombre' value="@if(isset($trabajador)){{old('nombre',$trabajador->nombres)}}@else{{old('nombre')}}@endif" placeholder="Nombres" required = ""
                           autocomplete="off" class="form-control input-sm" data-aw="5"/>
 
                 </div>

@@ -178,25 +178,17 @@ class UserController extends Controller
 		{
 			/**** Validaciones laravel ****/
 			$this->validate($request, [
-	            'name' => 'unique:users,name,'.$idusuario.',id',
-	            'email' => 'unique:users,email,'.$idusuario.',id',
-	            'dni' => 'unique:users,dni,'.$idusuario.',id'
+	            'name' => 'unique:users,name,'.$idusuario.',id'
 			], [
             	'name.unique' => 'Usuario ya registrado',
-            	'email.unique' => 'Correo Electronico ya registrado',
-            	'dni.unique' => 'DNI ya registrado',
-        	]);
+            ]);	
 			/******************************/
 
 			$idusers 				 = $this->funciones->getCreateId('users');
 
 			$cabecera            	 =	User::find($idusuario);
 			$cabecera->id 	     	 =  $idusers;			
-			$cabecera->nombre 	     =  $request['nombre'];
-			$cabecera->apellido 	 =  $request['apellido'];
-			$cabecera->dni 	 		 = 	$request['dni'];
 			$cabecera->name  		 =	$request['name'];
-			$cabecera->email 	 	 =  $request['email'];
 			$cabecera->password 	 = 	Crypt::encrypt($request['password']);
 			$cabecera->activo 	 	 =  $request['activo'];			
 			$cabecera->rol_id 	 	 = 	$request['rol_id'];
