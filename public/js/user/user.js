@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         $.ajax({
             type	: 	"POST",
-            url		: 	"/induamerica/ajax-dato-del-trabajador",
+            url		: 	carpeta+"/ajax-dato-del-trabajador",
             data	: 	{
             				_token	: _token,
             				dni 	: dni
@@ -47,7 +47,7 @@ $(document).ready(function(){
 
         $.ajax({
             type	: 	"POST",
-            url		: 	"/induamerica/ajax-listado-de-opciones",
+            url		: 	carpeta+"/ajax-listado-de-opciones",
             data	: 	{
             				_token: _token,
             				idrol : idrol
@@ -87,7 +87,7 @@ $(document).ready(function(){
 
         $.ajax({
             type	: 	"POST",
-            url		: 	"/induamerica/ajax-activar-permisos",
+            url		: 	carpeta+"/ajax-activar-permisos",
             data	: 	data,
             success: function (data) {
 

@@ -54,7 +54,7 @@
 
     
 
-        <input type='hidden' id='carpeta' value="induamerica"/>
+        <input type='hidden' id='carpeta' value="{{$capeta}}"/>
 
         <input type="text" id="token" name="_token"  value="{{ csrf_token() }}">
     </div>

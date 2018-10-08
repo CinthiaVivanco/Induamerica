@@ -16,6 +16,7 @@ class Controller extends BaseController
 	public $funciones;
 	public $inicio;
 	public $fin;
+	public $prefijomaestro;
 	public function __construct()
 	{
 	    $this->funciones = new Funcion();
@@ -24,6 +25,8 @@ class Controller extends BaseController
 
 		$this->inicio 	= date_format(date_create($fecha->format('Y-m-d')), 'd-m-Y');
 		$this->fin 		= date_format(date_create(date('Y-m-d')), 'd-m-Y');
+
+		$this->prefijomaestro	= $this->funciones->idmaestra();
 
 	}
 

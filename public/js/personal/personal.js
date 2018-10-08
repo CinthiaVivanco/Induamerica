@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    var carpeta = $("#carpeta").val();
+
     $(function(){
         $('.btn-circle').on('click',function(){
             $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
@@ -42,7 +44,7 @@ $(document).ready(function(){
 
         $.ajax({
             type    :   "POST",
-            url     :   "/induamerica/ajax-form-derechohabiente",
+            url     :   carpeta+"/ajax-form-derechohabiente",
             data    :   {
                             _token          : _token,
                             id              : id,
@@ -72,9 +74,11 @@ $(document).ready(function(){
         
         var _token          = $('#token').val();
 
+
+
         $.ajax({
             type    :   "POST",
-            url     :   "/induamerica/ajax-form-fichasocioeconomica",
+            url     :   carpeta+"/ajax-form-fichasocioeconomica",
             data    :   {
                             _token          : _token,
                             id              : id,
@@ -108,7 +112,7 @@ $(document).ready(function(){
 
         $.ajax({
             type    :   "POST",
-            url     :   "/induamerica/ajax-form-contrato",
+            url     :   carpeta+"/ajax-form-contrato",
             data    :   {
                             _token          : _token,
                             id              : id,
@@ -138,7 +142,7 @@ $(document).ready(function(){
         $.ajax({
 
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-tipoinstitucion",
+            url     :   carpeta+"/ajax-select-tipoinstitucion",
             data    :   {
                             _token  : _token,
                             regimeninstitucion_id : regimeninstitucion_id
@@ -162,7 +166,7 @@ $(document).ready(function(){
         $.ajax({
             
             type	: 	"POST",
-            url		: 	"/induamerica/ajax-select-provincia",
+            url		: 	carpeta+"/ajax-select-provincia",
             data	: 	{
             				_token	: _token,
             				departamentos_id : departamentos_id
@@ -189,7 +193,7 @@ $(document).ready(function(){
         $.ajax({
 
             type	: 	"POST",
-            url		: 	"/induamerica/ajax-select-distrito",
+            url		: 	carpeta+"/ajax-select-distrito",
             data	: 	{
             				_token	: _token,
             				provincia_id : provincia_id
@@ -215,7 +219,7 @@ $(document).ready(function(){
         $.ajax({
             
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-area",
+            url     :   carpeta+"/ajax-select-area",
             data    :   {
                             _token  : _token,
                             gerencia_id : gerencia_id
@@ -243,7 +247,7 @@ $(document).ready(function(){
         $.ajax({
 
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-unidad",
+            url     :   carpeta+"/ajax-select-unidad",
             data    :   {
                             _token  : _token,
                             area_id : area_id
@@ -269,7 +273,7 @@ $(document).ready(function(){
         $.ajax({
 
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-cargo",
+            url     :   carpeta+"/ajax-select-cargo",
             data    :   {
                             _token  : _token,
                             unidad_id : unidad_id
@@ -300,7 +304,7 @@ $(document).ready(function(){
         $.ajax({
             
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-tipodocumentoacredita",
+            url     :   carpeta+"/ajax-select-tipodocumentoacredita",
             data    :   {
                             _token  : _token,
                             vinculofamiliar_id : vinculofamiliar_id
@@ -329,7 +333,7 @@ $(document).ready(function(){
 
         $.ajax({
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-institucion",
+            url     :   carpeta+"/ajax-select-institucion",
             data    :   {
                             _token  : _token,
                             tipoinstitucion_id : tipoinstitucion_id
@@ -355,7 +359,7 @@ $(document).ready(function(){
 
         $.ajax({
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-carrera",
+            url     :   carpeta+"/ajax-select-carrera",
             data    :   {
                             _token  : _token,
                             institucion_id : institucion_id

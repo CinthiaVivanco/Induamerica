@@ -1,4 +1,4 @@
-<label class="col-sm-3 control-label">Provincia</label>
+<label class="col-sm-3 control-label">Provincia<span class="required">*</span></label>
 <div class="col-sm-7">
   {!! Form::select( 'provincia_id', $comboprovincia, array(),
                     [

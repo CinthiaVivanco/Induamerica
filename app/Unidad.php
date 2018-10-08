@@ -19,4 +19,15 @@ class Unidad extends Model
         return $this->hasMany('App\Trabajador');
     }
 
+    public function cargo()
+    {
+        return $this->hasMany('App\Cargo');
+    }   
+
+
+    public function area()
+    {
+        return $this->belongsTo('App\Area');
+    }
+
 }

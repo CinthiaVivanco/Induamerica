@@ -1,4 +1,4 @@
-  <label class="col-sm-3 control-label">Distrito</label>
+  <label class="col-sm-3 control-label">Distrito<span class="required">*</span></label>
   <div class="col-sm-7">
     {!! Form::select( 'distrito_id', $combodistrito, array(),
                       [

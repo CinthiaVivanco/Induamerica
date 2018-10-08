@@ -19,4 +19,9 @@ class Gerencia extends Model
         return $this->hasMany('App\Trabajador');
     }
     
+    public function area()
+    {
+        return $this->hasMany('App\Area');
+    }
+
 }

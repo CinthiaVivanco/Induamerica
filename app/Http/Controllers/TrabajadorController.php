@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Crypt;
-use App\Trabajador,App\Estadocivil,App\Empresa,App\Local;
+use App\Trabajador,App\Estadocivil,App\Empresa,App\Local,App\Cargo;
 use View;
 use Session;
 use Hashids;
@@ -57,6 +57,9 @@ class TrabajadorController extends Controller
 			/******************************/
 
 
+			$cargo 								= Cargo::where('id','=',$request['cargo_id'])->first();
+
+
 
 			$idtrabajador 		 				 = $this->funciones->getCreateId('trabajadores');
 			
@@ -82,10 +85,12 @@ class TrabajadorController extends Controller
 			$cabecera->tipozona_id 	 	 		 = 	$request['tipozona_id'];
 			$cabecera->nombrezona		 		 =	$request['nombrezona'];
 			$cabecera->referencia		 		 =	$request['referencia'];
-			$cabecera->gerencia_id 		 		 = 	$request['gerencia_id'];
-			$cabecera->area_id 		 		 	 = 	$request['area_id'];
-			$cabecera->unidad_id 		 		 = 	$request['unidad_id'];
-			$cabecera->cargo_id 		 		 = 	$request['cargo_id'];
+
+			$cabecera->gerencia_id 		 		 = 	$cargo->unidad->area->gerencia->id;
+			$cabecera->area_id 		 		 	 = 	$cargo->unidad->area->id;
+			$cabecera->unidad_id 		 		 = 	$cargo->unidad->id;
+			$cabecera->cargo_id 		 		 = 	$cargo->id;
+
 			$cabecera->tipotrabajador_id 		 = 	$request['tipotrabajador_id'];
 			$cabecera->tipocontrato_id 	 		 = 	$request['tipocontrato_id'];
 			$cabecera->jornadalaboral_id 		 = 	$request['jornadalaboral_id'];
@@ -165,16 +170,9 @@ class TrabajadorController extends Controller
 
 			$tipozona 					 = DB::table('tipozonas')->pluck('descripcion','id')->toArray();
 			$combotipozona				 = array('' => "Seleccione Zona") + $tipozona;
-
-			$gerencia					 = DB::table('gerencias')->pluck('nombre','id')->toArray();
-			$combogerencia				 = array('' => "Seleccione Gerencia") + $gerencia;
-
-							
-			$comboarea			 		 = array('' => "Seleccione Área") ;
-
-			$combounidad			 	 = array('' => "Seleccione Unidad") ;
 		
-			$combocargo					 = array('' => "Seleccione Cargo") ;
+			$cargo					 	 = DB::table('cargos')->pluck('nombre','id')->toArray();
+			$combocargo				 	 = array('' => "Seleccione Cargo") + $cargo;
 
 			$tipotrabajador				 = DB::table('tipotrabajadores')->pluck('descripcionabreviada','id')->toArray();
 			$combotipotrabajador		 = array('' => "Seleccione Tipo Trabajador") + $tipotrabajador;
@@ -251,10 +249,7 @@ class TrabajadorController extends Controller
 						  	'comboprovincia' 				=> $comboprovincia,
 						  	'combodistrito' 				=> $combodistrito,
 						  	'combotipovia' 					=> $combotipovia,						  
-						  	'combotipozona' 				=> $combotipozona,
-						  	'combogerencia'		    		=> $combogerencia,
-						  	'comboarea'		    		    => $comboarea,		
-						  	'combounidad'		    		=> $combounidad,			
+						  	'combotipozona' 				=> $combotipozona,			
 						  	'combocargo'		    		=> $combocargo,
 					  		'combotipotrabajador' 			=> $combotipotrabajador,
 							'combotipocontrato' 			=> $combotipocontrato,
@@ -312,6 +307,8 @@ class TrabajadorController extends Controller
 			/******************************/
 
 
+			$cargo 								= Cargo::where('id','=',$request['cargo_id'])->first();
+
 
 			$cabecera            	 	 		  =		Trabajador::find($idtrabajador);
 			$empresa            	 	 		  =		Empresa::find($empresa->id);
@@ -334,10 +331,14 @@ class TrabajadorController extends Controller
 			$cabecera->interior  		 		  =		$request['interior'];
 			$cabecera->nombrezona  		 		  =		$request['nombrezona'];
 			$cabecera->referencia  		 		  =		$request['referencia'];
-			$cabecera->gerencia_id 		 		  = 	$request['gerencia_id'];
-			$cabecera->area_id 		 		      = 	$request['area_id'];
-			$cabecera->unidad_id 		 		  = 	$request['unidad_id'];
-			$cabecera->cargo_id 		 		  = 	$request['cargo_id'];
+
+
+			$cabecera->gerencia_id 		 		  = 	$cargo->unidad->area->gerencia->id;
+			$cabecera->area_id 		 		 	  = 	$cargo->unidad->area->id;
+			$cabecera->unidad_id 		 		  = 	$cargo->unidad->id;
+			$cabecera->cargo_id 		 		  = 	$cargo->id;
+
+
 			$cabecera->tipotrabajador_id 		  = 	$request['tipotrabajador_id'];
 			$cabecera->tipocontrato_id 	 		  = 	$request['tipocontrato_id'];
 			$cabecera->jornadalaboral_id 		  = 	$request['jornadalaboral_id'];
@@ -412,16 +413,8 @@ class TrabajadorController extends Controller
 				$distrito						= DB::table('distritos')->where('provincia_id','=',$trabajador->provincia_id)->pluck('nombre','id')->toArray();
 				$combodistrito  				= array($trabajador->distrito_id => $trabajador->distrito->nombre) + $distrito ;
 
-				$gerencia						= DB::table('gerencias')->pluck('nombre','id')->toArray();
-				$combogerencia					= array($trabajador->gerencia_id => $trabajador->gerencia ->nombre) + $gerencia ;
 
-				$area						    = DB::table('areas')->where('gerencia_id','=',$trabajador->gerencia_id)->pluck('nombre','id')->toArray();
-				$comboarea 						= array($trabajador->area_id => $trabajador->area->nombre) + $area ;
-
-				$unidad						    = DB::table('unidades')->where('area_id','=',$trabajador->area_id)->pluck('nombre','id')->toArray();
-				$combounidad 					= array($trabajador->unidad_id => $trabajador->unidad->nombre) + $unidad ;
-
-				$cargo							= DB::table('cargos')->where('unidad_id','=',$trabajador->unidad_id)->pluck('nombre','id')->toArray();
+				$cargo							= DB::table('cargos')->pluck('nombre','id')->toArray();
 				$combocargo  					= array($trabajador->cargo_id => $trabajador->cargo->nombre) + $cargo ;
 
 
@@ -481,11 +474,6 @@ class TrabajadorController extends Controller
 				$comboocupacion       			= array($trabajador->ocupacion_id => $trabajador->ocupacion ->descripcion) + $ocupacion;
 
 
-				/*$empresa 					 = $this->funciones->getEmpresa();
-			$local	 					 = DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('nombreabreviado','id')->toArray();
-			$combolocal 				 = array('' => "Seleccione Local") + $local;
-
-*/
 				$empresa 					 	= $this->funciones->getEmpresa();
 
 				$local							= DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('nombreabreviado','id')->toArray();
@@ -523,9 +511,6 @@ class TrabajadorController extends Controller
 		        					'comboprovincia' 				=> $comboprovincia,
 		        					'combodistrito' 				=> $combodistrito,
 		        					'combotipovia' 					=> $combotipovia,
-		        					'combogerencia' 				=> $combogerencia,
-		        					'comboarea' 					=> $comboarea,		        					
-		        					'combounidad' 					=> $combounidad,
 		        					'combocargo' 					=> $combocargo,
 		        					'combotipotrabajador' 			=> $combotipotrabajador,
 		        					'combotipocontrato' 			=> $combotipocontrato,

@@ -95,8 +95,7 @@ class UserController extends Controller
 
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
-
-	    $listausuarios = User::where('id','<>','ARCHICEN000000000001')->orderBy('id', 'asc')->get();
+	    $listausuarios = User::where('id','<>',$this->prefijomaestro.'000000000001')->orderBy('id', 'asc')->get();
 
 		return View::make('usuario/listausuarios',
 						 [
@@ -151,7 +150,7 @@ class UserController extends Controller
 		}else{
 
 		
-			$rol 		= DB::table('Rols')->where('id','<>','ARCHICEN000000000001')->pluck('nombre','id')->toArray();
+			$rol 		= DB::table('Rols')->where('id','<>',$this->prefijomaestro.'000000000001')->pluck('nombre','id')->toArray();
 			$comborol  	= array('' => "Seleccione Rol") + $rol;
 
 			return View::make('usuario/agregarusuario',
@@ -202,7 +201,7 @@ class UserController extends Controller
 
 				$usuario 	= User::where('id', $idusuario)->first();
 
-				$rol 		= DB::table('Rols')->where('id','<>','ARCHICEN000000000001')->pluck('nombre','id')->toArray();
+				$rol 		= DB::table('Rols')->where('id','<>',$this->prefijomaestro.'000000000001')->pluck('nombre','id')->toArray();
 				$comborol  	= array($usuario->rol_id => $usuario->rol->nombre) + $rol;
 
 
@@ -227,7 +226,7 @@ class UserController extends Controller
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
-	    $listaroles = Rol::where('id','<>','ARCHICEN000000000001')->orderBy('id', 'asc')->get();
+	    $listaroles = Rol::where('id','<>',$this->prefijomaestro.'000000000001')->orderBy('id', 'asc')->get();
 
 		return View::make('usuario/listaroles',
 						 [
@@ -347,7 +346,7 @@ class UserController extends Controller
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
-	    $listaroles = Rol::where('id','<>','ARCHICEN000000000001')->orderBy('id', 'asc')->get();
+	    $listaroles = Rol::where('id','<>',$this->prefijomaestro.'000000000001')->orderBy('id', 'asc')->get();
 
 		return View::make('usuario/listapermisos',
 						 [

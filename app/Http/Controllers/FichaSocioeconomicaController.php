@@ -151,6 +151,8 @@ class FichaSocioeconomicaController extends Controller
 	public function actionFichaSocioeconomicaAjax(Request $request)
 	{
 
+		
+
 		$id   							= $request['id'];
 		$idopcion   					= $request['idopcion'];
 		$idtrabajador   				= $request['idtrabajador'];

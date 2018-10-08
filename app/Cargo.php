@@ -19,4 +19,10 @@ class Cargo extends Model
         return $this->hasMany('App\Trabajador');
     }
     
+    public function unidad()
+    {
+        return $this->belongsTo('App\Unidad');
+    }
+    
+
 }

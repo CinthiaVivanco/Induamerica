@@ -60,6 +60,13 @@ class Funcion{
 
 	}
 
+	public function idmaestra() {
+
+		$prefijo = Empresa::where('activo', '=', 1)->first();
+	  	return substr($prefijo->id, 0, 8);
+
+	}
+
 
 	public function getCreateId($tabla) {
 

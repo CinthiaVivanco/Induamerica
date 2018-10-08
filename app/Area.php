@@ -18,5 +18,17 @@ class Area extends Model
     {
         return $this->hasMany('App\Trabajador');
     }
-    
+
+    public function unidad()
+    {
+        return $this->hasMany('App\Unidad');
+    }   
+
+    public function gerencia()
+    {
+        return $this->belongsTo('App\Gerencia');
+    }
+
+
+
 }

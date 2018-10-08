@@ -1,4 +1,4 @@
-  <label class="col-sm-3 control-label">Cargo</label>
+  <label class="col-sm-3 control-label">Cargo <span class="required">*</span></label>
   <div class="col-sm-7">
     {!! Form::select( 'cargo_id', $combocargo, array(),
                       [

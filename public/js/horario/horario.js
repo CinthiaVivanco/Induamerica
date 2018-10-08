@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         $.ajax({
             type	: 	"POST",
-            url		: 	"/induamerica/ajax-listado-de-horario",
+            url		: 	carpeta+"/ajax-listado-de-horario",
             data	: 	{
             				_token	 : _token,
             				idsemana : idsemana
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
         $.ajax({
             type    :   "POST",
-            url     :   "/induamerica/ajax-activar-horario-trabajador",
+            url     :   carpeta+"/ajax-activar-horario-trabajador",
             data    :   {
                             _token  : _token,
                             name    : name,
@@ -85,7 +85,7 @@ $(document).ready(function(){
 
         $.ajax({
             type    :   "POST",
-            url     :   "/induamerica/ajax-select-horario-trabajador",
+            url     :   carpeta+"/ajax-select-horario-trabajador",
             data    :   {
                             _token              : _token,
                             idhorariotrabajador : idhorariotrabajador,
