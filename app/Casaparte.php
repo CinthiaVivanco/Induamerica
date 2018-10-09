@@ -14,9 +14,9 @@ class Casaparte extends Model
     public $keyType = 'string';
 
     
-    public function trabajador()
+    public function detallefichacasaparte()
     {
-        return $this->hasMany('App\Fichasocioeconomica');
+        return $this->hasMany('App\Detallefichacasaparte');
     }
 
 }

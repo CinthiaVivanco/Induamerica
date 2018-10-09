@@ -14,9 +14,9 @@ class Servicio extends Model
     public $keyType = 'string';
 
     
-    public function trabajador()
+    public function detallefichaservicio()
     {
-        return $this->hasMany('App\Fichasocioeconomica');
+        return $this->hasMany('App\Detallefichaservicio');
     }
 
 }

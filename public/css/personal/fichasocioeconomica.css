@@ -1,3 +1,7 @@
+.tab-content{
+    margin-left: 70px;
+}   
+
 .cont_princ_lists  ul{
   padding-left: 0px;
   font-family: 'Open Sans', sans-serif;
@@ -52,3 +56,19 @@
     border: 1px solid #999;
 }
 
+/* CHECKBOX */
+
+.be-checkbox.inline {
+    display: block !important;
+    position: relative !important;
+    margin-left: 18px !important;
+}
+.be-radio.inline.ficha{
+  margin-right: 10px;
+}
+/*
+.be-checkbox.inline.largo {
+    margin-top: -108px !important;
+    padding-right: 30px !important;
+}
+*/

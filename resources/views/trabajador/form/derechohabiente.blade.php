@@ -52,8 +52,8 @@
                     <div class="col-sm-6">
                     <div class="panel-body">
                          <div class="form-group">
-                           <label class="col-sm-3 control-label" >Tipo Documento <span class="required">*</span></label>
-                            <div class="col-sm-8 ">
+                           <label class="col-sm-12 control-label labelleft" >Tipo Documento <span class="required">*</span></label>
+                            <div class="col-sm-8 abajocaja">
                               {!! Form::select( 'tipodocumento_id', $combotipodocumento, array(),
                                                 [
                                                   'class'       => 'form-control control input-sm' ,
@@ -65,8 +65,8 @@
                           </div>
 
                           <div class="form-group">
-                            <label class="col-sm-3 control-label">DNI <span class="required">*</span></label>
-                            <div class="col-sm-8">
+                            <label class="col-sm-12 control-label labelleft">DNI <span class="required">*</span></label>
+                            <div class="col-sm-8 abajocaja">
 
                               <input  type="text"
                                       id="dnihabiente" name='dnihabiente' value="@if(isset($derechohabiente)){{old('dnihabiente' ,$derechohabiente->dnihabiente)}}@else{{old('dnihabiente')}}@endif" placeholder="DNI Habiente"
@@ -81,10 +81,10 @@
                           </div>
 
                           <div class="form-group">
-                            <label class="col-sm-3 control-label">
+                            <label class="col-sm-12 control-label labelleft">
                               Fecha Nacimiento <span class="required">*</span>
                             </label>
-                            <div class="col-sm-8">
+                            <div class="col-sm-8 abajocaja">
                               <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
                                         <input size="16" type="text" value="@if(isset($derechohabiente)){{old('fechanacimiento',$derechohabiente->fechanacimiento)}}@else{{old('fechanacimiento')}}@endif" placeholder="Fecha Nacimiento"
                                         id='fechanacimiento' name='fechanacimiento' 
@@ -96,8 +96,8 @@
                           </div>
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Apellido Paterno <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Apellido Paterno <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
 
                                 <input  type="text"
                                         id="apellidopaterno" name='apellidopaterno' value="@if(isset($derechohabiente)){{old('apellidopaterno',$derechohabiente->apellidopaterno)}}@else{{old('apellidopaterno')}}@endif" placeholder="Apellido Paterno"
@@ -115,8 +115,8 @@
                         <div class="panel-body">
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Apellido Materno <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Apellido Materno <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
 
                                 <input  type="text"
                                         id="apellidomaterno" name='apellidomaterno' value="@if(isset($derechohabiente)){{old('apellidomaterno',$derechohabiente->apellidomaterno)}}@else{{old('apellidomaterno')}}@endif" placeholder="Apellido Materno"
@@ -127,8 +127,8 @@
                           </div>
 
                           <div class="form-group">
-                            <label class="col-sm-3 control-label">Nombres <span class="required">*</span></label>
-                            <div class="col-sm-8">
+                            <label class="col-sm-12 control-label labelleft">Nombres <span class="required">*</span></label>
+                            <div class="col-sm-8 abajocaja">
 
                               <input  type="text"
                                       id="nombre" name='nombre' value="@if(isset($derechohabiente)){{old('nombre',$derechohabiente->nombres)}}@else{{old('nombre')}}@endif" placeholder="Nombres"
@@ -139,8 +139,8 @@
                           </div> 
 
                           <div class="form-group">
-                            <label class="col-sm-3 control-label">Sexo <span class="required">*</span></label>
-                            <div class="col-sm-8">
+                            <label class="col-sm-12 control-label labelleft">Sexo <span class="required">*</span></label>
+                            <div class="col-sm-8 abajocaja">
                               <div class="be-radio has-success inline">
                                 <input type="radio" value='1' @if(isset($derechohabiente)) @if($derechohabiente->sexo == 1) checked  @endif @else checked @endif name="sexo" id="rad1">
                                 <label for="rad1">Masculino</label>
@@ -173,8 +173,8 @@
 
                            <div class="form-group">
 
-                              <label class="col-sm-3 control-label">Vínculo Familiar <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Vínculo Familiar <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
                                 {!! Form::select( 'vinculofamiliar_id', $combovinculofamiliar, array(),
                                                   [
                                                     'class'       => 'form-control control input-sm' ,
@@ -187,8 +187,8 @@
 
                             <div class="form-group ajaxtipodocumentoacredita">
 
-                              <label class="col-sm-3 control-label" >Tipo Doc Acred <span class="required">*</span></label>
-                              <div class="col-sm-8 ">
+                              <label class="col-sm-12 control-label labelleft" >Tipo Doc Acred <span class="required">*</span></label>
+                              <div class="col-sm-8  abajocaja">
                                 {!! Form::select( 'tipodocumentoacredita_id', $combotipodocumentoacredita, array(),
                                                   [
                                                     'class'       => 'form-control control input-sm' ,
@@ -200,8 +200,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">Nro Doc Acredita <span class="required">*</span></label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-12 control-label labelleft">Nro Doc Acredita <span class="required">*</span></label>
+                                <div class="col-sm-8 abajocaja">
 
                                   <input  type="text"
                                           id="dniacredita" name='dniacredita' value="@if(isset($derechohabiente)){{old('dniacredita' ,$derechohabiente->dniacredita)}}@else{{old('dniacredita')}}@endif" placeholder="Doc Acredita"
@@ -216,10 +216,10 @@
                             </div>
 
                             <div class="form-group">
-                              <label class="col-sm-3 control-label">
+                              <label class="col-sm-12 control-label labelleft">
                                 Fecha Alta
                               </label>
-                              <div class="col-sm-8">
+                              <div class="col-sm-8 abajocaja">
                                 <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
                                           <input size="16" type="text" value="@if(isset($derechohabiente)){{old('fechainicio',$derechohabiente->fechainicio)}}@else{{old('fechainicio')}}@endif" placeholder="Fecha Alta"
                                           id='fechainicio' name='fechainicio' 
@@ -240,10 +240,10 @@
                         <div class="panel-body">
 
                            <div class="form-group">
-                                <label class="col-sm-3 control-label">
+                                <label class="col-sm-12 control-label labelleft">
                                   Fecha Fin
                                 </label>
-                                <div class="col-sm-8 ">
+                                <div class="col-sm-8  abajocaja">
                                   <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
                                             <input size="16" type="text" value="@if(isset($derechohabiente)){{old('fechafin',$derechohabiente->fechafin)}}@else{{old('fechafin')}}@endif" placeholder="Fecha Fin"
                                             id='fechafin' name='fechafin' 
@@ -256,8 +256,8 @@
 
                            <div class="form-group">
 
-                                <label class="col-sm-3 control-label">Tipo Baja </label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-12 control-label labelleft">Tipo Baja </label>
+                                <div class="col-sm-8 abajocaja">
                                   {!! Form::select( 'tipobaja_id', $combotipobaja, array(),
                                                     [
                                                       'class'       => 'form-control control input-sm' ,
@@ -269,8 +269,8 @@
                            </div>
 
                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Nro Resolución </label>
-                                <div class="col-sm-8">
+                                <label class="col-sm-12 control-label labelleft">Nro Resolución </label>
+                                <div class="col-sm-8 abajocaja">
 
                                     <input  type="text"
                                           id="numeroresolucion" name='numeroresolucion' value="@if(isset($derechohabiente)){{old('numeroresolucion',$derechohabiente->numeroresolucion)}}@else{{old('numeroresolucion')}}@endif"placeholder="Número Resolución"
@@ -302,8 +302,8 @@
 
                                 <div class="form-group">
 
-                                      <label class="col-sm-3 control-label" >Tipo Vía <span class="required">*</span></label>
-                                          <div class="col-sm-8">
+                                      <label class="col-sm-12 control-label labelleft" >Tipo Vía <span class="required">*</span></label>
+                                          <div class="col-sm-8 abajocaja">
                                             {!! Form::select( 'tipovia_id', $combotipovia, array(),
                                                               [
                                                                 'class'       => 'form-control control input-sm' ,
@@ -315,8 +315,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                      <label class="col-sm-3 control-label" >Nombre Vía <span class="required">*</span></label>
-                                      <div class="col-sm-8">
+                                      <label class="col-sm-12 control-label labelleft" >Nombre Vía <span class="required">*</span></label>
+                                      <div class="col-sm-8 abajocaja">
 
                                         <input  type="text"
                                                 id="nombrevia" name='nombrevia' value="@if(isset($derechohabiente)){{old('nombrevia',$derechohabiente->nombrevia)}}@else{{old('nombrevia')}}@endif" placeholder="Nombre Vía"
@@ -327,8 +327,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                  <label class="col-sm-3 control-label">Número Vía <span class="required">*</span></label>
-                                  <div class="col-sm-8">
+                                  <label class="col-sm-12 control-label labelleft">Número Vía <span class="required">*</span></label>
+                                  <div class="col-sm-8 abajocaja">
 
                                     <input  type="text"
                                             id="numerovia" name='numerovia' value="@if(isset($derechohabiente)){{old('numerovia',$derechohabiente->numerovia)}}@else{{old('numerovia')}}@endif" placeholder="Número Vía"
@@ -339,8 +339,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Interior <span class="required">*</span></label>
-                                    <div class="col-sm-8">
+                                    <label class="col-sm-12 control-label labelleft">Interior <span class="required">*</span></label>
+                                    <div class="col-sm-12 abajocaja">
 
                                         <input  type="text"
                                                 id="interior" name='interior' value="@if(isset($derechohabiente)){{old('interior',$derechohabiente->interior)}}@else{{old('interior')}}@endif" placeholder="Interior"
@@ -352,8 +352,8 @@
 
                                 <div class="form-group">
 
-                                        <label class="col-sm-3 control-label">Tipo Zona <span class="required">*</span></label>
-                                        <div class="col-sm-8">
+                                        <label class="col-sm-12 control-label labelleft">Tipo Zona <span class="required">*</span></label>
+                                        <div class="col-sm-8 abajocaja">
                                           {!! Form::select( 'tipozona_id', $combotipozona, array(),
                                                             [
                                                               'class'       => 'form-control control input-sm' ,
@@ -365,8 +365,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                        <label class="col-sm-3 control-label">Nombre Zona <span class="required">*</span></label>
-                                        <div class="col-sm-8">
+                                        <label class="col-sm-12 control-label labelleft">Nombre Zona <span class="required">*</span></label>
+                                        <div class="col-sm-8 abajocaja">
 
                                           <input  type="text"
                                                   id="nombrezona" name='nombrezona' value="@if(isset($derechohabiente)){{old('nombrezona',$derechohabiente->nombrezona)}}@else{{old('nombrezona')}}@endif" placeholder="Nombre Zona"
@@ -384,8 +384,8 @@
                             <div class="panel-body">
                              
                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Referencia </label>
-                                    <div class="col-sm-8">
+                                    <label class="col-sm-12 control-label labelleft">Referencia </label>
+                                    <div class="col-sm-8 abajocaja">
 
                                           <input  type="text"
                                                   id="referencia" name='referencia' value="@if(isset($derechohabiente)){{old('referencia',$derechohabiente->referencia)}}@else{{old('referencia')}}@endif" placeholder="Referencia"
@@ -397,8 +397,8 @@
 
                                <div class="form-group">
 
-                                      <label class="col-sm-3 control-label">Departamento <span class="required">*</span></label>
-                                      <div class="col-sm-8">
+                                      <label class="col-sm-12 control-label labelleft">Departamento <span class="required">*</span></label>
+                                      <div class="col-sm-8 abajocaja">
                                         {!! Form::select( 'departamento_id', $combodepartamento, array(),
                                                           [
                                                             'class'       => 'form-control control input-sm' ,
@@ -411,8 +411,8 @@
 
                                <div class="form-group ajaxprovincia">
 
-                                    <label class="col-sm-3 control-label">Provincia <span class="required">*</span></label>
-                                    <div class="col-sm-8">
+                                    <label class="col-sm-12 control-label labelleft">Provincia <span class="required">*</span></label>
+                                    <div class="col-sm-8 abajocaja">
                                       {!! Form::select( 'provincia_id', $comboprovincia, array(),
                                                         [
                                                           'class'       => 'form-control control input-sm' ,
@@ -425,8 +425,8 @@
 
                                <div class="form-group ajaxdistrito">
 
-                                    <label class="col-sm-3 control-label">Distrito <span class="required">*</span></label>
-                                    <div class="col-sm-8">
+                                    <label class="col-sm-12 control-label labelleft">Distrito <span class="required">*</span></label>
+                                    <div class="col-sm-8 abajocaja">
                                       {!! Form::select( 'distrito_id', $combodistrito, array(),
                                                         [
                                                           'class'       => 'form-control control input-sm' ,
@@ -438,8 +438,8 @@
                                </div>
 
                                <div class="form-group">
-                                      <label class="col-sm-3 control-label">Situación <span class="required">*</span></label>
-                                      <div class="col-sm-8">
+                                      <label class="col-sm-12 control-label labelleft">Situación <span class="required">*</span></label>
+                                      <div class="col-sm-8 abajocaja">
                                           <div class="be-radio has-success inline">
                                             <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->activo == 1) checked  @endif @else checked @endif name="activo" id="rad5">
                                             <label for="rad5">Activo</label>

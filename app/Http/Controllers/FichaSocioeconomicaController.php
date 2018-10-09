@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Crypt;
-use App\Trabajador,App\FichaSocioeconomica;
+use App\Trabajador,App\FichaSocioeconomica,App\Casaparte,App\Tipovivienda,App\Construccionmaterial,App\Centromedico,App\Frecuenciamedico,App\Frecuenciaexamen;
 use View;
 use Session;
 use Hashids;
@@ -62,7 +62,9 @@ class FichaSocioeconomicaController extends Controller
 			], [
             	'id.unique' => 'Ficha ya registrada',
         	]);
-			/******************************/
+			/******************************/ 
+
+ 
 
 			$idfichasocioeconomica 		 	     = $this->funciones->getCreateId('fichasocioeconomicas');
 			
@@ -70,13 +72,10 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->id 	     	 	 		 =  $idfichasocioeconomica;
 			$cabecera->trabajador_id  		 	 = 	$idtrabajador;
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
-			$cabecera->casaparte_id 	     	 =  $request['casaparte_id'];
 			$cabecera->construccionmaterial_id 	 =  $request['construccionmaterial_id'];
-			$cabecera->servicio_id 	 		     =  $request['servicio_id'];
 			$cabecera->centromedico_id 	 		 = 	$request['centromedico_id'];
 			$cabecera->frecuenciamedico_id  	 =	$request['frecuenciamedico_id'];
 			$cabecera->frecuenciaexamen_id   	 = 	$request['frecuenciaexamen_id'];
-			$cabecera->enfermedad_id   			 = 	$request['enfermedad_id'];
 			$cabecera->religion   			 	 = 	$request['religion'];
 			$cabecera->gruposanguineo 		 	 = 	$request['gruposanguineo'];
 			$cabecera->tallapantalon 		 	 =	$request['tallapantalon'];
@@ -94,8 +93,28 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->estadoconstruccion 	 	 = 	$request['estadoconstruccion'];
 			$cabecera->laboratorioclinico 	 	 = 	$request['laboratorioclinico'];
 			$cabecera->observacion 	 	         = 	$request['observacion'];
-
 			$cabecera->save();
+
+
+			// Llenamos Tabla DetalleFichaServicios
+
+			$horariotrabajador 		= 	Horariotrabajador::all('id','luh','lud','hlu','rhlu','mah','mad','hma','rhma',
+												'mih','mid','hmi','rhmi','juh','jud','hju','rhju',
+												'vih','vid','hvi','rhvi','sah','sad','hsa','rhsa',
+												'doh','dod','hdo','rhdo','activo','trabajador_id','semana_id')
+										->where('semana_id','=',$idsemana)
+										->toArray();
+
+			DB::table('horariotrabajadoresclonados')->insert($horariotrabajador);
+			
+						dd($request['casaparte']);
+
+
+
+
+
+
+
  			return Redirect::to('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.$idtrabajadorsd)->with('bienhecho', 'FichaSocioeconomica'.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
 
 		}else{
@@ -103,27 +122,21 @@ class FichaSocioeconomicaController extends Controller
 			$listafichasocioeconomica 		= Fichasocioeconomica::where('trabajador_id','=' , $idtrabajador)->get();
 			
 		    $trabajador 					= Trabajador::where('id', $idtrabajador)->first();
-		    
-			$tipovivienda 				 	= DB::table('tipoviviendas')->pluck('descripcion','id')->toArray();
-			$combotipovivienda 		 	    = array('' => "Seleccione:") + $tipovivienda;
+		 
+			$tipovivienda 				 	= Tipovivienda::get(); 
+			$casaparte 				        = Casaparte::get(); 
 
-			$casaparte 				        = DB::table('casapartes')->pluck('descripcion','id')->toArray();
-			$combocasaparte 		 	    = array('' => "Seleccione:") + $casaparte;
-
-			$construccionmaterial 		    = DB::table('construccionmateriales')->pluck('descripcion','id')->toArray();
-			$comboconstruccionmaterial	    = array('' => "Seleccione:") + $construccionmaterial;
+			$construccionmaterial 		    = Construccionmaterial::get(); 
 
 			$servicio 					 	= DB::table('servicios')->pluck('descripcion','id')->toArray();
 			$comboservicio					= array('' => "Seleccione:") + $servicio;
 
-			$centromedico 					= DB::table('centromedicos')->pluck('descripcion','id')->toArray();
-			$combocentromedico				= array('' => "Seleccione centro médico") + $centromedico;
+			$centromedico 					= Centromedico::get(); 
+	
+			$frecuenciamedico 			    = Frecuenciamedico::get(); 
+			
+			$frecuenciaexamen 				= Frecuenciaexamen::get();
 
-			$frecuenciamedico 			    = DB::table('frecuenciamedicos')->pluck('descripcion','id')->toArray();
-			$combofrecuenciamedico			= array('' => "Seleccione:") + $frecuenciamedico;
-
-			$frecuenciaexamen 				= DB::table('frecuenciaexamenes')->pluck('descripcion','id')->toArray();
-			$combofrecuenciaexamen		    = array('' => "Seleccione:") + $frecuenciaexamen;
 
 			$enfermedad 					= DB::table('enfermedades')->pluck('descripcion','id')->toArray();
 			$comboenfermedad				= array('' => "Seleccione enfermedad:") + $enfermedad;
@@ -135,13 +148,13 @@ class FichaSocioeconomicaController extends Controller
 	        					'listafichasocioeconomica'  	    	=> $listafichasocioeconomica,
 	        					'trabajador'  	    					=> $trabajador,
 	        					'idopcion'  	    					=> $idopcion,
-	        					'combotipovivienda'  	    			=> $combotipovivienda,
-	        					'combocasaparte'  	    				=> $combocasaparte,
-	        					'comboconstruccionmaterial'  	    	=> $comboconstruccionmaterial,
+	        					'tipovivienda'  	    				=> $tipovivienda,
+	        					'casaparte'  	    					=> $casaparte,
+	        					'construccionmaterial'  	    		=> $construccionmaterial,
 	        					'comboservicio'  	    				=> $comboservicio,
-	        					'combocentromedico' 					=> $combocentromedico,
-	        					'combofrecuenciamedico' 				=> $combofrecuenciamedico,
-						  		'combofrecuenciaexamen' 				=> $combofrecuenciaexamen,
+	        					'centromedico' 							=> $centromedico,
+	        					'frecuenciamedico' 						=> $frecuenciamedico,
+						  		'frecuenciaexamen' 						=> $frecuenciaexamen,
 						  		'comboenfermedad' 						=> $comboenfermedad,
 						  		
 	        				]);

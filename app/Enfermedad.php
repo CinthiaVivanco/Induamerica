@@ -14,9 +14,9 @@ class Enfermedad extends Model
     public $keyType = 'string';
 
     
-    public function trabajador()
+    public function detallefichaenfermedad()
     {
-        return $this->hasMany('App\Fichasocioeconomica');
+        return $this->hasMany('App\Detallefichaenfermedad');
     }
 
 }

@@ -72,8 +72,8 @@
                     <div class="col-sm-6">
                     <div class="panel-body">
                          <div class="form-group">
-                              <label class="col-sm-3 control-label">Religión <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Religión <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
 
                                 <input  type="text"
                                         id="religion" name='religion' value="@if(isset($fichasocioeconomica)){{old('religion',$fichasocioeconomica->religion)}}@else{{old('religion')}}@endif" placeholder="Religion"
@@ -88,8 +88,8 @@
                           </div>
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Grupo Sanguíneo <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Grupo Sanguíneo <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
 
                                 <input  type="text"
                                         id="gruposanguineo" name='gruposanguineo' value="@if(isset($fichasocioeconomica)){{old('gruposanguineo',$fichasocioeconomica->gruposanguineo)}}@else{{old('gruposanguineo')}}@endif" placeholder="Grupo Sanguineo"
@@ -104,8 +104,8 @@
                           </div>
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Talla Pantalón <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Talla Pantalón <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
 
                                 <input  type="text"
                                         id="tallapantalon" name='tallapantalon' value="@if(isset($fichasocioeconomica)){{old('tallapantalon',$fichasocioeconomica->tallapantalon)}}@else{{old('tallapantalon')}}@endif" placeholder="Talla Pantalón"
@@ -128,8 +128,8 @@
                         <div class="panel-body">
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Talla Polo <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Talla Polo <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
 
                                 <input  type="text"
                                         id="tallapolo" name='tallapolo' value="@if(isset($fichasocioeconomica)){{old('tallapolo',$fichasocioeconomica->tallapolo)}}@else{{old('tallapolo')}}@endif" placeholder="Talla Polo"
@@ -143,12 +143,12 @@
                           </div>
 
                           <div class="form-group">
-                            <label class="col-sm-3 control-label">Talla Zapato <span class="required">*</span></label>
-                            <div class="col-sm-8">
+                            <label class="col-sm-12 control-label labelleft">Talla Zapato <span class="required">*</span></label>
+                            <div class="col-sm-8 abajocaja">
 
                               <input  type="text"
                                       id="tallazapato" name='tallazapato' value="@if(isset($fichasocioeconomica)){{old('tallazapato',$fichasocioeconomica->tallazapato)}}@else{{old('tallazapato')}}@endif" placeholder="Talla Zapato"
-                                      required = ""
+                                      required = "" data-parsley-type="number"
                                       autocomplete="off" class="form-control input-sm" data-aw="5"/>
                                       @include('error.erroresvalidate', [ 'id' => $errors->has('tallazapato')  , 
                                                                     'error' => $errors->first('tallazapato', ':message') , 
@@ -158,8 +158,8 @@
                           </div> 
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Talla Camisa <span class="required">*</span></label>
-                              <div class="col-sm-8">
+                              <label class="col-sm-12 control-label labelleft">Talla Camisa <span class="required">*</span></label>
+                              <div class="col-sm-8 abajocaja">
 
                                 <input  type="text"
                                         id="tallacamisa" name='tallacamisa' value="@if(isset($fichasocioeconomica)){{old('tallacamisa',$fichasocioeconomica->tallacamisa)}}@else{{old('tallacamisa')}}@endif" placeholder="Talla Camisa"
@@ -280,9 +280,7 @@
 
                           <div class="col-sm-6">
                             <div class="panel-body">
-
-                                
-
+                          
                                 <div class="form-group">
                                       <label class="col-sm-12 control-label labelleft" >Monto de Ingreso Mensual: <span class="required">*</span></label>
                                       <div class="col-sm-12 abajocaja">
@@ -330,12 +328,12 @@
                                   <label class="col-sm-12 control-label labelleft">Negocio Propio <span class="required">*</span></label>
                                   <div class="col-sm-6 abajocaja">
                                     <div class="be-radio has-success inline">
-                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 1) checked  @endif @else checked @endif name="negociopropio" id="rad1">
-                                      <label for="rad1">Sí</label>
+                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 1) checked  @endif @else checked @endif name="negociopropio" id="rad3">
+                                      <label for="rad3">Sí</label>
                                     </div>
                                     <div class="be-radio has-danger inline">
-                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 0) checked  @endif @endif name="negociopropio" id="rad2">
-                                      <label for="rad2">No</label>
+                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 0) checked  @endif @endif name="negociopropio" id="rad4">
+                                      <label for="rad4">No</label>
                                     </div>
                                   </div>
                                 </div>
@@ -344,12 +342,12 @@
                                   <label class="col-sm-12 control-label labelleft">Tiene Deudas en entidades financieras  <span class="required">*</span></label>
                                   <div class="col-sm-6 abajocaja">
                                     <div class="be-radio has-success inline">
-                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 1) checked  @endif @else checked @endif name="deudas" id="rad1">
-                                      <label for="rad1">Sí</label>
+                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 1) checked  @endif @else checked @endif name="deudas" id="rad5">
+                                      <label for="rad5">Sí</label>
                                     </div>
                                     <div class="be-radio has-danger inline">
-                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 0) checked  @endif @endif name="deudas" id="rad2">
-                                      <label for="rad2">No</label>
+                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 0) checked  @endif @endif name="deudas" id="rad6">
+                                      <label for="rad6">No</label>
                                     </div>
                                   </div>
                                 </div>
@@ -374,63 +372,68 @@
                       <div class="col-sm-6">
                         <div class="panel-body">
 
-                           <div class="form-group">
-                             <label class="col-sm-12 control-label labelleft " > Tipo de vivienda <span class="required">*</span></label>
-                              <div class="col-sm-12 abajocaja">
-                                {!! Form::select( 'tipovivienda_id', $combotipovivienda, array(),
-                                                  [
-                                                    'class'       => 'form-control control input-sm' ,
-                                                    'id'          => 'tipovivienda_id',
-                                                    'required'    => '',
-                                                    'data-aw'     => '1'
-                                                  ]) !!}
-                              </div>
-                            </div>
 
                            <div class="form-group">
-                             <label class="col-sm-12 control-label labelleft" >Cuenta con <span class="required">*</span></label>
 
-                                <!--
-                                 <div class="col-sm-6">
-                                    <div class="be-checkbox inline">
-                                      <input id="check6" type="checkbox" checked="">
-                                      <label for="check6">Sala</label>
-                                    </div>
-                                    <div class="be-checkbox inline">
-                                      <input id="check7" type="checkbox">
-                                      <label for="check7">Comedor</label>
-                                    </div>
-                                    <div class="be-checkbox inline">
-                                      <input id="check8" type="checkbox">
-                                      <label for="check8">Habitaciones</label>
-                                    </div>
-                                 </div>
+                                  <label class="col-sm-12 control-label labelleft">Tipo Vivienda  <span class="required">*</span></label>
+                                  <div class="col-sm-12 abajocaja">
 
-                                -->
-                               
-                              <div class="col-sm-12 abajocaja">
-                                {!! Form::select( 'casaparte_id', $combocasaparte, array(),
-                                                  [
-                                                    'class'       => 'form-control control input-sm' ,
-                                                    'id'          => 'casaparte_id',
-                                                    'required'    => '',
-                                                    'data-aw'     => '1'
-                                                  ]) !!}
-                              </div>
-                             
+
+                                    @foreach($tipovivienda as $item)
+                                      <div class="be-radio has-success inline">
+                                        <input type="radio" value="{{$item->id}}"  name="tipovivienda_id" id="rad{{$item->id}}"
+                                          @if(isset($fichasocioeconomica)) 
+                                            @if($fichasocioeconomica->tipovivienda_id == $item->id) 
+                                              checked  
+                                            @endif 
+                                          @endif
+                                           />
+                                        <label for="rad{{$item->id}}">{{$item->descripcion}}</label>
+                                      </div><br>
+                                    @endforeach
+
+
+                                  </div>
+                           </div>
+                         
+
+
+                           <div class="form-group">
+                            <label class="col-sm-12 control-label labelleft">Cuenta con<span class="required">*</span></label>
+                            <div class="col-sm-6 abajocaja">
+                              @foreach($casaparte as $item)  
+
+                                <div class="be-checkbox inline ">
+
+                                  <input id="{{$item->id}}" value="{{$item->id}}" name="casaparte[]" type="checkbox">
+
+                                  <label for="{{$item->id}}">
+                                    <font style="vertical-align: inherit;">
+                                      <font style="vertical-align: inherit;">{{$item->descripcion}}</font>
+                                    </font>
+                                  </label>
+
+                                </div>
+
+                              @endforeach
 
                             </div>
+                          </div>
+
+
+
+                         
 
                             <div class="form-group">
                               <label class="col-sm-12 control-label labelleft">Estado de Construcción <span class="required">*</span></label>
                               <div class="col-sm-12 abajocaja">
                                 <div class="be-radio has-success inline">
-                                  <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 1) checked  @endif @else checked @endif name="estadoconstruccion" id="rad1">
-                                  <label for="rad1">Construida</label>
+                                  <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 1) checked  @endif @else checked @endif name="estadoconstruccion" id="rad7">
+                                  <label for="rad7">Construida</label>
                                 </div>
                                 <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 0) checked  @endif @endif name="estadoconstruccion" id="rad2">
-                                  <label for="rad2">En Construcción</label>
+                                  <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 0) checked  @endif @endif name="estadoconstruccion" id="rad8">
+                                  <label for="rad8">En Construcción</label5>
                                 </div>
                               </div>
                             </div>
@@ -442,30 +445,57 @@
 
                       <div class="col-sm-6">
                             <div class="panel-body">
-                             
-                                 <div class="form-group">
-                                   <label class="col-sm-12 control-label labelleft" >Materiales de Construcción <span class="required">*</span></label>
-                                    <div class="col-sm-12 abajocaja ">
-                                      {!! Form::select( 'construccionmaterial_id', $comboconstruccionmaterial, array(),
-                                                        [
-                                                          'class'       => 'form-control control input-sm' ,
-                                                          'id'          => 'construccionmaterial_id',
-                                                          'required'    => '',
-                                                          'data-aw'     => '1'
-                                                        ]) !!}
-                                    </div>
-                                  </div>
 
-                                 <div class="form-group">
-                                   <label class="col-sm-12 control-label labelleft" > Servicios <span class="required">*</span></label>
-                                    <div class="col-sm-12 abajocaja">
-                                      {!! Form::select( 'servicio_id', $comboservicio, array(),
-                                                        [
-                                                          'class'       => 'form-control control input-sm' ,
-                                                          'id'          => 'servicio_id',
-                                                          'required'    => '',
-                                                          'data-aw'     => '1'
-                                                        ]) !!}
+                                   <div class="form-group">
+
+                                      <label class="col-sm-12 control-label labelleft">Materiales de Construcción  <span class="required">*</span></label>
+                                      <div class="col-sm-12 abajocaja">
+
+                                        @foreach($construccionmaterial as $item)
+                                          <div class="be-radio has-success inline">
+                                            <input type="radio" value="{{$item->id}}"  name="construccionmaterial_id" id="radc{{$item->id}}"
+                                              @if(isset($fichasocioeconomica)) 
+                                                @if($fichasocioeconomica->construccionmaterial_id == $item->id) 
+                                                  checked  
+                                                @endif 
+                                              @endif
+                                               />
+                                            <label for="radc{{$item->id}}">{{$item->descripcion}}</label>
+                                          </div><br>
+                                        @endforeach
+
+
+                                      </div>
+                                   </div>
+                
+
+                                  <div class="form-group">
+                                    <label class="col-sm-12 control-label labelleft">Servicios <span class="required">*</span></label>
+                                    <div class="col-sm-6 abajocaja">
+                                      <div class="be-checkbox inline ">
+                                        <input id="check13" type="checkbox">
+                                        <label for="check13"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agua</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline">
+                                        <input id="check14" type="checkbox">
+                                        <label for="check14"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desague</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline">
+                                        <input id="check15" type="checkbox">
+                                        <label for="check15"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Luz Eléctrica</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline largo ">
+                                        <input id="check16" type="checkbox" >
+                                        <label for="check16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Teléfono</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline largo">
+                                        <input id="check17" type="checkbox">
+                                        <label for="check17"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Internet</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline largo">
+                                        <input id="check18" type="checkbox">
+                                        <label for="check18"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cable</font></font></label>
+                                      </div>
                                     </div>
                                   </div>
                               
@@ -487,45 +517,72 @@
                           <div class="col-sm-6">
                             <div class="panel-body">
 
-                                 <div class="form-group ">
-                                   <label class="col-sm-12 control-label labelleft" >Lugar dónde se atiende <span class="required abajo">*</span></label>
-                                   <div class="col-sm-12 abajocaja">
-                                      {!! Form::select( 'centromedico_id', $combocentromedico, array(),
-                                                        [
-                                                          'class'       => 'form-control control input-sm' ,
-                                                          'id'          => 'centromedico_id',
-                                                          'required'    => '',
-                                                          'data-aw'     => '1'
-                                                        ]) !!}
-                                    </div>
-                                  </div>
 
-                                 <div class="form-group">
-                                   <label class="col-sm-12 control-label labelleft" >  Frecuencia con la que asiste al médico <span class="required">*</span></label>
-                                    <div class="col-sm-12 abajocaja">
-                                      {!! Form::select( 'frecuenciamedico_id', $combofrecuenciamedico, array(),
-                                                        [
-                                                          'class'       => 'form-control control input-sm' ,
-                                                          'id'          => 'frecuenciamedico_id',
-                                                          'required'    => '',
-                                                          'data-aw'     => '1'
-                                                        ]) !!}
-                                    </div>
-                                  </div>
+                              <div class="form-group">
 
-                                 <div class="form-group">
-                                   <label class="col-sm-12 control-label labelleft" >Con que frecuencia realiza exámenes de laboratorio clínico <span class="required">*</span></label>
-                                    <div class="col-sm-12 abajocaja">
-                                      {!! Form::select( 'frecuenciaexamen_id', $combofrecuenciaexamen, array(),
-                                                        [
-                                                          'class'       => 'form-control control input-sm' ,
-                                                          'id'          => 'frecuenciaexamen_id',
-                                                          'required'    => '',
-                                                          'data-aw'     => '1'
-                                                        ]) !!}
-                                    </div>
-                                  </div>
+                                      <label class="col-sm-12 control-label labelleft">Lugar dónde se atiende<span class="required">*</span></label>
+                                      <div class="col-sm-12 abajocaja">
 
+                                        @foreach($centromedico as $item)
+                                          <div class="be-radio has-success inline">
+                                            <input type="radio" value="{{$item->id}}"  name="centromedico_id" id="radcm{{$item->id}}"
+                                              @if(isset($fichasocioeconomica)) 
+                                                @if($fichasocioeconomica->centromedico_id == $item->id) 
+                                                  checked  
+                                                @endif 
+                                              @endif
+                                               />
+                                            <label for="radcm{{$item->id}}">{{$item->descripcion}}</label>
+                                          </div><br>
+                                        @endforeach
+
+
+                                      </div>
+                              </div>
+
+
+                              <div class="form-group">
+
+                                      <label class="col-sm-12 control-label labelleft">Frecuencia con la que asiste al médico <span class="required">*</span></label>
+                                      <div class="col-sm-12 abajocaja">
+
+                                        @foreach($frecuenciamedico as $item)
+                                          <div class="be-radio has-success inline">
+                                            <input type="radio" value="{{$item->id}}"  name="frecuenciamedico_id" id="radfm{{$item->id}}"
+                                              @if(isset($fichasocioeconomica)) 
+                                                @if($fichasocioeconomica->frecuenciamedico_id == $item->id) 
+                                                  checked  
+                                                @endif 
+                                              @endif
+                                               />
+                                            <label for="radfm{{$item->id}}">{{$item->descripcion}}</label>
+                                          </div><br>
+                                        @endforeach
+
+
+                                      </div>
+                              </div>
+
+                                <div class="form-group">
+
+                                      <label class="col-sm-12 control-label labelleft">. Con que frecuencia realiza exámenes de laboratorio clínico: <span class="required">*</span></label>
+                                      <div class="col-sm-12 abajocaja">
+
+                                        @foreach($frecuenciaexamen as $item)
+                                          <div class="be-radio has-success inline">
+                                            <input type="radio" value="{{$item->id}}"  name="frecuenciaexamen_id" id="radfe{{$item->id}}"
+                                              @if(isset($fichasocioeconomica)) 
+                                                @if($fichasocioeconomica->frecuenciaexamen_id == $item->id) 
+                                                  checked  
+                                                @endif 
+                                              @endif
+                                               />
+                                            <label for="radfe{{$item->id}}">{{$item->descripcion}}</label>
+                                          </div><br>
+                                        @endforeach
+
+                                      </div>
+                              </div>
              
                             </div>
                           </div>
@@ -538,26 +595,43 @@
                                   <label class="col-sm-12 control-label labelleft">Donde realiza los exámenes de laboratorio clínico<span class="required">*</span></label>
                                   <div class="col-sm-12 abajocaja">
                                     <div class="be-radio has-success inline">
-                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 1) checked  @endif @else checked @endif name="laboratorioclinico" id="rad1">
-                                      <label for="rad1">EsSalud</label>
+                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 1) checked  @endif @else checked @endif name="laboratorioclinico" id="rad22">
+                                      <label for="rad22">EsSalud</label>
                                     </div>
                                     <div class="be-radio has-danger inline">
-                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 0) checked  @endif @endif name="laboratorioclinico" id="rad2">
-                                      <label for="rad2">Particular</label>
+                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 0) checked  @endif @endif name="laboratorioclinico" id="rad23">
+                                      <label for="rad23">Particular</label>
                                     </div>
                                   </div>
                                 </div>
 
-                                 <div class="form-group">
-                                   <label class="col-sm-12 control-label labelleft" > Padece de alguna enfermedad <span class="required">*</span></label>
-                                    <div class="col-sm-12 abajocaja">
-                                      {!! Form::select( 'enfermedad_id', $comboenfermedad, array(),
-                                                        [
-                                                          'class'       => 'form-control control input-sm' ,
-                                                          'id'          => 'enfermedad_id',
-                                                          'required'    => '',
-                                                          'data-aw'     => '1'
-                                                        ]) !!}
+                                  <div class="form-group">
+                                    <label class="col-sm-12 control-label labelleft">Padece de alguna enfermedad <span class="required">*</span></label>
+                                    <div class="col-sm-6 abajocaja">
+                                      <div class="be-checkbox inline ">
+                                        <input id="check19" type="checkbox">
+                                        <label for="check19"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respiratorias</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline">
+                                        <input id="check20" type="checkbox">
+                                        <label for="check20"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cardiovascular</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline">
+                                        <input id="check21" type="checkbox">
+                                        <label for="check21"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hipertensión</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline largo ">
+                                        <input id="check22" type="checkbox" >
+                                        <label for="check22"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diabetes</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline largo">
+                                        <input id="check23" type="checkbox">
+                                        <label for="check23"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Migraña</font></font></label>
+                                      </div>
+                                      <div class="be-checkbox inline largo">
+                                        <input id="check24" type="checkbox">
+                                        <label for="check24"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otras</font></font></label>
+                                      </div>
                                     </div>
                                   </div>
 

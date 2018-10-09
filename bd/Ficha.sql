@@ -1,5 +1,17 @@
 
 -----FICHA DE PERSONAL------
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'casapartes') AND type in (N'U'))
+DROP TABLE [detallefichacasapartes];
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'servicios') AND type in (N'U'))
+DROP TABLE [detallefichaservicios];
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'enfermedades') AND type in (N'U'))
+DROP TABLE [detallefichaenfermedades];
+GO
+
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'fichasocioeconomicas') AND type in (N'U'))
 DROP TABLE [fichasocioeconomicas];
 GO
@@ -188,17 +200,12 @@ IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'tipovivienda
 DROP TABLE [tipoviviendas];
 GO
 
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'casapartes') AND type in (N'U'))
-DROP TABLE [casapartes];
-GO
+
 
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'construccionmateriales') AND type in (N'U'))
 DROP TABLE [construccionmateriales];
 GO
 
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'servicios') AND type in (N'U'))
-DROP TABLE [servicios];
-GO
 
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'centromedicos') AND type in (N'U'))
 DROP TABLE [centromedicos];
@@ -215,9 +222,7 @@ GO
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'laboratorioexamenes') AND type in (N'U'))
 DROP TABLE [laboratorioexamenes];
 
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'enfermedades') AND type in (N'U'))
-DROP TABLE [enfermedades];
-GO
+
 
 CREATE TABLE tipodocumentos (
   [id] varchar(20) NOT NULL,
@@ -802,21 +807,9 @@ CREATE TABLE tipoviviendas (
 ) ;
 GO
 
-CREATE TABLE casapartes (
-  [id] varchar(20) NOT NULL,
-  [descripcion] varchar(100) NOT NULL ,
-  PRIMARY KEY  ([id])
-) ;
-GO
+
 
 CREATE TABLE construccionmateriales (
-  [id] varchar(20) NOT NULL,
-  [descripcion] varchar(100) NOT NULL ,
-  PRIMARY KEY  ([id])
-) ;
-GO
-
-CREATE TABLE servicios (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
   PRIMARY KEY  ([id])
@@ -845,15 +838,7 @@ CREATE TABLE frecuenciaexamenes (
 ) ;
 GO
 
-
-CREATE TABLE enfermedades (
-  [id] varchar(20) NOT NULL,
-  [descripcion] varchar(100) NOT NULL ,
-  PRIMARY KEY  ([id])
-) ;
-GO
-
-CREATE TABLE fichasocioeconomicas (
+create TABLE fichasocioeconomicas (
   [id] varchar(20) NOT NULL,
   [religion] varchar(20) NOT NULL,
   [gruposanguineo] varchar(20) NOT NULL,
@@ -873,25 +858,79 @@ CREATE TABLE fichasocioeconomicas (
   [laboratorioclinico] int NULL,
   [observacion] varchar(100) NULL,
   [tipovivienda_id] varchar(20) NOT NULL,
+  PRIMARY KEY  ([id]),
   FOREIGN KEY (tipovivienda_id) REFERENCES tipoviviendas(id),
-  [casaparte_id] varchar(20) NOT NULL,
-  FOREIGN KEY (casaparte_id) REFERENCES casapartes(id),
   [construccionmaterial_id] varchar(20) NOT NULL,
   FOREIGN KEY (construccionmaterial_id) REFERENCES construccionmateriales(id),
-  [servicio_id] varchar(20) NOT NULL,
-  FOREIGN KEY (servicio_id) REFERENCES servicios(id),
   [centromedico_id] varchar(20) NOT NULL,
   FOREIGN KEY (centromedico_id) REFERENCES centromedicos(id),
   [frecuenciamedico_id] varchar(20) NOT NULL,
   FOREIGN KEY (frecuenciamedico_id) REFERENCES frecuenciamedicos(id),
   [frecuenciaexamen_id] varchar(20) NOT NULL,
   FOREIGN KEY (frecuenciaexamen_id) REFERENCES frecuenciaexamenes(id),
-  [enfermedad_id] varchar(20) NOT NULL,
-  FOREIGN KEY (enfermedad_id) REFERENCES enfermedades(id),
   [trabajador_id] varchar(20) NOT NULL,
   FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id)
 ) ;
 GO
+
+CREATE TABLE casapartes (
+  [id] varchar(20) NOT NULL,
+  [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
+  PRIMARY KEY  ([id]),
+) ;
+GO
+
+CREATE TABLE detallefichacasapartes (
+  [id] varchar(20) NOT NULL,
+  [fichasocioeconomica_id] varchar(20)  NULL,
+  FOREIGN KEY (fichasocioeconomica_id) REFERENCES fichasocioeconomicas(id),
+  [casaparte_id] varchar(20)  NULL,
+  [activo]  int NOT NULL default 1,
+  FOREIGN KEY (casaparte_id) REFERENCES casapartes(id)
+) ;
+GO
+
+CREATE TABLE enfermedades (
+  [id] varchar(20) NOT NULL,
+  [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
+  PRIMARY KEY  ([id])
+) ;
+GO
+
+CREATE TABLE detallefichaenfermedades (
+  [id] varchar(20) NOT NULL,
+  PRIMARY KEY  ([id]),
+  [fichasocioeconomica_id] varchar(20)  NULL,
+  FOREIGN KEY (fichasocioeconomica_id) REFERENCES fichasocioeconomicas(id),
+  [enfermedad_id] varchar(20)  NULL,
+  [activo]  int NOT NULL default 1,
+  FOREIGN KEY (enfermedad_id) REFERENCES enfermedades(id)
+) ;
+GO
+
+CREATE TABLE servicios (
+  [id] varchar(20) NOT NULL,
+  [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
+  PRIMARY KEY  ([id])
+
+) ;
+GO
+
+
+CREATE TABLE detallefichaservicios (
+  [id] varchar(20) NOT NULL,
+  PRIMARY KEY  ([id]),
+  [fichasocioeconomica_id] varchar(20)  NULL,
+  FOREIGN KEY (fichasocioeconomica_id) REFERENCES fichasocioeconomicas(id),
+  [servicio_id] varchar(20)  NULL,
+  [activo]  int NOT NULL default 1,
+  FOREIGN KEY (servicio_id) REFERENCES servicios(id)
+) ;
+GO
+
 
 --CONTRATO DEL TRABAJADOR
 

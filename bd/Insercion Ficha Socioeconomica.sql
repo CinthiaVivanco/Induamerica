@@ -12,12 +12,35 @@ INSERT INTO tipoviviendas(id, descripcion) VALUES
 
 --PARTES DE LA CASA
 GO
-INSERT INTO casapartes(id, descripcion) VALUES
-('ARCHICEN000000000001','Sala'),
-('ARCHICEN000000000002',  'Comedor'),
-('ARCHICEN000000000003', 'Habitaciones'),
-('ARCHICEN000000000004', 'Cocina'),
-('ARCHICEN000000000005', 'Servicios Higiénicos');
+INSERT INTO casapartes(id, descripcion, activo) VALUES
+('ARCHICEN000000000001','Sala',1), 
+('ARCHICEN000000000002', 'Comedor',1),
+('ARCHICEN000000000003','Habitaciones',1),
+('ARCHICEN000000000004','Cocina',1),
+('ARCHICEN000000000005','Servicios Higiénicos',1);
+
+
+--SERVICIOS DE LA CASA
+GO
+INSERT INTO servicios(id, descripcion, activo) VALUES
+('ARCHICEN000000000001','Agua',1),
+('ARCHICEN000000000002',  'Desagüe',1),
+('ARCHICEN000000000003', 'Luz Eléctrica',1),
+('ARCHICEN000000000004', 'Teléfono',1),
+('ARCHICEN000000000005', 'Internet',1),
+('ARCHICEN000000000006', 'Cable',1);
+
+--ENFERMEDADES 
+GO
+INSERT INTO enfermedades(id, descripcion, activo) VALUES
+('ARCHICEN000000000001','Respiratorias',1), 
+('ARCHICEN000000000002', 'Cardiovascular',1),
+('ARCHICEN000000000003','Hipertensión',1),
+('ARCHICEN000000000004','Diabetes',1),
+('ARCHICEN000000000005','Migraña',1),
+('ARCHICEN000000000006','Otras',1);
+
+
 
 --MATERIALES DE CONSTRUCCIÓN
 GO
@@ -27,16 +50,6 @@ INSERT INTO construccionmateriales(id, descripcion) VALUES
 ('ARCHICEN000000000003', 'Madera'),
 ('ARCHICEN000000000004', 'Otros');
 
-
---SERVICIOS DE LA CASA
-GO
-INSERT INTO servicios(id, descripcion) VALUES
-('ARCHICEN000000000001','Agua'),
-('ARCHICEN000000000002',  'Desagüe'),
-('ARCHICEN000000000003', 'Luz Eléctrica'),
-('ARCHICEN000000000004', 'Teléfono'),
-('ARCHICEN000000000005', 'Internet'),
-('ARCHICEN000000000006', 'Cable');
 
 --CENTRO MÉDICO DÓNDE SE ATIENDE
 GO
@@ -62,12 +75,3 @@ INSERT INTO frecuenciaexamenes(id, descripcion) VALUES
 
 
 
---PADECE DE ALGUNA ENFERMEDAD
-GO
-INSERT INTO enfermedades(id, descripcion) VALUES
-('ARCHICEN000000000001','Respiratorias'),
-('ARCHICEN000000000002',  'Cardiovascular'),
-('ARCHICEN000000000003', 'Hipertensión'),
-('ARCHICEN000000000004', 'Diabetes'),
-('ARCHICEN000000000005', 'Migraña'),
-('ARCHICEN000000000006', 'Otras');

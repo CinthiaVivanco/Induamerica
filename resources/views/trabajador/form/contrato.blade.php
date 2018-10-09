@@ -21,10 +21,10 @@
                     <div class="col-sm-6">
                     <div class="panel-body">
                          <div class="form-group">
-                            <label class="col-sm-3 control-label">
+                            <label class="col-sm-12 control-label labelleft">
                               Fec Desde <span class="required">*</span>
                             </label> 
-                            <div class="col-sm-7">
+                            <div class="col-sm-6 abajocaja">
                               <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
                                         <input size="16" type="text" value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechainicio')}}@endif" placeholder="Fecha Desde"
                                         id='fechainicio' name='fechainicio' 
@@ -36,10 +36,10 @@
                           </div>
 
                           <div class="form-group">
-                            <label class="col-sm-3 control-label">
+                            <label class="col-sm-12 control-label labelleft">
                               Fecha Hasta <span class="required">*</span>
                             </label> 
-                            <div class="col-sm-7">
+                            <div class="col-sm-6 abajocaja">
                               <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
                                         <input size="16" type="text" value="@if(isset($contrato)){{old('fechafin',$contrato->fechafin)}}@else{{old('fechafin')}}@endif" placeholder="Fecha Hasta"
                                         id='fechafin' name='fechafin' 
@@ -51,8 +51,8 @@
                           </div>
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Empresa <span class="required">*</span></label>
-                              <div class="col-sm-7">
+                              <label class="col-sm-12 control-label labelleft">Empresa <span class="required">*</span></label>
+                              <div class="col-sm-6 abajocaja">
 
                                 <input  type="text"
                                         id="empresa" name='empresa' value="@if(isset($contrato)){{old('empresa',$contrato->empresa)}}@else{{old('empresa')}}@endif" placeholder="Empresa"
@@ -77,8 +77,8 @@
                         <div class="panel-body">
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Observación <span class="required">*</span></label>
-                              <div class="col-sm-7">
+                              <label class="col-sm-12 control-label labelleft">Observación <span class="required">*</span></label>
+                              <div class="col-sm-6 abajocaja">
 
                                 <input  type="text"
                                         id="observacion" name='observacion' value="@if(isset($contrato)){{old('observacion',$contrato->observacion)}}@else{{old('observacion')}}@endif" placeholder="Observación"
@@ -92,8 +92,8 @@
                           </div>
 
                           <div class="form-group">
-                              <label class="col-sm-3 control-label">Estado <span class="required">*</span></label>
-                              <div class="col-sm-7">
+                              <label class="col-sm-12 control-label labelleft">Estado <span class="required">*</span></label>
+                              <div class="col-sm-6 abajocaja">
                                 <div class="be-radio has-success inline">
                                   <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->estado == 1) checked  @endif @else checked @endif name="estado" id="rad1">
                                   <label for="rad1">Pendiente</label>
@@ -107,8 +107,8 @@
 
                           <div class="form-group ">
 
-                            <label class="col-sm-3 control-label" >Tipo Contrato  <span class="required">*</span> </label>
-                            <div class="col-sm-7" >
+                            <label class="col-sm-12 control-label labelleft" >Tipo Contrato  <span class="required">*</span> </label>
+                            <div class="col-sm-6 abajocaja"  >
                               {!! Form::select( 'tipocontratotrabajador_id', $combotipocontratotrabajador, array(),
                                                 [
                                                   'class'       => 'form-control control input-sm' ,

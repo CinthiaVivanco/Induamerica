@@ -1,5 +1,5 @@
-  <label class="col-sm-3 control-label">Institucion</label>
-  <div class="col-sm-5">
+  <label class="col-sm-12 control-label labelleft">Institucion</label>
+  <div class="col-sm-5 abajocaja">
     {!! Form::select( 'institucion_id', $comboinstitucion, array(),
                       [
                         'class'       => 'form-control control input-sm' ,
