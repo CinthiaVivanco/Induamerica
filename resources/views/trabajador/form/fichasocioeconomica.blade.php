@@ -301,11 +301,11 @@
 
 
                                   <div class="col-sm-12 abajocaja">
-                                    <div class="be-radio has-success inline">
+                                    <div class="be-radio dos has-success inline">
                                       <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 1) checked  @endif @else checked @endif name="otroingreso" id="rad1">
                                       <label for="rad1">Sí</label>
                                     </div>
-                                    <div class="be-radio has-danger inline">
+                                    <div class="be-radio dos segundo has-danger inline">
                                       <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 0) checked  @endif @endif name="otroingreso" id="rad2">
                                       <label for="rad2">No</label>
                                     </div>
@@ -327,11 +327,11 @@
                                 <div class="form-group">
                                   <label class="col-sm-12 control-label labelleft">Negocio Propio <span class="required">*</span></label>
                                   <div class="col-sm-6 abajocaja">
-                                    <div class="be-radio has-success inline">
+                                    <div class="be-radio dos has-success inline">
                                       <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 1) checked  @endif @else checked @endif name="negociopropio" id="rad3">
                                       <label for="rad3">Sí</label>
                                     </div>
-                                    <div class="be-radio has-danger inline">
+                                    <div class="be-radio dos segundo has-danger inline">
                                       <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 0) checked  @endif @endif name="negociopropio" id="rad4">
                                       <label for="rad4">No</label>
                                     </div>
@@ -341,11 +341,11 @@
                                 <div class="form-group">
                                   <label class="col-sm-12 control-label labelleft">Tiene Deudas en entidades financieras  <span class="required">*</span></label>
                                   <div class="col-sm-6 abajocaja">
-                                    <div class="be-radio has-success inline">
+                                    <div class="be-radio dos has-success inline">
                                       <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 1) checked  @endif @else checked @endif name="deudas" id="rad5">
                                       <label for="rad5">Sí</label>
                                     </div>
-                                    <div class="be-radio has-danger inline">
+                                    <div class="be-radio dos segundo has-danger inline">
                                       <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 0) checked  @endif @endif name="deudas" id="rad6">
                                       <label for="rad6">No</label>
                                     </div>
@@ -372,16 +372,14 @@
                       <div class="col-sm-6">
                         <div class="panel-body">
 
-
                            <div class="form-group">
 
                                   <label class="col-sm-12 control-label labelleft">Tipo Vivienda  <span class="required">*</span></label>
                                   <div class="col-sm-12 abajocaja">
 
-
                                     @foreach($tipovivienda as $item)
                                       <div class="be-radio has-success inline">
-                                        <input type="radio" value="{{$item->id}}"  name="tipovivienda_id" id="rad{{$item->id}}"
+                                        <input type="radio" value="{{$item->id}}" name="tipovivienda_id" id="rad{{$item->id}}"
                                           @if(isset($fichasocioeconomica)) 
                                             @if($fichasocioeconomica->tipovivienda_id == $item->id) 
                                               checked  
@@ -399,13 +397,20 @@
 
 
                            <div class="form-group">
+
                             <label class="col-sm-12 control-label labelleft">Cuenta con<span class="required">*</span></label>
                             <div class="col-sm-6 abajocaja">
                               @foreach($casaparte as $item)  
 
                                 <div class="be-checkbox inline ">
 
-                                  <input id="{{$item->id}}" value="{{$item->id}}" name="casaparte[]" type="checkbox">
+                                  <input id="{{$item->id}}" value="{{$item->id}}" name="casaparte[]" type="checkbox"
+                                      @if(isset($fichasocioeconomica))
+                                        @if($item->activo == '1') 
+                                          checked  
+                                        @endif 
+                                      @endif
+                                  >
 
                                   <label for="{{$item->id}}">
                                     <font style="vertical-align: inherit;">
@@ -421,13 +426,10 @@
                           </div>
 
 
-
-                         
-
                             <div class="form-group">
                               <label class="col-sm-12 control-label labelleft">Estado de Construcción <span class="required">*</span></label>
                               <div class="col-sm-12 abajocaja">
-                                <div class="be-radio has-success inline">
+                                <div class="be-radio dos has-success inline">
                                   <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 1) checked  @endif @else checked @endif name="estadoconstruccion" id="rad7">
                                   <label for="rad7">Construida</label>
                                 </div>
@@ -469,36 +471,43 @@
                                    </div>
                 
 
-                                  <div class="form-group">
-                                    <label class="col-sm-12 control-label labelleft">Servicios <span class="required">*</span></label>
-                                    <div class="col-sm-6 abajocaja">
-                                      <div class="be-checkbox inline ">
-                                        <input id="check13" type="checkbox">
-                                        <label for="check13"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agua</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline">
-                                        <input id="check14" type="checkbox">
-                                        <label for="check14"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desague</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline">
-                                        <input id="check15" type="checkbox">
-                                        <label for="check15"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Luz Eléctrica</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline largo ">
-                                        <input id="check16" type="checkbox" >
-                                        <label for="check16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Teléfono</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline largo">
-                                        <input id="check17" type="checkbox">
-                                        <label for="check17"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Internet</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline largo">
-                                        <input id="check18" type="checkbox">
-                                        <label for="check18"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cable</font></font></label>
+                                    <div class="form-group">
+                                      <label class="col-sm-12 control-label labelleft">Servicios<span class="required">*</span></label>
+                                      <div class="col-sm-6 abajocaja">
+
+
+                                        @foreach($servicio as $item)  
+
+                                          <div class="be-checkbox inline ">
+
+                                            <input id="s{{$item->id}}" value="{{$item->id}}" name="servicio[]" type="checkbox"
+                                              @if(isset($fichasocioeconomica))
+                                                @if($item->activo == '1') 
+                                                  checked  
+                                                @endif 
+                                              @endif 
+                                              >
+
+                                            <label for="s{{$item->id}}">
+                                              <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">
+
+                                                  {{$item->descripcion}}
+
+                                                </font>
+                                              </font>
+                                            </label>
+
+                                          </div>
+
+                                        @endforeach
+
                                       </div>
                                     </div>
-                                  </div>
-                              
+
+
+
+
                             </div>
                       </div>
 
@@ -565,7 +574,7 @@
 
                                 <div class="form-group">
 
-                                      <label class="col-sm-12 control-label labelleft">. Con que frecuencia realiza exámenes de laboratorio clínico: <span class="required">*</span></label>
+                                      <label class="col-sm-12 control-label labelleft">Con que frecuencia realiza exámenes de laboratorio clínico: <span class="required">*</span></label>
                                       <div class="col-sm-12 abajocaja">
 
                                         @foreach($frecuenciaexamen as $item)
@@ -594,7 +603,7 @@
                                 <div class="form-group">
                                   <label class="col-sm-12 control-label labelleft">Donde realiza los exámenes de laboratorio clínico<span class="required">*</span></label>
                                   <div class="col-sm-12 abajocaja">
-                                    <div class="be-radio has-success inline">
+                                    <div class="be-radio dos has-success inline">
                                       <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 1) checked  @endif @else checked @endif name="laboratorioclinico" id="rad22">
                                       <label for="rad22">EsSalud</label>
                                     </div>
@@ -605,33 +614,32 @@
                                   </div>
                                 </div>
 
-                                  <div class="form-group">
-                                    <label class="col-sm-12 control-label labelleft">Padece de alguna enfermedad <span class="required">*</span></label>
+
+                                <div class="form-group">
+                                    <label class="col-sm-12 control-label labelleft">Padece de alguna enfermedad<span class="required">*</span></label>
                                     <div class="col-sm-6 abajocaja">
-                                      <div class="be-checkbox inline ">
-                                        <input id="check19" type="checkbox">
-                                        <label for="check19"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respiratorias</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline">
-                                        <input id="check20" type="checkbox">
-                                        <label for="check20"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cardiovascular</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline">
-                                        <input id="check21" type="checkbox">
-                                        <label for="check21"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hipertensión</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline largo ">
-                                        <input id="check22" type="checkbox" >
-                                        <label for="check22"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diabetes</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline largo">
-                                        <input id="check23" type="checkbox">
-                                        <label for="check23"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Migraña</font></font></label>
-                                      </div>
-                                      <div class="be-checkbox inline largo">
-                                        <input id="check24" type="checkbox">
-                                        <label for="check24"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otras</font></font></label>
-                                      </div>
+                                      @foreach($enfermedad as $item)  
+
+                                        <div class="be-checkbox inline ">
+
+                                          <input id="e{{$item->id}}" value="{{$item->id}}" name="enfermedad[]" type="checkbox"
+                                              @if(isset($fichasocioeconomica))
+                                                @if($item->activo == '1') 
+                                                  checked  
+                                                @endif 
+                                              @endif
+                                          >
+
+                                          <label for="e{{$item->id}}">
+                                            <font style="vertical-align: inherit;">
+                                              <font style="vertical-align: inherit;">{{$item->descripcion}}</font>
+                                            </font>
+                                          </label>
+
+                                        </div>
+
+                                      @endforeach
+
                                     </div>
                                   </div>
 

@@ -57,6 +57,16 @@
 }
 
 /* CHECKBOX */
+.be-checkbox input[type="checkbox"]:checked + label:before, .be-radio input[type="checkbox"]:checked + label:before, .be-checkbox input[type="radio"]:checked + label:before, .be-radio input[type="radio"]:checked + label:before {
+    content: "\f26b";
+    color: #4285f4;
+    border-color: #4285f4;
+}
+
+.be-checkbox.has-success input[type="checkbox"] + label:before, .be-radio.has-success input[type="checkbox"] + label:before, .be-checkbox.has-success input[type="radio"] + label:before, .be-radio.has-success input[type="radio"] + label:before {
+    color: #4285f4 !important;
+    border-color: #4285f4 !important;
+}
 
 .be-checkbox.inline {
     display: block !important;
@@ -66,6 +76,11 @@
 .be-radio.inline.ficha{
   margin-right: 10px;
 }
+
+
+
+
+
 /*
 .be-checkbox.inline.largo {
     margin-top: -108px !important;
