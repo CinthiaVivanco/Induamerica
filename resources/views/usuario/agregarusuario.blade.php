@@ -51,6 +51,7 @@
                             autocomplete="off" class="form-control input-sm" data-aw="1"/>
 
                   </div>
+                  
 
                   <input  type="hidden"
                             id="trabajador_id" name='trabajador_id'/>

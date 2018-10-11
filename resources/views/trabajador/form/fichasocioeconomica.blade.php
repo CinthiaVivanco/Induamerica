@@ -382,18 +382,44 @@
                                         <input type="radio" value="{{$item->id}}" name="tipovivienda_id" id="rad{{$item->id}}"
                                           @if(isset($fichasocioeconomica)) 
                                             @if($fichasocioeconomica->tipovivienda_id == $item->id) 
-                                              checked  
+                                              checked
+
                                             @endif 
                                           @endif
+
                                            />
+
                                         <label for="rad{{$item->id}}">{{$item->descripcion}}</label>
-                                      </div><br>
+
+
+                                      </div>                       
+                                      <br>
                                     @endforeach
 
 
-                                  </div>
+                                    @if($item == 'radSLCHICEN000000000006')
+
+
+                                          <div class="col-sm-7 otro">
+                                                <input  type="text"
+                                                        id="otro" name='otro' value=''  placeholder="Ingrese"
+                                                        required = "" autocomplete="off" class="form-control input-xs" data-aw="1"/>
+                                          </div>
+                                    @else
+
+                                          <div class="col-sm-7 otro">
+                                                <input  type="text"
+                                                        id="otro" name='otro' value=''  placeholder="Ingrese"
+                                                        required = "" disabled="disabled"
+                                                        autocomplete="off" class="form-control input-xs" data-aw="1"/>
+                                          </div>
+
+                                    @endif 
+                                                                      
+                                  </div> 
+
                            </div>
-                         
+
 
 
                            <div class="form-group">
@@ -682,7 +708,6 @@
                     </p>                
                 </ul>
              </div>
-
         </div>
    </div>
 </div>

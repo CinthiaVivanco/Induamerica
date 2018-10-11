@@ -17,6 +17,11 @@ use Hashids;
 
 class FichaSocioeconomicaController extends Controller
 {
+
+
+
+
+
 	public function actionModificarFichaSocioeconomica($idfichasocioeconomica,$idopcion,$idtrabajador,Request $request)
 	{
 			$cabecera            	 	 		 =	Fichasocioeconomica::find($idfichasocioeconomica);
@@ -125,13 +130,14 @@ class FichaSocioeconomicaController extends Controller
         	]);
 			/******************************/ 
 
- 
+
 
 			$idfichasocioeconomica 		 	     = $this->funciones->getCreateId('fichasocioeconomicas');
 			
 			$cabecera            	 	 		 =	new Fichasocioeconomica;
 			$cabecera->id 	     	 	 		 =  $idfichasocioeconomica;
-			$cabecera->trabajador_id  		 	 = 	$idtrabajador;
+
+
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
 			$cabecera->construccionmaterial_id 	 =  $request['construccionmaterial_id'];
 			$cabecera->centromedico_id 	 		 = 	$request['centromedico_id'];
@@ -154,6 +160,9 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->estadoconstruccion 	 	 = 	$request['estadoconstruccion'];
 			$cabecera->laboratorioclinico 	 	 = 	$request['laboratorioclinico'];
 			$cabecera->observacion 	 	         = 	$request['observacion'];
+			$cabecera->trabajador_id 			 = 	$idtrabajador;;
+
+
 			$cabecera->save();
 
 
@@ -244,6 +253,7 @@ class FichaSocioeconomicaController extends Controller
 			$frecuenciaexamen 				= Frecuenciaexamen::get();
 			$enfermedad 					= Enfermedad::get();
 
+			
 
 
 	        return View::make('trabajador/fichasocioeconomicatrabajador', 

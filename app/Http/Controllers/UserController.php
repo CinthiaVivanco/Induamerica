@@ -27,9 +27,6 @@ class UserController extends Controller
 						 	'trabajador' => $trabajador,
 						 	'usuario' 	 => $usuario
 						 ]);
-
-
-
  	}
 
 	

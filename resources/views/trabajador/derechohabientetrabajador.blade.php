@@ -4,8 +4,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/select2/css/select2.min.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/bootstrap-slider/css/bootstrap-slider.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/personal/derechohabiente.css') }} "/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/select2/css/select2.min.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/bootsnipp.css') }} "/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/datatables/css/dataTables.bootstrap.min.css') }} "/>
 
 @stop
 @section('section')
@@ -28,7 +28,7 @@
                   <li class="list_shopping li_num_0_1">
                     <div class="row">
 
-                      <div class="col-sm-4 detdni"> 
+                      <div class="col-sm-4 detdni">  
 
                           <p>{{$item->dnihabiente}}</p>
                       
@@ -98,6 +98,7 @@
     <script src="{{ asset('public/lib/bootstrap-slider/js/bootstrap-slider.js') }}" type="text/javascript"></script>
     <script src="{{ asset('public/js/app-form-elements.js') }}" type="text/javascript"></script>
     <script src="{{ asset('public/lib/parsley/parsley.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/app-tables-datatables.js') }}" type="text/javascript"></script>
 
 
     <script type="text/javascript">

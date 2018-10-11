@@ -15,6 +15,18 @@ use Hashids;
 
 class TrabajadorController extends Controller
 {
+	public function actionFichaTrabajador(Request $request){
+
+		$id 						= strtoupper($request['id']);
+		$trabajador     			= Trabajador::where('id', '=', $id)->first();
+		$fichasocioeconomica     	= Fichasocioeconomica::where('id', '=', $id)->first();
+		
+		return View::make('usuario/ajax/datotrabajador',
+						 [
+						 	'trabajador' 			 => $trabajador,
+						 	'fichasocioeconomica' 	 => $fichasocioeconomica
+						 ]);
+ 	}
 
 	public function actionListarTrabajador($idopcion)
 	{

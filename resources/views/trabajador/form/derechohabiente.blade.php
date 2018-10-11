@@ -37,7 +37,7 @@
               </div>
 
 
-              <div class="process-step">
+              <div class="process-step tabmenu4">
                <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-check fa-2x"></i></button>
                <p><small>Guardar<br />Ficha</small></p>
 
@@ -52,6 +52,7 @@
                     <div class="col-sm-6">
                     <div class="panel-body">
                          <div class="form-group">
+                          
                            <label class="col-sm-12 control-label labelleft" >Tipo Documento <span class="required">*</span></label>
                             <div class="col-sm-8 abajocaja">
                               {!! Form::select( 'tipodocumento_id', $combotipodocumento, array(),
