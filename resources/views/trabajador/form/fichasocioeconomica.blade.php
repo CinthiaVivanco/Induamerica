@@ -266,6 +266,8 @@
                   </div>
                 </div>
 
+
+
                             
                  <ul class="list-unstyled list-inline pull-right">
                   <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i> Atrás</button></li>
@@ -380,41 +382,42 @@
                                     @foreach($tipovivienda as $item)
                                       <div class="be-radio has-success inline">
                                         <input type="radio" value="{{$item->id}}" name="tipovivienda_id" id="rad{{$item->id}}"
+                                        
+
                                           @if(isset($fichasocioeconomica)) 
                                             @if($fichasocioeconomica->tipovivienda_id == $item->id) 
                                               checked
-
                                             @endif 
                                           @endif
 
-                                           />
 
+                                           />
                                         <label for="rad{{$item->id}}">{{$item->descripcion}}</label>
+
 
 
                                       </div>                       
                                       <br>
+
                                     @endforeach
 
-
-                                    @if($item == 'radSLCHICEN000000000006')
-
+<!-- -->
+                                    @if($item->descripcion == "Otros")
 
                                           <div class="col-sm-7 otro">
-                                                <input  type="text"
-                                                        id="otro" name='otro' value=''  placeholder="Ingrese"
+                                                <input  type="text" id="otro" name='otro' value=''  placeholder="Ingrese"
                                                         required = "" autocomplete="off" class="form-control input-xs" data-aw="1"/>
                                           </div>
                                     @else
 
                                           <div class="col-sm-7 otro">
-                                                <input  type="text"
+                                                <input  type="hidden"
                                                         id="otro" name='otro' value=''  placeholder="Ingrese"
-                                                        required = "" disabled="disabled"
-                                                        autocomplete="off" class="form-control input-xs" data-aw="1"/>
+                                                        required = "" autocomplete="off" class="form-control input-xs" data-aw="1"/>
                                           </div>
 
                                     @endif 
+                                  
                                                                       
                                   </div> 
 

@@ -160,7 +160,7 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->estadoconstruccion 	 	 = 	$request['estadoconstruccion'];
 			$cabecera->laboratorioclinico 	 	 = 	$request['laboratorioclinico'];
 			$cabecera->observacion 	 	         = 	$request['observacion'];
-			$cabecera->trabajador_id 			 = 	$idtrabajador;;
+			$cabecera->trabajador_id 			 = 	$idtrabajador;
 
 
 			$cabecera->save();

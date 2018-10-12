@@ -69,25 +69,20 @@
     <div class="row">
           <div class="col-md-12">
             <div class="panel panel-default panel-border-color panel-border-color-primary">
-              <div class="panel-heading panel-heading-divider" >Ficha Socioeconómica<span class="panel-subtitle">Crear la Ficha Socioeconómica</span></div>
-              
+              <div class="panel-heading panel-heading-divider" >Ficha Socioeconómica<span class="panel-subtitle">Crear la Ficha Socioeconómica</span></div>              
               <div class="panel-body">
 
                 <div class="main-content container-fluid ajaxformfs">
-
                   <form method="POST" action="{{ url('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.Hashids::encode(substr($trabajador->id, -12))) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed"> 
                                     {{ csrf_field() }}
                         @include('trabajador.form.fichasocioeconomica')
-                  </form>
-                
+                  </form>               
+                </div>
               </div>
             </div>
           </div>
-        </div>
     </div>
-
-
-   </div>
+  </div>
 </div>
 
 @stop
