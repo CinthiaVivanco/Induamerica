@@ -15,54 +15,8 @@
 
     <h2 class="panel-heading">Ficha Socioeconómica del Trabajador :  {{$trabajador->apellidopaterno}} {{$trabajador->apellidomaterno}} {{$trabajador->nombres}}</h2>
   </div>
-  <div class="main-content container-fluid editfs">
-    
-    <div class="row">
-
-      @foreach($listafichasocioeconomica as $item)
-
-        <div class="col-sm-4">  
-          <div class="cont_principal">
-            <div class="cont_centrar">
-              <div class="cont_princ_lists">
-                <ul>
-                  <li class="list_shopping li_num_0_1">
-                    <div class="row">
-
-                      <div class="col-sm-4 detid"> 
-
-                          <p>{{$item->trabajador->dni}}</p>
-                      
-                      </div>
-
-                      <div class="col-sm-6 detnombres">
-                          <h2 class="panel-heading">Ficha Socioeconómica</h2>
 
 
-                      </div>
-                      <div class="col-sm-2 detmodificar"> 
-
-                          <div class="icon"><span 
-                                          class="mdi mdi-edit" 
-                                          id='btnmodificarfs'
-                                          name='{{$item->id}}' 
-                                          data_opcion='{{$idopcion}}'
-                                          data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
-                                          ></span></div>
-                          
-                      </div>                      
-
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-                 
-    @endforeach
-
-    </div>
-  </div>
 
 
   <div class="main-content container-fluid">
@@ -73,8 +27,14 @@
               <div class="panel-body">
 
                 <div class="main-content container-fluid ajaxformfs">
-                  <form method="POST" action="{{ url('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.Hashids::encode(substr($trabajador->id, -12))) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed"> 
-                                    {{ csrf_field() }}
+                  <form method="POST" 
+                  action="@if(count($fichasocioeconomica)>0)
+                          {{ url('/modificar-ficha-socioeconomica-trabajador/'.$fichasocioeconomica->id.'/'.$idopcion.'/'.Hashids::encode(substr($trabajador->id, -12))) }}
+                          @else
+                          {{ url('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.Hashids::encode(substr($trabajador->id, -12))) }}
+                          @endif"
+                  style="border-radius: 0px;" class="form-horizontal group-border-dashed"> 
+                        {{ csrf_field() }}
                         @include('trabajador.form.fichasocioeconomica')
                   </form>               
                 </div>

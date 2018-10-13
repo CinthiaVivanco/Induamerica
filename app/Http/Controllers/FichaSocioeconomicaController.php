@@ -240,10 +240,11 @@ class FichaSocioeconomicaController extends Controller
 
 		}else{
 
-			$listafichasocioeconomica 		= Fichasocioeconomica::where('trabajador_id','=' , $idtrabajador)->get();
+
+
+			$fichasocioeconomica 			= Fichasocioeconomica::where('trabajador_id','=' , $idtrabajador)->first();
 			
-		    $trabajador 					= Trabajador::where('id', $idtrabajador)->first();
-		 
+		    $trabajador 					= Trabajador::where('id', $idtrabajador)->first();		 
 			$tipovivienda 				 	= Tipovivienda::get(); 
 			$casaparte 				        = Casaparte::get(); 
 			$construccionmaterial 		    = Construccionmaterial::get(); 
@@ -254,12 +255,10 @@ class FichaSocioeconomicaController extends Controller
 			$enfermedad 					= Enfermedad::get();
 
 			
-
-
 	        return View::make('trabajador/fichasocioeconomicatrabajador', 
 	        				[
 
-	        					'listafichasocioeconomica'  	    	=> $listafichasocioeconomica,
+	        					'fichasocioeconomica'  	    			=> $fichasocioeconomica,
 	        					'trabajador'  	    					=> $trabajador,
 	        					'idopcion'  	    					=> $idopcion,
 	        					'tipovivienda'  	    				=> $tipovivienda,
