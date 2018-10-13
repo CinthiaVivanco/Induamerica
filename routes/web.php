@@ -12,6 +12,7 @@
 */
 
 /********************** USUARIOS *************************/
+
 Route::group(['middleware' => ['guestaw']], function () {
 
 	Route::any('/', 'UserController@actionLogin');

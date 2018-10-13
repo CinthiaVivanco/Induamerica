@@ -380,7 +380,7 @@
                                   <div class="col-sm-12 abajocaja">
 
                                     @foreach($tipovivienda as $item)
-                                      <div class="be-radio has-success inline">
+                                      <div class="be-radio vivienda has-success inline">
                                         <input type="radio" value="{{$item->id}}" name="tipovivienda_id" id="rad{{$item->id}}"
                                         
 
@@ -393,32 +393,17 @@
 
                                            />
                                         <label for="rad{{$item->id}}">{{$item->descripcion}}</label>
-
-
-
                                       </div>                       
                                       <br>
 
-                                    @endforeach
+                                    @endforeach  
 
-<!-- -->
-                                    @if($item->descripcion == "Otros")
+                                    <div class="col-sm-7 otrotipovivienda">
 
-                                          <div class="col-sm-7 otro">
-                                                <input  type="text" id="otro" name='otro' value=''  placeholder="Ingrese"
-                                                        required = "" autocomplete="off" class="form-control input-xs" data-aw="1"/>
-                                          </div>
-                                    @else
-
-                                          <div class="col-sm-7 otro">
-                                                <input  type="hidden"
-                                                        id="otro" name='otro' value=''  placeholder="Ingrese"
-                                                        required = "" autocomplete="off" class="form-control input-xs" data-aw="1"/>
-                                          </div>
-
-                                    @endif 
-                                  
-                                                                      
+                                        <input  type="text" id="otro" name='otro' value="" placeholder="Ingrese otra Vivienda"
+                                            required = "" autocomplete="off" class="form-control input-sm" data-aw="1"/>
+                                    </div>
+                                                                          
                                   </div> 
 
                            </div>
