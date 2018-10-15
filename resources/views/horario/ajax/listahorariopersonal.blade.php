@@ -36,12 +36,13 @@
           {!! 
             Form::select( 'horario_id', 
                           $combohorario, 
-                          array(),
+                          $item->hlu,
                           [
-                            'class'       => 'form-control control input-fr' ,
+                            'class'       => 'comboh form-control control input-fr' ,
                             'id'          => 'horario_id',
                             'required'    => '',
                             'data-aw'     => '1',
+                            'data-attr'   => 'lu',
                             'data-id'     => Hashids::encode(substr($item->id, -12))
                           ]) 
           !!}
@@ -49,8 +50,8 @@
           <span class="text-center cell-detail-description cell-detail-descriptionfr">
             {{date_format(date_create($item->lud), 'd/m/Y')}}
           </span>
-          <span class="text-center cell-detail-description cell-detail-descriptionfr">
-            hora
+          <span class="text-center cell-detail-description cell-detail-descriptionfr labelhora">
+            {{$item->rhlu}}
           </span>
         </td>
         <td class="cell-detail">
@@ -70,19 +71,23 @@
           {!! 
             Form::select( 'horario_id', 
                           $combohorario, 
-                          array(),
+                          $item->hma,
                           [
-                            'class'       => 'form-control control input-fr' ,
+                            'class'       => 'comboh form-control control input-fr' ,
                             'id'          => 'horario_id',
                             'required'    => '',
+                            'data-attr'   => 'ma',
                             'data-aw'     => '1',
                             'data-id'     => Hashids::encode(substr($item->id, -12))
                           ]) 
           !!}
 
-          <span class="cell-detail-description cell-detail-descriptionfr">
+          <span class="text-center cell-detail-description cell-detail-descriptionfr">
             {{date_format(date_create($item->mad), 'd/m/Y')}}
           </span>
+          <span class="text-center cell-detail-description cell-detail-descriptionfr labelhora">
+            {{$item->rhma}}
+          </span>          
         </td>
         <td class="cell-detail">
 
@@ -101,19 +106,23 @@
           {!! 
             Form::select( 'horario_id', 
                           $combohorario, 
-                          array(),
+                          $item->hmi,
                           [
-                            'class'       => 'form-control control input-fr' ,
+                            'class'       => 'comboh form-control control input-fr' ,
                             'id'          => 'horario_id',
                             'required'    => '',
+                            'data-attr'   => 'mi',
                             'data-aw'     => '1',
                             'data-id'     => Hashids::encode(substr($item->id, -12))
                           ]) 
           !!}
 
-          <span class="cell-detail-description cell-detail-descriptionfr">
+          <span class="text-center cell-detail-description cell-detail-descriptionfr">
             {{date_format(date_create($item->mid), 'd/m/Y')}}
           </span>
+          <span class="text-center cell-detail-description cell-detail-descriptionfr labelhora">
+            {{$item->rhmi}}
+          </span> 
         </td>
         <td class="cell-detail">
 
@@ -132,19 +141,23 @@
           {!! 
             Form::select( 'horario_id', 
                           $combohorario, 
-                          array(),
+                          $item->hju,
                           [
-                            'class'       => 'form-control control input-fr' ,
+                            'class'       => 'comboh form-control control input-fr' ,
                             'id'          => 'horario_id',
                             'required'    => '',
+                            'data-attr'   => 'ju',
                             'data-aw'     => '1',
                             'data-id'     => Hashids::encode(substr($item->id, -12))
                           ]) 
           !!}
 
-          <span class="cell-detail-description cell-detail-descriptionfr">
+          <span class="text-center cell-detail-description cell-detail-descriptionfr">
             {{date_format(date_create($item->jud), 'd/m/Y')}}
           </span>
+          <span class="text-center cell-detail-description cell-detail-descriptionfr labelhora">
+            {{$item->rhju}}
+          </span> 
         </td>
         <td class="cell-detail">
 
@@ -163,19 +176,23 @@
           {!! 
             Form::select( 'horario_id', 
                           $combohorario, 
-                          array(),
+                          $item->hvi,
                           [
-                            'class'       => 'form-control control input-fr' ,
+                            'class'       => 'comboh form-control control input-fr' ,
                             'id'          => 'horario_id',
                             'required'    => '',
+                            'data-attr'   => 'vi',
                             'data-aw'     => '1',
                             'data-id'     => Hashids::encode(substr($item->id, -12))
                           ]) 
           !!}
 
-          <span class="cell-detail-description cell-detail-descriptionfr">
+          <span class="text-center cell-detail-description cell-detail-descriptionfr">
             {{date_format(date_create($item->vid), 'd/m/Y')}}
           </span>
+          <span class="text-center cell-detail-description cell-detail-descriptionfr labelhora">
+            {{$item->rhvi}}
+          </span> 
         </td>
         <td class="cell-detail">
 
@@ -194,19 +211,23 @@
           {!! 
             Form::select( 'horario_id', 
                           $combohorario, 
-                          array(),
+                          $item->hsa,
                           [
-                            'class'       => 'form-control control input-fr' ,
+                            'class'       => 'comboh form-control control input-fr' ,
                             'id'          => 'horario_id',
                             'required'    => '',
+                            'data-attr'   => 'sa',
                             'data-aw'     => '1',
                             'data-id'     => Hashids::encode(substr($item->id, -12))
                           ]) 
           !!}
 
-          <span class="cell-detail-description cell-detail-descriptionfr">
+          <span class="text-center cell-detail-description cell-detail-descriptionfr">
             {{date_format(date_create($item->sad), 'd/m/Y')}}
           </span>
+          <span class="text-center cell-detail-description cell-detail-descriptionfr labelhora">
+            {{$item->rhsa}}
+          </span> 
         </td>
         <td class="cell-detail">
 
@@ -225,19 +246,23 @@
           {!! 
             Form::select( 'horario_id', 
                           $combohorario, 
-                          array(),
+                          $item->hdo,
                           [
-                            'class'       => 'form-control control input-fr' ,
+                            'class'       => 'comboh form-control control input-fr' ,
                             'id'          => 'horario_id',
                             'required'    => '',
+                            'data-attr'   => 'do',
                             'data-aw'     => '1',
                             'data-id'     => Hashids::encode(substr($item->id, -12))
                           ]) 
           !!}
 
-          <span class="cell-detail-description cell-detail-descriptionfr">
+          <span class="text-center cell-detail-description cell-detail-descriptionfr">
             {{date_format(date_create($item->dod), 'd/m/Y')}}
           </span>
+          <span class="text-center cell-detail-description cell-detail-descriptionfr labelhora">
+            {{$item->rhdo}}
+          </span> 
         </td>
 
       </tr>                    

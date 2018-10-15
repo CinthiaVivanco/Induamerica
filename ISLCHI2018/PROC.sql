@@ -201,6 +201,4 @@ select T.* from trabajadores U
 inner join horarios T 
 where U.id =@dni
 
-
-
 GO

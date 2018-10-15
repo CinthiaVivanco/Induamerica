@@ -6,7 +6,93 @@ $(document).ready(function(){
     jQuery('.scrollbar-inner').scrollTop(numero*32.2);
 
 
+
+    $('#copiarhorarioclonar').on('click', function(event){
+        event.preventDefault();
+        var _token              = $('#token').val();
+        var objeto = $('.listasemana').find('.active');
+
+        if(objeto.length>0){
+
+            abrircargando();
+                
+            idsemana = $(objeto).find('.selectsemana').attr('id');
+            $(".listadohorario").html("");
+
+            $.ajax({
+                type    :   "POST",
+                url     :   carpeta+"/ajax--copiar-horario-clonado",
+                data    :   {
+                                _token   : _token,
+                                idsemana : idsemana
+                            },
+                success: function (data) {
+
+                    cerrarcargando();
+                    $(".listadohorario").html(data);
+                    alertajax("Clonación exitosa");
+                    
+                },
+                error: function (data) {
+                    cerrarcargando();
+                    console.log('Error:', data);
+                }
+            });
+
+
+        }else{
+            alerterrorajax("Seleccione una semana para traspase de clonación");
+        }
+    }); 
+
+
+
+
+    $('#clonarhorario').on('click', function(event){
+        event.preventDefault();
+        var _token              = $('#token').val();
+        var objeto = $('.listasemana').find('.active');
+
+        if(objeto.length>0){
+
+            abrircargando();
+                
+            idsemana = $(objeto).find('.selectsemana').attr('id');
+
+
+            $.ajax({
+                type    :   "POST",
+                url     :   carpeta+"/ajax-clonar-horario",
+                data    :   {
+                                _token   : _token,
+                                idsemana : idsemana
+                            },
+                success: function (data) {
+
+                    JSONdata     = JSON.parse(data);
+                    error        = JSONdata[0].error;
+                    cerrarcargando();
+
+                    if(error==true){
+                        alertajax("Clonación exitosa");
+                    }
+                    
+                },
+                error: function (data) {
+                    cerrarcargando();
+                    console.log('Error:', data);
+                }
+            });
+
+
+        }else{
+            alerterrorajax("Seleccione una semana para clonarla");
+        }
+    }); 
+
+
     $('.selectsemana').on('click', function(event){
+
     	event.preventDefault();
     	var idsemana 			= $(this).attr("id");
     	var _token 				= $('#token').val();
@@ -79,9 +165,14 @@ $(document).ready(function(){
 
     $(".listadohorario").on('change','#horario_id', function() {
 
+
+        var puntero                 = $(this);
         var horario_id              = $(this).val();
         var idhorariotrabajador     = $(this).attr('data-id');
+        var atributo                = $(this).attr('data-attr');
+        
         var _token                  = $('#token').val();
+
 
         $.ajax({
             type    :   "POST",
@@ -89,14 +180,22 @@ $(document).ready(function(){
             data    :   {
                             _token              : _token,
                             idhorariotrabajador : idhorariotrabajador,
+                            atributo            : atributo,
                             horario_id          : horario_id
                         },
             success: function (data) {
 
-                if(data>=0){
+                JSONdata     = JSON.parse(data);
+                error        = JSONdata[0].error;
+                hora         = JSONdata[0].hora;
+
+                if(error==true){
+
+                    $(puntero).parent('.cell-detail').find('.labelhora').html(hora);
                     alertajax("Realizado con exito");
+
                 }
-                //console.log(data);
+
 
             },
             error: function (data) {

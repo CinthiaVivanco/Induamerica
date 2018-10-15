@@ -1,5 +1,5 @@
 .content .demo > div {
-    max-height: 500px;
+    max-height: 110px;
     overflow: auto;
 }
 
@@ -104,14 +104,14 @@
 
 .scrollbar-inner > .scroll-element.scroll-x {
     bottom: 2px;
-    height: 8px;
+    height: 12px;
     left: 0;
     width: 100%;
 }
 
 .scrollbar-inner > .scroll-element.scroll-y {
     height: 100%;
-    right: 6px;
+    right: 16px;
     top: 2px;
     width: 5px;
 }
