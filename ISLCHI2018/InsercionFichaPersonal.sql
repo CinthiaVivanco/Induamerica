@@ -976,13 +976,13 @@ GO
 
 --TIPO VIVIENDA
 GO
-INSERT INTO tipoviviendas(id, descripcion,otro) VALUES
-('SLCHICEN000000000001','Propia',''),
-('SLCHICEN000000000002',  'Alquilada',''),
-('SLCHICEN000000000003', 'Departamento en Edificio',''),
-('SLCHICEN000000000004', 'Alojado en Casa de un Familia',''),
-('SLCHICEN000000000005', 'Cuarto',''),
-('SLCHICEN000000000006', 'Otros','');
+INSERT INTO tipoviviendas(id, descripcion) VALUES
+('SLCHICEN000000000001','Propia'),
+('SLCHICEN000000000002',  'Alquilada'),
+('SLCHICEN000000000003', 'Departamento en Edificio'),
+('SLCHICEN000000000004', 'Alojado en Casa de un Familia'),
+('SLCHICEN000000000005', 'Cuarto'),
+('SLCHICEN000000000006', 'Otros');
 
 --PARTES DE LA CASA
 GO

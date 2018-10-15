@@ -902,7 +902,7 @@ GO
 CREATE TABLE tipoviviendas (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
-  [otro] varchar(100) NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -958,6 +958,7 @@ create TABLE fichasocioeconomicas (
   [laboratorioclinico] int NULL,
   [observacion] varchar(100) NULL,
   [tipovivienda_id] varchar(20) NOT NULL,
+  [otrotipovivienda] varchar(100) NULL,
   PRIMARY KEY  ([id]),
   FOREIGN KEY (tipovivienda_id) REFERENCES tipoviviendas(id),
   [construccionmaterial_id] varchar(20) NOT NULL,

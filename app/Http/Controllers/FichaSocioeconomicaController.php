@@ -26,6 +26,7 @@ class FichaSocioeconomicaController extends Controller
 	{
 			$cabecera            	 	 		 =	Fichasocioeconomica::find($idfichasocioeconomica);
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
+			$cabecera->otrotipovivienda  		 = 	$request['otrotipovivienda'];
 			$cabecera->construccionmaterial_id 	 =  $request['construccionmaterial_id'];
 			$cabecera->centromedico_id 	 		 = 	$request['centromedico_id'];
 			$cabecera->frecuenciamedico_id  	 =	$request['frecuenciamedico_id'];
@@ -139,6 +140,7 @@ class FichaSocioeconomicaController extends Controller
 
 
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
+			$cabecera->otrotipovivienda  		 = 	$request['otrotipovivienda'];
 			$cabecera->construccionmaterial_id 	 =  $request['construccionmaterial_id'];
 			$cabecera->centromedico_id 	 		 = 	$request['centromedico_id'];
 			$cabecera->frecuenciamedico_id  	 =	$request['frecuenciamedico_id'];
@@ -216,7 +218,7 @@ class FichaSocioeconomicaController extends Controller
 			$enfermedades 							= $request['enfermedad']; // este es un array que nos devuelve todos los id seleccionados
 			$listaenfermedad 						= Enfermedad::get(); //listamos todos los casapartes
 			foreach($listaenfermedad as $item){
-
+1.,	
 				$activo 							= 0;
 				$iddetallefichaenfermedades 			= $this->funciones->getCreateId('detallefichaenfermedades');
 
@@ -246,15 +248,32 @@ class FichaSocioeconomicaController extends Controller
 			
 		    $trabajador 					= Trabajador::where('id', $idtrabajador)->first();		 
 			$tipovivienda 				 	= Tipovivienda::get(); 
-			$casaparte 				        = Casaparte::get(); 
 			$construccionmaterial 		    = Construccionmaterial::get(); 
-			$servicio 					 	= Servicio::get();
 			$centromedico 					= Centromedico::get(); 
 			$frecuenciamedico 			    = Frecuenciamedico::get(); 
 			$frecuenciaexamen 				= Frecuenciaexamen::get();
-			$enfermedad 					= Enfermedad::get();
 
-			
+			if(count($fichasocioeconomica)>0){
+				$casaparte 				        = Detallefichacasaparte::join('casapartes', 'detallefichacasapartes.casaparte_id', '=', 'casapartes.id')
+											  		->select('casapartes.id','casapartes.descripcion','detallefichacasapartes.activo')
+											  		->where('fichasocioeconomica_id','=',$fichasocioeconomica->id)->get();
+				$servicio 					 	= Detallefichaservicio::join('servicios', 'detallefichaservicios.servicio_id', '=', 'servicios.id')
+											  		->select('servicios.id','servicios.descripcion','detallefichaservicios.activo')
+											  		->where('fichasocioeconomica_id','=',$fichasocioeconomica->id)->get(); 
+				$enfermedad 					= Detallefichaenfermedad::join('enfermedades', 'detallefichaenfermedades.enfermedad_id', '=', 'enfermedades.id')
+											  		->select('enfermedades.id','enfermedades.descripcion','detallefichaenfermedades.activo')
+											  		->where('fichasocioeconomica_id','=',$fichasocioeconomica->id)->get();				
+			}else{
+
+				$casaparte 				        = Casaparte::get(); 
+				$servicio 					 	= 0::get();
+				$enfermedad 					= Enfermedad::get();
+
+			}
+
+
+
+
 	        return View::make('trabajador/fichasocioeconomicatrabajador', 
 	        				[
 
