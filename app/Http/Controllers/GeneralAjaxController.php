@@ -119,6 +119,7 @@ class GeneralAjaxController extends Controller
 
 	public function actionInstitucionAjax(Request $request)
 	{
+		
 		$tipoinstitucion_id   = $request['tipoinstitucion_id'];
 
 		$institucion = DB::table('instituciones')->where('tipoinstitucion_id','=',$tipoinstitucion_id)->pluck('nombre','id')->toArray();

@@ -96,6 +96,9 @@ class DerechoHabienteController extends Controller
 			$cabecera->activo 		 	 		 = 	$request['activo'];
 
 			$cabecera->save();
+
+
+
  			return Redirect::to('/derecho-habiente-trabajador/'.$idopcion.'/'.$idtrabajadorsd)->with('bienhecho', 'DerechoHabiente'.$request['nombre'].' '.$request['apellidopaterno'].' registrado con exito');
 
 		}else{

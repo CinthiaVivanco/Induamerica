@@ -165,6 +165,7 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->trabajador_id 			 = 	$idtrabajador;
 
 
+
 			$cabecera->save();
 
 
@@ -218,7 +219,7 @@ class FichaSocioeconomicaController extends Controller
 			$enfermedades 							= $request['enfermedad']; // este es un array que nos devuelve todos los id seleccionados
 			$listaenfermedad 						= Enfermedad::get(); //listamos todos los casapartes
 			foreach($listaenfermedad as $item){
-1.,	
+	
 				$activo 							= 0;
 				$iddetallefichaenfermedades 			= $this->funciones->getCreateId('detallefichaenfermedades');
 
@@ -235,6 +236,7 @@ class FichaSocioeconomicaController extends Controller
 
 			}
 			///////////////////////////////////////////////////////////
+
 
 
 
@@ -266,7 +268,7 @@ class FichaSocioeconomicaController extends Controller
 			}else{
 
 				$casaparte 				        = Casaparte::get(); 
-				$servicio 					 	= 0::get();
+				$servicio 					 	= Servicio::get();
 				$enfermedad 					= Enfermedad::get();
 
 			}

@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+    var carpeta = $("#carpeta").val();
+    
 
     $(".ltipovivienda").on('click','.tipovivienda', function() {
 
@@ -129,6 +130,7 @@ $(document).ready(function(){
 
         var regimeninstitucion_id = $('#regimeninstitucion_id').val();
         var _token      = $('#token').val();
+
 
         $.ajax({
 

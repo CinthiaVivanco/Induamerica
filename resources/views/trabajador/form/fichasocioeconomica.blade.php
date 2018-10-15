@@ -330,7 +330,7 @@
                                   <label class="col-sm-12 control-label labelleft">Negocio Propio <span class="required">*</span></label>
                                   <div class="col-sm-6 abajocaja">
                                     <div class="be-radio dos has-success inline">
-                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 1) checked  @endif @else checked @endif name="negociopropio" id="rad3">
+                                      <input type="radio"  value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 1) checked  @endif @else checked @endif name="negociopropio" id="rad3">
                                       <label for="rad3">Sí</label>
                                     </div>
                                     <div class="be-radio dos segundo has-danger inline">
