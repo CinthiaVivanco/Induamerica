@@ -7,7 +7,7 @@ INSERT INTO tipodocumentos (id, identificador, descripcion, descripcionabreviado
 ('SLCHICEN000000000002','2','Carnet de Extranjería', 'Carnet Ext'),
 ('SLCHICEN000000000003','3','Reg. Único De Contributentes (1)', 'RUC'),
 ('SLCHICEN000000000004','4','Pasaporte', 'Pasaporte'),
-('SLCHICEN000000000005','5','Carnet De Solicit De Refugio', 'Carnet Solic refugio'),
+('SLCHICEN000000000005','5','Carnet De Solicit De Refugio', 'Carnet Solic refugio')
 ('SLCHICEN000000000006','6','Partida De Nacimiento (2)', 'Part Nac');
 GO
 

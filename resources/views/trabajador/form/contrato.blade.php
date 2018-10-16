@@ -94,14 +94,32 @@
                           <div class="form-group">
                               <label class="col-sm-12 control-label labelleft">Estado <span class="required">*</span></label>
                               <div class="col-sm-6 abajocaja">
+
                                 <div class="be-radio has-success inline">
-                                  <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->estado == 1) checked  @endif @else checked @endif name="estado" id="rad1">
+                                  <input type="radio" value="1" 
+
+                                    @if(isset($contrato)) 
+                                      @if($contrato->estado == 1) 
+                                        checked  
+                                      @endif 
+                                    @endif 
+                                    name="estado" id="rad1">
                                   <label for="rad1">Pendiente</label>
                                 </div>
+
                                 <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->estado == 0) checked  @endif @endif name="estado" id="rad2">
+                                  <input type="radio" value='0'
+
+
+                                    @if(isset($contrato)) 
+                                      @if($contrato->estado == 0) 
+                                        checked  
+                                      @endif 
+                                    @endif 
+                                    name="estado" id="rad2">
                                   <label for="rad2">Concluido</label>
                                 </div>
+                                
                               </div>
                           </div>  
 

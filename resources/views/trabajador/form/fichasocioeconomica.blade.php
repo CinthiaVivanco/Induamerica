@@ -304,11 +304,11 @@
 
                                   <div class="col-sm-12 abajocaja">
                                     <div class="be-radio dos has-success inline">
-                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 1) checked  @endif @else checked @endif name="otroingreso" id="rad1">
+                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 1) checked  @endif @else  @endif name="otroingreso" id="rad1">
                                       <label for="rad1">Sí</label>
                                     </div>
-                                    <div class="be-radio dos segundo has-danger inline">
-                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 0) checked  @endif @endif name="otroingreso" id="rad2">
+                                    <div class="be-radio dos segundo has-danger inline radio2">
+                                      <input type="radio" value='0' required = "" @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 0) checked  @endif @endif name="otroingreso" id="rad2">
                                       <label for="rad2">No</label>
                                     </div>
                                   </div>
@@ -330,11 +330,11 @@
                                   <label class="col-sm-12 control-label labelleft">Negocio Propio <span class="required">*</span></label>
                                   <div class="col-sm-6 abajocaja">
                                     <div class="be-radio dos has-success inline">
-                                      <input type="radio"  value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 1) checked  @endif @else checked @endif name="negociopropio" id="rad3">
+                                      <input type="radio"  value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 1) checked  @endif @else  @endif name="negociopropio" id="rad3">
                                       <label for="rad3">Sí</label>
                                     </div>
-                                    <div class="be-radio dos segundo has-danger inline">
-                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 0) checked  @endif @endif name="negociopropio" id="rad4">
+                                    <div class="be-radio dos segundo has-danger inline radio2">
+                                      <input type="radio" value='0' required = "" @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 0) checked  @endif @endif name="negociopropio" id="rad4">
                                       <label for="rad4">No</label>
                                     </div>
                                   </div>
@@ -344,11 +344,11 @@
                                   <label class="col-sm-12 control-label labelleft">Tiene Deudas en entidades financieras  <span class="required">*</span></label>
                                   <div class="col-sm-6 abajocaja">
                                     <div class="be-radio dos has-success inline">
-                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 1) checked  @endif @else checked @endif name="deudas" id="rad5">
+                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 1) checked  @endif @else  @endif name="deudas" id="rad5">
                                       <label for="rad5">Sí</label>
                                     </div>
-                                    <div class="be-radio dos segundo has-danger inline">
-                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 0) checked  @endif @endif name="deudas" id="rad6">
+                                    <div class="be-radio dos segundo has-danger inline radio2">
+                                      <input type="radio" value='0' required = "" @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->deudas == 0) checked  @endif @endif name="deudas" id="rad6">
                                       <label for="rad6">No</label>
                                     </div>
                                   </div>
@@ -384,7 +384,7 @@
                                         <input  type="radio" 
                                                 value="{{$item->id}}" 
                                                 data-value='{{$item->descripcion}}' 
-                                                class='tipovivienda' name="tipovivienda_id" id="rad{{$item->id}}"
+                                                class='tipovivienda' name="tipovivienda_id" id="rad{{$item->id}} "
                                         
 
                                           @if(isset($fichasocioeconomica)) 
@@ -392,6 +392,8 @@
                                               checked
                                             @endif 
                                           @endif
+
+
 
 
                                            />
@@ -406,7 +408,6 @@
                                         <input  type="text" 
                                                 id="otrotipovivienda" 
                                                 name='otrotipovivienda' 
-                                                
                                                 placeholder="Ingrese otra Vivienda"
                                                 class="form-control input-sm
                                                 @if(count($fichasocioeconomica)>0) 
@@ -422,7 +423,6 @@
                                     </div>
                                                                           
                                   </div> 
-
                            </div>
 
 
@@ -435,7 +435,8 @@
 
                                 <div class="be-checkbox inline ">
 
-                                  <input id="{{$item->id}}" value="{{$item->id}}" name="casaparte[]" type="checkbox"
+                                  <input id="{{$item->id}}"   value="{{$item->id}}" name="casaparte[]" type="checkbox"
+                                  
                                       @if(isset($fichasocioeconomica))
                                         @if($item->activo == '1') 
                                           checked  
@@ -445,7 +446,7 @@
 
                                   <label for="{{$item->id}}">
                                     <font style="vertical-align: inherit;">
-                                      <font style="vertical-align: inherit;">{{$item->descripcion}}</font>
+                                      <font   style="vertical-align: inherit;">{{$item->descripcion}}</font>
                                     </font>
                                   </label>
 
@@ -461,11 +462,11 @@
                               <label class="col-sm-12 control-label labelleft">Estado de Construcción <span class="required">*</span></label>
                               <div class="col-sm-12 abajocaja">
                                 <div class="be-radio dos has-success inline">
-                                  <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 1) checked  @endif @else checked @endif name="estadoconstruccion" id="rad7">
+                                  <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 1) checked  @endif @else  @endif name="estadoconstruccion" id="rad7">
                                   <label for="rad7">Construida</label>
                                 </div>
-                                <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 0) checked  @endif @endif name="estadoconstruccion" id="rad8">
+                                <div class="be-radio has-danger inline radio2">
+                                  <input type="radio" value='0' required = "" @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 0) checked  @endif @endif name="estadoconstruccion" id="rad8">
                                   <label for="rad8">En Construcción</label5>
                                 </div>
                               </div>
@@ -637,11 +638,11 @@
                                   <label class="col-sm-12 control-label labelleft">Donde realiza los exámenes de laboratorio clínico<span class="required">*</span></label>
                                   <div class="col-sm-12 abajocaja">
                                     <div class="be-radio dos has-success inline">
-                                      <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 1) checked  @endif @else checked @endif name="laboratorioclinico" id="rad22">
+                                      <input type="radio" value='1'  @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 1) checked  @endif @else  @endif name="laboratorioclinico" id="rad22">
                                       <label for="rad22">EsSalud</label>
                                     </div>
-                                    <div class="be-radio has-danger inline">
-                                      <input type="radio" value='0' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 0) checked  @endif @endif name="laboratorioclinico" id="rad23">
+                                    <div class="be-radio has-danger inline radio2">
+                                      <input type="radio" value='0' required = "" @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->laboratorioclinico == 0) checked  @endif @endif name="laboratorioclinico" id="rad23">
                                       <label for="rad23">Particular</label>
                                     </div>
                                   </div>
@@ -714,6 +715,7 @@
                                       
                     </p>                
                 </ul>
+                
              </div>
         </div>
    </div>

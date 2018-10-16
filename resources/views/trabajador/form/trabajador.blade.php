@@ -199,11 +199,11 @@
                 <label class="col-sm-12 control-label labelleft">Sexo <span class="required">*</span></label>
                 <div class="col-sm-7 abajocaja">
                   <div class="be-radio has-success inline">
-                    <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->sexo == 1) checked  @endif @else checked @endif name="sexo" id="rad1">
+                    <input type="radio" class="radiosexo radio" value='1' @if(isset($trabajador)) @if($trabajador->sexo == 1) checked  @endif @else  @endif name="sexo" id="rad1">
                     <label for="rad1">Masculino</label>
                   </div>
-                  <div class="be-radio has-danger inline">
-                    <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->sexo == 0) checked  @endif @endif name="sexo" id="rad2">
+                  <div class="be-radio has-danger inline radio2">
+                    <input type="radio" class="radiosexo radio" required = "" value='0' @if(isset($trabajador)) @if($trabajador->sexo == 0) checked  @endif @endif name="sexo" id="rad2">
                     <label for="rad2">Femenino</label>
                   </div>
                 </div>
@@ -362,11 +362,11 @@
                     <label class="col-sm-12 control-label labelleft">¿Discapacitado? <span class="required">*</span></label>
                     <div class="col-sm-7 abajocaja">
                       <div class="be-radio has-success inline">
-                          <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->discapacidad == 1) checked  @endif @else checked @endif name="discapacidad" id="rad3">
+                          <input type="radio" class="radio" value='1' @if(isset($trabajador)) @if($trabajador->discapacidad == 1) checked  @endif @else  @endif name="discapacidad" id="rad3">
                           <label for="rad3">Sí</label>
                       </div>
-                      <div class="be-radio has-danger inline">
-                          <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->discapacidad == 0) checked  @endif @endif name="discapacidad" id="rad4">
+                      <div class="be-radio has-danger inline radio2">
+                          <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->discapacidad == 0) checked  @endif @endif name="discapacidad" id="rad4">
                           <label for="rad4">No</label>
                       </div>
                     </div>
@@ -381,15 +381,15 @@
 
                 <div class="panel-body">
 
-                   <div class="form-group ">
+                   <div class="form-group abajocaja">
                       <label class="col-sm-12 control-label labelleft">¿Sindicalizado? <span class="required">*</span></label>
                       <div class="col-sm-7 abajocaja">
                         <div class="be-radio has-success inline">
-                          <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->sindicalizado == 1) checked  @endif @else checked @endif name="sindicalizado" id="rad5">
+                          <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->sindicalizado == 1) checked  @endif @else  @endif name="sindicalizado" id="rad5">
                           <label for="rad5">Sí</label>
                         </div>
-                        <div class="be-radio has-danger inline">
-                          <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->sindicalizado == 0) checked  @endif @endif name="sindicalizado" id="rad6">
+                        <div class="be-radio has-danger inline radio2">
+                          <input type="radio" value='0' class="radio" required = "" @if(isset($trabajador)) @if($trabajador->sindicalizado == 0) checked  @endif @endif name="sindicalizado" id="rad6">
                           <label for="rad6">No</label>
                         </div>
                       </div>
@@ -508,11 +508,11 @@
                           <label class="col-sm-12 control-label labelleft">¿Estudios en Perú? <span class="required">*</span></label>
                           <div class="col-sm-5 abajocaja">
                             <div class="be-radio has-success inline">
-                              <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->estudiosperu == 1) checked  @endif @else checked @endif name="estudiosperu" id="rad20">
+                              <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->estudiosperu == 1) checked  @endif @else  @endif name="estudiosperu" id="rad20">
                               <label for="rad20">Sí</label>
                             </div>
-                            <div class="be-radio has-danger inline">
-                              <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->estudiosperu == 0) checked  @endif @endif name="estudiosperu" id="rad21">
+                            <div class="be-radio has-danger inline radio2">
+                              <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->estudiosperu == 0) checked  @endif @endif name="estudiosperu" id="rad21">
                               <label for="rad21">No</label>
                             </div>
                           </div>
@@ -757,11 +757,11 @@
                         <label class="col-sm-12 control-label labelleft">Domiciliado <span class="required">*</span></label>
                         <div class="col-sm-7 abajocaja">
                           <div class="be-radio has-success inline">
-                              <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->domiciliado == 1) checked  @endif @else checked @endif name="domiciliado" id="rad17">
+                              <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->domiciliado == 1) checked  @endif @else  @endif name="domiciliado" id="rad17">
                               <label for="rad17">Sí</label>
                           </div>
-                          <div class="be-radio has-danger inline">
-                              <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->domiciliado == 0) checked  @endif @endif name="domiciliado" id="rad18">
+                          <div class="be-radio has-danger inline radio2">
+                              <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->domiciliado == 0) checked  @endif @endif name="domiciliado" id="rad18">
                               <label for="rad18">No</label>
                           </div>
                         </div>
@@ -943,11 +943,11 @@
                           <label class="col-sm-12 control-label labelleft">ESSALUD <span class="required">*</span></label>
                           <div class="col-sm-7 abajocaja">
                             <div class="be-radio has-success inline">
-                              <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->essaludvida == 1) checked  @endif @else checked @endif name="essaludvida" id="rad9">
+                              <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->essaludvida == 1) checked  @endif @else  @endif name="essaludvida" id="rad9">
                               <label for="rad9">Sì</label>
                             </div>
-                            <div class="be-radio has-danger inline">
-                              <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->essaludvida == 0) checked  @endif @endif name="essaludvida" id="rad10">
+                            <div class="be-radio has-danger inline radio2">
+                              <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->essaludvida == 0) checked  @endif @endif name="essaludvida" id="rad10">
                               <label for="rad10">No</label>
                             </div>
                           </div>
@@ -957,11 +957,11 @@
                         <label class="col-sm-12 control-label labelleft">SENATI <span class="required">*</span></label>
                         <div class="col-sm-7 abajocaja">
                           <div class="be-radio has-success inline">
-                            <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->senati == 1) checked  @endif @else checked @endif name="senati" id="rad11">
+                            <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->senati == 1) checked  @endif @else  @endif name="senati" id="rad11">
                             <label for="rad11">Sí</label>
                           </div>
-                          <div class="be-radio has-danger inline">
-                            <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->senati == 0) checked  @endif @endif name="senati" id="rad12">
+                          <div class="be-radio has-danger inline radio2">
+                            <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->senati == 0) checked  @endif @endif name="senati" id="rad12">
                             <label for="rad12">No </label>
                           </div>
                         </div>
@@ -971,11 +971,11 @@
                         <label class="col-sm-12 control-label labelleft">SCTR Salud <span class="required">*</span></label>
                         <div class="col-sm-7 abajocaja">
                           <div class="be-radio has-success inline">
-                            <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->sctrsalud == 1) checked  @endif @else checked @endif name="sctrsalud" id="rad13">
+                            <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->sctrsalud == 1) checked  @endif @else  @endif name="sctrsalud" id="rad13">
                             <label for="rad13">Essalud</label>
                           </div>
-                          <div class="be-radio has-danger inline">
-                            <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->sctrsalud == 0) checked  @endif @endif name="sctrsalud" id="rad14">
+                          <div class="be-radio has-danger inline radio2">
+                            <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->sctrsalud == 0) checked  @endif @endif name="sctrsalud" id="rad14">
                             <label for="rad14">Eps</label>
                           </div>
                         </div>
@@ -985,11 +985,11 @@
                         <label class="col-sm-12 control-label labelleft">SCTR Pensiones <span class="required">*</span></label>
                         <div class="col-sm-7 abajocaja">
                           <div class="be-radio has-success inline">
-                            <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->sctrpensiones == 1) checked  @endif @else checked @endif name="sctrpensiones" id="rad15">
+                            <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->sctrpensiones == 1) checked  @endif @else  @endif name="sctrpensiones" id="rad15">
                             <label for="rad15">Onp</label>
                           </div>
-                          <div class="be-radio has-danger inline">
-                            <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->sctrpensiones == 0) checked  @endif @endif name="sctrpensiones" id="rad16">
+                          <div class="be-radio has-danger inline radio2">
+                            <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->sctrpensiones == 0) checked  @endif @endif name="sctrpensiones" id="rad16">
                             <label for="rad16">Seguro Privado</label>
                           </div>
                         </div>
@@ -1008,11 +1008,11 @@
                                 <label class="col-sm-12 control-label labelleft">¿Afiliado a EPS? <span class="required">*</span></label>
                                 <div class="col-sm-7 abajocaja">
                                   <div class="be-radio has-success inline">
-                                    <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->afiliadoeps == 1) checked  @endif @else checked @endif name="afiliadoeps" id="rad7">
+                                    <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->afiliadoeps == 1) checked  @endif @else  @endif name="afiliadoeps" id="rad7">
                                     <label for="rad7">Sí</label>
                                   </div>
-                                  <div class="be-radio has-danger inline">
-                                    <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->afiliadoeps == 0) checked  @endif @endif name="afiliadoeps" id="rad8">
+                                  <div class="be-radio has-danger inline radio2">
+                                    <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->afiliadoeps == 0) checked  @endif @endif name="afiliadoeps" id="rad8">
                                     <label for="rad8">No</label>
                                   </div>
                                 </div>
@@ -1037,11 +1037,11 @@
 
                               <div class="col-sm-7 abajocaja">
                                 <div class="be-radio has-success inline">
-                                  <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->rentaquinta == 1) checked  @endif @else checked @endif name="rentaquinta" id="rad22">
+                                  <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->rentaquinta == 1) checked  @endif @else  @endif name="rentaquinta" id="rad22">
                                   <label for="rad22">Sí</label>
                                 </div>
-                                <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->rentaquinta == 0) checked  @endif @endif name="rentaquinta" id="rad23">
+                                <div class="be-radio has-danger inline radio2">
+                                  <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->rentaquinta == 0) checked  @endif @endif name="rentaquinta" id="rad23">
                                   <label for="rad23">No</label>
                                 </div>
                               </div>
@@ -1051,11 +1051,11 @@
                             <label class="col-sm-12 control-label labelleft">¿5ta Exonerada?</label>
                             <div class="col-sm-7 abajocaja">
                               <div class="be-radio has-success inline">
-                                <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->quintaexonerada == 1) checked  @endif @else checked @endif name="quintaexonerada" id="rad24">
+                                <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->quintaexonerada == 1) checked  @endif @else  @endif name="quintaexonerada" id="rad24">
                                 <label for="rad24">Sí</label>
                               </div>
-                              <div class="be-radio has-danger inline">
-                                <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->quintaexonerada == 0) checked  @endif @endif name="quintaexonerada" id="rad25">
+                              <div class="be-radio has-danger inline radio2">
+                                <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->quintaexonerada == 0) checked  @endif @endif name="quintaexonerada" id="rad25">
                                 <label for="rad25">No</label>
                               </div>
                             </div>
@@ -1065,11 +1065,11 @@
                             <label class="col-sm-12 control-label labelleft">¿Asignación Familiar? <span class="required">*</span></label>
                             <div class="col-sm-7 abajocaja">
                               <div class="be-radio has-success inline">
-                                <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->asignacionfamiliar == 1) checked  @endif @else checked @endif name="asignacionfamiliar" id="rad26">
+                                <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->asignacionfamiliar == 1) checked  @endif @else  @endif name="asignacionfamiliar" id="rad26">
                                 <label for="rad26">Sí</label>
                               </div>
-                              <div class="be-radio has-danger inline">
-                                <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->asignacionfamiliar == 0) checked  @endif @endif name="asignacionfamiliar" id="rad27">
+                              <div class="be-radio has-danger inline radio2">
+                                <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->asignacionfamiliar == 0) checked  @endif @endif name="asignacionfamiliar" id="rad27">
                                 <label for="rad27">No</label>
                               </div>
                             </div>
@@ -1082,8 +1082,8 @@
                                   <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->activo == 1) checked  @endif @else checked @endif name="activo" id="rad28">
                                   <label for="rad28">Activado</label>
                                 </div>
-                                <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0' @if(isset($trabajador)) @if($trabajador->activo == 0) checked  @endif @endif name="activo" id="rad29">
+                                <div class="be-radio has-danger inline ">
+                                  <input type="radio" value='0'  @if(isset($trabajador)) @if($trabajador->activo == 0) checked  @endif @endif name="activo" id="rad29">
                                   <label for="rad29">Desactivado</label>
                                 </div>
                               </div>

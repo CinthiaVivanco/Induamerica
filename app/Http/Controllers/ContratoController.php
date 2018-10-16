@@ -36,6 +36,8 @@ class ContratoController extends Controller
 		$idtrabajadorsd  = $idtrabajador;
 	    $idtrabajador = $this->funciones->decodificar($idtrabajador);
 
+
+
 		if($_POST)
 		{
 			/**** Validaciones laravel ****/
@@ -63,10 +65,9 @@ class ContratoController extends Controller
 
 		}else{
 
+
 			$listacontrato 		    		= Contrato::where('trabajador_id','=' , $idtrabajador)->get();
-			
 		    $trabajador 					= Trabajador::where('id', $idtrabajador)->first();
-		    
 			$tipocontratotrabajador 		= DB::table('tipocontratotrabajadores')->pluck('descripcion','id')->toArray();
 			$combotipocontratotrabajador  	= array('' => "Seleccione Tipo Contrato") + $tipocontratotrabajador;
 

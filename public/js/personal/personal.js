@@ -1,6 +1,30 @@
 $(document).ready(function(){
     var carpeta = $("#carpeta").val();
-    
+    /*
+
+    var nuevocss= {"position":'absolute', "margin-top":'-97px ', "margin-left":'156px'};
+
+    var anteriorcss= {"position":'absolute', "margin-top":'-46px ', "margin-left":'156px'};
+
+
+    $(".panel-body").on('click','#guardarderechohabiente', function() {
+            $(".radio2").css(nuevocss);
+        
+    });
+
+    $(".abajocaja").on('click','.radio', function() {
+        $(".radio2").css(anteriorcss);
+
+     });
+
+
+
+    $(".panel-body").on('click','#guardartrabajador', function() {
+            $(".radio2").css(nuevocss);
+
+    }); 
+       */
+
 
     $(".ltipovivienda").on('click','.tipovivienda', function() {
 
@@ -18,7 +42,25 @@ $(document).ready(function(){
         
     });
 
+/*
 
+{"position":'absolute !important', "margin-top":'-97px !important', "margin-left":'156px !important'};
+    $(".guardarfichasocioeconomica").on("click",function(){
+        $("#radio2").css({
+           'position':'relative','margin-top':'0px','margin-left':'0px'
+        })
+    });
+
+    $(".guardarfichasocioeconomica").on('click','.guardarfichasocioeconomica', function() {
+
+         if($("#tipovivienda").val() == ""){
+        alert("Seleccione un tipo de vivienda");
+        return false;
+         }
+        
+    });
+*/
+    
 
     /* FIN DE LA FICHA TRABAJADOR*/
 

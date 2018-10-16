@@ -140,15 +140,16 @@
                           </div> 
 
                           <div class="form-group">
-                            <label class="col-sm-12 control-label labelleft">Sexo <span class="required">*</span></label>
-                            <div class="col-sm-8 abajocaja">
-                              <div class="be-radio has-success inline">
-                                <input type="radio" class="radiosexo" value='1' @if(isset($derechohabiente)) @if($derechohabiente->sexo == 1) checked  @endif @else checked @endif name="sexo" id="rad1">
-                                <label for="rad1">Masculino</label>
+                            <label class="col-sm-12 control-label labelleft "  >Sexo <span class="required">*</span></label>
+                            <div class="col-sm-8 abajocaja "  >
+                              <div class="be-radio has-success inline" >
+                                <input type="radio" class="radiosexo radio"  value='1' @if(isset($derechohabiente)) @if($derechohabiente->sexo == 1) checked  @endif @else  @endif name="sexo" id="rad1">
+                                <label for="rad1"  >Masculino</label>
                               </div>
-                              <div class="be-radio has-danger inline">
-                                <input type="radio" class="radiosexo" value='0' @if(isset($derechohabiente)) @if($derechohabiente->sexo == 0) checked  @endif @endif name="sexo" id="rad2">
-                                <label for="rad2">Femenino</label>
+
+                              <div class="be-radio has-danger inline radio2" >
+                                <input type="radio" class="radiosexo radio " required = "" value='0' @if(isset($derechohabiente)) @if($derechohabiente->sexo == 0) checked  @endif @endif name="sexo" id="rad2" >
+                                <label for="rad2" >Femenino</label>
                               </div>
                             </div>
                           </div>

@@ -407,6 +407,14 @@ tbody .mdi-close{
     background-size: 50% 50%;
 }
 
+.radio2{
+    position: absolute;
+    top: 0px;
+    right: 125px;
+    display: block;
+}
+
+
 /*
 .col-md-4 {
 font-family:Titillium, Arial, sans-serif;
