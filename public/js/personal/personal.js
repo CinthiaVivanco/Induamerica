@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var carpeta = $("#carpeta").val();
+
     /*
 
     var nuevocss= {"position":'absolute', "margin-top":'-97px ', "margin-left":'156px'};
@@ -23,13 +24,23 @@ $(document).ready(function(){
             $(".radio2").css(nuevocss);
 
     }); 
-       */
+    
 
+
+    $(".panel-body").on('click','#guardarfichasocioeconomica', function() {
+
+        if($('.tipoviviendaa').is(':checked')){
+            $('.tipoviviendaa').attr("required", false);
+        }else{
+            $('.tipovivienda').attr( "required",true);
+        }
+        
+    });   */
 
     $(".ltipovivienda").on('click','.tipovivienda', function() {
 
-        $valor = $(this).attr('data-value');
 
+        $valor = $(this).attr('data-value');
         $('#otrotipovivienda').val("");
 
         if($valor == 'Otros'){

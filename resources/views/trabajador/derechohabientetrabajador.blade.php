@@ -99,8 +99,8 @@
     <script src="{{ asset('public/js/app-form-elements.js') }}" type="text/javascript"></script>
     <script src="{{ asset('public/lib/parsley/parsley.js') }}" type="text/javascript"></script>
     <script src="{{ asset('public/js/app-tables-datatables.js') }}" type="text/javascript"></script>
-
-
+    
+    
     <script type="text/javascript">
       $(document).ready(function(){
         //initialize the javascript
@@ -126,7 +126,6 @@
                     $(".tab"+menu+' .errortab').css("display", "block");
                     $(".tab"+menu+' .bientab').css("display", "none");
                 }
-
 
 
 

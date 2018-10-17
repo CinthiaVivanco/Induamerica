@@ -232,7 +232,7 @@
                         <div class="panel-body">
 
                            <div class="form-group">
-                              <label class="col-sm-12 control-label labelleft">Teléfono Emergencia <span class="required">*</span></label>
+                              <label class="col-sm-12 control-label labelleft"> Teléfono Emergencia <span class="required">*</span></label>
                               <div class="col-sm-12 abajocaja">
 
                                 <input  type="text"
@@ -335,7 +335,7 @@
                                     </div>
                                     <div class="be-radio dos segundo has-danger inline radio2">
                                       <input type="radio" value='0' required = "" @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->negociopropio == 0) checked  @endif @endif name="negociopropio" id="rad4">
-                                      <label for="rad4">No</label>
+                                      <label for="rad4">No</label> 
                                     </div>
                                   </div>
                                 </div>
@@ -379,49 +379,54 @@
                                   <label class="col-sm-12 control-label labelleft">Tipo Vivienda  <span class="required">*</span></label>
                                   <div class="col-sm-12 abajocaja ltipovivienda">
 
-                                    @foreach($tipovivienda as $item)
+                                    @foreach($tipovivienda as $key=>$item)
                                       <div class="be-radio vivienda has-success inline">
                                         <input  type="radio" 
                                                 value="{{$item->id}}" 
                                                 data-value='{{$item->descripcion}}' 
-                                                class='tipovivienda' name="tipovivienda_id" id="rad{{$item->id}} "
-                                        
+                                                class='tipovivienda' name="tipovivienda_id" id="radtv{{$item->id}}"
+                                                   
+                                                @if($key == count($tipovivienda)-1) 
+                                                    required=""
+                                                @endif
 
-                                          @if(isset($fichasocioeconomica)) 
-                                            @if($fichasocioeconomica->tipovivienda_id == $item->id) 
-                                              checked
-                                            @endif 
-                                          @endif
-
-
-
-
+                                                @if(isset($fichasocioeconomica)) 
+                                                  @if($fichasocioeconomica->tipovivienda_id == $item->id) 
+                                                    checked
+                                                  @endif 
+                                                @endif
                                            />
-                                        <label for="rad{{$item->id}}">{{$item->descripcion}}</label>
+
+                                        <label for="radtv{{$item->id}}">{{$item->descripcion}}</label>
                                       </div>                       
                                       <br>
 
                                     @endforeach  
 
                                     <div class="col-sm-7 otrotipovivienda">
-
                                         <input  type="text" 
                                                 id="otrotipovivienda" 
-                                                name='otrotipovivienda' 
+                                                name="otrotipovivienda" 
+
                                                 placeholder="Ingrese otra Vivienda"
+
                                                 class="form-control input-sm
+
+
                                                 @if(count($fichasocioeconomica)>0) 
                                                   @if($fichasocioeconomica->otrotipovivienda == '') 
                                                     hide  
                                                   @endif
                                                 @else 
                                                   hide 
-                                                @endif" 
-                                                data-aw="1"
-                                                @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otrotipovivienda <> '') value="{{$fichasocioeconomica->otrotipovivienda}}"  required   @endif @endif
-                                                />
-                                    </div>
-                                                                          
+                                                @endif 
+                                                data-aw='1'
+                                                @if(isset($fichasocioeconomica)) 
+                                                  @if($fichasocioeconomica->otrotipovivienda <> '')     value="{{$fichasocioeconomica->otrotipovivienda}}"  required   
+                                                  @endif 
+                                                @endif"
+                                        />
+                                    </div>                                                                         
                                   </div> 
                            </div>
 
@@ -435,7 +440,7 @@
 
                                 <div class="be-checkbox inline ">
 
-                                  <input id="{{$item->id}}"   value="{{$item->id}}" name="casaparte[]" type="checkbox"
+                                  <input id="{{$item->id}}"   value="{{$item->id}}" name="casaparte[]" type="checkbox" data-parsley-multiple="groups" data-parsley-mincheck="2" data-parsley-errors-container="#error-container1"
                                   
                                       @if(isset($fichasocioeconomica))
                                         @if($item->activo == '1') 
@@ -487,7 +492,7 @@
 
                                         @foreach($construccionmaterial as $item)
                                           <div class="be-radio has-success inline">
-                                            <input type="radio" value="{{$item->id}}"  name="construccionmaterial_id" id="radc{{$item->id}}"
+                                            <input type="radio" value="{{$item->id}}"  name="construccionmaterial_id" required="" id="radc{{$item->id}}"
                                               @if(isset($fichasocioeconomica)) 
                                                 @if($fichasocioeconomica->construccionmaterial_id == $item->id) 
                                                   checked  
@@ -510,9 +515,16 @@
 
                                         @foreach($servicio as $item)  
 
-                                          <div class="be-checkbox inline ">
+                                          <div class="be-checkbox inline servicioss">
 
-                                            <input id="s{{$item->id}}" value="{{$item->id}}" name="servicio[]" type="checkbox"
+                                            <input 
+                                            id="s{{$item->id}}" 
+                                            value="{{$item->id}} bar"
+                                            data-parsley-multiple="groups" 
+                                            data-parsley-mincheck="2" 
+                                            data-parsley-errors-container="#error-container1" 
+                                            name="servicio[]" 
+                                            type="checkbox"
                                               @if(isset($fichasocioeconomica))
 
                                                 @if($item->activo == '1') 
