@@ -302,7 +302,7 @@
                                   <label class="col-sm-12 control-label labelleft">Cuenta con otro Ingreso Económico aparte de su Trabajo <span class="required">*</span></label>
 
 
-                                  <div class="col-sm-12 abajocaja">
+                                  <div class="col-sm-12 abajocaja parsley-error">
                                     <div class="be-radio dos has-success inline">
                                       <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 1) checked  @endif @else  @endif name="otroingreso" id="rad1">
                                       <label for="rad1">Sí</label>
@@ -431,17 +431,19 @@
                            </div>
 
 
-
                            <div class="form-group">
-
                             <label class="col-sm-12 control-label labelleft">Cuenta con<span class="required">*</span></label>
                             <div class="col-sm-6 abajocaja">
+
                               @foreach($casaparte as $item)  
 
-                                <div class="be-checkbox inline ">
+                                <div class="be-checkbox inline parsley-error">
 
-                                  <input id="{{$item->id}}"   value="{{$item->id}}" name="casaparte[]" type="checkbox" data-parsley-multiple="groups" data-parsley-mincheck="2" data-parsley-errors-container="#error-container1"
-                                  
+                                  <input id="{{$item->id}}" 
+                                         value="{{$item->id}}" 
+                                         name="casaparte[]" 
+                                         type="checkbox"
+                                     
                                       @if(isset($fichasocioeconomica))
                                         @if($item->activo == '1') 
                                           checked  
@@ -515,14 +517,11 @@
 
                                         @foreach($servicio as $item)  
 
-                                          <div class="be-checkbox inline servicioss">
+                                          <div class="be-checkbox inline parsley-error">
 
                                             <input 
                                             id="s{{$item->id}}" 
-                                            value="{{$item->id}} bar"
-                                            data-parsley-multiple="groups" 
-                                            data-parsley-mincheck="2" 
-                                            data-parsley-errors-container="#error-container1" 
+                                            value="{{$item->id}}"
                                             name="servicio[]" 
                                             type="checkbox"
                                               @if(isset($fichasocioeconomica))
@@ -666,9 +665,14 @@
                                     <div class="col-sm-6 abajocaja">
                                       @foreach($enfermedad as $item)  
 
-                                        <div class="be-checkbox inline ">
+                                        <div class="be-checkbox inline parsley-error">
 
-                                          <input id="e{{$item->id}}" value="{{$item->id}}" name="enfermedad[]" type="checkbox"
+                                          <input 
+                                          id="e{{$item->id}}" 
+                                          value="{{$item->id}}" 
+                                          name="enfermedad[]" 
+                                          type="checkbox"
+
                                               @if(isset($fichasocioeconomica))
                                                 @if($item->activo == '1') 
                                                   checked  
