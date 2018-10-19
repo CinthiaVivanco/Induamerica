@@ -5,7 +5,24 @@ $(document).ready(function(){
     jQuery('.scrollbar-inner').scrollbar();
     jQuery('.scrollbar-inner').scrollTop(numero*32.2);
 
+    $('#descargarhorario').on('click', function(event){
 
+        var _token              = $('#token').val();
+        var objeto = $('.listasemana').find('.active');
+
+        if(objeto.length>0){
+
+            idsemana = $(objeto).find('.selectsemana').attr('id');
+            href = $(this).attr('href')+'/'+idsemana;
+            $(this).prop('href', href);
+            return true;
+
+        }else{
+            alerterrorajax("Seleccione una semana para el reporte");
+            return false;
+        }
+
+    }); 
 
     $('#copiarhorarioclonar').on('click', function(event){
         event.preventDefault();

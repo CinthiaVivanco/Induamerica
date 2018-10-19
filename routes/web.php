@@ -88,7 +88,7 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/ajax-select-horario-trabajador', 'HorarioController@actionAjaxSelectHorarioTrabajador');
 	Route::any('/ajax-clonar-horario', 'HorarioController@actionAjaxClonarHorario');
 	Route::any('/ajax--copiar-horario-clonado', 'HorarioController@actionAjaxCopiarHorarioClonado');
-
+	Route::any('/horario-semana-pdf/{idsemana}', 'HorarioReporteController@actionHorarioSemanaPdf');
 
 	
 
