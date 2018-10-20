@@ -1018,34 +1018,34 @@ INSERT INTO enfermedades(id, descripcion, activo) VALUES
 
 --MATERIALES DE CONSTRUCCIÓN
 GO
-INSERT INTO construccionmateriales(id, descripcion) VALUES
-('SLCHICEN000000000001','Ladrillo'),
-('SLCHICEN000000000002',  'Adobe'),
-('SLCHICEN000000000003', 'Madera'),
-('SLCHICEN000000000004', 'Otros');
+INSERT INTO construccionmateriales(id, descripcion, activo) VALUES
+('SLCHICEN000000000001','Ladrillo',1),
+('SLCHICEN000000000002',  'Adobe',1),
+('SLCHICEN000000000003', 'Madera',1),
+('SLCHICEN000000000004', 'Otros',1);
 
 
 --CENTRO MÉDICO DÓNDE SE ATIENDE
 GO
-INSERT INTO centromedicos(id, descripcion) VALUES
-('SLCHICEN000000000001','EsSalud'),
-('SLCHICEN000000000002',  'Posta Médica'),
-('SLCHICEN000000000003', 'Médico Particular');
+INSERT INTO centromedicos(id, descripcion, activo) VALUES
+('SLCHICEN000000000001','EsSalud',1),
+('SLCHICEN000000000002',  'Posta Médica',1),
+('SLCHICEN000000000003', 'Médico Particular',1);
 
 --FRECUENCIA QUE VA AL MÉDICO
 GO
-INSERT INTO frecuenciamedicos(id, descripcion) VALUES
-('SLCHICEN000000000001','Una vez por semana'),
-('SLCHICEN000000000002','Mensualmente'),
-('SLCHICEN000000000003',  'Anualmente'),
-('SLCHICEN000000000004', 'Cuando se enferma');
+INSERT INTO frecuenciamedicos(id, descripcion, activo) VALUES
+('SLCHICEN000000000001','Una vez por semana',1),
+('SLCHICEN000000000002','Mensualmente',1),
+('SLCHICEN000000000003',  'Anualmente',1),
+('SLCHICEN000000000004', 'Cuando se enferma',1);
 
 --FRECUENCIA QUE SE REALIZA EXAMENES
 GO
-INSERT INTO frecuenciaexamenes(id, descripcion) VALUES
-('SLCHICEN000000000001','Mensualmente'),
-('SLCHICEN000000000002',  'Anualmente'),
-('SLCHICEN000000000003', 'Cuando se enferma');
+INSERT INTO frecuenciaexamenes(id, descripcion, activo) VALUES
+('SLCHICEN000000000001','Mensualmente',1),
+('SLCHICEN000000000002',  'Anualmente',1),
+('SLCHICEN000000000003', 'Cuando se enferma',1);
 
 
 

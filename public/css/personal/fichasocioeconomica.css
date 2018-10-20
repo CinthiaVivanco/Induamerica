@@ -1,6 +1,16 @@
 .otrotipovivienda{
-    top: -33px;
+    top: -40px;
     margin-left: 70px;
+}
+
+.otromaterial{
+    top: -40px;
+    margin-left: 70px;
+}
+
+.otraenfermedad{
+    top: -40px;
+    margin-left: 80px;
 }
 
 .tab-content{

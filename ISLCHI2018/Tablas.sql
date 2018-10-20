@@ -862,6 +862,7 @@ GO
 CREATE TABLE construccionmateriales (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -869,6 +870,7 @@ GO
 CREATE TABLE centromedicos (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -877,6 +879,7 @@ GO
 CREATE TABLE frecuenciamedicos (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -884,6 +887,7 @@ GO
 CREATE TABLE frecuenciaexamenes (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -911,6 +915,8 @@ create TABLE fichasocioeconomicas (
   [otrotipovivienda] varchar(100) NULL,
   PRIMARY KEY  ([id]),
   [construccionmaterial_id] varchar(20) NOT NULL,
+  [otromaterial] varchar(100) NULL,
+  [otraenfermedad] varchar(100) NULL,
   [centromedico_id] varchar(20) NOT NULL,
   [frecuenciamedico_id] varchar(20) NOT NULL,
   [frecuenciaexamen_id] varchar(20) NOT NULL,

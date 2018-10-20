@@ -37,7 +37,8 @@ $(document).ready(function(){
         
     });   */
 
-    $(".ltipovivienda").on('click','.tipovivienda', function() {
+
+    $(".ltipovivienda").on('click','.tipodevivienda', function() {
 
 
         $valor = $(this).attr('data-value');
@@ -46,12 +47,53 @@ $(document).ready(function(){
         if($valor == 'Otros'){
             $('#otrotipovivienda').removeClass( "hide" );
             $('#otrotipovivienda').attr("required", true);
+
+
+
         }else{
             $('#otrotipovivienda').addClass( "hide" );
             $('#otrotipovivienda').attr("required", false);
         }
+
         
     });
+
+
+    $(".lmaterial").on('click','.tipomaterial', function() {
+
+
+        $valor = $(this).attr('data-value');
+        $('#otromaterial').val("");
+
+        if($valor == 'Otros'){
+            $('#otromaterial').removeClass( "hide" );
+            $('#otromaterial').attr("required", true);
+        }else{
+            $('#otromaterial').addClass( "hide" );
+            $('#otromaterial').attr("required", false);
+        }
+
+        
+    });
+
+    $(".lenfermedad").on('click','.tipoenfermedad', function() {
+
+
+        $valor = $(this).attr('data-value');
+        $('#otraenfermedad').val("");
+
+        if($valor == 'Otras'){
+            $('#otraenfermedad').removeClass( "hide" );
+            $('#otraenfermedad').attr("required", true);
+        }else{
+            $('#otraenfermedad').addClass( "hide" );
+            $('#otraenfermedad').attr("required", false);
+        }
+
+        
+    });
+
+        
 
 /*
 

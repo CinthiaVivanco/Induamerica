@@ -19,14 +19,13 @@ class FichaSocioeconomicaController extends Controller
 {
 
 
-
-
-
 	public function actionModificarFichaSocioeconomica($idfichasocioeconomica,$idopcion,$idtrabajador,Request $request)
 	{
 			$cabecera            	 	 		 =	Fichasocioeconomica::find($idfichasocioeconomica);
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
 			$cabecera->otrotipovivienda  		 = 	$request['otrotipovivienda'];
+			$cabecera->otromaterial  		 	 = 	$request['otromaterial'];
+			$cabecera->otraenfermedad  		 	 = 	$request['otraenfermedad'];
 			$cabecera->construccionmaterial_id 	 =  $request['construccionmaterial_id'];
 			$cabecera->centromedico_id 	 		 = 	$request['centromedico_id'];
 			$cabecera->frecuenciamedico_id  	 =	$request['frecuenciamedico_id'];
@@ -67,7 +66,10 @@ class FichaSocioeconomicaController extends Controller
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
 
+
+
 			}
+
 
 			//////////// Llenamos Tabla DetalleFichaCasaPartes ///////
 
@@ -85,10 +87,9 @@ class FichaSocioeconomicaController extends Controller
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
 
-			}
-			///////////////////////////////////////////////////////////
 
-			///////////////////////////////////////////////////////////
+			}
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 			//////////// Llenamos Tabla DetalleFichaEnfermedades ///////
 
@@ -132,7 +133,6 @@ class FichaSocioeconomicaController extends Controller
 			/******************************/ 
 
 
-
 			$idfichasocioeconomica 		 	     = $this->funciones->getCreateId('fichasocioeconomicas');
 			
 			$cabecera            	 	 		 =	new Fichasocioeconomica;
@@ -140,8 +140,10 @@ class FichaSocioeconomicaController extends Controller
 
 
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
-			$cabecera->otrotipovivienda  		 = 	$request['otrotipovivienda'];
 			$cabecera->construccionmaterial_id 	 =  $request['construccionmaterial_id'];
+			$cabecera->otrotipovivienda  		 = 	$request['otrotipovivienda'];
+			$cabecera->otromaterial  		 	 = 	$request['otromaterial'];
+			$cabecera->otraenfermedad  		 	 = 	$request['otraenfermedad'];
 			$cabecera->centromedico_id 	 		 = 	$request['centromedico_id'];
 			$cabecera->frecuenciamedico_id  	 =	$request['frecuenciamedico_id'];
 			$cabecera->frecuenciaexamen_id   	 = 	$request['frecuenciaexamen_id'];
@@ -167,6 +169,7 @@ class FichaSocioeconomicaController extends Controller
 
 
 			$cabecera->save();
+
 
 
 			//////////// Llenamos Tabla DetalleFichaServicios ///////
@@ -238,8 +241,6 @@ class FichaSocioeconomicaController extends Controller
 			///////////////////////////////////////////////////////////
 
 
-
-
  			return Redirect::to('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.$idtrabajadorsd)->with('bienhecho', 'FichaSocioeconomica'.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
 
 		}else{
@@ -303,6 +304,7 @@ class FichaSocioeconomicaController extends Controller
 		$idtrabajador   				= $request['idtrabajador'];
 
 		$fichasocioeconomica 		    = Fichasocioeconomica::where('id','=' , $id)->first();
+
 		$tipovivienda 				 	= Tipovivienda::get(); 
 
 		$casaparte 				        = Detallefichacasaparte::join('casapartes', 'detallefichacasapartes.casaparte_id', '=', 'casapartes.id')

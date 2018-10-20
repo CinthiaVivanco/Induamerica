@@ -302,7 +302,7 @@
                                   <label class="col-sm-12 control-label labelleft">Cuenta con otro Ingreso Económico aparte de su Trabajo <span class="required">*</span></label>
 
 
-                                  <div class="col-sm-12 abajocaja parsley-error">
+                                  <div class="col-sm-12 abajocaja">
                                     <div class="be-radio dos has-success inline">
                                       <input type="radio" value='1' @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->otroingreso == 1) checked  @endif @else  @endif name="otroingreso" id="rad1">
                                       <label for="rad1">Sí</label>
@@ -365,26 +365,24 @@
                     </ul>
              </div>
 
-
              <div id="menu4" class="tab-pane fade">
                     <h3></h3>
 
                     <div class="row">
-
                       <div class="col-sm-6">
                         <div class="panel-body">
 
                            <div class="form-group">
-
                                   <label class="col-sm-12 control-label labelleft">Tipo Vivienda  <span class="required">*</span></label>
                                   <div class="col-sm-12 abajocaja ltipovivienda">
-
                                     @foreach($tipovivienda as $key=>$item)
                                       <div class="be-radio vivienda has-success inline">
                                         <input  type="radio" 
                                                 value="{{$item->id}}" 
                                                 data-value='{{$item->descripcion}}' 
-                                                class='tipovivienda' name="tipovivienda_id" id="radtv{{$item->id}}"
+                                                class='tipodevivienda' name="tipovivienda_id" id="radtv{{$item->id}}"
+
+                                                data-parsley-errors-container="#error-tvivienda"
                                                    
                                                 @if($key == count($tipovivienda)-1) 
                                                     required=""
@@ -396,74 +394,76 @@
                                                   @endif 
                                                 @endif
                                            />
-
                                         <label for="radtv{{$item->id}}">{{$item->descripcion}}</label>
                                       </div>                       
                                       <br>
-
                                     @endforeach  
+
+
+                                    <div id="error-tvivienda"></div>
 
                                     <div class="col-sm-7 otrotipovivienda">
                                         <input  type="text" 
                                                 id="otrotipovivienda" 
-                                                name="otrotipovivienda" 
-
-                                                placeholder="Ingrese otra Vivienda"
-
+                                                name="otrotipovivienda"    
+                                                placeholder="Ingrese otra vivienda"
                                                 class="form-control input-sm
-
-
                                                 @if(count($fichasocioeconomica)>0) 
                                                   @if($fichasocioeconomica->otrotipovivienda == '') 
                                                     hide  
                                                   @endif
                                                 @else 
                                                   hide 
-                                                @endif 
+                                                @endif "
                                                 data-aw='1'
+
                                                 @if(isset($fichasocioeconomica)) 
-                                                  @if($fichasocioeconomica->otrotipovivienda <> '')     value="{{$fichasocioeconomica->otrotipovivienda}}"  required   
+                                                  @if($fichasocioeconomica->otrotipovivienda <> '')     
+                                                    value='{{$fichasocioeconomica->otrotipovivienda}}'  required   
                                                   @endif 
                                                 @endif"
                                         />
+
                                     </div>                                                                         
                                   </div> 
                            </div>
 
-
                            <div class="form-group">
+
                             <label class="col-sm-12 control-label labelleft">Cuenta con<span class="required">*</span></label>
-                            <div class="col-sm-6 abajocaja">
+                            <div class="col-sm-6 abajocaja partes">
+                              @foreach($casaparte as $key=>$item)  
 
-                              @foreach($casaparte as $item)  
+                                <div class="be-checkbox inline">
 
-                                <div class="be-checkbox inline parsley-error">
+                                  <input 
+                                  id="{{$item->id}}" 
+                                  value="{{$item->id}}" 
+                                  name="casaparte[]" 
+                                  type="checkbox"
+                                  data-parsley-multiple="groups-partes"                   
+                                  data-parsley-errors-container="#error-partes"
+                                  data-parsley-mincheck="1" 
+                                  @if($key == count($casaparte)-1) 
+                                      required=""  
+                                  @endif 
 
-                                  <input id="{{$item->id}}" 
-                                         value="{{$item->id}}" 
-                                         name="casaparte[]" 
-                                         type="checkbox"
-                                     
-                                      @if(isset($fichasocioeconomica))
-                                        @if($item->activo == '1') 
-                                          checked  
-                                        @endif 
-                                      @endif
+                                  @if(isset($fichasocioeconomica))
+                                    @if($item->activo == '1') 
+                                      checked  
+                                    @endif 
+                                  @endif
                                   >
-
                                   <label for="{{$item->id}}">
                                     <font style="vertical-align: inherit;">
                                       <font   style="vertical-align: inherit;">{{$item->descripcion}}</font>
                                     </font>
                                   </label>
-
                                 </div>
-
                               @endforeach
-
+                                <div id="error-partes"></div>
                             </div>
                           </div>
-
 
                             <div class="form-group">
                               <label class="col-sm-12 control-label labelleft">Estado de Construcción <span class="required">*</span></label>
@@ -474,7 +474,7 @@
                                 </div>
                                 <div class="be-radio has-danger inline radio2">
                                   <input type="radio" value='0' required = "" @if(isset($fichasocioeconomica)) @if($fichasocioeconomica->estadoconstruccion == 0) checked  @endif @endif name="estadoconstruccion" id="rad8">
-                                  <label for="rad8">En Construcción</label5>
+                                  <label for="rad8">En Construcción</label>
                                 </div>
                               </div>
                             </div>
@@ -490,11 +490,24 @@
                                    <div class="form-group">
 
                                       <label class="col-sm-12 control-label labelleft">Materiales de Construcción  <span class="required">*</span></label>
-                                      <div class="col-sm-12 abajocaja">
+                                      <div class="col-sm-12 abajocaja lmaterial">
 
-                                        @foreach($construccionmaterial as $item)
-                                          <div class="be-radio has-success inline">
-                                            <input type="radio" value="{{$item->id}}"  name="construccionmaterial_id" required="" id="radc{{$item->id}}"
+                                        @foreach($construccionmaterial as $key => $item)
+                                          <div class="be-radio material has-success inline">
+                                            <input 
+                                            type="radio" 
+                                            value="{{$item->id}}" 
+                                            data-value='{{$item->descripcion}}'  
+                                            name="construccionmaterial_id" 
+                                            id="radc{{$item->id}}" 
+                                            class="tipomaterial"
+
+                                              data-parsley-errors-container="#error-mconstruccion"
+
+                                              @if($key == count($construccionmaterial)-1) 
+                                                    required=""
+                                              @endif
+
                                               @if(isset($fichasocioeconomica)) 
                                                 @if($fichasocioeconomica->construccionmaterial_id == $item->id) 
                                                   checked  
@@ -503,8 +516,31 @@
                                                />
                                             <label for="radc{{$item->id}}">{{$item->descripcion}}</label>
                                           </div><br>
-                                        @endforeach
 
+                                        @endforeach
+                                          <div id="error-mconstruccion"></div>
+
+                                        <div class="col-sm-7 otromaterial">
+                                        <input  type="text" 
+                                                id="otromaterial" 
+                                                name="otromaterial" 
+                                                placeholder="Ingrese otro material"
+                                                class="form-control input-sm 
+                                                @if(count($fichasocioeconomica)>0) 
+                                                  @if($fichasocioeconomica->otromaterial == '') 
+                                                    hide  
+                                                  @endif
+                                                @else 
+                                                  hide 
+                                                @endif " 
+                                                data-aw='1'
+                                                @if(isset($fichasocioeconomica)) 
+                                                  @if($fichasocioeconomica->otromaterial <> '') 
+                                                    value='{{$fichasocioeconomica->otromaterial}}' required   
+                                                  @endif 
+                                                @endif"
+                                        />
+                                        </div> 
 
                                       </div>
                                    </div>
@@ -512,41 +548,39 @@
 
                                     <div class="form-group">
                                       <label class="col-sm-12 control-label labelleft">Servicios<span class="required">*</span></label>
-                                      <div class="col-sm-6 abajocaja">
-
-
-                                        @foreach($servicio as $item)  
-
-                                          <div class="be-checkbox inline parsley-error">
+                                      <div class="col-sm-6 abajocaja servicioss">                                     
+                                        @foreach($servicio as $key => $item)  
+                                          <div class="be-checkbox inline">
 
                                             <input 
                                             id="s{{$item->id}}" 
-                                            value="{{$item->id}}"
+                                            value="{{$item->id}}" 
                                             name="servicio[]" 
                                             type="checkbox"
-                                              @if(isset($fichasocioeconomica))
 
-                                                @if($item->activo == '1') 
-                                                  checked  
-                                                @endif 
+                                            data-parsley-multiple="groups-servicioss"                   
+                                            data-parsley-errors-container="#error-servicioss"
+                                            data-parsley-mincheck="1" 
 
+                                            @if($key == count($servicio)-1) 
+                                                required=""  
+                                            @endif 
+
+                                            @if(isset($fichasocioeconomica))
+                                              @if($item->activo == '1') 
+                                                checked 
                                               @endif 
-                                              >
+                                            @endif 
+                                            >
 
                                             <label for="s{{$item->id}}">
                                               <font style="vertical-align: inherit;">
-                                                <font style="vertical-align: inherit;">
-
-                                                  {{$item->descripcion}}
-
-                                                </font>
+                                                <font style="vertical-align: inherit;">{{$item->descripcion}}</font>
                                               </font>
                                             </label>
-
                                           </div>
-
                                         @endforeach
-
+                                            <div id="error-servicioss"></div>
                                       </div>
                                     </div>
 
@@ -577,9 +611,17 @@
                                       <label class="col-sm-12 control-label labelleft">Lugar dónde se atiende<span class="required">*</span></label>
                                       <div class="col-sm-12 abajocaja">
 
-                                        @foreach($centromedico as $item)
+                                        @foreach($centromedico as $key => $item)
+
                                           <div class="be-radio has-success inline">
                                             <input type="radio" value="{{$item->id}}"  name="centromedico_id" id="radcm{{$item->id}}"
+
+                                              data-parsley-errors-container="#error-centro"
+
+                                              @if($key == count($centromedico)-1) 
+                                                  required=""
+                                              @endif
+
                                               @if(isset($fichasocioeconomica)) 
                                                 @if($fichasocioeconomica->centromedico_id == $item->id) 
                                                   checked  
@@ -589,8 +631,7 @@
                                             <label for="radcm{{$item->id}}">{{$item->descripcion}}</label>
                                           </div><br>
                                         @endforeach
-
-
+                                             <div id="error-centro"></div>
                                       </div>
                               </div>
 
@@ -600,9 +641,16 @@
                                       <label class="col-sm-12 control-label labelleft">Frecuencia con la que asiste al médico <span class="required">*</span></label>
                                       <div class="col-sm-12 abajocaja">
 
-                                        @foreach($frecuenciamedico as $item)
+                                        @foreach($frecuenciamedico as $key => $item)
                                           <div class="be-radio has-success inline">
                                             <input type="radio" value="{{$item->id}}"  name="frecuenciamedico_id" id="radfm{{$item->id}}"
+
+                                              data-parsley-errors-container="#error-frecuenciamedico"
+
+                                              @if($key == count($frecuenciamedico)-1) 
+                                                  required=""
+                                              @endif
+
                                               @if(isset($fichasocioeconomica)) 
                                                 @if($fichasocioeconomica->frecuenciamedico_id == $item->id) 
                                                   checked  
@@ -612,8 +660,7 @@
                                             <label for="radfm{{$item->id}}">{{$item->descripcion}}</label>
                                           </div><br>
                                         @endforeach
-
-
+                                             <div id="error-frecuenciamedico"></div>
                                       </div>
                               </div>
 
@@ -622,9 +669,16 @@
                                       <label class="col-sm-12 control-label labelleft">Con que frecuencia realiza exámenes de laboratorio clínico: <span class="required">*</span></label>
                                       <div class="col-sm-12 abajocaja">
 
-                                        @foreach($frecuenciaexamen as $item)
+                                        @foreach($frecuenciaexamen as $key => $item)
                                           <div class="be-radio has-success inline">
                                             <input type="radio" value="{{$item->id}}"  name="frecuenciaexamen_id" id="radfe{{$item->id}}"
+
+                                              data-parsley-errors-container="#error-frecuenciaexamenes"
+
+                                              @if($key == count($frecuenciaexamen)-1) 
+                                                  required=""
+                                              @endif
+
                                               @if(isset($fichasocioeconomica)) 
                                                 @if($fichasocioeconomica->frecuenciaexamen_id == $item->id) 
                                                   checked  
@@ -634,6 +688,7 @@
                                             <label for="radfe{{$item->id}}">{{$item->descripcion}}</label>
                                           </div><br>
                                         @endforeach
+                                          <div id="error-frecuenciaexamenes"></div>
 
                                       </div>
                               </div>
@@ -662,22 +717,31 @@
 
                                 <div class="form-group">
                                     <label class="col-sm-12 control-label labelleft">Padece de alguna enfermedad<span class="required">*</span></label>
-                                    <div class="col-sm-6 abajocaja">
-                                      @foreach($enfermedad as $item)  
+                                    <div class="col-sm-6 abajocaja enfermedades lenfermedad">
+                                      @foreach($enfermedad as $key => $item)  
 
-                                        <div class="be-checkbox inline parsley-error">
+                                        <div class="be-checkbox inline">
 
-                                          <input 
-                                          id="e{{$item->id}}" 
-                                          value="{{$item->id}}" 
-                                          name="enfermedad[]" 
-                                          type="checkbox"
+                                          <input id="e{{$item->id}}" 
+                                                 value="{{$item->id}}" 
+                                                 name="enfermedad[]" 
+                                                 type="checkbox"
+                                                 class="tipoenfermedad hide"
+                                                 data-value='{{$item->descripcion}}'  
 
-                                              @if(isset($fichasocioeconomica))
-                                                @if($item->activo == '1') 
-                                                  checked  
-                                                @endif 
-                                              @endif
+                                                 data-parsley-multiple="groups-enfermedades"                   
+                                                 data-parsley-errors-container="#error-enfermedades"
+                                                 data-parsley-mincheck="1" 
+
+                                                 @if($key == count($enfermedad)-1) 
+                                                      required=""  
+                                                  @endif 
+
+                                                 @if(isset($fichasocioeconomica))
+                                                    @if($item->activo == '1') 
+                                                      checked  
+                                                    @endif 
+                                                 @endif
                                           >
 
                                           <label for="e{{$item->id}}">
@@ -689,6 +753,29 @@
                                         </div>
 
                                       @endforeach
+                                      <div id="error-enfermedades"></div>
+
+                                      <div class="col-sm-7 otraenfermedad">
+                                      <input  type="text" 
+                                              id="otraenfermedad" 
+                                              name="otraenfermedad"
+                                              placeholder="Ingrese otra enfermedad"
+                                              class="form-control input-sm  
+                                              @if(count($fichasocioeconomica)>0) 
+                                                @if($fichasocioeconomica->otraenfermedad == '') 
+                                                  hide  
+                                                @endif
+                                              @else 
+                                                hide 
+                                              @endif "
+                                              data-aw='1'
+                                              @if(isset($fichasocioeconomica)) 
+                                                @if($fichasocioeconomica->otraenfermedad <> '') 
+                                                  value='{{$fichasocioeconomica->otraenfermedad}}' required   
+                                                @endif 
+                                              @endif"
+                                      />
+                                      </div> 
 
                                     </div>
                                   </div>
