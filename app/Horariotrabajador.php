@@ -26,7 +26,7 @@ class Horariotrabajador extends Model
 
     public function asistenciatrabajador()
     {
-        return $this->hasMany('App\Asistenciatrabajador');
+        return $this->hasOne('App\Asistenciatrabajador');
     }
 
 

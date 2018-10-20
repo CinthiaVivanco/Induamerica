@@ -8,7 +8,9 @@
     z-index: 1100;
     right: 12px;
 }
-
+.comboh{
+    width: 100% !important;
+}
 
 .main-content {
     padding: 8px;

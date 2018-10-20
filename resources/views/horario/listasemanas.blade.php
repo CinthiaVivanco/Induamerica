@@ -8,11 +8,6 @@
 @stop
 @section('section')
 
-
-
-
-
-
 <div class="be-content panelhorario">
   <div class="main-content container-fluid">
     <div class="row">
@@ -27,7 +22,13 @@
             <div class="row content ">
               <div class="col-md-12">
                     <div class="panel-heading">
+
                       <div class="tools toolsopcion">
+                        <a href="{{url('/horario-semana-pdf')}}" target="_blank" data-toggle="tooltip" id="descargarhorario" data-placement="top" title="Descargar Horario">
+                            <span class="icon mdi mdi-collection-pdf"></span>
+                        </a>
+
+
                         <a href="#" data-toggle="tooltip" id="copiarhorarioclonar" data-placement="top" title="Copiar Horario Clonado">
                           <span class="icon mdi mdi-collection-text"></span>
                         </a>
