@@ -1,0 +1,918 @@
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\Usuarios\obj\Debug\Usuarios.pdb
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Usuarios.exe
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Usuarios.xml
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Usuarios.pdb
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\error.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Imagenes\user.png
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Usuarios.exe
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Usuarios.pdb
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Usuarios.xml
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Entidades.dll
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Entidades.pdb
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Entidades.xml
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+D:\ASISTENCIA 1\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Usuarios.exe
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Usuarios.xml
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Usuarios.pdb
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\error.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Imagenes\user.png
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Usuarios.exe
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Usuarios.pdb
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Usuarios.xml
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Entidades.dll
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Entidades.pdb
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Entidades.xml
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+F:\asistenciafrank\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Usuarios.exe
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Usuarios.xml
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Usuarios.pdb
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\error.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Imagenes\user.png
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Usuarios.exe
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Usuarios.pdb
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Usuarios.xml
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Entidades.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Entidades.pdb
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Entidades.xml
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+D:\ASISTENCIA\asistenciaf\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.exe
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.xml
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.pdb
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\error.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Imagenes\user.png
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.exe
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.pdb
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Usuarios.xml
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.pdb
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Entidades.xml
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Usuarios.exe.config
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Interop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\AxInterop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Usuarios.vbproj.ResolveComReference.cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Usuarios.exe
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Usuarios.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Usuarios.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\aula.gif
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\Buscar.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\Cancelar.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\Cerrar.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\docente.jpg
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\Editar.jpg
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\error.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\exito.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\Guardar.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\MenuAcceso.jpg
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\nuevo.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\padres.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\Salir.gif
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\Seleccionar.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Imagenes\user.png
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Resources\MenuAcceso.jpg
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Usuarios.exe
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Usuarios.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Usuarios.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Entidades.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\ReglasNegocio.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Entidades.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\ReglasNegocio.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\ReglasNegocio.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\Interop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\bin\Debug\AxInterop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Usuarios.vbprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersona.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.buscaUsuario.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.BuscaPersonal.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmAsignaGrupoaUsuario.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBase.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscaPersona.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmBuscarUsuario.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmGrupoUsuario.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmIdentificar.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Menu.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.Resources.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmOpcion.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoGrupal.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmPermisoIndividuales.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmSistema.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Colegio.IUsuario.frmUsuario.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Usuarios\obj\Debug\Usuarios.vbproj.GenerateResource.Cache

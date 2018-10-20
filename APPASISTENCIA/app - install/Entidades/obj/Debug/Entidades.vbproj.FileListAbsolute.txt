@@ -1,0 +1,54 @@
+D:\ASISTENCIA 1\app - install\Entidades\bin\Debug\Entidades.dll.config
+D:\ASISTENCIA 1\app - install\Entidades\bin\Debug\Entidades.dll
+D:\ASISTENCIA 1\app - install\Entidades\bin\Debug\Entidades.pdb
+D:\ASISTENCIA 1\app - install\Entidades\bin\Debug\Entidades.xml
+D:\ASISTENCIA 1\app - install\Entidades\obj\Debug\Entidades.Resources.resources
+D:\ASISTENCIA 1\app - install\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+D:\ASISTENCIA 1\app - install\Entidades\obj\Debug\Entidades.dll
+D:\ASISTENCIA 1\app - install\Entidades\obj\Debug\Entidades.xml
+D:\ASISTENCIA 1\app - install\Entidades\obj\Debug\Entidades.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll.config
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.Resources.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll.config
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.Resources.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll.config
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.Resources.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll.config
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\bin\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.Resources.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\bin\Debug\Entidades.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\bin\Debug\Entidades.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\obj\Debug\Entidades.Resources.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\obj\Debug\Entidades.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\obj\Debug\Entidades.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\Entidades\obj\Debug\Entidades.pdb

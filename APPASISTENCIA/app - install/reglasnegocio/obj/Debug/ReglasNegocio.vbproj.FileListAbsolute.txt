@@ -1,0 +1,117 @@
+D:\ASISTENCIA 1\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+D:\ASISTENCIA 1\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+D:\ASISTENCIA 1\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA 1\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+D:\ASISTENCIA 1\app - install\reglasnegocio\bin\Debug\Entidades.dll
+D:\ASISTENCIA 1\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+D:\ASISTENCIA 1\app - install\reglasnegocio\bin\Debug\Entidades.xml
+D:\ASISTENCIA 1\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+D:\ASISTENCIA 1\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+D:\ASISTENCIA 1\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+D:\ASISTENCIA 1\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+D:\ASISTENCIA 1\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+D:\ASISTENCIA 1\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\bin\Debug\Entidades.dll
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\bin\Debug\Entidades.xml
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+D:\ASISTENCIA\asistenciaf\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\bin\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\bin\Debug\Entidades.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\bin\Debug\Entidades.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb

@@ -1,0 +1,218 @@
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\img\buscar.gif
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\img\NODISPONIBLE.JPG
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\AppAsistencia.pdb
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\AppAsistencia.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\Entidades.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\ReglasNegocio.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\Entidades.pdb
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\Entidades.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\ReglasNegocio.pdb
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\ReglasNegocio.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.frmAsistencia.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.exe
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\CERIN\APP_CERIN- INVENTARIO - CONTROL RX_20180810\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+D:\ASISTENCIA 1\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+D:\ASISTENCIA 1\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA 1\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+D:\ASISTENCIA 1\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+D:\ASISTENCIA 1\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+F:\asistenciafrank\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+F:\asistenciafrank\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+F:\asistenciafrank\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+F:\asistenciafrank\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+F:\asistenciafrank\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+D:\ASISTENCIA\asistenciaf\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+D:\ASISTENCIA\asistenciaf\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\asistenciaf\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+D:\ASISTENCIA\asistenciaf\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+D:\ASISTENCIA\asistenciaf\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+D:\ASISTENCIA\1\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+D:\ASISTENCIA\1\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+D:\ASISTENCIA\1\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+D:\ASISTENCIA\1\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+D:\ASISTENCIA\1\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+D:\FINAL DEL DIA 5.9 Registra huella trabajador\Ultimo\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\planillas (05-09-2018)\planillas (05-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbprojResolveAssemblyReference.cache
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.frmAsistencia.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
+E:\planillas (06-09-2018)\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\planillas (08-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\planillas (10-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\planillas (11-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\planillas (12-09-2018)\planillas (06-09-2018) Con Filtro\planillas (06-09-2018) Con Filtro\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\img\buscar.gif
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\img\NODISPONIBLE.JPG
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.pdb
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.xml
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbprojResolveAssemblyReference.cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.frmAsistencia.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache
+E:\PLANILLAS WEB Y ASIST (19-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.exe
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.exe
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\img\buscar.gif
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\img\NODISPONIBLE.JPG
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.pdb
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.xml
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbprojResolveAssemblyReference.cache
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.frmAsistencia.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
+E:\PLANILLAS WEB Y ASIST (20-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.exe
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\img\buscar.gif
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\img\NODISPONIBLE.JPG
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.pdb
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.xml
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.pdb
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Entidades.xml
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.pdb
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\ReglasNegocio.xml
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\Interop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AxInterop.ZKFPEngXControl.dll
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbprojResolveAssemblyReference.cache
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.frmAsistencia.resources
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
+E:\PLANILLAS WEB Y ASIST (21-09-2018) con asistencia\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.exe
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+D:\fg\PLANILLAS WEB Y ASIST (21-09-2018) IA\PLANILLAS WEB Y ASIST (21-09-2018) IA\appasistencia\modifica y registra huella\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.exe
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\img\buscar.gif
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\img\NODISPONIBLE.JPG
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\AppAsistencia.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\AppAsistencia.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\Entidades.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\ReglasNegocio.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\Entidades.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\ReglasNegocio.pdb
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\ReglasNegocio.xml
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\Interop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\bin\Debug\AxInterop.ZKFPEngXControl.dll
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.frmAsistencia.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
+C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache
