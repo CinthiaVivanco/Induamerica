@@ -8,6 +8,126 @@
 
 @section('section')
 
+
+<div class="be-content">
+    <div class="main-content container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+
+                <div class="panel-heading">
+                  
+                </div>
+                <div class="panel-body"><br>
+
+                  <div class="row">
+                      <div class="col-xs-12 col-md-6 col-lg-3">
+                                  <div class="widget widget-tile">
+                                    <div id="spark1" class="chart sparkline"><canvas width="85" height="35" style="display: inline-block; width: 85px; height: 35px; vertical-align: top;"></canvas></div>
+                                    <div class="data-info">
+                                      <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Usuarios nuevos</font></font></div>
+                                      <div class="value"><span class="indicator indicator-equal mdi mdi-chevron-right"></span><span data-toggle="counter" data-end="113" class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">113</font></font></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-3">
+                                  <div class="widget widget-tile">
+                                    <div id="spark2" class="chart sparkline"><canvas width="81" height="35" style="display: inline-block; width: 81px; height: 35px; vertical-align: top;"></canvas></div>
+                                    <div class="data-info">
+                                      <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Permisos </font></font></div>
+                                      <div class="value"><span class="indicator indicator-positive mdi mdi-chevron-up"></span><span data-toggle="counter" data-end="80" data-suffix="%" class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">80%</font></font></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-3">
+                                  <div class="widget widget-tile">
+                                    <div id="spark3" class="chart sparkline"><canvas width="85" height="35" style="display: inline-block; width: 85px; height: 35px; vertical-align: top;"></canvas></div>
+                                    <div class="data-info">
+                                      <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asistencia</font></font></div>
+                                      <div class="value"><span class="indicator indicator-positive mdi mdi-chevron-up"></span><span data-toggle="counter" data-end="532" class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">532</font></font></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-3">
+                                  <div class="widget widget-tile">
+                                    <div id="spark4" class="chart sparkline"><canvas width="85" height="35" style="display: inline-block; width: 85px; height: 35px; vertical-align: top;"></canvas></div>
+                                    <div class="data-info">
+                                      <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tardanzas</font></font></div>
+                                      <div class="value"><span class="indicator indicator-negative mdi mdi-chevron-down"></span><span data-toggle="counter" data-end="113" class="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">113</font></font></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                      </div>
+                  </div><br><br>
+
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="widget widget-fullwidth be-loading">
+                          <div class="widget-head">
+                            <div class="tools">
+                              <div class="dropdown"><span data-toggle="dropdown" class="icon mdi mdi-more-vert visible-xs-inline-block dropdown-toggle"></span>
+                                <ul role="menu" class="dropdown-menu">
+                                  <li><a href="#">Week</a></li>
+                                  <li><a href="#">Month</a></li>
+                                  <li><a href="#">Year</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Today</a></li>
+                                </ul>
+                              </div><span class="icon mdi mdi-chevron-down"></span><span class="icon toggle-loading mdi mdi-refresh-sync"></span><span class="icon mdi mdi-close"></span>
+                            </div>
+                            <div class="button-toolbar hidden-xs">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Semana</font></font></button>
+                                <button type="button" class="btn btn-default active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mes</font></font></button>
+                                <button type="button" class="btn btn-default"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Año</font></font></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoy</font></font></button>
+                              </div>
+                            </div><span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Movimiento reciente</font></font></span>
+                          </div>
+                          <div class="widget-chart-container">
+                            <div class="widget-chart-info">
+                              <ul class="chart-legend-horizontal">
+                                <li><span data-color="main-chart-color1" style="background-color: rgb(66, 133, 244);"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Asistencia</font></font></li>
+                                <li><span data-color="main-chart-color2" style="background-color: rgb(129, 173, 248);"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Tardanzas</font></font></li>
+                                <li><span data-color="main-chart-color3" style="background-color: rgb(162, 195, 250);"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Servicios</font></font></li>
+                              </ul>
+                            </div>
+                            <div class="widget-counter-group widget-counter-group-right">
+                              <div class="counter counter-big">
+                                <div class="value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25%</font></font></div>
+                                <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asistencia</font></font></div>
+                              </div>
+                              <div class="counter counter-big">
+                                <div class="value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5%</font></font></div>
+                                <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tardanzas</font></font></div>
+                              </div>
+                              <div class="counter counter-big">
+                                <div class="value"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5%</font></font></div>
+                                <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Servicios</font></font></div>
+                              </div>
+                            </div>
+                            <div id="main-chart" style="height: 260px; padding: 0px; position: relative;"><canvas class="flot-base" width="1143" height="260" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1143px; height: 260px;"></canvas><canvas class="flot-overlay" width="1143" height="260" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1143px; height: 260px;"></canvas></div>
+                          </div>
+                          <div class="be-spinner">
+                            <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                              <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+        
+            </div>
+          </div>
+    </div>
+  </div>
+
 <!--
          <div class="bd-example">
             <div class="row">

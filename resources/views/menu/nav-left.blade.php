@@ -7,8 +7,6 @@
             <li class="divider">Menú</li>
             <li class="active"><a href="{{ url('/bienvenido') }}"><i class="icon mdi mdi-home"></i><span>Inicio</span></a>
             </li>
-
-
             @foreach(Session::get('listamenu') as $grupo)
 
                 @if($grupo->orden == 100)
@@ -20,17 +18,12 @@
                     @foreach($grupo->opcion as $opcion)
                       <li>
                         <a href="{{ url('/'.$opcion->pagina.'/'.Hashids::encode(substr($opcion->id, -12))) }}">{{$opcion->nombre}}</a>
-
-
-
                       </li>
                     @endforeach
                   </ul>
                 </li>
 
             @endforeach
-
-
           </ul>
         </div>
       </div>

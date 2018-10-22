@@ -1,28 +1,61 @@
 
-alter proc  pr_ListadoAsisxID     
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'pr_ListadoAsisxID')
+BEGIN
+    DROP PROCEDURE dbo.pr_ListadoAsisxID
+END
+GO
+
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'pr_LeerxNroDoc')
+BEGIN
+    DROP PROCEDURE dbo.pr_LeerxNroDoc
+END
+GO
+
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'pr_LeerDnixId')
+BEGIN
+    DROP PROCEDURE dbo.pr_LeerDnixId
+END
+GO
+
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'pr_consultar_personal_huella')
+BEGIN
+    DROP PROCEDURE dbo.pr_consultar_personal_huella
+END
+GO
+
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'pr_iAsistencia')
+BEGIN
+    DROP PROCEDURE dbo.pr_iAsistencia
+END
+GO
+
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'ValidarAsistencia')
+BEGIN
+    DROP PROCEDURE dbo.ValidarAsistencia
+END
+GO
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE PROC  pr_ListadoAsisxID     
 @id char(8)
 as       
 select alias as Nombre,Hora as Hora,estadoaviso as Estado from asistenciadiarias
 where fecha = CONVERT(VARCHAR(10), getdate(), 126)
 order by fechatime desc
-go
+GO
 
 
-
-ALTER proc  pr_LeerxNroDoc     
+CREATE PROC  pr_LeerxNroDoc     
 @dni char(8)
 as       
 SELECT u.id,u.dni,u.apellidopaterno,u.apellidomaterno  ,u.nombres,
  isnull(U.template,'') Template,isnull(U.template10,'') as  Template10 ,isnull(U.huella_foto,'') as huella_foto,isnull(U.MAR_DNI,0) as  MAR_DNI,isnull(U.MAR_HUELLA,0) as MAR_HUELLA
  FROM trabajadores u 
  where u.dni=@dni
+GO
 
 
-go
-
------------------------------------------------------------------------------------------------------------------------------------------------
-
-ALTER proc  pr_LeerDnixId     
+CREATE PROC  pr_LeerDnixId     
 @id char(8)
 as      
 select id as ID, dni as DNI,  
@@ -31,22 +64,21 @@ select id as ID, dni as DNI,
   isnull(U.MAR_DNI,0) as  MAR_DNI, isnull(U.MAR_HUELLA,0) as MAR_HUELLA   
 from trabajadores U 
 where U.dni = @id
-
-
 GO
------------------------------------------------------------------------------------------------------------------------------------------------
-ALTER proc  pr_consultar_personal_huella     
+
+
+CREATE PROC  pr_consultar_personal_huella     
 as      
 select dni,      
   ISNULL(Template,'') AS 'Template',      
   ISNULL(Template10,'') AS 'Template10'      
 from trabajadores     
 where ISNULL(Template,'')!=''  
+GO
 
 
-go
 -- exec pr_iAsistencia 'SLCHICEN000000000001','lumi','lu'
-ALTER PROCEDURE pr_iAsistencia(     
+CREATE PROCEDURE pr_iAsistencia(     
 	@idasistenca varchar(20),  
 	@variableenviar varchar(5) = '',
 	@prefijo varchar(2) = '',
@@ -83,11 +115,10 @@ EXEC(@sql)
 
 insert into asistenciadiarias (trabajador_id,alias,hora,fecha,fechatime,estadoaviso)
 values(@idtrabajador,@nombrecompleto,@hora,CONVERT(VARCHAR(10), getdate(), 126),getdate(),@estadoaviso)
-
-go
+GO
 
 -- exec ValidarAsistencia '70251035'
-ALTER proc  ValidarAsistencia
+CREATE PROC  ValidarAsistencia
 @dni char(8)
 as
 declare @idtrabajador varchar(20) = ''  

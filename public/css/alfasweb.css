@@ -416,7 +416,10 @@ tbody .mdi-close{
     display: block;
 }
 
-
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
 /*
 .col-md-4 {
 font-family:Titillium, Arial, sans-serif;

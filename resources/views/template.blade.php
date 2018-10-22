@@ -29,7 +29,6 @@
   </head>
   <body>
 
-  
 
     <div class="be-wrapper be-fixed-sidebar">
 
@@ -40,27 +39,15 @@
         @include('menu.nav-top')
         @include('menu.nav-left')
 
-
-
-
         @include('success.xml', ['xml' => Session::get('xmlmsj')])
 
-    
-
         @yield('section')
-
-        
-
-
-    
 
         <input type='hidden' id='carpeta' value="{{$capeta}}"/>
 
         <input type="text" id="token" name="_token"  value="{{ csrf_token() }}">
     </div>
 
-
-        
 
     <script src="{{ asset('public/lib/jquery/jquery-2.1.3.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('public/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js') }}" type="text/javascript"></script>
@@ -70,9 +57,6 @@
     <script src="{{ asset('public/lib/scroll/js/jquery-scrollpanel-0.7.0.js') }}" type="text/javascript"></script>
     <script src="{{ asset('public/lib/scroll/js/scroll.js') }}" type="text/javascript"></script>   
     <script src="{{ asset('public/js/general/general.js') }}" type="text/javascript"></script>
-
-
-
 
     @yield('script')
 
