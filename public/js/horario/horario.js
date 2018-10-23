@@ -140,6 +140,8 @@ $(document).ready(function(){
 
         var input   = $(this).siblings('input');
         var accion  = $(this).attr('data-atr');
+        var dia     = $(this).attr('data-dia');        
+        
         var name    = $(this).attr('name');
         var _token  = $('#token').val()
         var check   = -1;
@@ -161,13 +163,25 @@ $(document).ready(function(){
                             _token  : _token,
                             name    : name,
                             check   : check,
-                            accion  : accion
+                            accion  : accion,
+                            dia     : dia,
+                            
                         },
             success: function (data) {
-                if(data>=0){
-                    alertajax("Realizado con exito");
+
+                JSONdata     = JSON.parse(data);
+                error        = JSONdata[0].error;
+                mensaje      = JSONdata[0].mensaje;
+
+                if(error==false){
+                    alertajax(mensaje);
+
+
+                }else{
+                    alerterrorajax(mensaje);
+
+                    
                 }
-                //console.log(data);
                 
             },
             error: function (data) {

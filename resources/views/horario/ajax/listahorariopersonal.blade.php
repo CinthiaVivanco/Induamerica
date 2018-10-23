@@ -28,6 +28,7 @@
                     @if ($item->luh == 1) checked @endif >
             <label  for="lu{{Hashids::encode(substr($item->id, -12))}}"
                     data-atr = "luh"
+                    data-dia = "lu"
                     class = "checkbox"                    
                     name="{{Hashids::encode(substr($item->id, -12))}}"
               ></label>
@@ -63,10 +64,13 @@
                     @if ($item->mah == 1) checked @endif >
             <label  for="ma{{Hashids::encode(substr($item->id, -12))}}"
                     data-atr = "mah"
+                    data-dia = "ma"
                     class = "checkbox"                    
                     name="{{Hashids::encode(substr($item->id, -12))}}"
               ></label>
           </div>
+
+
 
           {!! 
             Form::select( 'horario_id', 
@@ -98,6 +102,7 @@
                     @if ($item->mih == 1) checked @endif >
             <label  for="mi{{Hashids::encode(substr($item->id, -12))}}"
                     data-atr = "mih"
+                    data-dia = "mi"
                     class = "checkbox"                    
                     name="{{Hashids::encode(substr($item->id, -12))}}"
               ></label>
@@ -133,6 +138,7 @@
                     @if ($item->juh == 1) checked @endif >
             <label  for="ju{{Hashids::encode(substr($item->id, -12))}}"
                     data-atr = "juh"
+                    data-dia = "ju"
                     class = "checkbox"                    
                     name="{{Hashids::encode(substr($item->id, -12))}}"
               ></label>
@@ -168,6 +174,7 @@
                     @if ($item->vih == 1) checked @endif >
             <label  for="vi{{Hashids::encode(substr($item->id, -12))}}"
                     data-atr = "vih"
+                    data-dia = "vi"
                     class = "checkbox"                    
                     name="{{Hashids::encode(substr($item->id, -12))}}"
               ></label>
@@ -203,6 +210,7 @@
                     @if ($item->sah == 1) checked @endif >
             <label  for="sa{{Hashids::encode(substr($item->id, -12))}}"
                     data-atr = "sah"
+                    data-dia = "sa"
                     class = "checkbox"                    
                     name="{{Hashids::encode(substr($item->id, -12))}}"
               ></label>
@@ -238,6 +246,7 @@
                     @if ($item->doh == 1) checked @endif >
             <label  for="do{{Hashids::encode(substr($item->id, -12))}}"
                     data-atr = "doh"
+                    data-dia = "do"
                     class = "checkbox"                    
                     name="{{Hashids::encode(substr($item->id, -12))}}"
               ></label>

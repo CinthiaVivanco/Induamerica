@@ -59,6 +59,7 @@ INSERT INTO horarios (id, nombre,horainicio, horafin, refrigerioinicio, refriger
 ('SLCHICEN000000000001', 'full time', '08:00', '17:30', '13:00', '14:00',8,1,4),
 ('SLCHICEN000000000002', 'part time', '08:00', '12:00', '', '',4,0,2);
 
+
 GO
 
 CREATE TABLE horariotrabajadoresclonados (

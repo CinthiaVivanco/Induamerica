@@ -901,8 +901,8 @@ INSERT INTO users (id, nombre, apellido,dni, name, email, password, activo, rol_
 GO
 INSERT INTO grupoopciones (id, nombre,icono, orden,activo) VALUES
 ('SLCHICEN000000000001', 'Usuarios','mdi-accounts-alt',1, 1),
-('SLCHICEN000000000002', 'Personal','mdi-account-outline',2, 1),
-('SLCHICEN000000000003', 'Asistencia','mdi-accounts-alt',3, 1);
+('SLCHICEN000000000002', 'Personal','mdi-face',2, 1),
+('SLCHICEN000000000003', 'Asistencia','mdi-watch',3, 1);
 
 GO
 INSERT INTO opciones (id, nombre,descripcion, pagina,activo, grupoopcion_id) VALUES

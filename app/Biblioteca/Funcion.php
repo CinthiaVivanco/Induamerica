@@ -2,7 +2,7 @@
 namespace App\Biblioteca;
 
 use DB,Hashids,Session,Redirect,table;
-use App\RolOpcion,App\Local,App\Empresa;
+use App\RolOpcion,App\Local,App\Empresa,App\Horariotrabajador;
 
 class Funcion{
 
@@ -98,6 +98,28 @@ class Funcion{
 		$empresa 	= Empresa::where('activo','=', 1)->first();
   		return $empresa;	
 
+
+	}
+	
+	public function getDiaAnterior($idhorariotrabajadores,$dia) {
+
+
+		$mensaje					=   'Realizado con exito';
+		$error						=   false;
+		$fecha 						=   Horariotrabajador::where('id','=', $idhorariotrabajadores)
+										->select($dia)->first();
+
+		if($fecha->$dia < date('Y-m-d')){
+			$mensaje = 'La fecha seleccionda es anterior a la fecha actual';
+			$error   = true;
+		}								
+
+		$response[] = array(
+			'error'           		=> $error,
+			'mensaje'      			=> $mensaje
+		);
+
+		return $response;
 
 	}
 

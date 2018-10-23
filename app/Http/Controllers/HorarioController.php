@@ -170,11 +170,17 @@ class HorarioController extends Controller
 
 
 
+		$dia 						= 	$request['dia'].'d';
 		$idhorariotrabajadores 		=  	$request['name'];
 		$idhorariotrabajadores 		= 	$this->funciones->decodificar($idhorariotrabajadores);
+
+		$response 					= 	$this->funciones->getDiaAnterior($idhorariotrabajadores,$dia);
+		if($response[0]['error']){echo json_encode($response); exit();}
+
+
 		Horariotrabajador::where('id','=', $idhorariotrabajadores)->update([$request['accion'] => $request['check']]);
-	
-		echo("1");
+
+		echo json_encode($response);
 
 	}
 
