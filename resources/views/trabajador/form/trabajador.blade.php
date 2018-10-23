@@ -47,19 +47,9 @@
      </div>
     </div>
 
-    <div class="process-step tabmenu5">
-     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu5"><i class="fa fa-pencil-square-o fa-2x"></i></button>
-     <p><small>Contrato y<br />Pago</small></p>
-     <div class='errortab'>
-       <i class="fa fa-exclamation" aria-hidden="true"></i>
-     </div>
-     <div class='bientab'>
-       <i class="fa fa-check" aria-hidden="true"></i> 
-     </div>
-    </div>
 
-    <div class="process-step tabmenu6">
-     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu6"><i class="fa fa-user-md fa-2x"></i></button>
+    <div class="process-step tabmenu5">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu5"><i class="fa fa-user-md fa-2x"></i></button>
      <p><small>Seguridad <br />Social</small></p>
      <div class='errortab'>
        <i class="fa fa-exclamation" aria-hidden="true"></i>
@@ -69,8 +59,8 @@
      </div>
     </div>
 
-    <div class="process-step tabmenu7">
-     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu7"><i class="fa fa-check fa-2x"></i></button>
+    <div class="process-step tabmenu6">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu6"><i class="fa fa-check fa-2x"></i></button>
      <p><small>Guardar<br />Ficha</small></p>
      <div class='errortab'>
        <i class="fa fa-exclamation" aria-hidden="true"></i>
@@ -80,8 +70,8 @@
    </div>
   </div>
   <div class="tab-content">
-       <div id="menu1" class="tab-pane fade active in">
-        <h3></h3>
+    <div id="menu1" class="tab-pane fade active in">
+         <h3></h3>
 
         <div class="row">
           <div class="col-sm-6">        
@@ -778,121 +768,7 @@
         </ul>
        </div>
 
-
      <div id="menu5" class="tab-pane fade">
-           <h3></h3>
-
-            <div class="row">
-
-                <div class="col-sm-6">
-                  <div class="panel-body">
-
-                      <div class="form-group">
-                          <label class="col-sm-12 control-label labelleft">Tipo Contrato <span class="required">*</span></label>
-                          <div class="col-sm-7 abajocaja">
-                           {!! Form::select( 'tipocontrato_id', $combotipocontrato, array(),
-                                              [
-                                                'class'       => 'form-control control input-sm' ,
-                                                'id'          => 'tipocontrato_id',
-                                                'required'    => '',
-                                                'data-aw'     => '20'
-                                              ]) !!}
-                          </div>
-                      </div>
-
-
-                      <div class="form-group ajaxcargo">
-                          @include('general.ajax.combocargo', ['combocargo' => $combocargo])
-                      </div>
-
-                      
-                      <div class="form-group">
-
-                          <label class="col-sm-12 control-label labelleft">Jornada Laboral <span class="required">*</span></label>
-                          <div class="col-sm-7 abajocaja">
-                            {!! Form::select( 'jornadalaboral_id', $combojornadalaboral, array(),
-                                              [
-                                                'class'       => 'form-control control input-sm' ,
-                                                'id'          => 'jornadalaboral_id',
-                                                'required'    => '',
-                                                'data-aw'     => '21'
-                                              ]) !!}
-                          </div>
-                      </div>
-
-                      <div class="form-group">
-
-                            <label class="col-sm-12 control-label labelleft">Periodicidad <span class="required">*</span></label>
-                            <div class="col-sm-7 abajocaja">
-                                {!! Form::select( 'periodicidad_id', $comboperiodicidad, array(),
-                                                  [
-                                                    'class'       => 'form-control control input-sm' ,
-                                                    'id'          => 'periodicidad_id',
-                                                    'required'    => '',
-                                                    'data-aw'     => '24'
-                                                  ]) !!}
-                            </div>
-                      </div>
-                
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-
-                    <div class="panel-body">
-
-
-
-                            <div class="form-group">
-
-                                <label class="col-sm-12 control-label labelleft">Tipo Pago <span class="required">*</span></label>
-                                <div class="col-sm-7 abajocaja">
-                                  {!! Form::select( 'tipopago_id', $combotipopago, array(),
-                                                    [
-                                                      'class'       => 'form-control control input-sm' ,
-                                                      'id'          => 'tipopago_id',
-                                                      'required'    => '',
-                                                      'data-aw'     => '22'
-                                                    ]) !!}
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                  <label class="col-sm-12 control-label labelleft">Número Cuenta <span class="required">*</span></label>
-                                  <div class="col-sm-7 abajocaja">
-
-                                    <input  type="text"
-                                            id="numerocuenta" name='numerocuenta' value="@if(isset($trabajador)){{old('numerocuenta',$trabajador->numerocuenta)}}@else{{old('numerocuenta')}}@endif" placeholder="Número Cuenta"
-                                            required = ""
-                                            autocomplete="off" class="form-control input-sm" data-aw="23"/>
-
-                                  </div>
-                            </div>
-
-                            <div class="form-group">
-                                  <label class="col-sm-12 control-label labelleft">Remuneración <span class="required">*</span></label>
-                                  <div class="col-sm-7 abajocaja">
-
-                                    <input  type="text"
-                                            id="remuneracion" name='remuneracion' value="@if(isset($trabajador)){{old('remuneracion',$trabajador->remuneracion)}}@else{{old('remuneracion')}}@endif" placeholder="Remuneración"
-                                            required = "" data-parsley-type="number"
-                                            autocomplete="off" class="form-control input-sm" data-aw="25"/>
-
-                                  </div>
-                            </div>
-                    </div>
-                </div>
-
-            </div>
-            <ul class="list-unstyled list-inline pull-right">
-              <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i>Atrás</button></li>
-              <li><button type="button" class="btn btn-info next-step">Siguiente <i class="fa fa-chevron-right"></i></button></li>
-            </ul>
-            
-     </div>
-    
-
-     <div id="menu6" class="tab-pane fade">
         <h3></h3>
         <div class="row">
 
@@ -1100,7 +976,7 @@
           </ul>
      </div>
 
-     <div id="menu7" class="tab-pane fade">
+     <div id="menu6" class="tab-pane fade">
           <h3></h3>
           <center><p>¿Seguro que desea guardar esta ficha?</p></center>
 

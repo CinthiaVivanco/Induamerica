@@ -1,7 +1,11 @@
 .tab-content{
     margin-left: 70px;
-}   
-
+} 
+/*
+.centro {
+  align-content: center;
+} 
+*/
 .cont_princ_lists  ul{
   padding-left: 0px;
   font-family: 'Open Sans', sans-serif;
@@ -11,7 +15,7 @@
 .cont_princ_lists  ul  li  {
   /*align-content: center;*/
   position: relative;
-  width: 196%; 
+  width: 100%; 
   height: 75px;
   background-color: #F1F1EF;
   list-style: none;
@@ -45,16 +49,17 @@
 
 .cont_princ_lists .mdi-edit{
 
+    margin-top: 25px;
     padding-top: 5px;
-    padding-left: 7px;
+    padding-left: 6px;
     font-size: 1.6em;
     cursor: pointer;
-    width: 31px;
-    height: 31px;
+    width: 30px;
+    height: 30px;
     border-radius: 25px;
     border: 1px solid #999;
 }
-
+/*
 .cont_princ_lists .fa-download{
     margin-top: 25px;
     padding-top: 5px;
@@ -66,7 +71,7 @@
     border-radius: 25px;
     border: 1px solid #999;
 }
-
+*/
 .icon{
 
     padding-top: 15px;

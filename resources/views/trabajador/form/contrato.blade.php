@@ -11,6 +11,16 @@
                  <div class='bientab'>
                    <i class="fa fa-check" aria-hidden="true"></i> 
                  </div>
+              </div>  
+              <div class="process-step tabmnu2">
+                 <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-pencil-square-o fa-2x"></i></button>
+                 <p><small>Datos del<br />Pago</small></p>
+                 <div class='errortab'>
+                   <i class="fa fa-exclamation" aria-hidden="true"></i> 
+                 </div>
+                 <div class='bientab'>
+                   <i class="fa fa-check" aria-hidden="true"></i> 
+                 </div>
               </div>
            </div>
         </div>
@@ -19,10 +29,25 @@
                 <h3></h3>
                 <div class="row">
                     <div class="col-sm-6">
-                    <div class="panel-body">
+                      <div class="panel-body">
+
+                         <div class="form-group ">
+
+                            <label class="col-sm-12 control-label labelleft" >Tipo Contrato  <span class="required">*</span> </label>
+                            <div class="col-sm-6 abajocaja"  >
+                              {!! Form::select( 'tipocontrato_id', $combotipocontrato, array(),
+                                                [
+                                                  'class'       => 'form-control control input-sm' ,
+                                                  'id'          => 'tipocontrato_id',
+                                                  'required'    => '',
+                                                  'data-aw'     => '1'
+                                                ]) !!}
+                            </div>
+                          </div>
+
                          <div class="form-group">
                             <label class="col-sm-12 control-label labelleft">
-                              Fec Desde <span class="required">*</span>
+                              Fecha Inicio <span class="required">*</span>
                             </label> 
                             <div class="col-sm-6 abajocaja">
                               <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
@@ -37,7 +62,7 @@
 
                           <div class="form-group">
                             <label class="col-sm-12 control-label labelleft">
-                              Fecha Hasta <span class="required">*</span>
+                              Fecha Fin <span class="required">*</span>
                             </label> 
                             <div class="col-sm-6 abajocaja">
                               <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
@@ -50,31 +75,45 @@
                             </div>
                           </div>
 
-                          <div class="form-group">
-                              <label class="col-sm-12 control-label labelleft">Empresa <span class="required">*</span></label>
-                              <div class="col-sm-6 abajocaja">
-
-                                <input  type="text"
-                                        id="empresa" name='empresa' value="@if(isset($contrato)){{old('empresa',$contrato->empresa)}}@else{{old('empresa')}}@endif" placeholder="Empresa"
-                                        required = ""
-                                        autocomplete="off" class="form-control input-sm" data-aw="3"/>
-                                        @include('error.erroresvalidate', [ 'id' => $errors->has('empresa')  , 
-                                                                    'error' => $errors->first('empresa', ':message') , 
-                                                                    'data' => '2'])
-
-                              </div>
+                          <div class="form-group ajaxcargo">
+                             @include('general.ajax.combocargo', ['combocargo' => $combocargo])
                           </div>
 
-
-
-                          
-                      </div>
+                       </div>
               
                     </div>
 
                     <div class="col-sm-6">
 
                         <div class="panel-body">
+
+                           <div class="form-group">
+
+                              <label class="col-sm-12 control-label labelleft">Jornada Laboral <span class="required">*</span></label>
+                              <div class="col-sm-7 abajocaja">
+                                {!! Form::select( 'jornadalaboral_id', $combojornadalaboral, array(),
+                                                  [
+                                                    'class'       => 'form-control control input-sm' ,
+                                                    'id'          => 'jornadalaboral_id',
+                                                    'required'    => '',
+                                                    'data-aw'     => '21'
+                                                  ]) !!}
+                              </div>
+                           </div>
+
+                           <div class="form-group">
+
+                                <label class="col-sm-12 control-label labelleft">Periodicidad <span class="required">*</span></label>
+                                <div class="col-sm-7 abajocaja">
+                                    {!! Form::select( 'periodicidad_id', $comboperiodicidad, array(),
+                                                      [
+                                                        'class'       => 'form-control control input-sm' ,
+                                                        'id'          => 'periodicidad_id',
+                                                        'required'    => '',
+                                                        'data-aw'     => '24'
+                                                      ]) !!}
+                                </div>
+                           </div>
 
                           <div class="form-group">
                               <label class="col-sm-12 control-label labelleft">Observación <span class="required">*</span></label>
@@ -104,7 +143,7 @@
                                       @endif 
                                     @endif 
                                     name="estado" id="rad1">
-                                  <label for="rad1">Pendiente</label>
+                                  <label for="rad1">Activo</label>
                                 </div>
 
                                 <div class="be-radio has-danger inline">
@@ -123,23 +162,63 @@
                               </div>
                           </div>  
 
-                          <div class="form-group ">
-
-                            <label class="col-sm-12 control-label labelleft" >Tipo Contrato  <span class="required">*</span> </label>
-                            <div class="col-sm-6 abajocaja"  >
-                              {!! Form::select( 'tipocontratotrabajador_id', $combotipocontratotrabajador, array(),
-                                                [
-                                                  'class'       => 'form-control control input-sm' ,
-                                                  'id'          => 'tipocontratotrabajador_id',
-                                                  'required'    => '',
-                                                  'data-aw'     => '1'
-                                                ]) !!}
-                            </div>
-                          </div>
-
+                    
                         </div>
 
                     </div>
+                </div>
+
+             </div>  
+
+             <div id="menu2" class="tab-pane fade" >
+                <h3></h3>
+                <div class="row" >
+
+                    <div class="col-md-6 centro">
+                      <div class="panel-body">
+
+                           <div class="form-group" >
+
+                                <label class="col-sm-12 control-label labelleft">Tipo Pago <span class="required">*</span></label>
+                                <div class="col-sm-7 abajocaja">
+                                  {!! Form::select( 'tipopago_id', $combotipopago, array(),
+                                                    [
+                                                      'class'       => 'form-control control input-sm' ,
+                                                      'id'          => 'tipopago_id',
+                                                      'required'    => '',
+                                                      'data-aw'     => '22'
+                                                    ]) !!}
+                                </div>
+                            </div>
+
+                            <div class="form-group" >
+                                  <label class="col-sm-12 control-label labelleft">Número Cuenta <span class="required">*</span></label>
+                                  <div class="col-sm-7 abajocaja">
+
+                                    <input  type="text"
+                                            id="numerocuenta" name='numerocuenta' value="@if(isset($trabajador)){{old('numerocuenta',$trabajador->numerocuenta)}}@else{{old('numerocuenta')}}@endif" placeholder="Número Cuenta"
+                                            required = ""
+                                            autocomplete="off" class="form-control input-sm" data-aw="23"/>
+
+                                  </div>
+                            </div>
+
+                            <div class="form-group">
+                                  <label class="col-sm-12 control-label labelleft">Remuneración <span class="required">*</span></label>
+                                  <div class="col-sm-7 abajocaja">
+
+                                    <input  type="text"
+                                            id="remuneracion" name='remuneracion' value="@if(isset($trabajador)){{old('remuneracion',$trabajador->remuneracion)}}@else{{old('remuneracion')}}@endif" placeholder="Remuneración"
+                                            required = "" data-parsley-type="number"
+                                            autocomplete="off" class="form-control input-sm" data-aw="25"/>
+
+                                  </div>
+                            </div>
+                         
+                      </div>
+              
+                    </div>
+
                 </div>
 
                 <ul class="list-unstyled list-inline pull-right">
@@ -149,7 +228,7 @@
                                       
                     </p>                
                 </ul>
-             </div>           
+             </div>          
 
         </div>
    </div>

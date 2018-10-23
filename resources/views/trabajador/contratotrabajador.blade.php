@@ -52,6 +52,7 @@
 
                        
                       </div> 
+                      <!--
                       <div class="col-sm-2 imprimir detmodificar"> 
 
                           <div class="iconi"><span 
@@ -64,7 +65,7 @@
 
                        
                       </div>                     
-
+                      -->
                   </li>
                 </ul>
               </div>

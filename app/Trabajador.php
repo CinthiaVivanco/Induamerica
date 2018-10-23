@@ -50,51 +50,12 @@ class Trabajador extends Model
 
 
 
-     public function area()
-    {
-        return $this->belongsTo('App\Area');
-    }
-
-    public function gerencia()
-    {
-        return $this->belongsTo('App\Gerencia');
-    }
-
-    public function cargo()
-    {
-        return $this->belongsTo('App\Cargo');
-    }
-
-    public function unidad()
-    {
-        return $this->belongsTo('App\Unidad');
-    }
-
     public function tipotrabajador()
     {
         return $this->belongsTo('App\Tipotrabajador');
     }
 
-    public function tipocontrato()
-    {
-        return $this->belongsTo('App\Tipocontrato');
-    }
-
-    public function jornadalaboral()
-    {
-        return $this->belongsTo('App\Jornadalaboral');
-    }
-
-    public function tipopago()
-    {
-        return $this->belongsTo('App\Tipopago');
-    }
-
-    public function periodicidad()
-    {
-        return $this->belongsTo('App\periodicidad');
-    }
-
+   
     public function motivobaja()
     {
         return $this->belongsTo('App\Motivobaja');

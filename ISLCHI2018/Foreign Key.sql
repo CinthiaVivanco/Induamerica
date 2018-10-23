@@ -82,26 +82,6 @@ ADD FOREIGN KEY (motivobaja_id) REFERENCES motivobajas(id);
 GO
 
 ALTER TABLE trabajadores
-ADD FOREIGN KEY (tipocontrato_id) REFERENCES tipocontratos(id);
-GO
-
-ALTER TABLE trabajadores
-ADD FOREIGN KEY (tipopago_id) REFERENCES tipopagos(id);
-GO
-
-ALTER TABLE trabajadores
-ADD FOREIGN KEY (periodicidad_id) REFERENCES periodicidads(id);
-GO
-
-ALTER TABLE trabajadores
-ADD FOREIGN KEY (cargo_id) REFERENCES cargos(id);
-GO
-
-ALTER TABLE trabajadores
-ADD FOREIGN KEY (jornadalaboral_id) REFERENCES jornadalaborals(id);
-GO
-
-ALTER TABLE trabajadores
 ADD FOREIGN KEY (entidadfinanciera_id) REFERENCES entidadfinancieras(id);
 GO
 
@@ -266,9 +246,26 @@ GO
 ----------------------------------------------------------------------CONTRATO DEL TRABAJADOR--------------------------------------------------------------------
 
 ALTER TABLE contratos
-ADD FOREIGN KEY (tipocontratotrabajador_id) REFERENCES tipocontratotrabajadores(id);
+ADD FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id);
 GO
 
 ALTER TABLE contratos
-ADD FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id);
+ADD FOREIGN KEY (tipocontrato_id) REFERENCES tipocontratos(id);
 GO
+
+ALTER TABLE contratos
+ADD FOREIGN KEY (tipopago_id) REFERENCES tipopagos(id);
+GO
+
+ALTER TABLE contratos
+ADD FOREIGN KEY (periodicidad_id) REFERENCES periodicidads(id);
+GO
+
+ALTER TABLE contratos
+ADD FOREIGN KEY (cargo_id) REFERENCES cargos(id);
+GO
+
+ALTER TABLE contratos
+ADD FOREIGN KEY (jornadalaboral_id) REFERENCES jornadalaborals(id);
+GO
+

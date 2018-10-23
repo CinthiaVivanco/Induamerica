@@ -227,9 +227,7 @@ DROP TABLE [laboratorioexamenes];
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'rolopciones') AND type in (N'U'))
 DROP TABLE [rolopciones];
 GO
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'rolopciones') AND type in (N'U'))
-DROP TABLE [rolopciones];
-GO
+
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'opciones') AND type in (N'U'))
 DROP TABLE [opciones];
 GO
@@ -624,6 +622,7 @@ CREATE TABLE establecimientolaborals (
 */
 GO
 
+
 CREATE TABLE trabajadores (
   [apellidopaterno] varchar(100) NOT NULL,
   [apellidomaterno] varchar(100) NOT NULL,
@@ -639,15 +638,10 @@ CREATE TABLE trabajadores (
   [nombrezona] varchar(100) NOT NULL,
   [referencia] varchar(100)  NULL,
   [interior] varchar(20) NOT NULL,
-  [remuneracion] int NOT NULL,
-  [numerocuenta] varchar(100) NOT NULL,
   [discapacidad] int NOT NULL,
   [sindicalizado] int NOT NULL,
   [departamento_id] varchar(20) NOT NULL,
   [provincia_id] varchar(20) NOT NULL,
-  [gerencia_id] varchar(20) NOT NULL,
-  [area_id] varchar(20) NOT NULL,
-  [unidad_id] varchar(20) NULL,
   [afiliadoeps] int NOT NULL,
   [essaludvida] int NOT NULL,
   [senati] int NOT NULL,
@@ -681,11 +675,6 @@ CREATE TABLE trabajadores (
   [pais_id] varchar(20) NOT NULL,
   [tipotrabajador_id] varchar(20) NOT NULL,
   [motivobaja_id] varchar(20) NOT NULL,
-  [tipocontrato_id] varchar(20) NOT NULL,
-  [tipopago_id] varchar(20) NOT NULL,
-  [periodicidad_id] varchar(20) NOT NULL,
-  [cargo_id] varchar(20) NOT NULL,
-  [jornadalaboral_id] varchar(20) NOT NULL,
   [entidadfinanciera_id] varchar(20) NOT NULL,
   [regimensalud_id] varchar(20) NOT NULL,
   [regimenpensionario_id] varchar(20) NOT NULL,
@@ -698,12 +687,8 @@ CREATE TABLE trabajadores (
   [categoriaocupacional_id] varchar(20) NOT NULL,
   [ocupacion_id] varchar(20) NOT NULL,
   [situacionespecial_id] varchar(20) NOT NULL,
-  [local_id] varchar(20) NOT NULL,
-  /*
-  [fechaingreso] datetime NOT NULL,
-  [fechacese] datetime NULL,
-
-  */
+  [local_id] varchar(20) NOT NULL
+ 
 ) ;
 GO
 
@@ -777,7 +762,6 @@ CREATE TABLE rolopciones (
   PRIMARY KEY  ([id])
 ) ;
 GO
-
 
 
 -----------------------------------------------------------------------FICHA DERECHO HABIENTE--------------------------------------------------------------------
@@ -979,22 +963,23 @@ GO
 
 ----------------------------------------------------------------------CONTRATO DEL TRABAJADOR--------------------------------------------------------------------
 
-CREATE TABLE tipocontratotrabajadores(
-	[id] varchar(20) NOT NULL,
-	[descripcion] varchar(50) NOT NULL,
-    PRIMARY KEY ([id])
-)  ;
-GO
-
 CREATE TABLE contratos(
 	[id] varchar(20) NOT NULL,
+	[tipocontrato_id] varchar(20) NOT NULL,
 	[fechainicio] date NOT NULL,
 	[fechafin] date NOT NULL,
-	[empresa] varchar(50) NULL,
 	[observacion] varchar(50) NULL,
 	[estado]  int NOT NULL default 1,
+	[remuneracion] int NOT NULL,
+	[numerocuenta] varchar(100) NOT NULL,
+	[gerencia_id] varchar(20) NOT NULL,
+	[area_id] varchar(20) NOT NULL,
+	[unidad_id] varchar(20) NULL,
     PRIMARY KEY ([id]),
-	[tipocontratotrabajador_id] varchar(20) NULL,
+    [tipopago_id] varchar(20) NOT NULL,
+	[periodicidad_id] varchar(20) NOT NULL,
+	[cargo_id] varchar(20) NOT NULL,
+	[jornadalaboral_id] varchar(20) NOT NULL,
 	[trabajador_id] varchar(20) NOT NULL
 )  ;
 GO
