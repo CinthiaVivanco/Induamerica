@@ -6,10 +6,10 @@
               <div class="process-step tabmenu1">
                <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-file-text fa-2x"></i></button>
                <p><small>Datos <br />Personales</small></p>
-               <div class='errortab'>
+               <div class='errortabdh'>
                  <i class="fa fa-exclamation" aria-hidden="true"></i> 
                </div>
-               <div class='bientab'>
+               <div class='bientabdh'>
                  <i class="fa fa-check" aria-hidden="true"></i> 
                </div>
               </div>
@@ -17,10 +17,10 @@
               <div class="process-step tabmenu2">
                <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-users fa-2x"></i></button>
                <p><small>Datos<br />Familiares</small></p>
-               <div class='errortab'>
+               <div class='errortabdh'>
                  <i class="fa fa-exclamation" aria-hidden="true"></i> 
                </div>
-               <div class='bientab'>
+               <div class='bientabdh'>
                  <i class="fa fa-check" aria-hidden="true"></i> 
                </div>
               </div>
@@ -28,10 +28,10 @@
               <div class="process-step tabmenu3">
                <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-home fa-2x"></i></button>
                <p><small>Datos<br />Domicilio</small></p>
-               <div class='errortab'>
+               <div class='errortabdh'>
                  <i class="fa fa-exclamation" aria-hidden="true"></i> 
                </div>
-               <div class='bientab'>
+               <div class='bientabdh'>
                  <i class="fa fa-check" aria-hidden="true"></i> 
                </div>
               </div>

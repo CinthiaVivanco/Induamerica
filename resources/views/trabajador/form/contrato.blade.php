@@ -135,7 +135,7 @@
                               <div class="col-sm-6 abajocaja">
 
                                 <div class="be-radio has-success inline">
-                                  <input type="radio" value="1" 
+                                  <input type="radio" value="1" class="estadoactivo"  
 
                                     @if(isset($contrato)) 
                                       @if($contrato->estado == 1) 
@@ -147,8 +147,7 @@
                                 </div>
 
                                 <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0'
-
+                                  <input type="radio" value='0' class="estadoconcluido"  
 
                                     @if(isset($contrato)) 
                                       @if($contrato->estado == 0) 
@@ -196,7 +195,7 @@
                                   <div class="col-sm-7 abajocaja">
 
                                     <input  type="text"
-                                            id="numerocuenta" name='numerocuenta' value="@if(isset($trabajador)){{old('numerocuenta',$trabajador->numerocuenta)}}@else{{old('numerocuenta')}}@endif" placeholder="Número Cuenta"
+                                            id="numerocuenta" name='numerocuenta' value="@if(isset($contrato)){{old('numerocuenta',$contrato->numerocuenta)}}@else{{old('numerocuenta')}}@endif" placeholder="Número Cuenta"
                                             required = ""
                                             autocomplete="off" class="form-control input-sm" data-aw="23"/>
 
@@ -208,7 +207,7 @@
                                   <div class="col-sm-7 abajocaja">
 
                                     <input  type="text"
-                                            id="remuneracion" name='remuneracion' value="@if(isset($trabajador)){{old('remuneracion',$trabajador->remuneracion)}}@else{{old('remuneracion')}}@endif" placeholder="Remuneración"
+                                            id="remuneracion" name='remuneracion' value="@if(isset($contrato)){{old('remuneracion',$contrato->remuneracion)}}@else{{old('remuneracion')}}@endif" placeholder="Remuneración"
                                             required = "" data-parsley-type="number"
                                             autocomplete="off" class="form-control input-sm" data-aw="25"/>
 

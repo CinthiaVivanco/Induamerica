@@ -35,7 +35,25 @@ $(document).ready(function(){
             $('.tipovivienda').attr( "required",true);
         }
         
-    });   */
+    });   */    
+
+    var cssactivo= {"color":'#4453ee'};
+    var cssconcluido= {"color":'#e46'};
+
+
+    $(".tab-content").on('click','#guardarcontrato', function() { 
+
+        if($('.estadoactivo').is(':checked')){
+
+            $(".numero").css(nuevocss);
+            alert("ACTIVO");
+
+        }else{
+            alert("CONCLUIDO");
+        }   
+
+    });
+
 
 
     $(".ltipovivienda").on('click','.tipodevivienda', function() {

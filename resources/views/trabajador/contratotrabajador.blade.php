@@ -21,7 +21,7 @@
 
       @foreach($listacontrato as $item)
 
-        <div class="col-sm-4">  
+        <div class="col-sm-4 listacontratoo">  
           <div class="cont_principal">
             <div class="cont_centrar">
               <div class="cont_princ_lists">
@@ -30,27 +30,22 @@
                     <div class="row">
 
                       <div class="col-sm-4 detid"> 
-
-                          <p>{{$item->trabajador->dni}}</p>
-                      
+                          <p class="numero">{{$item->trabajador->dni}}</p>                          
                       </div>
 
                       <div class="col-sm-6 detnombres">
                           <h2 class="panel-heading">Contrato</h2>
-
-
                       </div>
+
                       <div class="col-sm-2 detmodificar"> 
 
-                          <div class="iconc"><span 
+                          <div class="icon"><span 
                                           class="mdi mdi-edit" 
                                           id='btnmodificarc'
                                           name='{{$item->id}}' 
                                           data_opcion='{{$idopcion}}'
                                           data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
                                           ></span></div>
-
-                       
                       </div> 
                       <!--
                       <div class="col-sm-2 imprimir detmodificar"> 

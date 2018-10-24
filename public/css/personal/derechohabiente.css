@@ -21,6 +21,24 @@
   transition: all 0.5s;
 }
 
+.process-step .errortabdh{ 
+    position: absolute;
+    top: 2px;
+    right: 92px;
+    color: #d82739;
+    font-size: 1.2em;
+    display: none;
+}
+
+.process-step .bientabdh{ 
+    position: absolute;
+    top: 2px;
+    right: 92px;
+    color: #34a853;
+    font-size: 1.2em;
+    display: none;
+}
+
 
 .cont_princ_lists .detdni p{
   margin-top: 25px;

@@ -35,7 +35,7 @@
                       </div>
                       <div class="col-sm-6 detnombres"> 
 
-                          <p class='detnombre'>{{$item->nombres}}</p>
+                          <p class='detnombre'>{{$item->nmbres}}</p>
                           <p class='detapellido'>{{$item->apellidopaterno}} {{$item->apellidomaterno}}</p>
 
                       </div>
@@ -120,11 +120,11 @@
                 var menu  = $(this).attr('id');
 
                 if (error === undefined || error === null || error === '') {
-                    $(".tab"+menu+' .errortab').css("display", "none");
-                    $(".tab"+menu+' .bientab').css("display", "block");
+                    $(".tab"+menu+' .errortabdh').css("display", "none");
+                    $(".tab"+menu+' .bientabdh').css("display", "block");
                 }else{
-                    $(".tab"+menu+' .errortab').css("display", "block");
-                    $(".tab"+menu+' .bientab').css("display", "none");
+                    $(".tab"+menu+' .errortabdh').css("display", "block");
+                    $(".tab"+menu+' .bientabdh').css("display", "none");
                 }
 
 

@@ -24,17 +24,19 @@
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  margin-left: 200px;
+
 }
 
 
-.cont_princ_lists .detid p{
+.cont_princ_lists .detid .numero{
   margin-top: 25px;
   padding-left: 5px;
   border-left: 4px solid #e45;
   color: #e45;
   font-weight: bold;
 }
+
+
 .cont_princ_lists .detnombres .detnombre{
     margin-top: 25px;
     margin-bottom: 0px;
