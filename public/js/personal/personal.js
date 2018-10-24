@@ -42,16 +42,11 @@ $(document).ready(function(){
 
 
     $(".tab-content").on('click','#guardarcontrato', function() { 
-
         if($('.estadoactivo').is(':checked')){
-
-            $(".numero").css(nuevocss);
             alert("ACTIVO");
-
         }else{
             alert("CONCLUIDO");
         }   
-
     });
 
 
