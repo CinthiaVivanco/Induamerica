@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Data.SqlClient
 
 Public Class frmAsistencia
     Dim rutaFoto As String = "\\SYSCERIN\AppAsistencia\"
@@ -64,20 +65,7 @@ Public Class frmAsistencia
     End Sub
     Private Sub ShowHintImage(ByVal iType As Integer)
 
-        If (iType = 0) Then
-            imgNO.Visible = False
-            imgOK.Visible = False
 
-        ElseIf (iType = 1) Then
-
-            imgNO.Visible = False
-            imgOK.Visible = True
-
-        ElseIf (iType = 2) Then
-
-            imgNO.Visible = True
-            imgOK.Visible = False
-        End If
     End Sub
     Private Sub ZKFPEngX1_OnImageReceived(ByVal sender As Object, ByVal e As AxZKFPEngXControl.IZKFPEngXEvents_OnImageReceivedEvent) Handles ZKFPEngX1.OnImageReceived
         Dim g As Graphics = picHuella.CreateGraphics()
@@ -154,7 +142,7 @@ Public Class frmAsistencia
     End Sub
 
     Private Function imgOK() As Object
-        Throw New NotImplementedException
+        'Throw New NotImplementedException
     End Function
 
     Private Function ConvertirAByte(ByVal img As Image) As Byte()
@@ -199,7 +187,7 @@ Public Class frmAsistencia
         Timer1.Stop()
     End Sub
 
-  
+
 
     Private Sub frmAsistencia_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -209,7 +197,7 @@ Public Class frmAsistencia
         Timer1.Start()
 
         Limpiar()
-
+        ListadoPersonalAsistencia()
         ' If codigo.Length > 0 Then
 
         Call Iniciar_Sensor()
@@ -296,7 +284,7 @@ Public Class frmAsistencia
             MsgBox("Sensor NO Detectado ", 48, Me.Text)
         Finally
             obj = Nothing
-            La = Nothing
+            la = Nothing
         End Try
     End Sub
 
@@ -310,7 +298,7 @@ Public Class frmAsistencia
         Dim Estado As String = ""
         Dim Foto As String = ""
 
-        
+
 
         If Id_Personal = 0 Then
             NroDocumento = RTrim(LTrim(Me.TxtNroDocuemento.Text))
@@ -334,7 +322,7 @@ Public Class frmAsistencia
             End If
         Else
 
-        
+
             dt = obj.LeerxNroDocxID(Id_Personal)
 
             row = dt.Rows(0)
@@ -364,7 +352,8 @@ Public Class frmAsistencia
 
 
             If U IsNot Nothing Then
-                LblNombre.Text = U.nombres
+
+                LblNombre.Text = U.nombres & " " & U.apellidopaterno & " " & U.apellidomaterno
                 LblDni.Text = "N° D.N.I : " & NroDocumento
 
                 'Foto = rutaFoto & NroDocumento + ".jpg"
@@ -406,36 +395,42 @@ Public Class frmAsistencia
         Dim aviso As String = ""
         Dim idasistencia As String = ""
         Dim atributomodificar As String = ""
+        Dim prefijo As String = ""
         Dim errorsw As Integer = 0
+        Dim swcolor As Integer = 0
         Dim tipo As String = ""
-
+        Dim nombres As String = ""
+        Dim estadoaviso As String = ""
         ' aviso = ds.Tables(0).Columns(0).ToString
 
         aviso = ds.Tables(0).Rows(0).Item(0)
         errorsw = ds.Tables(0).Rows(0).Item(1)
         idasistencia = ds.Tables(0).Rows(0).Item(2)
         atributomodificar = ds.Tables(0).Rows(0).Item(3)
+        prefijo = ds.Tables(0).Rows(0).Item(4)
+        swcolor = ds.Tables(0).Rows(0).Item(5)
+        nombres = ds.Tables(0).Rows(0).Item(6)
+        estadoaviso = ds.Tables(0).Rows(0).Item(7)
+
 
         tipo = Microsoft.VisualBasic.Left(aviso, 1)
 
         Try
             If errorsw = 0 Then
-                If MessageBox.Show("Esta seguro de registrar su " & aviso, Me.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
-                    obj.Registrar(New Asistencia(idasistencia, atributomodificar))
-                    'MessageBox.Show("Asistencia Registrada exitosamente", Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    LblMensaje.Text = "Asistencia Registrada Correctamente."
-                    Me.txtobs.Text = ""
-
-                    ' Me.Close()
-                Else
-                    Limpiar()
+                obj.Registrar(New Asistencia(idasistencia, atributomodificar, prefijo, estadoaviso))
+                'MessageBox.Show("Asistencia Registrada exitosamente", Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Information)
+                If swcolor = 1 Then
+                    LblMensaje.ForeColor = Color.MidnightBlue
                 End If
+                LblMensaje.Text = aviso
+                ListadoPersonalAsistencia()
+                ' Me.Close()
             Else
                 ' MessageBox.Show("Ya registro su Asistencia el dia de Hoy", Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Information)
                 ' Me.Close()
 
                 lblError.Visible = True
-                lblError.Text = "Este Personal ya registró su Asistencia !!!"
+                lblError.Text = aviso
                 lblError.ForeColor = Color.Red
             End If
 
@@ -451,7 +446,33 @@ Public Class frmAsistencia
         End Try
 
     End Sub
+    Private Sub ListadoPersonalAsistencia()
 
+         Dim obj As RNAsistencia = New RNAsistencia
+
+        dt = obj.ListadoPersonalAsistencia("12345")
+
+        If dt.Rows.Count > 0 Then
+            ' dgvlistado.AutoGenerateColumns = False
+            dgvlistado.DataSource = dt
+            dgvlistado.CurrentCell = Nothing
+            dgvlistado.RowHeadersVisible = False
+            For Each fila As DataGridViewRow In dgvlistado.Rows
+                If fila.Cells("Estado").Value = "Entrada" Or fila.Cells("Estado").Value = "Salida" Then
+                    fila.DefaultCellStyle.BackColor = Color.DarkGreen
+                Else
+                    fila.DefaultCellStyle.BackColor = Color.MidnightBlue
+                End If
+            Next
+            'dgvlistado.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+        Else
+            dgvlistado.DataSource = Nothing
+            dgvlistado.Rows.Clear()
+        End If
+
+
+    End Sub
     Private Sub TxtNroDocuemento_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TxtNroDocuemento.KeyPress
         If Char.IsDigit(e.KeyChar) Then
             e.Handled = False
@@ -490,31 +511,57 @@ Public Class frmAsistencia
         If segundos = 2 Then
             LblMensaje.Text = ""
             lblError.Text = ""
-            lblError.Visible = False
+            'lblError.Visible = False
             Timer2.Stop()
             Limpiar()
         End If
     End Sub
 
     Private Sub Timer2_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer2.Tick
-        Static C As Integer
 
-        C = C + 1 'Inicializando
-        If C = 1 Then
-            LblMensaje.ForeColor = Color.Red
-        ElseIf C = 2 Then
-            LblMensaje.ForeColor = Color.Blue
-        ElseIf C = 3 Then
-            LblMensaje.ForeColor = Color.Yellow
-        Else : C = 4
-            C = 0
+        'Static C As Integer
 
-        End If
+        'C = C + 1
+        'If C = 1 Then
+        'LblMensaje.ForeColor = Color.Red
+        'ElseIf C = 2 Then
+        'LblMensaje.ForeColor = Color.Blue
+        'ElseIf C = 3 Then
+        'LblMensaje.ForeColor = Color.Yellow
+        'Else : C = 4
+        'C = 0
+
+        'End If
+
     End Sub
 
     Private Sub cboturno_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboturno.SelectedIndexChanged
         If cboturno.SelectedIndex > 0 Then
             seleccion = cboturno.SelectedIndex
         End If
+    End Sub
+
+    Private Sub LblMensaje_Click(sender As Object, e As EventArgs) Handles LblMensaje.Click
+
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+
+    Private Sub lblError_Click(sender As Object, e As EventArgs) Handles lblError.Click
+
+    End Sub
+
+    Private Sub dgvlistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvlistado.CellContentClick
+
+    End Sub
+
+    Private Sub LblDni_Click(sender As Object, e As EventArgs) Handles LblDni.Click
+
+    End Sub
+
+    Private Sub PH_Clock1_Load(sender As Object, e As EventArgs) Handles PH_Clock1.Load
+
     End Sub
 End Class

@@ -24,6 +24,7 @@ Partial Class frmAsistencia
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAsistencia))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lbl_fecha = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.memoHint = New System.Windows.Forms.TextBox()
@@ -33,15 +34,14 @@ Partial Class frmAsistencia
         Me.picHuella = New System.Windows.Forms.PictureBox()
         Me.rbtZkFinger10 = New System.Windows.Forms.RadioButton()
         Me.rbtZkFinger9 = New System.Windows.Forms.RadioButton()
-        Me.LblMensaje = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtobs = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.dgvlistado = New System.Windows.Forms.DataGridView()
         Me.LblDni = New System.Windows.Forms.Label()
         Me.LblNombre = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.picFoto = New System.Windows.Forms.PictureBox()
         Me.TxtNroDocuemento = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.picFoto = New System.Windows.Forms.PictureBox()
         Me.lblError = New System.Windows.Forms.Label()
         Me.cboturno = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -50,11 +50,13 @@ Partial Class frmAsistencia
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ZKFPEngX1 = New AxZKFPEngXControl.AxZKFPEngX()
         Me.imgNO = New System.Windows.Forms.PictureBox()
+        Me.LblMensaje = New System.Windows.Forms.Label()
         Me.PH_Clock1 = New AppAsistencia.PH_Clock()
         Me.GroupBoxHuella.SuspendLayout()
         CType(Me.picHuella, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.dgvlistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ZKFPEngX1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgNO, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,10 +88,10 @@ Partial Class frmAsistencia
         '
         'memoHint
         '
-        Me.memoHint.Location = New System.Drawing.Point(800, 323)
+        Me.memoHint.Location = New System.Drawing.Point(804, 395)
         Me.memoHint.Multiline = True
         Me.memoHint.Name = "memoHint"
-        Me.memoHint.Size = New System.Drawing.Size(204, 89)
+        Me.memoHint.Size = New System.Drawing.Size(36, 17)
         Me.memoHint.TabIndex = 60
         Me.memoHint.Visible = False
         '
@@ -98,9 +100,10 @@ Partial Class frmAsistencia
         Me.GroupBoxHuella.Controls.Add(Me.UltraLabel14)
         Me.GroupBoxHuella.Controls.Add(Me.btnHuellaRefresh)
         Me.GroupBoxHuella.Controls.Add(Me.picHuella)
+        Me.GroupBoxHuella.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxHuella.Location = New System.Drawing.Point(800, 9)
         Me.GroupBoxHuella.Name = "GroupBoxHuella"
-        Me.GroupBoxHuella.Size = New System.Drawing.Size(205, 295)
+        Me.GroupBoxHuella.Size = New System.Drawing.Size(205, 248)
         Me.GroupBoxHuella.TabIndex = 59
         Me.GroupBoxHuella.TabStop = False
         Me.GroupBoxHuella.Text = "HUELLA"
@@ -109,11 +112,11 @@ Partial Class frmAsistencia
         '
         Me.UltraLabel14.Enabled = False
         Me.UltraLabel14.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.UltraLabel14.Location = New System.Drawing.Point(6, 196)
+        Me.UltraLabel14.Location = New System.Drawing.Point(17, 196)
         Me.UltraLabel14.Multiline = True
         Me.UltraLabel14.Name = "UltraLabel14"
         Me.UltraLabel14.ReadOnly = True
-        Me.UltraLabel14.Size = New System.Drawing.Size(193, 93)
+        Me.UltraLabel14.Size = New System.Drawing.Size(154, 37)
         Me.UltraLabel14.TabIndex = 29
         '
         'btnHuellaRefresh
@@ -159,44 +162,61 @@ Partial Class frmAsistencia
         Me.rbtZkFinger9.UseVisualStyleBackColor = True
         Me.rbtZkFinger9.Visible = False
         '
-        'LblMensaje
-        '
-        Me.LblMensaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMensaje.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.LblMensaje.Location = New System.Drawing.Point(463, 529)
-        Me.LblMensaje.Name = "LblMensaje"
-        Me.LblMensaje.Size = New System.Drawing.Size(332, 40)
-        Me.LblMensaje.TabIndex = 66
-        Me.LblMensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.txtobs)
-        Me.GroupBox1.Controls.Add(Me.LblDni)
-        Me.GroupBox1.Controls.Add(Me.LblNombre)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
+        Me.GroupBox1.Controls.Add(Me.LblNombre)
+        Me.GroupBox1.Controls.Add(Me.LblDni)
         Me.GroupBox1.Controls.Add(Me.TxtNroDocuemento)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Location = New System.Drawing.Point(463, 80)
+        Me.GroupBox1.Controls.Add(Me.LblMensaje)
+        Me.GroupBox1.Controls.Add(Me.lblError)
+        Me.GroupBox1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(466, 9)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(332, 446)
+        Me.GroupBox1.Size = New System.Drawing.Size(332, 517)
         Me.GroupBox1.TabIndex = 65
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "PERSONAL"
         '
-        'txtobs
+        'GroupBox2
         '
-        Me.txtobs.Location = New System.Drawing.Point(25, 138)
-        Me.txtobs.Multiline = True
-        Me.txtobs.Name = "txtobs"
-        Me.txtobs.Size = New System.Drawing.Size(289, 45)
-        Me.txtobs.TabIndex = 52
+        Me.GroupBox2.Controls.Add(Me.dgvlistado)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 198)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(319, 320)
+        Me.GroupBox2.TabIndex = 52
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Lista Personal"
+        '
+        'dgvlistado
+        '
+        Me.dgvlistado.AllowUserToAddRows = False
+        Me.dgvlistado.AllowUserToDeleteRows = False
+        Me.dgvlistado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvlistado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvlistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvlistado.DefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvlistado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvlistado.Location = New System.Drawing.Point(3, 16)
+        Me.dgvlistado.Name = "dgvlistado"
+        Me.dgvlistado.ReadOnly = True
+        Me.dgvlistado.Size = New System.Drawing.Size(313, 301)
+        Me.dgvlistado.TabIndex = 0
         '
         'LblDni
         '
-        Me.LblDni.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblDni.ForeColor = System.Drawing.Color.DarkRed
-        Me.LblDni.Location = New System.Drawing.Point(9, 106)
+        Me.LblDni.BackColor = System.Drawing.Color.White
+        Me.LblDni.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDni.ForeColor = System.Drawing.Color.DarkGreen
+        Me.LblDni.Location = New System.Drawing.Point(9, 110)
         Me.LblDni.Name = "LblDni"
         Me.LblDni.Size = New System.Drawing.Size(317, 28)
         Me.LblDni.TabIndex = 51
@@ -204,44 +224,24 @@ Partial Class frmAsistencia
         '
         'LblNombre
         '
-        Me.LblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblNombre.ForeColor = System.Drawing.Color.DarkRed
-        Me.LblNombre.Location = New System.Drawing.Point(6, 78)
+        Me.LblNombre.BackColor = System.Drawing.Color.White
+        Me.LblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNombre.ForeColor = System.Drawing.Color.DarkGreen
+        Me.LblNombre.Location = New System.Drawing.Point(9, 137)
         Me.LblNombre.Name = "LblNombre"
-        Me.LblNombre.Size = New System.Drawing.Size(320, 28)
+        Me.LblNombre.Size = New System.Drawing.Size(317, 28)
         Me.LblNombre.TabIndex = 50
         Me.LblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.picFoto)
-        Me.GroupBox2.Location = New System.Drawing.Point(68, 178)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(230, 252)
-        Me.GroupBox2.TabIndex = 38
-        Me.GroupBox2.TabStop = False
-        '
-        'picFoto
-        '
-        Me.picFoto.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picFoto.Location = New System.Drawing.Point(6, 11)
-        Me.picFoto.Name = "picFoto"
-        Me.picFoto.Size = New System.Drawing.Size(218, 235)
-        Me.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picFoto.TabIndex = 0
-        Me.picFoto.TabStop = False
         '
         'TxtNroDocuemento
         '
         Me.TxtNroDocuemento.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNroDocuemento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TxtNroDocuemento.Location = New System.Drawing.Point(25, 44)
+        Me.TxtNroDocuemento.Location = New System.Drawing.Point(9, 44)
         Me.TxtNroDocuemento.MaxLength = 8
         Me.TxtNroDocuemento.Name = "TxtNroDocuemento"
         Me.TxtNroDocuemento.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TxtNroDocuemento.Size = New System.Drawing.Size(289, 31)
+        Me.TxtNroDocuemento.Size = New System.Drawing.Size(317, 31)
         Me.TxtNroDocuemento.TabIndex = 36
         Me.TxtNroDocuemento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -256,13 +256,26 @@ Partial Class frmAsistencia
         Me.Label5.TabIndex = 37
         Me.Label5.Text = "Ingrese aqui su Nro Documento:"
         '
+        'picFoto
+        '
+        Me.picFoto.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picFoto.Location = New System.Drawing.Point(817, 263)
+        Me.picFoto.Name = "picFoto"
+        Me.picFoto.Size = New System.Drawing.Size(154, 126)
+        Me.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picFoto.TabIndex = 0
+        Me.picFoto.TabStop = False
+        '
         'lblError
         '
+        Me.lblError.BackColor = System.Drawing.Color.White
         Me.lblError.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblError.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblError.Location = New System.Drawing.Point(463, 557)
+        Me.lblError.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblError.Location = New System.Drawing.Point(9, 165)
         Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(332, 40)
+        Me.lblError.Size = New System.Drawing.Size(317, 30)
         Me.lblError.TabIndex = 67
         Me.lblError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -270,19 +283,21 @@ Partial Class frmAsistencia
         '
         Me.cboturno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboturno.FormattingEnabled = True
-        Me.cboturno.Location = New System.Drawing.Point(537, 21)
+        Me.cboturno.Location = New System.Drawing.Point(12, 25)
         Me.cboturno.Name = "cboturno"
         Me.cboturno.Size = New System.Drawing.Size(92, 21)
         Me.cboturno.TabIndex = 69
+        Me.cboturno.Visible = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(472, 24)
+        Me.Label2.Location = New System.Drawing.Point(12, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(46, 13)
         Me.Label2.TabIndex = 68
         Me.Label2.Text = "TURNO"
+        Me.Label2.Visible = False
         '
         'Label9
         '
@@ -300,7 +315,7 @@ Partial Class frmAsistencia
         '
         'Timer1
         '
-        Me.Timer1.Interval = 1000
+        Me.Timer1.Interval = 1500
         '
         'ZKFPEngX1
         '
@@ -320,6 +335,17 @@ Partial Class frmAsistencia
         Me.imgNO.TabStop = False
         Me.imgNO.Visible = False
         '
+        'LblMensaje
+        '
+        Me.LblMensaje.BackColor = System.Drawing.Color.White
+        Me.LblMensaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMensaje.ForeColor = System.Drawing.Color.DarkGreen
+        Me.LblMensaje.Location = New System.Drawing.Point(9, 83)
+        Me.LblMensaje.Name = "LblMensaje"
+        Me.LblMensaje.Size = New System.Drawing.Size(317, 27)
+        Me.LblMensaje.TabIndex = 66
+        Me.LblMensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'PH_Clock1
         '
         Me.PH_Clock1.AutoSize = True
@@ -334,14 +360,13 @@ Partial Class frmAsistencia
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1018, 606)
+        Me.Controls.Add(Me.picFoto)
         Me.Controls.Add(Me.imgNO)
         Me.Controls.Add(Me.ZKFPEngX1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.cboturno)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.LblMensaje)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.memoHint)
         Me.Controls.Add(Me.GroupBoxHuella)
         Me.Controls.Add(Me.rbtZkFinger10)
@@ -358,6 +383,7 @@ Partial Class frmAsistencia
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        CType(Me.dgvlistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picFoto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ZKFPEngX1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgNO, System.ComponentModel.ISupportInitialize).EndInit()
@@ -375,11 +401,9 @@ Partial Class frmAsistencia
     Friend WithEvents picHuella As System.Windows.Forms.PictureBox
     Private WithEvents rbtZkFinger10 As System.Windows.Forms.RadioButton
     Private WithEvents rbtZkFinger9 As System.Windows.Forms.RadioButton
-    Friend WithEvents LblMensaje As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents LblDni As System.Windows.Forms.Label
     Friend WithEvents LblNombre As System.Windows.Forms.Label
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents picFoto As System.Windows.Forms.PictureBox
     Friend WithEvents TxtNroDocuemento As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
@@ -387,10 +411,12 @@ Partial Class frmAsistencia
     Friend WithEvents cboturno As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents txtobs As System.Windows.Forms.TextBox
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents ZKFPEngX1 As AxZKFPEngXControl.AxZKFPEngX
     Private WithEvents imgNO As System.Windows.Forms.PictureBox
+    Friend WithEvents LblMensaje As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents dgvlistado As System.Windows.Forms.DataGridView
 
 End Class

@@ -115,3 +115,16 @@ C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasN
 C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
 C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
 C:\Users\Usuario\Desktop\coffee fe\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll.config
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\bin\Debug\ReglasNegocio.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\bin\Debug\ReglasNegocio.pdb
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\bin\Debug\ReglasNegocio.xml
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\bin\Debug\Entidades.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\bin\Debug\Entidades.pdb
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\bin\Debug\Entidades.xml
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbprojResolveAssemblyReference.cache
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\obj\Debug\ReglasNegocio.Resources.resources
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\obj\Debug\ReglasNegocio.vbproj.GenerateResource.Cache
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\obj\Debug\ReglasNegocio.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\obj\Debug\ReglasNegocio.xml
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\reglasnegocio\obj\Debug\ReglasNegocio.pdb

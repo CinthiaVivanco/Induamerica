@@ -216,3 +216,30 @@ C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\App
 C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
 C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
 C:\Users\Usuario\Desktop\coffee fe\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe.config
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\Interop.ZKFPEngXControl.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AxInterop.ZKFPEngXControl.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.ResolveComReference.cache
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.exe
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.xml
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.pdb
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\dll\AxInterop.ZKFPEngXControl.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\dll\Interop.ZKFPEngXControl.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\img\buscar.gif
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\img\NODISPONIBLE.JPG
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\AppAsistencia.exe
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\AppAsistencia.pdb
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\AppAsistencia.xml
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\Entidades.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\ReglasNegocio.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\Entidades.pdb
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\Entidades.xml
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\ReglasNegocio.pdb
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\ReglasNegocio.xml
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\Interop.ZKFPEngXControl.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\bin\Debug\AxInterop.ZKFPEngXControl.dll
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbprojResolveAssemblyReference.cache
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.frmAsistencia.resources
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.Resources.resources
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.PH_Clock.resources
+C:\wamp64\www\induamerica\APPASISTENCIA\app - install\AppAsistencia\obj\x86\Debug\AppAsistencia.vbproj.GenerateResource.Cache

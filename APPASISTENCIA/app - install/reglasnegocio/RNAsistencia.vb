@@ -7,6 +7,8 @@ Public Class RNAsistencia
 		With cmd.Parameters
             .AddWithValue("@idasistenca", wAsistencia.Usuario)
             .AddWithValue("@variableenviar", wAsistencia.tipo)
+            .AddWithValue("@prefijo", wAsistencia.observacion)
+            .AddWithValue("@estadoaviso", wAsistencia.EstadoAviso)
 		End With
 		Try
 			cn.Open()
@@ -113,4 +115,26 @@ Public Class RNAsistencia
 
     End Function
 
+
+    Public Function ListadoPersonalAsistencia(xid As String) As DataTable
+        Try
+            Dim cn As New SqlConnection(My.Settings.conexion)
+
+            Dim adaptador As New SqlDataAdapter("pr_ListadoAsisxID", cn)
+            adaptador.SelectCommand.CommandType = CommandType.StoredProcedure
+
+            With adaptador.SelectCommand.Parameters
+                .AddWithValue("@id", xid)
+            End With
+
+            Dim dt As New DataTable
+            adaptador.Fill(dt)
+
+            Return dt
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+
+    End Function
 End Class

@@ -35,7 +35,7 @@ $(document).ready(function(){
             $('.tipovivienda').attr( "required",true);
         }
         
-    });   */    
+    });   
 
     var cssactivo= {"color":'#4453ee'};
     var cssconcluido= {"color":'#e46'};
@@ -48,7 +48,7 @@ $(document).ready(function(){
             alert("CONCLUIDO");
         }   
     });
-
+  */  
 
 
     $(".ltipovivienda").on('click','.tipodevivienda', function() {

@@ -21,7 +21,9 @@
 
       @foreach($listacontrato as $item)
 
-        <div class="col-sm-4 listacontratoo">  
+
+        <!--
+        <div class="col-sm-4 listacontrato @if($item->estado == 1) activo @else concluido @endif">  
           <div class="cont_principal">
             <div class="cont_centrar">
               <div class="cont_princ_lists">
@@ -37,9 +39,14 @@
                           <h2 class="panel-heading">Contrato</h2>
                       </div>
 
+                      <div class="col-sm-4 detfecha"> 
+                          <p class="fecha">{{$item->fechainicio}} / {{$item->fechafin}}</p> 
+                      </div>
+
                       <div class="col-sm-2 detmodificar"> 
 
                           <div class="icon"><span 
+                                          
                                           class="mdi mdi-edit" 
                                           id='btnmodificarc'
                                           name='{{$item->id}}' 
@@ -47,10 +54,11 @@
                                           data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
                                           ></span></div>
                       </div> 
-                      <!--
-                      <div class="col-sm-2 imprimir detmodificar"> 
+                      
+                      <div class="col-sm-2 imprimir detdescargar"> 
 
-                          <div class="iconi"><span 
+                          <div class="icond"><span 
+
                                           class="fa fa-download" 
                                           id='btnmodificarc'
                                           name='{{$item->id}}' 
@@ -60,12 +68,71 @@
 
                        
                       </div>                     
-                      -->
+                      
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      -->
+
+        <div class="col-sm-4 container listacontrato @if($item->estado == 1) activo @else concluido @endif"">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 estilo ">
+                <div class="offer offer-success cont_princ_lists estilo1" >
+                  <div class="shape">
+                    <div class="shape-text">
+                      act              
+                    </div>
+                  </div>
+                  <div class="offer-content">
+                    <h3 class="lead">
+                     Contrato
+                    </h3>           
+                    <p>
+                     Desde: {{$item->fechainicio}}  Hasta:  {{$item->fechafin}}
+                      <br> 
+                    </p>
+                  </div>
+                  <div class="col-sm-2 detmodificar"> 
+
+                          <div class="icon"><span 
+                                          
+                                class="fa fa-pencil" 
+                                id='btnmodificarc'
+                                name='{{$item->id}}' 
+                                data_opcion='{{$idopcion}}'
+                                data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
+                                ></span></div>
+                  </div>
+
+                  <div class="col-sm-2 detpdf"> 
+
+                          <div class="icon"><span 
+                                          
+                                class="icon mdi mdi-collection-pdf" 
+  
+                                ></span></div>
+                  </div>
+
+                  <!--
+                  <div class="col-sm-2 imprimir detdescargar"> 
+
+                          <div class="icond"><span 
+
+                                class="fa fa-download" 
+                                id='btnmodificarc'
+                                name='{{$item->id}}' 
+                                data_opcion='{{$idopcion}}'
+                                data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
+                                ></span></div>
+
+                  </div> 
+                  --> 
+                </div>
+              </div>
+            </div>
         </div>
                  
     @endforeach

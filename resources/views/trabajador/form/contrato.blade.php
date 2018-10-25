@@ -135,7 +135,7 @@
                               <div class="col-sm-6 abajocaja">
 
                                 <div class="be-radio has-success inline">
-                                  <input type="radio" value="1" class="estadoactivo"  
+                                  <input type="radio" value="1"  
 
                                     @if(isset($contrato)) 
                                       @if($contrato->estado == 1) 
@@ -147,7 +147,7 @@
                                 </div>
 
                                 <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0' class="estadoconcluido"  
+                                  <input type="radio" value='0'  
 
                                     @if(isset($contrato)) 
                                       @if($contrato->estado == 0) 
@@ -172,8 +172,9 @@
              <div id="menu2" class="tab-pane fade" >
                 <h3></h3>
                 <div class="row" >
+                    
 
-                    <div class="col-md-6 centro">
+                    <div class="col-md-6 col-md-offset-3 centro">
                       <div class="panel-body">
 
                            <div class="form-group" >
