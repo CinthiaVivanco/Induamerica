@@ -1,7 +1,15 @@
 $(document).ready(function(){
     var carpeta = $("#carpeta").val();
 
+
+    $(".datetimepicker1").datetimepicker({MinimumDateTime: 0 });
+
+  
     /*
+    $(".datetimepicker1").datetimepicker({ minDate: 0 });
+
+
+
 
     var nuevocss= {"position":'absolute', "margin-top":'-97px ', "margin-left":'156px'};
 

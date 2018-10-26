@@ -1,3 +1,12 @@
+.concluido .shape-text{
+  display: none;
+}
+
+.concluido .shape-text .fin{
+  display: block;
+  position: absolute;
+}
+
 .estilo1{
     width: max-content;
     height: 101px;
@@ -9,14 +18,6 @@
     top: -90px;
     font-size: 19px;
     right: -109px;
-}
-
-.detpdf{
-    position: absolute;
-    top: -50px;
-    right: -211px;
-    font-size: 19px;
-
 }
 
 
@@ -36,6 +37,8 @@
   align-content: center;
 } 
 */
+
+
 .cont_princ_lists  ul{
   padding-left: 0px;
   font-family: 'Open Sans', sans-serif;
@@ -56,7 +59,6 @@
   transition: all 0.5s;
 
 }
-
 
 .cont_princ_lists .detid .numero{
   margin-top: 25px;
@@ -79,20 +81,49 @@
     color: #999;
     font-size: 1em;   
 }
-/*
-.cont_princ_lists .mdi-edit{
 
-    margin-top: 25px;
-    padding-top: 5px;
-    padding-left: 10px;
-    font-size: 1.6em;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border-radius: 25px;
-    border: 1px solid #999;
+.cont_princ_lists .fa-pencil{
+
+    margin-top: -3px ;
+    padding-top: 4px !important;
+    padding-left: 7.5px !important;
+    font-size: 19px !important;
+    position: absolute !important;
+    cursor: pointer !important;
+    width: 31px !important;
+    height: 30px !important;
+    border-radius: 25px !important;
+    border: 1px solid #999 !important;
 }
 
+
+.mdi-collection-pdf {
+      padding-right: 20px;
+    position: absolute;
+    top: -48px;
+    right: 23px !important;
+    font-size: 23px !important;
+}
+
+.mdi-collection-pdf:hover{
+  color: #4285f4;
+}
+.mdi-collection-pdf:after{
+
+  color: #a6a6a6;
+}
+
+.panel-heading .tools .icon {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #bababa;
+    min-width: 20px;
+    text-align: center;
+}
+/*
 .cont_princ_lists .fa-download{
     margin-top: 25px;
     padding-top: 5px;
@@ -133,6 +164,7 @@
   -webkit-transform:rotate(360deg); /* Safari and Chrome */
   transform:rotate(360deg);
 }
+
 .offer{
   background:#fff; 
   border:1px solid #ddd; 
@@ -192,6 +224,8 @@ transition: all 0.4s ease-in-out;
   -webkit-transform:rotate(30deg); /* Safari and Chrome */
   transform:rotate(30deg);
 } 
+
+
 .offer-content{
   padding:0 20px 10px;
 }

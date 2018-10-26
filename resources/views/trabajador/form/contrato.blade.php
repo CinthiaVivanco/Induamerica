@@ -45,12 +45,13 @@
                             </div>
                           </div>
 
+
                          <div class="form-group">
                             <label class="col-sm-12 control-label labelleft">
                               Fecha Inicio <span class="required">*</span>
                             </label> 
                             <div class="col-sm-6 abajocaja">
-                              <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
+                              <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker datetimepicker1">
                                         <input size="16" type="text" value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechainicio')}}@endif" placeholder="Fecha Desde"
                                         id='fechainicio' name='fechainicio' 
                                         required = ""
@@ -74,6 +75,7 @@
                               </div>
                             </div>
                           </div>
+            
 
                           <div class="form-group ajaxcargo">
                              @include('general.ajax.combocargo', ['combocargo' => $combocargo])

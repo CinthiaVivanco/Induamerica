@@ -7,6 +7,12 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/select2/css/select2.min.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/bootsnipp.css') }} "/>
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/datatables/css/dataTables.bootstrap.min.css') }} "/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/scrollbar/scrollbar.css') }} "/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/bootstrap-select/css/bootstrap-select.min.css') }} "/>
+
+
+
 @stop
 @section('section')
 
@@ -79,13 +85,21 @@
 
         <div class="col-sm-4 container listacontrato @if($item->estado == 1) activo @else concluido @endif"">
             <div class="row">
+             <div class="cont_princ_lists">
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 estilo ">
                 <div class="offer offer-success cont_princ_lists estilo1" >
+                  
                   <div class="shape">
                     <div class="shape-text">
                       act              
                     </div>
+                    <div class="shape-text fin">
+                      fin              
+                    </div>
                   </div>
+
+     
+                  
                   <div class="offer-content">
                     <h3 class="lead">
                      Contrato
@@ -107,14 +121,20 @@
                                 ></span></div>
                   </div>
 
-                  <div class="col-sm-2 detpdf"> 
+                <div class="row content ">
+                  <div class="col-md-12">
+                    <div class="panel-heading">
 
-                          <div class="icon"><span 
-                                          
-                                class="icon mdi mdi-collection-pdf" 
-  
-                                ></span></div>
-                  </div>
+                      <div class="tools toolsopcion">
+                        <a href="{{url('/contrato-trabajador-pdf')}}" target="_blank" data-toggle="tooltip" id="descargarcontrato" data-placement="top" title="">
+                            <span class="icon mdi mdi-collection-pdf"></span>
+                        </a>
+
+                      </div>
+                    </div>
+                   </div>
+                </div>
+                  
 
                   <!--
                   <div class="col-sm-2 imprimir detdescargar"> 
@@ -132,6 +152,7 @@
                   --> 
                 </div>
               </div>
+            </div>
             </div>
         </div>
                  
@@ -183,10 +204,25 @@
     <script src="{{ asset('public/lib/parsley/parsley.js') }}" type="text/javascript"></script>
 
 
+    <script src="{{ asset('public/js/general/jquery.scrollbar.js') }}" type="text/javascript"></script> 
+    <script src="{{ asset('public/lib/datatables/js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/lib/datatables/js/dataTables.bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/lib/datatables/plugins/buttons/js/dataTables.buttons.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/lib/datatables/plugins/buttons/js/buttons.html5.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/lib/datatables/plugins/buttons/js/buttons.flash.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/lib/datatables/plugins/buttons/js/buttons.print.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/lib/datatables/plugins/buttons/js/buttons.colVis.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/lib/datatables/plugins/buttons/js/buttons.bootstrap.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/app-tables-datatables.js') }}" type="text/javascript"></script>
+
+
+
     <script type="text/javascript">
       $(document).ready(function(){
         //initialize the javascript
         App.init();
+        App.dataTables();
+        $('[data-toggle="tooltip"]').tooltip();
         App.formElements();
         $('form').parsley();
 
@@ -222,5 +258,6 @@
       });
     </script> 
     <script src="{{ asset('public/js/personal/personal.js') }}" type="text/javascript"></script>
+
     
 @stop
