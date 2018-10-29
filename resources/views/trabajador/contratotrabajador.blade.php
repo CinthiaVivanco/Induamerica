@@ -11,8 +11,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/scrollbar/scrollbar.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/bootstrap-select/css/bootstrap-select.min.css') }} "/>
 
-
-
 @stop
 @section('section')
 
@@ -218,7 +216,8 @@
 
 
     <script type="text/javascript">
-      $(document).ready(function(){
+      $(document).ready(function(){  
+
         //initialize the javascript
         App.init();
         App.dataTables();
@@ -245,9 +244,6 @@
                     $(".tab"+menu+' .errortab').css("display", "block");
                     $(".tab"+menu+' .bientab').css("display", "none");
                 }
-
-
-
 
             });
 

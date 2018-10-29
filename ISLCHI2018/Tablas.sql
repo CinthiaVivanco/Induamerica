@@ -12,6 +12,10 @@ IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'enfermedades
 DROP TABLE [detallefichaenfermedades];
 GO
 
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'jornadalaborals') AND type in (N'U'))
+DROP TABLE [detallejornadalaborals];
+GO
+
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'fichasocioeconomicas') AND type in (N'U'))
 DROP TABLE [fichasocioeconomicas];
 GO
@@ -248,6 +252,7 @@ CREATE TABLE tipodocumentos (
   [identificador] varchar(20) NULL,
   [descripcion] varchar(100) NOT NULL,
   [descripcionabreviado] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO 
@@ -255,6 +260,7 @@ GO
 CREATE TABLE tipozonas (
   [id]  varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -264,6 +270,7 @@ CREATE TABLE tipovias (
   [tipo] varchar(50) NOT NULL,
   PRIMARY KEY  ([id]),
   [tipozona_id] varchar(20) NOT NULL,
+  [activo]  int NOT NULL default 1,
   FOREIGN KEY (tipozona_id) REFERENCES tipozonas(id)
 ) ;
 GO
@@ -273,6 +280,7 @@ CREATE TABLE motivobajas (
   [codigo] varchar(20)  not NULL,
   [descripcion] varchar(150) not NULL ,
   [descripcionabreviada] varchar(150) not NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -281,6 +289,7 @@ CREATE TABLE nacionalidades (
   [id]  varchar(20) NOT NULL,
   [codigo] varchar(20) NOT NULL,
   [nombre] varchar(50) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -289,6 +298,7 @@ CREATE TABLE paises (
   [id]  varchar(20) NOT NULL,
   [codigo] varchar(20) NOT NULL,
   [nombre] varchar(50) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -296,6 +306,7 @@ GO
 CREATE TABLE departamentos (
   [id]  varchar(20) NOT NULL,
   [nombre] varchar(50) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -305,6 +316,7 @@ CREATE TABLE provincias (
   [ubigeo]  varchar(20) NOT NULL,
   [nombre] varchar(50) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [departamento_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -313,6 +325,7 @@ CREATE TABLE distritos (
   [id]  varchar(20) NOT NULL,
   [nombre] varchar(50) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [provincia_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -326,6 +339,7 @@ CREATE TABLE tipotrabajadores (
   [sectorprivado] varchar(15) NOT NULL,
   [sectorpublico] varchar(15) NOT NULL,
   [otrasentidades] varchar(15) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -338,6 +352,7 @@ CREATE TABLE categoriacupacionals (
   [sectorprivado] varchar(15) NOT NULL,
   [sectorpublico] varchar(15) NOT NULL,
   [otrasentidades] varchar(15) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -348,6 +363,7 @@ CREATE TABLE ocupaciontrabajos (
   [codigo] varchar(20) NOT NULL,
   [nombre] varchar(100) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [categoriacupacional_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -355,6 +371,7 @@ GO
 CREATE TABLE gerencias (
   [id] varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id]),
 ) ;
 GO
@@ -363,6 +380,7 @@ CREATE TABLE areas (
   [id]  varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [gerencia_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -372,6 +390,7 @@ CREATE TABLE unidades (
   [id]  varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [area_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -380,6 +399,7 @@ CREATE TABLE cargos (
   [id]  varchar(20) NOT NULL,
   [nombre] varchar(200) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [unidad_id] varchar(20) NULL
 ) ;
 GO
@@ -390,6 +410,7 @@ GO
 CREATE TABLE periodicidads (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -399,6 +420,7 @@ GO
 CREATE TABLE tipopagos (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -409,15 +431,18 @@ CREATE TABLE tipocontratos (
   [codigo] varchar(30) NOT NULL,
   [descripcion] varchar(100) NOT NULL,
   [descripcionabreviada] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
+
 
 
 CREATE TABLE regimeninstituciones (
   [id] varchar(20) NOT NULL,
   [codigo] varchar(100) NOT NULL,
   [nombre] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -427,6 +452,7 @@ CREATE TABLE tipoinstituciones (
   [codigo]  varchar(20) NOT NULL,
   [nombre]  varchar(100) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [regimeninstitucion_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -436,6 +462,7 @@ CREATE TABLE instituciones (
   [codigo]  varchar(20) NOT NULL,
   [nombre]  varchar(100) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [tipoinstitucion_id] varchar(20) NOT NULL
   
 ) ;
@@ -446,6 +473,7 @@ CREATE TABLE carreras (
   [codigo]  varchar(20) NOT NULL,
   [nombre] varchar(100) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [institucion_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -455,23 +483,15 @@ CREATE TABLE situaciones (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
   [descripcionabreviada] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
-
-
-
-CREATE TABLE jornadalaborals (
-  [id] varchar(20) NOT NULL, 
-  [descripcion] varchar(100) NOT NULL,
-  PRIMARY KEY  ([id])
-) ;
-GO
-
 
 
 CREATE TABLE estadocivils (
   [id] varchar(20) NOT NULL, 
+  [activo]  int NOT NULL default 1,
   [nombre] varchar(100) NOT NULL,
   PRIMARY KEY  ([id])
 ) ;
@@ -491,6 +511,7 @@ CREATE TABLE entidadfinancieras (
   [id] varchar(20) NOT NULL,
   [codigo] varchar(20) NOT NULL ,
   [entidad] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -501,6 +522,7 @@ CREATE TABLE regimensaluds (
   [codigo] varchar(20) NOT NULL ,
   [descripcion] varchar(100) NOT NULL ,
   [descripcionabreviada] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -513,6 +535,7 @@ CREATE TABLE regimenpensionarios (
   [sectorprivado] varchar(15) NULL,
   [sectorpublico] varchar(15) NULL,
   [otrasentidades] varchar(15) NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -522,6 +545,7 @@ CREATE TABLE codigoeps (
   [id] varchar(20) NOT NULL,
   [ruc] varchar(100) NOT NULL ,
   [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -530,6 +554,7 @@ CREATE TABLE situacioneducativas (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
   [descripcionabreviada] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -538,6 +563,7 @@ CREATE TABLE regimenlaborales (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
   [descripcionabreviada] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -549,6 +575,7 @@ CREATE TABLE categoriaocupacionales (
   [sectorpublico] varchar(100) NOT NULL ,
   [sectorprivado] varchar(100) NOT NULL ,
   [otrasentidades] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -557,6 +584,7 @@ CREATE TABLE ocupaciones (
   [id] varchar(20) NOT NULL,
   [codigo] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -565,6 +593,7 @@ CREATE TABLE situacionespeciales (
   [id] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
   [descripcionabreviada] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 
@@ -574,7 +603,7 @@ CREATE TABLE ciudades(
   [id] varchar(20) NOT NULL,
   [descripcion]  varchar(50) NULL,
   [zona]  varchar(50) NULL,
-  [activo] bit NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id]),
   
 )  ;
@@ -585,7 +614,7 @@ CREATE TABLE empresas(
   [id] varchar(20) NOT NULL,
   [descripcion]  varchar(50) NULL,
   [abreviatura]  varchar(50) NULL,
-  [activo] bit NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id]),
 )  ;
 GO
@@ -601,7 +630,7 @@ CREATE TABLE locales(
 	[email] varchar(50) NULL,
 	[descripcion] varchar(80) NULL,
 	[prefijoLocal] varchar(10) NULL,
-	[activo] [bit] NULL,
+	[activo]  int NOT NULL default 1,
     PRIMARY KEY ([id]),
 	[ciudad_id] varchar(20) NOT NULL,
 	[empresa_id] varchar(20) NOT NULL
@@ -759,6 +788,7 @@ CREATE TABLE rolopciones (
   --[updated_at] timestamp DEFAULT NULL,
   [rol_id] varchar(20)NOT NULL,
   [opcion_id] varchar(20)NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -772,6 +802,7 @@ CREATE TABLE vinculofamiliares (
   [codigo] varchar(20) NULL,
   [descripcion] varchar(100) NOT NULL,
   [descripcionabreviado] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
 GO
@@ -782,6 +813,7 @@ CREATE TABLE tipodocumentoacreditas(
   [descripcion] varchar(100) NOT NULL,
   [descripcionabreviado] varchar(100) NOT NULL,
   PRIMARY KEY  ([id]),
+  [activo]  int NOT NULL default 1,
   [vinculofamiliar_id] varchar(20) NOT NULL
 ) ;
 GO 
@@ -793,6 +825,7 @@ CREATE TABLE tipobajas (
   [codigo] varchar(20) NOT NULL,
   [descripcion] varchar(100) NOT NULL ,
   [descripcionabreviado] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1
   PRIMARY KEY  ([id])
 ) ;
 
@@ -904,6 +937,7 @@ create TABLE fichasocioeconomicas (
   [centromedico_id] varchar(20) NOT NULL,
   [frecuenciamedico_id] varchar(20) NOT NULL,
   [frecuenciaexamen_id] varchar(20) NOT NULL,
+  [activo]  int NOT NULL default 1,
   [trabajador_id] varchar(20) NOT NULL
 ) ;
 GO
@@ -963,7 +997,8 @@ GO
 
 ----------------------------------------------------------------------CONTRATO DEL TRABAJADOR--------------------------------------------------------------------
 
-CREATE TABLE contratos(
+
+create TABLE contratos(
 	[id] varchar(20) NOT NULL,
 	[tipocontrato_id] varchar(20) NOT NULL,
 	[fechainicio] date NOT NULL,
@@ -979,10 +1014,26 @@ CREATE TABLE contratos(
     [tipopago_id] varchar(20) NOT NULL,
 	[periodicidad_id] varchar(20) NOT NULL,
 	[cargo_id] varchar(20) NOT NULL,
-	[jornadalaboral_id] varchar(20) NOT NULL,
 	[trabajador_id] varchar(20) NOT NULL
 )  ;
 GO
+
+CREATE TABLE jornadalaborals (
+  [id] varchar(20) NOT NULL, 
+  [descripcion] varchar(100) NOT NULL,
+  [activo]  int NOT NULL default 1,
+  PRIMARY KEY  ([id])
+) ;
+GO
+
+CREATE TABLE detallejornadalaborals (
+  [id] varchar(20) NOT NULL,
+  [contrato_id] varchar(20)  NULL,
+  [jornadalaboral_id] varchar(20)  NULL,
+  [activo]  int NOT NULL default 1
+) ;
+GO
+
 
 /*
 CREATE TABLE parientes (

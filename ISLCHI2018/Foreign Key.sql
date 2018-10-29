@@ -265,7 +265,10 @@ ALTER TABLE contratos
 ADD FOREIGN KEY (cargo_id) REFERENCES cargos(id);
 GO
 
-ALTER TABLE contratos
-ADD FOREIGN KEY (jornadalaboral_id) REFERENCES jornadalaborals(id);
+ALTER TABLE detallejornadalaborals
+ADD FOREIGN KEY (contrato_id) REFERENCES contratos(id);
 GO
 
+ALTER TABLE detallejornadalaborals
+ADD FOREIGN KEY (jornadalaboral_id) REFERENCES jornadalaborals(id);
+GO

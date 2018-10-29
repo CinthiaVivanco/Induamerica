@@ -909,7 +909,7 @@
                           </div>
 
                           <div class="form-group">
-                              <label class="col-sm-12 control-label grande labelleft" >¿Otros ingresos?</label>
+                              <label class="col-sm-12 control-label grande labelleft" >¿Tiene otros ingresos afectos a la Renta de Quinta?</label>
 
                               <div class="col-sm-7 abajocaja">
                                 <div class="be-radio has-success inline">
@@ -924,7 +924,7 @@
                           </div>
 
                           <div class="form-group">
-                            <label class="col-sm-12 control-label labelleft">¿5ta Exonerada?</label>
+                            <label class="col-sm-12 control-label labelleft">¿Percibe Rentas de Quinta Exonerada?</label>
                             <div class="col-sm-7 abajocaja">
                               <div class="be-radio has-success inline">
                                 <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->quintaexonerada == 1) checked  @endif @else  @endif name="quintaexonerada" id="rad24">

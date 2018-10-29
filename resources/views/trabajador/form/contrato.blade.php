@@ -51,11 +51,15 @@
                               Fecha Inicio <span class="required">*</span>
                             </label> 
                             <div class="col-sm-6 abajocaja">
-                              <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker datetimepicker1">
-                                        <input size="16" type="text" value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechainicio')}}@endif" placeholder="Fecha Desde"
-                                        id='fechainicio' name='fechainicio' 
+                              <div data-min-view="2" data-date-format="dd-mm-yyyy" data-parsley-min='29-10-2018' class="input-group date datetimepicker">
+                                        <input size="16" type="text" 
+                                        value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechainicio')}}@endif" 
+                                        placeholder="Fecha Desde"
+                                        id='fechainicio' 
+                                        name='fechainicio' 
                                         required = ""
-                                        class="form-control input-sm">
+
+                                        class="form-control input-sm ">
                                         <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
                               </div>
                             </div>
@@ -75,7 +79,8 @@
                               </div>
                             </div>
                           </div>
-            
+
+
 
                           <div class="form-group ajaxcargo">
                              @include('general.ajax.combocargo', ['combocargo' => $combocargo])
@@ -88,20 +93,46 @@
                     <div class="col-sm-6">
 
                         <div class="panel-body">
+           
 
                            <div class="form-group">
 
-                              <label class="col-sm-12 control-label labelleft">Jornada Laboral <span class="required">*</span></label>
-                              <div class="col-sm-7 abajocaja">
-                                {!! Form::select( 'jornadalaboral_id', $combojornadalaboral, array(),
-                                                  [
-                                                    'class'       => 'form-control control input-sm' ,
-                                                    'id'          => 'jornadalaboral_id',
-                                                    'required'    => '',
-                                                    'data-aw'     => '21'
-                                                  ]) !!}
-                              </div>
-                           </div>
+                            <label class="col-sm-12 control-label labelleft">Jornada Laboral<span class="required">*</span></label>
+                            <div class="col-sm-6 abajocaja jornada">
+                              @foreach($jornadalaboral as $key=>$item)  
+
+                                <div class="be-checkbox inline">
+
+                                  <input 
+                                  id="{{$item->id}}" 
+                                  value="{{$item->id}}" 
+                                  name="jornadalaboral[]" 
+                                  type="checkbox"
+                                  data-parsley-multiple="groups-jornada"                   
+                                  data-parsley-errors-container="#error-jornada"
+                                  data-parsley-mincheck="1" 
+                                  @if($key == count($jornadalaboral)-1) 
+                                      required=""  
+                                  @endif 
+
+                                  @if(isset($contrato))
+                                    @if($item->activo == '1') 
+                                      checked  
+                                    @endif 
+                                  @endif
+                                  >
+                                  <label for="{{$item->id}}">
+                                    <font style="vertical-align: inherit;">
+                                      <font   style="vertical-align: inherit;">{{$item->descripcion}}</font>
+                                    </font>
+                                  </label>
+                                </div>
+                              @endforeach
+                                <div id="error-jornada"></div>
+                            </div>
+                          </div>
+
+
 
                            <div class="form-group">
 

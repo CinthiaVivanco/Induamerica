@@ -1,14 +1,36 @@
 $(document).ready(function(){
+
     var carpeta = $("#carpeta").val();
 
 
-    $(".datetimepicker1").datetimepicker({MinimumDateTime: 0 });
+   
+/*
+ 
+     $(".datetimepicker").on("dp.change", function (e) {
+        $('#datetimepicker').data("DateTimePicker").minDate(e.date);
+     });
+ 
+
+     $("#datetimepicker7").on("dp.change", function (e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+     });
+
+     $('.datetimepicker').datetimepicker({ startDate: new Date() });
+
+    $( ".datetimepicker").datetimepicker({
+        numberOfMonths: 2,
+        showButtonPanel: true,
+        minDate: "+1D",
+        maxDate: "+1M"
+    });
 
   
-    /*
+    $('.datetimepicker').datetimepicker({
+      min: new Date(),
+    });
+
+
     $(".datetimepicker1").datetimepicker({ minDate: 0 });
-
-
 
 
     var nuevocss= {"position":'absolute', "margin-top":'-97px ', "margin-left":'156px'};

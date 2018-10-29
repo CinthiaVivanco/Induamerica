@@ -12,6 +12,11 @@ class Contrato extends Model
     protected $primaryKey = 'id';
     public $incrementing = false;
 
+    public function detallejornadalaboral()
+    {
+        return $this->hasMany('App\Detallejornadalaboral');
+    }
+
 
     public function tipocontratotrabajador()
     {
@@ -47,11 +52,6 @@ class Contrato extends Model
      public function tipocontrato()
     {
         return $this->belongsTo('App\Tipocontrato');
-    }
-
-    public function jornadalaboral()
-    {
-        return $this->belongsTo('App\Jornadalaboral');
     }
 
     public function tipopago()

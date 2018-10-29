@@ -14,9 +14,9 @@ class Jornadalaboral extends Model
     public $keyType = 'string';
 
 
-    public function contrato()
+    public function detallejornadalaboral()
     {
-        return $this->hasMany('App\Contrato');
+        return $this->hasMany('App\Detallejornadalaboral');
     }
 
 

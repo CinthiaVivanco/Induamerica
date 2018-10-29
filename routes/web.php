@@ -51,8 +51,10 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/ajax-form-derechohabiente', 'DerechoHabienteController@actionDerechoHabienteAjax');
 	Route::any('/modificar-derecho-habiente-trabajador/{idderechohabiente}/{idopcion}/{idtrabajador}', 'DerechoHabienteController@actionModificarDerechoHabiente');
 
+
 	Route::any('/ficha-socioeconomica-trabajador/{idopcion}/{idtrabajador}', 'FichaSocioeconomicaController@actionFichaSocioeconomica');
 	Route::any('/ajax-form-fichasocioeconomica', 'FichaSocioeconomicaController@actionFichaSocioeconomicaAjax');
+
 	Route::any('/modificar-ficha-socioeconomica-trabajador/{idfichasocioeconomica}/{idopcion}/{idtrabajador}', 'FichaSocioeconomicaController@actionModificarFichaSocioeconomica');
 	Route::any('/ajax-ficha-del-trabajador', 'UserController@actionFichaTrabajador');
 
@@ -61,7 +63,6 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/ficha-contrato-trabajador/{idopcion}/{idtrabajador}', 'ContratoController@actionContrato');
 	Route::any('/ajax-form-contrato', 'ContratoController@actionContratoAjax');
 	Route::any('/modificar-ficha-contrato-trabajador/{idcontrato}/{idopcion}/{idtrabajador}', 'ContratoController@actionModificarContrato');
-
 
 
 
