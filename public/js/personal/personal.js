@@ -2,85 +2,44 @@ $(document).ready(function(){
 
     var carpeta = $("#carpeta").val();
 
+    $('.nivel').on('change','#situacioneducativa_id', function() {
 
-   
-/*
- 
-     $(".datetimepicker").on("dp.change", function (e) {
-        $('#datetimepicker').data("DateTimePicker").minDate(e.date);
-     });
- 
+        $variable = $("#situacioneducativa_id option:selected").text();
 
-     $("#datetimepicker7").on("dp.change", function (e) {
-        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-     });
+        if(($variable == 'TITULADO') || ($variable == 'GRADO DE BACHILLER') || ($variable == 'UNIVERSITARIA COMPLETA') 
+            || ($variable == 'ESTUD. MAESTRÍA COMPLETA') || ($variable == 'GRADO DE MAESTRÍA') || ($variable == 'ESTUD. DOCTORADO INCOMPLETO')
+            || ($variable == 'ESTUD. DOCTORADO COMPLETO') || ($variable == 'GRADO DE DOCTOR')) {
 
-     $('.datetimepicker').datetimepicker({ startDate: new Date() });
+                $("#contentestudiosid").css("display", "block");
 
-    $( ".datetimepicker").datetimepicker({
-        numberOfMonths: 2,
-        showButtonPanel: true,
-        minDate: "+1D",
-        maxDate: "+1M"
-    });
+                 $('.radioestudios').attr("required", true);
+                 $('#regimeninstitucion_id').attr("required", true);
+                 $('#tipoinstitucion_id').attr("required", true);
+                 $('#institucion_id').attr("required", true);
+                 $('#carrera_id').attr("required", true);
+                 $('#añoegreso').attr("required", true);
 
-  
-    $('.datetimepicker').datetimepicker({
-      min: new Date(),
-    });
-
-
-    $(".datetimepicker1").datetimepicker({ minDate: 0 });
-
-
-    var nuevocss= {"position":'absolute', "margin-top":'-97px ', "margin-left":'156px'};
-
-    var anteriorcss= {"position":'absolute', "margin-top":'-46px ', "margin-left":'156px'};
-
-
-    $(".panel-body").on('click','#guardarderechohabiente', function() {
-            $(".radio2").css(nuevocss);
-        
-    });
-
-    $(".abajocaja").on('click','.radio', function() {
-        $(".radio2").css(anteriorcss);
-
-     });
-
-
-
-    $(".panel-body").on('click','#guardartrabajador', function() {
-            $(".radio2").css(nuevocss);
-
-    }); 
-    
-
-
-    $(".panel-body").on('click','#guardarfichasocioeconomica', function() {
-
-        if($('.tipoviviendaa').is(':checked')){
-            $('.tipoviviendaa').attr("required", false);
+             
         }else{
-            $('.tipovivienda').attr( "required",true);
+
+              $("#contentestudiosid").css("display", "none");
+
+             $('.radioestudios').attr("required", false);
+             $('#regimeninstitucion_id').attr("required", false);
+             $('#tipoinstitucion_id').attr("required", false);
+             $('#institucion_id').attr("required", false);
+             $('#carrera_id').attr("required", false);
+             $('#añoegreso').attr("required", false);
+
+
         }
-        
-    });   
 
-    var cssactivo= {"color":'#4453ee'};
-    var cssconcluido= {"color":'#e46'};
+    })
 
 
-    $(".tab-content").on('click','#guardarcontrato', function() { 
-        if($('.estadoactivo').is(':checked')){
-            alert("ACTIVO");
-        }else{
-            alert("CONCLUIDO");
-        }   
-    });
-  */  
 
 
+ 
     $(".ltipovivienda").on('click','.tipodevivienda', function() {
 
 

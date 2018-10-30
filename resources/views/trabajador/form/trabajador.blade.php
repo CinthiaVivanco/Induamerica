@@ -472,126 +472,162 @@
         </ul>
      </div>
 
-     <div id="menu3" class="tab-pane fade">
-        <h3></h3>
-        <div class="row">
+<div id="menu3" class="tab-pane fade">
+      <h3></h3>
+      <div class="row">
 
-                <div class="col-sm-6">
-                  <div class="panel-body">
-
-                      <div class="form-group">
+              <div class="col-sm-6 col-md-offset-3">
+                <div class="panel-body">
+                   <div class="form-group">
                           <label class="col-sm-12 control-label labelleft">Nivel Instruccion <span class="required">*</span></label>
-                          <div class="col-sm-5 abajocaja">
+                          <div class="col-sm-5 abajocaja nivel" >
                             {!! Form::select( 'situacioneducativa_id', $combosituacioneducativa, array(),
                                           [
                                       'class'       => 'form-control control input-sm' ,
                                       'id'          => 'situacioneducativa_id',
                                       'required'    => '',
                                       'data-aw'     => '28'
+
                                     ]) !!}
                           </div>
+
+                   </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 ">
+              </div>
+
+      </div>
+
+
+      <div class="contentestudios @if(isset($trabajador)) 
+                    @if(isset($trabajador->regimeninstitucion))
+                      mostrar
+                    @else
+                      ocultar 
+                    @endif
+                  @else
+                    ocultar 
+                  @endif " id="contentestudiosid">
+          <div class="panelestudios panel-defaultestudios">
+              <div class="panel-headingestudios">
+                Detalle de estudios concluidos
+              </div>
+              <div class="panel-bodyestudios">
+                
+                <div class="row">
+
+                      <div class="col-sm-6 ">
+                        <div class="panel-body">
+
+                              <div class="form-group">
+
+                                  <label class="col-sm-12 control-label labelleft">¿Estudios en Perú? <span class="required">*</span></label>
+                                  <div class="col-sm-5 abajocaja">
+                                    <div class="be-radio has-success inline">
+                                      <input type="radio" value='1' class="radio radioestudios" @if(isset($trabajador)) @if($trabajador->estudiosperu == 1) checked  @endif @else  @endif name="estudiosperu" id="rad20">
+                                      <label for="rad20">Sí</label>
+                                    </div>
+                                    <div class="be-radio has-danger inline radio2">
+                                      <input type="radio" value='0' class="radio radioestudios" required = ""  @if(isset($trabajador)) @if($trabajador->estudiosperu == 0) checked  @endif @endif name="estudiosperu" id="rad21">
+                                      <label for="rad21">No</label>
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div class="form-group">
+
+                                    <label class="col-sm-12 control-label labelleft">Regimen Institucion <span class="required">*</span></label>
+                                    <div class="col-sm-5 abajocaja">
+                                        {!! Form::select( 'regimeninstitucion_id', $comboregimeninstitucion, array(),
+                                                          [
+                                                            'class'       => 'form-control control input-sm' ,
+                                                            'id'          => 'regimeninstitucion_id',
+                                                            'required'    => '',
+                                                            'data-aw'     => '10'
+                                                          ]) !!}
+                                    </div>
+                              </div>
+
+
+                              <div class="form-group ajaxtipoinstitucion">
+
+                                  <label class="col-sm-12 control-label labelleft">Tipo Institucion <span class="required">*</span></label>
+                                  <div class="col-sm-5 abajocaja">
+                                    {!! Form::select( 'tipoinstitucion_id', $combotipoinstitucion, array(),
+                                                      [
+                                                        'class'       => 'form-control control input-sm' ,
+                                                        'id'          => 'tipoinstitucion_id',
+                                                        'required'    => '',
+                                                        'data-aw'     => '11'
+                                                      ]) !!}
+                                  </div>
+                              </div>
+
+                        </div>
                       </div>
 
-                      
-                      <div class="form-group">
+                      <div class="col-sm-6 ">
 
-                          <label class="col-sm-12 control-label labelleft">¿Estudios en Perú? <span class="required">*</span></label>
-                          <div class="col-sm-5 abajocaja">
-                            <div class="be-radio has-success inline">
-                              <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->estudiosperu == 1) checked  @endif @else  @endif name="estudiosperu" id="rad20">
-                              <label for="rad20">Sí</label>
-                            </div>
-                            <div class="be-radio has-danger inline radio2">
-                              <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->estudiosperu == 0) checked  @endif @endif name="estudiosperu" id="rad21">
-                              <label for="rad21">No</label>
-                            </div>
+                          <div class="panel-body">
+
+                                <div class="form-group ajaxinstitucion">
+                                      <label class="col-sm-12 control-label labelleft">Institucion<span class="required">*</span></label>
+                                      <div class="col-sm-5 abajocaja">
+                                        {!! Form::select( 'institucion_id', $comboinstitucion, array(),
+                                                          [
+                                                            'class'       => 'form-control control input-sm' ,
+                                                            'id'          => 'institucion_id',
+                                                            'required'    => '',
+                                                            'data-aw'     => '12'
+                                                          ]) !!}
+                                      </div>
+                                </div>
+
+                                <div class="form-group ajaxcarrera">
+                                      <label class="col-sm-12 control-label labelleft">Carrera <span class="required">*</span></label>
+                                      <div class="col-sm-5 abajocaja">
+                                        {!! Form::select( 'carrera_id', $combocarrera, array(),
+                                                          [
+                                                            'class'       => 'form-control control input-sm' ,
+                                                            'id'          => 'carrera_id',
+                                                            'required'    => '',
+                                                            'data-aw'     => '12'
+                                                          ]) !!}
+                                      </div>
+                                </div>
+
+                                <div class="form-group">
+                                      <label class="col-sm-12 control-label labelleft">Año Egreso  <span class="required">*</span></label>
+                                      <div class="col-sm-5 abajocaja">
+
+                                        <input  type="text"
+                                                id="añoegreso" name='añoegreso' value="@if(isset($trabajador)){{old('añoegreso',$trabajador->añoegreso)}}@else{{old('añoegreso')}}@endif" placeholder="Año Egreso"
+                                                required = "" data-parsley-minlength="4" data-parsley-maxlength="4"  data-parsley-type="number"
+                                                autocomplete="off" class="form-control input-sm" data-aw="6"/>
+
+                                      </div>
+                                </div>
+
                           </div>
                       </div>
 
-                      <div class="form-group">
-
-                            <label class="col-sm-12 control-label labelleft">Regimen Institucion <span class="required">*</span></label>
-                            <div class="col-sm-5 abajocaja">
-                                {!! Form::select( 'regimeninstitucion_id', $comboregimeninstitucion, array(),
-                                                  [
-                                                    'class'       => 'form-control control input-sm' ,
-                                                    'id'          => 'regimeninstitucion_id',
-                                                    'required'    => '',
-                                                    'data-aw'     => '10'
-                                                  ]) !!}
-                            </div>
-                      </div>
-
-
-                      <div class="form-group ajaxtipoinstitucion">
-
-                          <label class="col-sm-12 control-label labelleft">Tipo Institucion <span class="required">*</span></label>
-                          <div class="col-sm-5 abajocaja">
-                            {!! Form::select( 'tipoinstitucion_id', $combotipoinstitucion, array(),
-                                              [
-                                                'class'       => 'form-control control input-sm' ,
-                                                'id'          => 'tipoinstitucion_id',
-                                                'required'    => '',
-                                                'data-aw'     => '11'
-                                              ]) !!}
-                          </div>
-                      </div>
-          
-                  </div>
                 </div>
 
-                <div class="col-sm-6">
 
-                    <div class="panel-body">
+              </div>
+          </div>
+      </div>
 
+      
 
-                            <div class="form-group ajaxinstitucion">
-                                  <label class="col-sm-12 control-label labelleft">Institucion<span class="required">*</span></label>
-                                  <div class="col-sm-5 abajocaja">
-                                    {!! Form::select( 'institucion_id', $comboinstitucion, array(),
-                                                      [
-                                                        'class'       => 'form-control control input-sm' ,
-                                                        'id'          => 'institucion_id',
-                                                        'required'    => '',
-                                                        'data-aw'     => '12'
-                                                      ]) !!}
-                                  </div>
-                            </div>
+      <ul class="list-unstyled list-inline pull-right">
+       <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i>Atrás</button></li>
+       <li><button type="button" class="btn btn-info next-step">Siguiente <i class="fa fa-chevron-right"></i></button></li>
+      </ul>
 
-                            <div class="form-group ajaxcarrera">
-                                  <label class="col-sm-12 control-label labelleft">Carrera <span class="required">*</span></label>
-                                  <div class="col-sm-5 abajocaja">
-                                    {!! Form::select( 'carrera_id', $combocarrera, array(),
-                                                      [
-                                                        'class'       => 'form-control control input-sm' ,
-                                                        'id'          => 'carrera_id',
-                                                        'required'    => '',
-                                                        'data-aw'     => '12'
-                                                      ]) !!}
-                                  </div>
-                            </div>
-
-                            <div class="form-group">
-                                  <label class="col-sm-12 control-label labelleft">Año Egreso  <span class="required">*</span></label>
-                                  <div class="col-sm-5 abajocaja">
-
-                                    <input  type="text"
-                                            id="añoegreso" name='añoegreso' value="@if(isset($trabajador)){{old('añoegreso',$trabajador->añoegreso)}}@else{{old('añoegreso')}}@endif" placeholder="Año Egreso"
-                                            required = "" data-parsley-minlength="4" data-parsley-maxlength="4"  data-parsley-type="number"
-                                            autocomplete="off" class="form-control input-sm" data-aw="6"/>
-
-                                  </div>
-                            </div>
-                    </div>
-                </div>
-
-            </div>
-
-        <ul class="list-unstyled list-inline pull-right">
-         <li><button type="button" class="btn btn-default prev-step"><i class="fa fa-chevron-left"></i>Atrás</button></li>
-         <li><button type="button" class="btn btn-info next-step">Siguiente <i class="fa fa-chevron-right"></i></button></li>
-        </ul>
-     </div>
+</div>
 
      <div id="menu4" class="tab-pane fade">
         <h3></h3>

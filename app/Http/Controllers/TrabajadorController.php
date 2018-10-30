@@ -355,7 +355,6 @@ class TrabajadorController extends Controller
 
 		        $trabajador 					= Trabajador::where('id', $idtrabajador)->first();
 
-
 				$tipodocumento 				 	= DB::table('tipodocumentos')->pluck('descripcion','id')->toArray();
 				$combotipodocumento  		 	= array($trabajador->tipodocumento_id => $trabajador->tipodocumento->descripcion) + $tipodocumento;
 
@@ -377,21 +376,17 @@ class TrabajadorController extends Controller
 				$distrito						= DB::table('distritos')->where('provincia_id','=',$trabajador->provincia_id)->pluck('nombre','id')->toArray();
 				$combodistrito  				= array($trabajador->distrito_id => $trabajador->distrito->nombre) + $distrito ;
 
-
 				$tipovia						= DB::table('tipovias')->pluck('tipo','id')->toArray();
 				$combotipovia  					= array($trabajador->tipovia_id => $trabajador->tipovia->tipo) + $tipovia ;
 
-				
 				$tipotrabajador					= DB::table('tipotrabajadores')->pluck('descripcionabreviada','id')->toArray();
 				$combotipotrabajador			= array($trabajador->tipotrabajador_id => $trabajador->tipotrabajador ->descripcionabreviada) + $tipotrabajador ;
 
-				
 				$motivobaja						= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
 				$combomotivobaja 				= array($trabajador->motivobaja_id => $trabajador->motivobaja ->descripcionabreviada) + $motivobaja ;
 
 				$entidadfinanciera 				= DB::table('entidadfinancieras')->pluck('entidad','id')->toArray();
 				$comboentidadfinanciera 		= array($trabajador->entidadfinanciera_id => $trabajador->entidadfinanciera ->entidad) + $entidadfinanciera ;
-
 
 				$codigoeps 						= DB::table('codigoeps')->pluck('descripcion','id')->toArray();
 				$combocodigoeps					= array($trabajador->codigoeps_id => $trabajador->codigoeps ->descripcion) + $codigoeps ;
@@ -421,7 +416,6 @@ class TrabajadorController extends Controller
 				$ocupacion 				  		= DB::table('ocupaciones')->pluck('descripcion','id')->toArray();
 				$comboocupacion       			= array($trabajador->ocupacion_id => $trabajador->ocupacion ->descripcion) + $ocupacion;
 
-
 				$empresa 					 	= $this->funciones->getEmpresa();
 
 				$local							= DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('nombreabreviado','id')->toArray();
@@ -430,21 +424,40 @@ class TrabajadorController extends Controller
 				$situacionespecial 				= DB::table('situacionespeciales')->pluck('descripcionabreviada','id')->toArray();
 				$combosituacionespecial			= array($trabajador->situacionespecial_id => $trabajador->situacionespecial ->descripcionabreviada) + $situacionespecial ;
 
-				$regimeninstitucion				= DB::table('regimeninstituciones')->pluck('nombre','id')->toArray();
-				$comboregimeninstitucion  		= array($trabajador->regimeninstitucion_id => $trabajador->regimeninstitucion->nombre) + $regimeninstitucion ;
+				if(isset($trabajador->regimeninstitucion)) {
+					
+					$regimeninstitucion				= DB::table('regimeninstituciones')->pluck('nombre','id')->toArray();
+					$comboregimeninstitucion  		= array($trabajador->regimeninstitucion_id => $trabajador->regimeninstitucion->nombre) + $regimeninstitucion;
 
-				$tipoinstitucion				= DB::table('tipoinstituciones')->where('regimeninstitucion_id','=',$trabajador->regimeninstitucion_id)->pluck('nombre','id')->toArray();
-				$combotipoinstitucion			= array($trabajador->tipoinstitucion_id => $trabajador->tipoinstitucion->nombre) + $tipoinstitucion ;
+					$tipoinstitucion				= DB::table('tipoinstituciones')
+													  ->where('regimeninstitucion_id','=',$trabajador->regimeninstitucion_id)->pluck('nombre','id')->toArray();
+					$combotipoinstitucion			= array($trabajador->tipoinstitucion_id => $trabajador->tipoinstitucion->nombre) + $tipoinstitucion ;
 
-				$institucion					= DB::table('instituciones')->where('tipoinstitucion_id','=',$trabajador->tipoinstitucion_id)->pluck('nombre','id')->toArray();
-				$comboinstitucion  				= array($trabajador->institucion_id => $trabajador->institucion->nombre) + $institucion ;
 
-				$carrera						= DB::table('carreras')->where('institucion_id','=',$trabajador->institucion_id)->pluck('nombre','id')->toArray();
-				$combocarrera  					= array($trabajador->carrera_id => $trabajador->carrera->nombre) + $carrera ;
+					$institucion					= DB::table('instituciones')->where('tipoinstitucion_id','=',$trabajador->tipoinstitucion_id)
+													  ->pluck('nombre','id')->toArray();
+					$comboinstitucion  				= array($trabajador->institucion_id => $trabajador->institucion->nombre) + $institucion ;
+
+
+					$carrera						= DB::table('carreras')->where('institucion_id','=',$trabajador->institucion_id)
+													  ->pluck('nombre','id')->toArray();
+					$combocarrera  					= array($trabajador->carrera_id => $trabajador->carrera->nombre) + $carrera ;
+
+
+				}else{
+
+					$regimeninstitucion 		 = DB::table('regimeninstituciones')->pluck('nombre','id')->toArray();
+					$comboregimeninstitucion	 = array('' => "Seleccione Regimen Institucion") + $regimeninstitucion;
+
+					$combotipoinstitucion		 = array('' => "Seleccione Tipo Insitucion");
+
+					$comboinstitucion			 = array('' => "Seleccione Institucion");
+
+					$combocarrera				 = array('' => "Seleccione Carrera");
+
+				}
 
 				$ffin 							= $this->fin;
-
-
 
 		        return View::make('trabajador/modificartrabajador', 
 		        				[
