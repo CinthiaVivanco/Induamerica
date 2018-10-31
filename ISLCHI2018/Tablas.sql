@@ -716,7 +716,11 @@ CREATE TABLE trabajadores (
   [categoriaocupacional_id] varchar(20) NOT NULL,
   [ocupacion_id] varchar(20) NOT NULL,
   [situacionespecial_id] varchar(20) NOT NULL,
-  [local_id] varchar(20) NOT NULL
+  [local_id] varchar(20) NOT NULL,
+  --[IdUsuarioCrea] varchar(20) null,
+  --[FechaCrea] datetime null,
+  --[IdUsuarioModifica] varchar(20) null,
+  --[FechaModifica] datetime null
  
 ) ;
 GO
@@ -758,7 +762,11 @@ CREATE TABLE users (
   --[updated_at] timestamp DEFAULT NULL,
   PRIMARY KEY  ([id]),
   [rol_id] varchar(20)NOT NULL,
-  [trabajador_id] varchar(20) NULL,
+  [trabajador_id] varchar(20) NULL
+  --[IdUsuarioCrea] varchar(20) null,
+  --[FechaCrea] datetime null,
+  --[IdUsuarioModifica] varchar(20) null,
+  --[FechaModifica] datetime null
 );
 GO
 
@@ -860,6 +868,10 @@ CREATE TABLE derechohabientes (
   [tipovia_id] varchar(20) NOT NULL,
   [tipozona_id] varchar(20) NOT NULL,
   [trabajador_id] varchar(20) NOT NULL
+  --[IdUsuarioCrea] varchar(20) null,
+  --[FechaCrea] datetime null,
+  --[IdUsuarioModifica] varchar(20) null,
+  --[FechaModifica] datetime null
 ) ;
 GO
 
@@ -939,6 +951,10 @@ create TABLE fichasocioeconomicas (
   [frecuenciaexamen_id] varchar(20) NOT NULL,
   [activo]  int NOT NULL default 1,
   [trabajador_id] varchar(20) NOT NULL
+  --[IdUsuarioCrea] varchar(20) null,
+  --[FechaCrea] datetime null,
+  --[IdUsuarioModifica] varchar(20) null,
+  --[FechaModifica] datetime null
 ) ;
 GO
 
@@ -1015,6 +1031,10 @@ create TABLE contratos(
 	[periodicidad_id] varchar(20) NOT NULL,
 	[cargo_id] varchar(20) NOT NULL,
 	[trabajador_id] varchar(20) NOT NULL
+  --[IdUsuarioCrea] varchar(20) null,
+  --[FechaCrea] datetime null,
+  --[IdUsuarioModifica] varchar(20) null,
+  --[FechaModifica] datetime null
 )  ;
 GO
 

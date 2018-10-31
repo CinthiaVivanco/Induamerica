@@ -13,7 +13,7 @@
                  </div>
               </div>  
               <div class="process-step tabmnu2">
-                 <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-pencil-square-o fa-2x"></i></button>
+                 <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-usd fa-2x"></i></button>
                  <p><small>Datos del<br />Pago</small></p>
                  <div class='errortab'>
                    <i class="fa fa-exclamation" aria-hidden="true"></i> 

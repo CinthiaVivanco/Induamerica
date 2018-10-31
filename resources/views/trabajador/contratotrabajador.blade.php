@@ -33,15 +33,10 @@
                   
                   <div class="shape">
                     <div class="shape-text">
-                      act              
-                    </div>
-                    <div class="shape-text fin">
-                      fin              
+                      act            
                     </div>
                   </div>
 
-     
-                  
                   <div class="offer-content">
                     <h3 class="lead">
                      Contrato

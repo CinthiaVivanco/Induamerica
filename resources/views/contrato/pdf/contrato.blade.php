@@ -17,12 +17,25 @@
     </header>
     <section>
 
-        <h1>CONTRATO INDUAMERICA</h1>
+        <h3 align="center">CONTRATO INDIVIDUAL DE TRABAJO SUJETO A MODALIDAD POR INCREMENTO DE ACTIVIDAD</h3>
 
         <article>
 
-                la señorita {{$contrato->trabajador->nombres}} dgfhffgds 
-                gdsfgdsfgdsfg
+            Conste por el presente documento, el Contrato Individual de Trabajo , de Naturaleza Temporal por Incremento de actividad, que celebran conforme al Art. 57° del TUO del D. Ley 728 aprobado por D.S. 003-97-TR Ley de Productividad y Competitividad Labrol, de una parte INDUAMÉRICA SERVICIOS LOGÍSTICOS SAC, con RUC N° 20479729141, y domicilio en CARRETERA PANAMERICANA NORTE KM 775, a la que se le denominará el EMPLEADOR, representada por el Señor Sixto Perales Huancaruna, identificado con DNI N° 16722570; y de otra parte  <font style="text-transform: uppercase;"> <strong>{{$contrato->trabajador->apellidopaterno}} {{$contrato->trabajador->apellidomaterno}},  {{$contrato->trabajador->nombres}}, </strong> </font> al que en lo sucesivo se le designará como EL TRABAJADOR, identificado con DNI N° {{$contrato->trabajador->dni}}, estado civil {{$contrato->trabajador->estadocivil->nombre}}
+                 
+                   
+                 {{$contrato->trabajador->sexo}} 
+                 {{$contrato->trabajador->tipovia->tipo}} 
+                 {{$contrato->trabajador->nombrevia}} 
+                 {{$contrato->trabajador->numerovia}} 
+                 {{$contrato->trabajador->nombrezona}} 
+                 DISTRITO {{$contrato->trabajador->distrito->nombre}}, 
+                 PROVINCIA {{$contrato->trabajador->provincia->nombre}}, 
+                 DEPARTAMENTO {{$contrato->trabajador->departamento->nombre}}
+                 {{$contrato->cargo->nombre}} 
+                 {{$contrato->fechainicio}} 
+                 {{$contrato->fechafin}} 
+
 
         </article>
 

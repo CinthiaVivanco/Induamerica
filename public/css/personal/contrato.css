@@ -2,9 +2,9 @@
   display: none;
 }
 
-.concluido .shape-text .fin{
-  display: block;
-  position: absolute;
+.concluido .detmodificar{
+  display: none;
+
 }
 
 .estilo1{
@@ -163,7 +163,11 @@
   -o-transform: rotate(360deg);  /* Opera 10.5 */
   -webkit-transform:rotate(360deg); /* Safari and Chrome */
   transform:rotate(360deg);
+
 }
+
+
+
 
 .offer{
   background:#fff; 
@@ -227,6 +231,7 @@ transition: all 0.4s ease-in-out;
   -webkit-transform:rotate(30deg); /* Safari and Chrome */
   transform:rotate(30deg);
 } 
+
 
 
 .offer-content{
