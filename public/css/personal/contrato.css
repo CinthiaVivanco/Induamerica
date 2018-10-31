@@ -196,11 +196,14 @@ transition: all 0.4s ease-in-out;
 .offer-danger .shape{
   border-color: transparent #d9534f transparent transparent;
 }
+
 .activo .offer-success {  border-color: #5cb85c; }
+
 .activo .offer-success .shape{
   border-color: transparent #5cb85c transparent transparent;
 }
-.concluido .offer-default {  border-color: #999999; }
+.concluido .offer-success {  border-color: #d9534f; }
+
 .concluido .offer-default .shape{
   border-color: transparent #999999 transparent transparent;
 }

@@ -25,62 +25,6 @@
 
       @foreach($listacontrato as $item)
 
-
-        <!--
-        <div class="col-sm-4 listacontrato @if($item->estado == 1) activo @else concluido @endif">  
-          <div class="cont_principal">
-            <div class="cont_centrar">
-              <div class="cont_princ_lists">
-                <ul>
-                  <li class="list_shopping li_num_0_1">
-                    <div class="row">
-
-                      <div class="col-sm-4 detid"> 
-                          <p class="numero">{{$item->trabajador->dni}}</p>                          
-                      </div>
-
-                      <div class="col-sm-6 detnombres">
-                          <h2 class="panel-heading">Contrato</h2>
-                      </div>
-
-                      <div class="col-sm-4 detfecha"> 
-                          <p class="fecha">{{$item->fechainicio}} / {{$item->fechafin}}</p> 
-                      </div>
-
-                      <div class="col-sm-2 detmodificar"> 
-
-                          <div class="icon"><span 
-                                          
-                                          class="mdi mdi-edit" 
-                                          id='btnmodificarc'
-                                          name='{{$item->id}}' 
-                                          data_opcion='{{$idopcion}}'
-                                          data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
-                                          ></span></div>
-                      </div> 
-                      
-                      <div class="col-sm-2 imprimir detdescargar"> 
-
-                          <div class="icond"><span 
-
-                                          class="fa fa-download" 
-                                          id='btnmodificarc'
-                                          name='{{$item->id}}' 
-                                          data_opcion='{{$idopcion}}'
-                                          data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
-                                          ></span></div>
-
-                       
-                      </div>                     
-                      
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      -->
-
         <div class="col-sm-4 container listacontrato @if($item->estado == 1) activo @else concluido @endif"">
             <div class="row">
              <div class="cont_princ_lists">
@@ -124,7 +68,7 @@
                     <div class="panel-heading">
 
                       <div class="tools toolsopcion">
-                        <a href="{{url('/contrato-trabajador-pdf')}}" target="_blank" data-toggle="tooltip" id="descargarcontrato" data-placement="top" title="">
+                        <a href="{{url('/contrato-trabajador-pdf/'.Hashids::encode(substr($item->id, -12)))}}" target="_blank" data-toggle="tooltip" id="descargarcontrato" data-placement="top" title="">
                             <span class="icon mdi mdi-collection-pdf"></span>
                         </a>
 
@@ -134,20 +78,6 @@
                 </div>
                   
 
-                  <!--
-                  <div class="col-sm-2 imprimir detdescargar"> 
-
-                          <div class="icond"><span 
-
-                                class="fa fa-download" 
-                                id='btnmodificarc'
-                                name='{{$item->id}}' 
-                                data_opcion='{{$idopcion}}'
-                                data_trabajador='{{Hashids::encode(substr($trabajador->id, -12))}}'
-                                ></span></div>
-
-                  </div> 
-                  --> 
                 </div>
               </div>
             </div>

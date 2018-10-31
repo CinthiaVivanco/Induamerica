@@ -159,7 +159,7 @@ class Trabajador extends Model
 
     public function contrato()
     {
-        return $this->belongsTo('App\Contrato');
+        return $this->hasMany('App\Contrato');
     }
 
 
