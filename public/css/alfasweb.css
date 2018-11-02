@@ -1,3 +1,8 @@
+.importe{
+    position: absolute;
+    top: -30px;
+    left: 119px;
+}
 /**********************ESTUIOS***********************/
 .panel-defaultestudios {
     border-color: #ddd !important;

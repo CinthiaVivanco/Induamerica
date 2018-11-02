@@ -1,3 +1,22 @@
+.trabajador{
+  margin-top:200px;
+  text-align: right;
+  position: absolute;
+  padding-left: 220px;
+
+}
+.empleador{
+  margin-top:200px;
+  text-align: left;
+  position: absolute;
+  padding-left: -180px;
+
+}
+.contrato{
+  text-align: justify;
+  line-height: 155%; 
+  font-size: 1em 
+}
 .concluido .shape-text{
   display: none;
 }

@@ -959,6 +959,19 @@
                               </div>
                           </div>
 
+                          <div class="montorenta">
+                              <label class="col-sm-12 control-label labelleft" >Ingrese Importe:</label>
+                              <div class="col-sm-5">
+                                 <input  type="text"
+                                    id="otrarentaquinta" 
+                                    name='otrarentaquinta' 
+                                    placeholder="Ingrese monto"
+                                    required = "" data-parsley-type="number"
+                                    autocomplete="off" class="form-control input-sm importe" data-aw="6"/>
+
+                              </div>
+                          </div>
+                    
                           <div class="form-group">
                             <label class="col-sm-12 control-label labelleft">¿Percibe Rentas de Quinta Exonerada?</label>
                             <div class="col-sm-7 abajocaja">
