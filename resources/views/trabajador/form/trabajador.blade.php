@@ -505,11 +505,11 @@
                     @if(isset($trabajador->regimeninstitucion))
                       mostrar
                     @else
-                      ocultar 
+                      mostrar 
                     @endif
                   @else
-                    ocultar 
-                  @endif " id="contentestudiosid">
+                    mostrar 
+                  @endif" id="contentestudiosid">
           <div class="panelestudios panel-defaultestudios">
               <div class="panel-headingestudios">
                 Detalle de estudios concluidos
@@ -518,7 +518,7 @@
                 
                 <div class="row">
 
-                      <div class="col-sm-6 ">
+                      <div class="col-sm-6 "> 
                         <div class="panel-body">
 
                               <div class="form-group">
@@ -947,11 +947,23 @@
                           <div class="form-group">
                               <label class="col-sm-12 control-label grande labelleft" >¿Tiene otros ingresos afectos a la Renta de Quinta?</label>
 
-                              <div class="col-sm-7 abajocaja">
+                              <div class="col-sm-7 abajocaja otrarenta">
                                 <div class="be-radio has-success inline">
-                                  <input type="radio" value='1' class="radio" @if(isset($trabajador)) @if($trabajador->rentaquinta == 1) checked  @endif @else  @endif name="rentaquinta" id="rad22">
+                                  <input 
+                                  type="radio" 
+                                  value='1' 
+                                  class="radio"
+                                  @if(isset($trabajador)) 
+                                    @if($trabajador->rentaquinta == 1)
+                                     checked  
+                                    @endif 
+                                  @else  
+                                  @endif 
+                                  name="rentaquinta" 
+                                  id="rad22">
                                   <label for="rad22">Sí</label>
                                 </div>
+
                                 <div class="be-radio has-danger inline radio2">
                                   <input type="radio" value='0' class="radio" required = ""  @if(isset($trabajador)) @if($trabajador->rentaquinta == 0) checked  @endif @endif name="rentaquinta" id="rad23">
                                   <label for="rad23">No</label>
@@ -959,18 +971,35 @@
                               </div>
                           </div>
 
-                          <div class="montorenta">
-                              <label class="col-sm-12 control-label labelleft" >Ingrese Importe:</label>
-                              <div class="col-sm-5">
-                                 <input  type="text"
-                                    id="otrarentaquinta" 
-                                    name='otrarentaquinta' 
-                                    placeholder="Ingrese monto"
-                                    required = "" data-parsley-type="number"
-                                    autocomplete="off" class="form-control input-sm importe" data-aw="6"/>
 
-                              </div>
-                          </div>
+
+                          <div class="col-sm-7 otrarentaquinta">
+                            <input  type="text" 
+                                    id="otrarentaquinta" 
+                                    name="otrarentaquinta"    
+                                    placeholder="Ingrese importe"
+                                    class="form-control input-sm
+                                        @if(isset($trabajador))
+                                          @if(count($trabajador)>0)
+                                            @if($trabajador->otrarentaquinta == '')
+                                              hide  
+                                            @endif
+                                          @else 
+                                            hide  
+                                          @endif
+                                        @else 
+                                            hide 
+                                        @endif""
+                                        data-aw='1'
+                                        @if(isset($trabajador)) 
+                                          @if($trabajador->otrarentaquinta <> '')     
+                                            value='{{$trabajador->otrarentaquinta}}'  required   
+                                          @endif 
+                                        @endif"
+
+                            />
+
+                          </div> 
                     
                           <div class="form-group">
                             <label class="col-sm-12 control-label labelleft">¿Percibe Rentas de Quinta Exonerada?</label>

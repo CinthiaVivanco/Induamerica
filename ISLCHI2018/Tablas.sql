@@ -717,6 +717,7 @@ CREATE TABLE trabajadores (
   [ocupacion_id] varchar(20) NOT NULL,
   [situacionespecial_id] varchar(20) NOT NULL,
   [local_id] varchar(20) NOT NULL,
+  [otrarentaquinta] varchar(20) NULL,
   --[IdUsuarioCrea] varchar(20) null,
   --[FechaCrea] datetime null,
   --[IdUsuarioModifica] varchar(20) null,

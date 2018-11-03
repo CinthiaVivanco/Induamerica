@@ -108,7 +108,7 @@ class GeneralAjaxController extends Controller
 		$regimeninstitucion_id   = $request['regimeninstitucion_id'];
 
 		$tipoinstitucion = DB::table('tipoinstituciones')->where('regimeninstitucion_id','=',$regimeninstitucion_id)->pluck('nombre','id')->toArray();
-		$combotipoinstitucion  = array(0 => "Seleccione Tipo Institucion") + $tipoinstitucion;
+		$combotipoinstitucion  = array('' => "Seleccione Tipo Institucion") + $tipoinstitucion;
 
 		return View::make('general/ajax/combotipoinstitucion',
 						 [
@@ -123,7 +123,7 @@ class GeneralAjaxController extends Controller
 		$tipoinstitucion_id   = $request['tipoinstitucion_id'];
 
 		$institucion = DB::table('instituciones')->where('tipoinstitucion_id','=',$tipoinstitucion_id)->pluck('nombre','id')->toArray();
-		$comboinstitucion = array(0 => "Seleccione Institucion") + $institucion;
+		$comboinstitucion = array('' => "Seleccione Institucion") + $institucion;
 
 		return View::make('general/ajax/comboinstitucion',
 						 [
@@ -137,7 +137,7 @@ class GeneralAjaxController extends Controller
 		$institucion_id = $request['institucion_id'];
 
 		$carrera 		= DB::table('carreras')->where('institucion_id','=',$institucion_id)->pluck('nombre','id')->toArray();
-		$combocarrera   = array(0 => "Seleccione Carrera") + $carrera;
+		$combocarrera   = array('' => "Seleccione Carrera") + $carrera;
 
 		return View::make('general/ajax/combocarrera',
 						 [

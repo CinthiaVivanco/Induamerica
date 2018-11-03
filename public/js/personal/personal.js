@@ -2,39 +2,17 @@ $(document).ready(function(){
 
     var carpeta = $("#carpeta").val();
 
+
+    // aca mejor programamos ok hasta buccar mejor forma haber
+
+    gradoacademico();
+
     $('.nivel').on('change','#situacioneducativa_id', function() {
 
-        $variable = $("#situacioneducativa_id option:selected").text();
-
-        if(($variable == 'TITULADO') || ($variable == 'GRADO DE BACHILLER') || ($variable == 'UNIVERSITARIA COMPLETA') 
-            || ($variable == 'ESTUD. MAESTRÍA COMPLETA') || ($variable == 'GRADO DE MAESTRÍA') || ($variable == 'ESTUD. DOCTORADO INCOMPLETO')
-            || ($variable == 'ESTUD. DOCTORADO COMPLETO') || ($variable == 'GRADO DE DOCTOR')) {
-
-                $("#contentestudiosid").css("display", "block");
-
-                 $('.radioestudios').attr("required", true);
-                 $('#regimeninstitucion_id').attr("required", true);
-                 $('#tipoinstitucion_id').attr("required", true);
-                 $('#institucion_id').attr("required", true);
-                 $('#carrera_id').attr("required", true);
-                 $('#añoegreso').attr("required", true);
-
-             
-        }else{
-
-              $("#contentestudiosid").css("display", "none");
-
-             $('.radioestudios').attr("required", false);
-             $('#regimeninstitucion_id').attr("required", false);
-             $('#tipoinstitucion_id').attr("required", false);
-             $('#institucion_id').attr("required", false);
-             $('#carrera_id').attr("required", false);
-             $('#añoegreso').attr("required", false);
-
-
-        }
+        gradoacademico();
 
     })
+
 
 
 
@@ -59,6 +37,31 @@ $(document).ready(function(){
 
         
     });
+
+
+
+
+
+    $(".otrarenta").on('click','.radio', function() {
+
+        $valor =$("input[name='rentaquinta']:checked").val(); 
+        $('#otrarentaquinta').val("");
+
+        if($valor == '1'){
+           $('#otrarentaquinta').removeClass( "hide" );
+           $('#otrarentaquinta').attr("required", true);
+
+
+        }else{
+
+           $('#otrarentaquinta').addClass( "hide" );
+           $('#otrarentaquinta').attr("required", false);
+        }
+
+    });
+
+
+
 
 
     $(".lmaterial").on('click','.tipomaterial', function() {
@@ -505,3 +508,57 @@ $(document).ready(function(){
 
 
 });
+
+function gradoacademico(){
+
+        $variable = $("#situacioneducativa_id option:selected").text(); 
+
+
+        // ya aca limpiamos antes de ingresar ok
+
+
+
+        if(($variable == 'TITULADO') || ($variable == 'GRADO DE BACHILLER') || ($variable == 'UNIVERSITARIA COMPLETA') 
+            || ($variable == 'ESTUD. MAESTRÍA COMPLETA') || ($variable == 'GRADO DE MAESTRÍA') || ($variable == 'ESTUD. DOCTORADO INCOMPLETO')
+            || ($variable == 'ESTUD. DOCTORADO COMPLETO') || ($variable == 'GRADO DE DOCTOR')) {
+
+
+
+                //$("#contentestudiosid").css("display", "block");
+
+                $('.radioestudios').attr("required", true);
+                $('#regimeninstitucion_id').attr("required", true);
+                $('.ajaxtipoinstitucion #tipoinstitucion_id').attr("required", true);
+                $('.ajaxinstitucion #institucion_id').attr("required", true);
+                $('.ajaxcarrera #carrera_id').attr("required", true);
+                $('#añoegreso').attr("required", true);
+
+             
+        }else{
+
+                //$("#contentestudiosid").css("display", "none");
+
+
+                $('.radioestudios').attr("required", false);
+                $('#regimeninstitucion_id').attr("required", false);
+                $('.ajaxtipoinstitucion #institucion_id').attr("required", false);
+                $('.ajaxinstitucion #institucion_id').attr("required", false);
+                $('.ajaxcarrera #carrera_id').attr("required", false);
+                $('#añoegreso').attr("required", false);
+
+        }
+
+        $('.radioestudios').removeAttr('checked');
+
+
+        // esto lo hacemos en la tarde mejor ok ? ok amor me avisas estare en mi casa ok te avisogracias 
+
+        //$("#regimeninstitucion_id option[value='']").attr('selected', 'selected');
+        //$("#regimeninstitucion_id").val("").change(); 
+        //$("#tipoinstitucion_id").val("").change();
+        //$("#institucion_id").val("").change();
+        //$("#carrera_id").val("").change();
+        $('#añoegreso').val('');
+
+
+}

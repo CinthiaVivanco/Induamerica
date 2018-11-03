@@ -56,7 +56,8 @@ class TrabajadorController extends Controller
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
-		if($_POST)
+
+		if($_POST) 
 		{
 
 
@@ -133,6 +134,7 @@ class TrabajadorController extends Controller
 			$cabecera->template10 			 	 = 	'';
 			$cabecera->mar_huella 			 	 = 	'';
 			$cabecera->mar_dni 				 	 = 	'';
+			$cabecera->otrarentaquinta  		 = 	$request['otrarentaquinta'];
 
 			$cabecera->save();
  			return Redirect::to('/gestion-de-trabajador/'.$idopcion)->with('bienhecho', 'Trabajador '.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
@@ -219,6 +221,8 @@ class TrabajadorController extends Controller
 
 			$ffin 						 = $this->fin;
 
+
+
 			return View::make('trabajador/agregartrabajador',
 						[
 							'combotipodocumento' 			=> $combotipodocumento,
@@ -271,7 +275,7 @@ class TrabajadorController extends Controller
 			$local	 					 = DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('nombreabreviado','id')->toArray();
 			$combolocal 				 = array('' => "Seleccione Local") + $local;*/
 
-		if($_POST)
+		if($_POST)  
 		{
 
 			/**** Validaciones laravel ****/
@@ -344,8 +348,10 @@ class TrabajadorController extends Controller
 			$cabecera->carrera_id   			  = 	$request['carrera_id'];
 			$cabecera->fechainicio 				  = 	$request['fechainicio'];
 			$cabecera->fechafin 				  = 	$request['fechafin'];
-
+			$cabecera->otrarentaquinta  		  = 	$request['otrarentaquinta'];
 			$cabecera->save();
+
+
 
  			return Redirect::to('/gestion-de-trabajador/'.$idopcion)->with('bienhecho', 'Trabajador '.$request['nombre'].' '.$request['apellidopaterno'].' modificado con éxito');
 
@@ -427,21 +433,21 @@ class TrabajadorController extends Controller
 				if(isset($trabajador->regimeninstitucion)) {
 					
 					$regimeninstitucion				= DB::table('regimeninstituciones')->pluck('nombre','id')->toArray();
-					$comboregimeninstitucion  		= array($trabajador->regimeninstitucion_id => $trabajador->regimeninstitucion->nombre) + $regimeninstitucion;
+					$comboregimeninstitucion  		= array($trabajador->regimeninstitucion_id => $trabajador->regimeninstitucion->nombre,'' => "Seleccione Regimen Institucion") + $regimeninstitucion;
 
 					$tipoinstitucion				= DB::table('tipoinstituciones')
 													  ->where('regimeninstitucion_id','=',$trabajador->regimeninstitucion_id)->pluck('nombre','id')->toArray();
-					$combotipoinstitucion			= array($trabajador->tipoinstitucion_id => $trabajador->tipoinstitucion->nombre) + $tipoinstitucion ;
+					$combotipoinstitucion			= array($trabajador->tipoinstitucion_id => $trabajador->tipoinstitucion->nombre,'' => "Seleccione Tipo Insitucion") + $tipoinstitucion ;
 
 
 					$institucion					= DB::table('instituciones')->where('tipoinstitucion_id','=',$trabajador->tipoinstitucion_id)
 													  ->pluck('nombre','id')->toArray();
-					$comboinstitucion  				= array($trabajador->institucion_id => $trabajador->institucion->nombre) + $institucion ;
+					$comboinstitucion  				= array($trabajador->institucion_id => $trabajador->institucion->nombre,'' => "Seleccione Institucion") + $institucion ;
 
 
 					$carrera						= DB::table('carreras')->where('institucion_id','=',$trabajador->institucion_id)
 													  ->pluck('nombre','id')->toArray();
-					$combocarrera  					= array($trabajador->carrera_id => $trabajador->carrera->nombre) + $carrera ;
+					$combocarrera  					= array($trabajador->carrera_id => $trabajador->carrera->nombre,'' => "Seleccione Carrera") + $carrera ;
 
 
 				}else{
