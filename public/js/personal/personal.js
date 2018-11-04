@@ -5,11 +5,11 @@ $(document).ready(function(){
 
     // aca mejor programamos ok hasta buccar mejor forma haber
 
-    gradoacademico();
+    gradoacademico('1');
 
     $('.nivel').on('change','#situacioneducativa_id', function() {
 
-        gradoacademico();
+        gradoacademico('0');
 
     })
 
@@ -226,30 +226,7 @@ $(document).ready(function(){
     
 
 
-    $(".ajaxpersonal").on('change','#regimeninstitucion_id', function() {
 
-        var regimeninstitucion_id = $('#regimeninstitucion_id').val();
-        var _token      = $('#token').val();
-
-
-        $.ajax({
-
-            type    :   "POST",
-            url     :   carpeta+"/ajax-select-tipoinstitucion",
-            data    :   {
-                            _token  : _token,
-                            regimeninstitucion_id : regimeninstitucion_id
-                        },
-            success: function (data) {
-
-                $(".ajaxtipoinstitucion").html(data);
-            },
-            error: function (data) {
-
-                console.log('Error:', data);
-            }
-        });
-    });
 
 
 	$(".ajaxpersonal").on('change','#departamentos_id', function() {
@@ -415,14 +392,38 @@ $(document).ready(function(){
 
 
 
+    $(".ajaxpersonal").on('change','#regimeninstitucion_id', function() {
 
+        var regimeninstitucion_id = $('#regimeninstitucion_id').val();
+        var _token      = $('#token').val();
+        if($('#swga').val()=='1'){return false;}
+
+        $.ajax({
+
+            type    :   "POST",
+            url     :   carpeta+"/ajax-select-tipoinstitucion",
+            data    :   {
+                            _token  : _token,
+                            regimeninstitucion_id : regimeninstitucion_id
+                        },
+            success: function (data) {
+
+                $(".ajaxtipoinstitucion").html(data);
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+    });
 
 
     $(".ajaxpersonal").on('change','#tipoinstitucion_id', function() {
 
         var tipoinstitucion_id = $('#tipoinstitucion_id').val();
-
         var _token      = $('#token').val();
+        if($('#swga').val()=='1'){return false;}
+
 
         $.ajax({
             type    :   "POST",
@@ -449,6 +450,8 @@ $(document).ready(function(){
 
         var institucion_id = $('#institucion_id').val();
         var _token      = $('#token').val();
+        if($('#swga').val()=='1'){return false;}
+
 
         $.ajax({
             type    :   "POST",
@@ -509,13 +512,13 @@ $(document).ready(function(){
 
 });
 
-function gradoacademico(){
+function gradoacademico(valor){
 
         $variable = $("#situacioneducativa_id option:selected").text(); 
 
 
         // ya aca limpiamos antes de ingresar ok
-
+        $('#swga').val('1');
 
 
         if(($variable == 'TITULADO') || ($variable == 'GRADO DE BACHILLER') || ($variable == 'UNIVERSITARIA COMPLETA') 
@@ -524,7 +527,7 @@ function gradoacademico(){
 
 
 
-                //$("#contentestudiosid").css("display", "block");
+                $("#contentestudiosid").css("display", "block");
 
                 $('.radioestudios').attr("required", true);
                 $('#regimeninstitucion_id').attr("required", true);
@@ -536,29 +539,26 @@ function gradoacademico(){
              
         }else{
 
-                //$("#contentestudiosid").css("display", "none");
+                $("#contentestudiosid").css("display", "none");
 
 
                 $('.radioestudios').attr("required", false);
                 $('#regimeninstitucion_id').attr("required", false);
-                $('.ajaxtipoinstitucion #institucion_id').attr("required", false);
+                $('.ajaxtipoinstitucion #tipoinstitucion_id').attr("required", false);
                 $('.ajaxinstitucion #institucion_id').attr("required", false);
                 $('.ajaxcarrera #carrera_id').attr("required", false);
                 $('#añoegreso').attr("required", false);
 
         }
 
+        if(valor==1){$('#swga').val('0'); return false ;}
         $('.radioestudios').removeAttr('checked');
-
-
-        // esto lo hacemos en la tarde mejor ok ? ok amor me avisas estare en mi casa ok te avisogracias 
-
-        //$("#regimeninstitucion_id option[value='']").attr('selected', 'selected');
-        //$("#regimeninstitucion_id").val("").change(); 
-        //$("#tipoinstitucion_id").val("").change();
-        //$("#institucion_id").val("").change();
-        //$("#carrera_id").val("").change();
+        $("#regimeninstitucion_id").val("").change(); 
+        $("#tipoinstitucion_id").val("").change();
+        $("#institucion_id").val("").change();
+        $("#carrera_id").val("").change();
         $('#añoegreso').val('');
+        $('#swga').val('0');
 
 
 }

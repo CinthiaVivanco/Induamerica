@@ -475,7 +475,6 @@
 <div id="menu3" class="tab-pane fade">
       <h3></h3>
       <div class="row">
-
               <div class="col-sm-6 col-md-offset-3">
                 <div class="panel-body">
                    <div class="form-group">
@@ -496,8 +495,8 @@
               </div>
 
               <div class="col-sm-6 ">
+                  <input type="hidden" value="0" id='swga'/>
               </div>
-
       </div>
 
 
@@ -505,10 +504,10 @@
                     @if(isset($trabajador->regimeninstitucion))
                       mostrar
                     @else
-                      mostrar 
+                      ocultar 
                     @endif
                   @else
-                    mostrar 
+                    ocultar 
                   @endif" id="contentestudiosid">
           <div class="panelestudios panel-defaultestudios">
               <div class="panel-headingestudios">
