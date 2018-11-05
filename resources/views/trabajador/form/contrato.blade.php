@@ -33,7 +33,7 @@
 
                          <div class="form-group ">
 
-                            <label class="col-sm-12 control-label labelleft" >Tipo Contrato  <span class="required">*</span> </label>
+                            <label class="col-sm-12 control-label labelleft" > Tipo Contrato<span class="required">*</span> </label>
                             <div class="col-sm-6 abajocaja"  >
                               {!! Form::select( 'tipocontrato_id', $combotipocontrato, array(),
                                                 [

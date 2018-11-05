@@ -9,8 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('public/css/pdf.css') }} "/>
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/personal/contrato.css') }} "/>
     <script src="{{ asset('public/js/personal/contrato.js') }}" type="text/javascript"></script>
-
-
 </head>
 
 <body>

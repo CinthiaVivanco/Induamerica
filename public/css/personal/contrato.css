@@ -1,3 +1,35 @@
+/******************************** MODAL CONTRATO *********************************/
+.modal-dialog .modal-content .modal-header {
+    background-color: #5f99f5;
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.modal-dialog  .modal-content .modal-header {
+    color: #fff;
+    padding: 25px 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.modal-body .columna{
+        position: relative;
+        top: 22px;
+}
+
+
+
+/*************************** FIN MODAL CONTRATO **********************************/
+
+.detver{
+    position: absolute;
+    top: -90px;
+    right: -115px;
+    font-size: 17px;
+}
 .trabajador{
   margin-top:200px;
   text-align: right;
@@ -17,6 +49,7 @@
   line-height: 155%; 
   font-size: 1em 
 }
+
 .concluido .shape-text{
   display: none;
 }
@@ -24,6 +57,29 @@
 .concluido .detmodificar{
   display: none;
 
+}
+
+.concluido .detver{
+  display: block;
+
+}
+.activo .detver{
+  display: none;
+}
+.concluido .modals{
+  display: block;
+}
+
+.activo .modals{
+  display: none;
+}
+
+.concluido .modal{
+  display: block;
+
+}
+.activo .modal{
+  display: none;
 }
 
 .estilo1{
@@ -115,6 +171,19 @@
     border: 1px solid #999 !important;
 }
 
+.cont_princ_lists .fa-eye{
+
+    margin-top: -3px ;
+    padding-top: 4px !important;
+    padding-left: 5px !important;
+    font-size: 19px !important;
+    position: absolute !important;
+    cursor: pointer !important;
+    width: 31px !important;
+    height: 30px !important;
+    border-radius: 25px !important;
+    border: 1px solid #999 !important;
+}
 
 .mdi-collection-pdf {
       padding-right: 20px;
@@ -158,6 +227,10 @@
 .icon{
 
     padding-top: 15px;
+}
+
+.icono{
+    position: absolute;
 }
 
 .radio2{
@@ -264,6 +337,8 @@ transition: all 0.4s ease-in-out;
     width: 50%;
   }
 }
+
+
 @media (min-width: 900px) {
   .container {
     max-width: 970px;
