@@ -13,10 +13,6 @@ $(document).ready(function(){
 
     })
 
-
-
-
-
  
     $(".ltipovivienda").on('click','.tipodevivienda', function() {
 
@@ -223,7 +219,41 @@ $(document).ready(function(){
         });
 
     });
-    
+
+/*
+    $(".editc").on('click','#btnverc', function() {
+
+        
+        var id              = $(this).attr('name');
+        var idopcion        = $(this).attr('data_opcion');
+        var idcontrato      = $(this).attr('data_contrato');
+        
+        var _token          = $('#token').val();
+
+
+
+        $.ajax({
+            type    :   "POST",
+            url     :   carpeta+"/ajax-form-contrato",
+            data    :   {
+                            _token          : _token,
+                            id              : id,
+                            idopcion        : idopcion,
+                            idcontrato      : idcontrato                                                       
+                        },
+            success: function (data) {
+
+                $(".ajaxformc").html(data);
+
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+
+    });
+    */
 
 
 

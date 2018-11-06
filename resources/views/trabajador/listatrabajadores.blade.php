@@ -1,6 +1,5 @@
 @extends('template')
 @section('style')
-
     <link rel="stylesheet" type="text/css" href="{{ asset('public/lib/datatables/css/dataTables.bootstrap.min.css') }} "/>
 @stop
 @section('section')

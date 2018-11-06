@@ -226,4 +226,20 @@ class ContratoController extends Controller
 	        				'contrato'  	    	=> $contrato,
 						 ]);
 	}	
+
+	public function actionContratoModalAjax(Request $request)
+	{
+
+
+		$idcontrato   				= $request['idcontrato'];
+		$contrato 		    		= Contrato::where('id','=' , $idcontrato)->first();
+
+		return View::make('contrato/ajax/modal',
+						 [
+
+	        				'contrato'  	    	=> $contrato,
+						 ]);
+	}	
+
+
 }

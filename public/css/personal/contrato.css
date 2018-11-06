@@ -18,7 +18,24 @@
 .modal-body .columna{
         position: relative;
         top: 22px;
+        right: -36px;
 }
+
+
+/***************MODALLL******************/
+
+.titleh4{
+  font-weight: bold;
+}
+.spanmodal{
+    font-size:15px;
+}
+
+.textmodal{
+    margin:11px 26px 20px 4px;
+
+}
+
 
 
 

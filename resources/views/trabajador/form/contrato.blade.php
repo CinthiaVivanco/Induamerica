@@ -51,14 +51,13 @@
                               Fecha Inicio <span class="required">*</span>
                             </label> 
                             <div class="col-sm-6 abajocaja">
-                              <div data-min-view="2" data-date-format="dd-mm-yyyy" data-parsley-min='29-10-2018' class="input-group date datetimepicker">
+                              <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
                                         <input size="16" type="text" 
                                         value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechainicio')}}@endif" 
                                         placeholder="Fecha Desde"
                                         id='fechainicio' 
                                         name='fechainicio' 
                                         required = ""
-
                                         class="form-control input-sm ">
                                         <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
                               </div>
