@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Crypt;
-use App\Trabajador, App\Contrato, App\Cargo, App\Tipocontrato,App\Jornadalaboral, App\Detallejornadalaboral;
+use App\Trabajador, App\Contrato, App\Cargo, App\Tipocontrato,App\Jornadalaboral, App\Formato, App\Detallejornadalaboral;
 use View;
 use Session;
 use Hashids;
@@ -28,6 +28,7 @@ class ContratoController extends Controller
 			$cabecera->cargo_id 		 	= 	$cargo->id;
 			$cabecera->tipocontrato_id 	 	= 	$request['tipocontrato_id'];
 			$cabecera->tipopago_id 	 	 	= 	$request['tipopago_id'];
+			$cabecera->formato_id 	 	 	= 	$request['formato_id'];
 			$cabecera->numerocuenta  		=	$request['numerocuenta'];
 			$cabecera->periodicidad_id   	= 	$request['periodicidad_id'];
 			$cabecera->remuneracion  	 	=	$request['remuneracion'];
@@ -48,6 +49,7 @@ class ContratoController extends Controller
 			    										->where('jornadalaboral_id','=',$item->id)->first();			    
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
+
 
 
 			}
@@ -98,12 +100,14 @@ class ContratoController extends Controller
 			$cabecera->cargo_id 		 		 = 	$cargo->id;
 			$cabecera->tipocontrato_id 	 		 = 	$request['tipocontrato_id'];
 			$cabecera->tipopago_id 	 	 		 = 	$request['tipopago_id'];
+			$cabecera->formato_id 	 	 		 = 	$request['formato_id'];
 			$cabecera->numerocuenta  			 =	$request['numerocuenta'];
 			$cabecera->periodicidad_id   		 = 	$request['periodicidad_id'];
 			$cabecera->remuneracion  	 		 =	$request['remuneracion'];
 
 
 			$cabecera->save();
+
 
 
 			//////////// Llenamos Tabla DetalleFichaCasaPartes ///////
@@ -125,6 +129,7 @@ class ContratoController extends Controller
 				$detalle->jornadalaboral_id    		=  	$item->id;
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
+
 
 			}
 
@@ -151,6 +156,9 @@ class ContratoController extends Controller
 			$tipopago					 = DB::table('tipopagos')->pluck('descripcion','id')->toArray();
 			$combotipopago				 = array('' => "Seleccione Tipo Pago") + $tipopago;
 
+			$formato					 = DB::table('formatos')->pluck('descripcionabreviada','id')->toArray();
+			$comboformato				 = array('' => "Seleccione Formato") + $formato;
+
 			$periodicidad				 = DB::table('periodicidads')->pluck('descripcion','id')->toArray();
 			$comboperiodicidad			 = array('' => "Seleccione Periodicidad") + $periodicidad;
 
@@ -168,7 +176,6 @@ class ContratoController extends Controller
 			}
 
 
-
 	        return View::make('trabajador/contratotrabajador', 
 	        				[
 
@@ -178,7 +185,8 @@ class ContratoController extends Controller
 	        					'combotipocontrato'  			=> $combotipocontrato,
 	        					'combocargo'		    		=> $combocargo,
 	        					'jornadalaboral'   				=> $jornadalaboral,
-							  	'combotipopago' 				=> $combotipopago,						
+							  	'combotipopago' 				=> $combotipopago,		
+							  	'comboformato' 					=> $comboformato,				
 							  	'comboperiodicidad' 			=> $comboperiodicidad,		
 	        				]);
 	        					
@@ -211,6 +219,9 @@ class ContratoController extends Controller
 		$tipopago 				 		= DB::table('tipopagos')->pluck('descripcion','id')->toArray();
 		$combotipopago  		 		= array($contrato->tipopago_id => $contrato->tipopago->descripcion) + $tipopago;
 
+		$formato 				 		= DB::table('formatos')->pluck('descripcionabreviada','id')->toArray();
+		$comboformato 		 			= array($contrato->formato_id => $contrato->formato->descripcion) + $formato;
+
 
 
 		return View::make('trabajador/ajax/editc',
@@ -222,6 +233,7 @@ class ContratoController extends Controller
 	        				'combocargo'  			=> $combocargo,
 	        				'comboperiodicidad'  	=> $comboperiodicidad,
 	        				'combotipopago'  		=> $combotipopago,
+	        				'comboformato'  		=> $comboformato,
 	        				'jornadalaboral'  	    => $jornadalaboral,
 	        				'contrato'  	    	=> $contrato,
 						 ]);

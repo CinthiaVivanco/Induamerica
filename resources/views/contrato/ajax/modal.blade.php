@@ -13,7 +13,7 @@
 
                           <div class="col-sm-12 col-md-6 columna">
 
-                            <div class="form-group ">
+                            <div class="form-group">
 
                                   <div class="title">
                                       <h4 class="titleh4">TIPO CONTRATO</h4>
@@ -109,6 +109,16 @@
                                       <span class="spanmodal">{{$contrato->remuneracion}}</span>
                                   </div>
                             </div> 
+
+                            <div class="form-group">
+                                  <div class="title">
+                                      <h4  class="titleh4">FORMATO</h4>
+                                  </div>
+                                                
+                                  <div class="textmodal">
+                                      <span class="spanmodal">{{$contrato->formato->descripcion}}</span>
+                                  </div>
+                            </div>
                           </div>
                     </div>
                   </div>

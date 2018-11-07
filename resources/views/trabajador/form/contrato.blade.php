@@ -246,6 +246,21 @@
 
                                   </div>
                             </div>
+
+                            <div class="form-group" >
+
+                                <label class="col-sm-12 control-label labelleft">Formato Contrato <span class="required">*</span></label>
+                                <div class="col-sm-7 abajocaja">
+                                  {!! Form::select( 'formato_id', $comboformato, array(),
+                                                    [
+                                                      'class'       => 'form-control control input-sm' ,
+                                                      'id'          => 'formato_id',
+                                                      'required'    => '',
+                                                      'data-aw'     => '22'
+                                                    ]) !!}
+                                </div>
+                            </div>
+
                          
                       </div>
               

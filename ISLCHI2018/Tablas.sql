@@ -16,6 +16,10 @@ IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'jornadalabor
 DROP TABLE [detallejornadalaborals];
 GO
 
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'formatos') AND type in (N'U'))
+DROP TABLE [formatos];
+GO
+
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'fichasocioeconomicas') AND type in (N'U'))
 DROP TABLE [fichasocioeconomicas];
 GO
@@ -1031,7 +1035,8 @@ create TABLE contratos(
     [tipopago_id] varchar(20) NOT NULL,
 	[periodicidad_id] varchar(20) NOT NULL,
 	[cargo_id] varchar(20) NOT NULL,
-	[trabajador_id] varchar(20) NOT NULL
+	[trabajador_id] varchar(20) NOT NULL,
+	[formato_id] varchar(20) NOT NULL
   --[IdUsuarioCrea] varchar(20) null,
   --[FechaCrea] datetime null,
   --[IdUsuarioModifica] varchar(20) null,
@@ -1052,6 +1057,15 @@ CREATE TABLE detallejornadalaborals (
   [contrato_id] varchar(20)  NULL,
   [jornadalaboral_id] varchar(20)  NULL,
   [activo]  int NOT NULL default 1
+) ;
+GO
+
+CREATE TABLE formatos(
+  [id] varchar(20) NOT NULL,
+  [descripcion] varchar(200)  NULL,
+  [descripcionabreviada] varchar(200)  NULL,
+  [activo]  int NOT NULL default 1,
+  PRIMARY KEY  ([id])
 ) ;
 GO
 

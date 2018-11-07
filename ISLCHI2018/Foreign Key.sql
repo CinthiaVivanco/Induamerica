@@ -272,3 +272,7 @@ GO
 ALTER TABLE detallejornadalaborals
 ADD FOREIGN KEY (jornadalaboral_id) REFERENCES jornadalaborals(id);
 GO
+
+ALTER TABLE contratos
+ADD FOREIGN KEY (formato_id) REFERENCES formatos(id);
+GO

@@ -28,6 +28,11 @@ class Contrato extends Model
         return $this->belongsTo('App\Trabajador');
     }
 
+    public function formato()
+    {
+        return $this->belongsTo('App\Formato');
+    }
+
 
      public function area()
     {

@@ -47,18 +47,18 @@
     right: -115px;
     font-size: 17px;
 }
-.trabajador{
+.empresa{
   margin-top:200px;
   text-align: right;
   position: absolute;
-  padding-left: 220px;
+  padding-left: 400px;
 
 }
-.empleador{
+.trabajador{
   margin-top:200px;
   text-align: left;
   position: absolute;
-  padding-left: -180px;
+  padding-left: 10px;
 
 }
 .contrato{
