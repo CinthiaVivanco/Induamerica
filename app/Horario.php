@@ -13,6 +13,9 @@ class Horario extends Model
     public $incrementing = false;
     public $keyType = 'string';
 
-
+    public function trabajador()
+    {
+        return $this->hasMany('App\Trabajador');
+    }
 
 }

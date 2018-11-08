@@ -85,21 +85,20 @@
                     </div>
                   </div>
 
-                <div class="row content ">
-                  <div class="col-md-12">
-                    <div class="panel-heading">
+                  <div class="row content ">
+                    <div class="col-md-12">
+                      <div class="panel-heading">
 
-                      <div class="tools toolsopcion">
-                        <a href="{{url('/contrato-trabajador-pdf/'.Hashids::encode(substr($item->id, -12)))}}" target="_blank" data-toggle="tooltip" id="descargarcontrato" data-placement="top" title="">
-                            <span class="icon mdi mdi-collection-pdf icono"></span>
-                        </a>
+                        <div class="tools toolsopcion">
+                          <a href="{{url('/contrato-trabajador-pdf/'.Hashids::encode(substr($item->id, -12)))}}" target="_blank" data-toggle="tooltip" id="descargarcontrato" data-placement="top" title="">
+                              <span class="icon mdi mdi-collection-pdf icono"></span>
+                          </a>
 
+                        </div>
                       </div>
-                    </div>
-                   </div>
-                </div>
+                     </div>
+                  </div>
                   
-
                 </div>
               </div>
             </div>

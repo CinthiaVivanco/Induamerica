@@ -43,6 +43,11 @@ class Trabajador extends Model
         return $this->belongsTo('App\Tipovia');
     }
 
+    public function horario()
+    {
+        return $this->belongsTo('App\Horaio');
+    }
+
     public function tipozona()
     {
         return $this->belongsTo('App\Tipozona');

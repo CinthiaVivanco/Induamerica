@@ -50,14 +50,10 @@ class ContratoController extends Controller
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
 
-
-
 			}
 
 
-
 			////////////////////////////////////////////////////////////////////////
-
 			
 
  			return Redirect::to('/ficha-contrato-trabajador/'.$idopcion.'/'.$idtrabajador)->with('bienhecho', 'Contrato'.$request['nombre'].' '.$request['apellidopaterno'].' Modificado con éxito');			
@@ -129,7 +125,7 @@ class ContratoController extends Controller
 				$detalle->jornadalaboral_id    		=  	$item->id;
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
-
+		       
 
 			}
 

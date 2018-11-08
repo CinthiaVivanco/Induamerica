@@ -459,6 +459,20 @@
                       </div>
                     </div>
 
+                    <div class="form-group">
+
+                      <label class="col-sm-12 control-label labelleft">Horario <span class="required">*</span></label>
+                      <div class="col-sm-7 abajocaja">
+                        {!! Form::select( 'horario_id', $combomohorario, array(),
+                                          [
+                                            'class'       => 'form-control control input-sm' ,
+                                            'id'          => 'horario_id',
+                                            'required'    => '',
+                                            'data-aw'     => '26'
+                                          ]) !!}
+                      </div>
+                    </div>
+
                 </div>
 
           </div>

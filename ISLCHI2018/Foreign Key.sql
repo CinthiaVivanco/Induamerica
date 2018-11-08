@@ -133,6 +133,10 @@ ALTER TABLE trabajadores
 ADD FOREIGN KEY (local_id) REFERENCES locales(id);
 GO
 
+ALTER TABLE trabajadores
+ADD FOREIGN KEY (horario_id) REFERENCES horarios(id);
+GO
+
 ALTER TABLE users
 ADD FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id);
 GO

@@ -721,6 +721,7 @@ CREATE TABLE trabajadores (
   [ocupacion_id] varchar(20) NOT NULL,
   [situacionespecial_id] varchar(20) NOT NULL,
   [local_id] varchar(20) NOT NULL,
+  [horario_id] varchar(20) NOT NULL,
   [otrarentaquinta] varchar(200) NULL,
   --[IdUsuarioCrea] varchar(20) null,
   --[FechaCrea] datetime null,
@@ -1062,6 +1063,7 @@ GO
 
 CREATE TABLE formatos(
   [id] varchar(20) NOT NULL,
+  [numero] int not  NULL,
   [descripcion] varchar(200)  NULL,
   [descripcionabreviada] varchar(200)  NULL,
   [activo]  int NOT NULL default 1,

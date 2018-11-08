@@ -23,9 +23,21 @@ class ContratoReporteController extends Controller
 		$idcontrato 		= 	$this->funciones->decodificar($idcontrato);
 		$contrato 			= 	Contrato::where('id','=',$idcontrato)->first();
 		$titulo				= 	"Contrato de personal";
+		$vistacontrato		=	"";
 
 
-		$pdf 			= 	PDF::loadView('contrato.pdf.contrato', 
+		if($contrato->formato->numero == 1){
+			$vistacontrato = "contrato01";
+		}else{
+			if($contrato->formato->numero == 2){
+				$vistacontrato = "contrato02";
+			}else{
+				$vistacontrato = "contrato03";
+			}
+		}
+
+
+		$pdf 			= 	PDF::loadView('contrato.pdf.'.$vistacontrato, 
 											[ 
 												'contrato' 		  	  => $contrato,
 												'titulo' 		  	  => $titulo,												

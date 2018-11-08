@@ -300,14 +300,14 @@ transition: all 0.4s ease-in-out;
 
     }
 .shape {
-  border-color: rgba(255,255,255,0) #d9534f rgba(255,255,255,0) rgba(255,255,255,0);
+  border-color: rgba(255,255,255,0) #ddd rgba(255,255,255,0) rgba(255,255,255,0);
 }
 .offer-radius{
   border-radius:7px;
 }
-.offer-danger { border-color: #d9534f; }
+.offer-danger { border-color: #ddd; }
 .offer-danger .shape{
-  border-color: transparent #d9534f transparent transparent;
+  border-color: transparent #ddd transparent transparent;
 }
 
 .activo .offer-success {  border-color: #5cb85c; }
@@ -315,14 +315,14 @@ transition: all 0.4s ease-in-out;
 .activo .offer-success .shape{
   border-color: transparent #5cb85c transparent transparent;
 }
-.concluido .offer-success {  border-color: #d9534f; }
+.offer-success {  border-color: #ddd; }
 
-.concluido .offer-default .shape{
+.offer-default .shape{
   border-color: transparent #999999 transparent transparent;
 }
-.offer-primary {  border-color: #428bca; }
-.offer-primary .shape{
-  border-color: transparent #428bca transparent transparent;
+.concluido .offer-primary {  border-color: #ddd; }
+.concluido .offer-primary .shape{
+  border-color: transparent #ddd transparent transparent;
 }
 .offer-info { border-color: #5bc0de; }
 .offer-info .shape{
