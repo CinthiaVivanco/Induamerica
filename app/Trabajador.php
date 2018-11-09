@@ -45,7 +45,7 @@ class Trabajador extends Model
 
     public function horario()
     {
-        return $this->belongsTo('App\Horaio');
+        return $this->belongsTo('App\Horario');
     }
 
     public function tipozona()

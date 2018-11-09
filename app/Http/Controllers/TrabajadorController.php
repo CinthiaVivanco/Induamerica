@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Crypt;
-use App\Trabajador,App\Estadocivil,App\Empresa,App\Local,App\Cargo;
+use App\Trabajador,App\Estadocivil,App\Empresa,App\Local,App\Cargo,App\Horario;
 use View;
 use Session;
 use Hashids;
@@ -135,6 +135,7 @@ class TrabajadorController extends Controller
 			$cabecera->mar_huella 			 	 = 	'';
 			$cabecera->mar_dni 				 	 = 	'';
 			$cabecera->otrarentaquinta  		 = 	$request['otrarentaquinta'];
+			$cabecera->horario_id  				 = 	$request['horario_id'];
 
 			$cabecera->save();
  			return Redirect::to('/gestion-de-trabajador/'.$idopcion)->with('bienhecho', 'Trabajador '.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
@@ -219,6 +220,9 @@ class TrabajadorController extends Controller
 			$situacionespecial			 = DB::table('situacionespeciales')->pluck('descripcionabreviada','id')->toArray();
 			$combosituacionespecial		 = array('' => "Seleccione Situación Especial") + $situacionespecial;
 
+			$horario			 		 = DB::table('horarios')->pluck('nombre','id')->toArray();
+			$combohorario		 		 = array('' => "Seleccione Horario") + $horario;
+
 			$ffin 						 = $this->fin;
 
 
@@ -252,6 +256,7 @@ class TrabajadorController extends Controller
 						  	'comboocupacion' 				=> $comboocupacion,
 						  	'combolocal'   					=> $combolocal,
 						  	'combosituacionespecial'	    => $combosituacionespecial,
+						  	'combohorario'	    			=> $combohorario,
 						  	'ffin'	  					    => $ffin,						
 						]);
 
@@ -349,6 +354,7 @@ class TrabajadorController extends Controller
 			$cabecera->fechainicio 				  = 	$request['fechainicio'];
 			$cabecera->fechafin 				  = 	$request['fechafin'];
 			$cabecera->otrarentaquinta  		  = 	$request['otrarentaquinta'];
+			$cabecera->horario_id 		  		  = 	$request['horario_id'];
 			$cabecera->save();
 
 
@@ -430,6 +436,9 @@ class TrabajadorController extends Controller
 				$situacionespecial 				= DB::table('situacionespeciales')->pluck('descripcionabreviada','id')->toArray();
 				$combosituacionespecial			= array($trabajador->situacionespecial_id => $trabajador->situacionespecial ->descripcionabreviada) + $situacionespecial ;
 
+				$horario 				  		= DB::table('horarios')->pluck('nombre','id')->toArray();
+				$combohorario       			= array($trabajador->horario_id => $trabajador->horario ->nombre) + $horario;						
+
 				if(isset($trabajador->regimeninstitucion)) {
 					
 					$regimeninstitucion				= DB::table('regimeninstituciones')->pluck('nombre','id')->toArray();
@@ -495,6 +504,7 @@ class TrabajadorController extends Controller
 						  			'combotipoinstitucion' 		  	=> $combotipoinstitucion,
 						  			'comboinstitucion' 			  	=> $comboinstitucion,
 						  			'combocarrera' 				  	=> $combocarrera,
+						  			'combohorario' 				  	=> $combohorario,
 						  			'ffin'	  					  	=> $ffin,
 						
 		        				]);

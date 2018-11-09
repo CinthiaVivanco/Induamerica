@@ -81,7 +81,7 @@ class ContratoController extends Controller
 			$cargo 								 = Cargo::where('id','=',$request['cargo_id'])->first();
 
 			$idcontrato 		 			 	 = $this->funciones->getCreateId('contratos');
-			
+
 			$cabecera            	 	 		 =	new Contrato;
 			$cabecera->id 	     	 	 		 =  $idcontrato;
 
@@ -130,16 +130,15 @@ class ContratoController extends Controller
 			}
 
 
-
-
  			return Redirect::to('/ficha-contrato-trabajador/'.$idopcion.'/'.$idtrabajadorsd)->with('bienhecho', 'Contrato'.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
+
+
 
 		}else{
 
 			$contrato 					 = Contrato::where('trabajador_id','=' , $idtrabajador)->first();
 
 			$trabajador 				 = Trabajador::where('id', $idtrabajador)->first();
-
 
 			$listacontrato 		    	 = Contrato::where('trabajador_id','=' , $idtrabajador)->get();
 		    

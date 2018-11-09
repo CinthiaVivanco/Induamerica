@@ -54,10 +54,12 @@
                      Contrato
                     </h3>           
                     <p>
-                     Desde: {{$item->fechainicio}}  Hasta:  {{$item->fechafin}}
+                     Desde: {{$item->fechainicio}}  Hasta:  {{$item->fechafin}}  
                       <br> 
                     </p>
                   </div>
+
+
 
                   <div class="col-sm-2 detver"> 
                     <div class="icon icono">
@@ -104,6 +106,7 @@
             </div>
             </div>
         </div>
+
                  
     @endforeach
 
