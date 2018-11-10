@@ -139,16 +139,23 @@ class ContratoController extends Controller
 
 
 			$contrato 					 = Contrato::where('trabajador_id','=' , $idtrabajador)->first();
+
 			$trabajador 				 = Trabajador::where('id', $idtrabajador)->first();
+
 			$listacontrato 		    	 = Contrato::where('trabajador_id','=' , $idtrabajador)->get();
+
 			$tipocontrato 				 = DB::table('tipocontratos')->pluck('descripcion','id')->toArray();
 			$combotipocontrato  		 = array('' => "Seleccione Tipo Contrato") + $tipocontrato;
+
 			$cargo					 	 = DB::table('cargos')->pluck('nombre','id')->toArray();
 			$combocargo				 	 = array('' => "Seleccione Cargo") + $cargo;
+
 			$tipopago					 = DB::table('tipopagos')->pluck('descripcion','id')->toArray();
 			$combotipopago				 = array('' => "Seleccione Tipo Pago") + $tipopago;
+
 			$formato					 = DB::table('formatos')->pluck('descripcionabreviada','id')->toArray();
 			$comboformato				 = array('' => "Seleccione Formato") + $formato;
+			
 			$periodicidad				 = DB::table('periodicidads')->pluck('descripcion','id')->toArray();
 			$comboperiodicidad			 = array('' => "Seleccione Periodicidad") + $periodicidad;
 

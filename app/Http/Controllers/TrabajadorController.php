@@ -140,6 +140,7 @@ class TrabajadorController extends Controller
 			$cabecera->save();
  			return Redirect::to('/gestion-de-trabajador/'.$idopcion)->with('bienhecho', 'Trabajador '.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
 
+ 		
 
 
 		}else{
@@ -197,9 +198,9 @@ class TrabajadorController extends Controller
 			$regimeninstitucion 		 = DB::table('regimeninstituciones')->pluck('nombre','id')->toArray();
 			$comboregimeninstitucion	 = array('' => "Seleccione Regimen Institucion") + $regimeninstitucion;
 
-			$combotipoinstitucion		 = array('' => "Seleccione Tipo Insitucion");
+			$combotipoinstitucion		 = array('' => "Seleccione Tipo Institución");
 
-			$comboinstitucion			 = array('' => "Seleccione Institucion");
+			$comboinstitucion			 = array('' => "Seleccione Institución");
 
 			$combocarrera				 = array('' => "Seleccione Carrera");
 
@@ -212,9 +213,9 @@ class TrabajadorController extends Controller
 			$ocupacion 				  	 = DB::table('ocupaciones')->pluck('descripcion','id')->toArray();
 			$comboocupacion 		  	 = array('' => "Seleccione Ocupacion") + $ocupacion;
 
-
 			$empresa 					 = $this->funciones->getEmpresa();
-			$local	 					 = DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('nombreabreviado','id')->toArray();
+
+			$local	 					 = DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('direccion','id')->toArray();
 			$combolocal 				 = array('' => "Seleccione Local") + $local;
 
 			$situacionespecial			 = DB::table('situacionespeciales')->pluck('descripcionabreviada','id')->toArray();
@@ -430,8 +431,8 @@ class TrabajadorController extends Controller
 
 				$empresa 					 	= $this->funciones->getEmpresa();
 
-				$local							= DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('nombreabreviado','id')->toArray();
-				$combolocal						= array($trabajador->local_id => $trabajador->local ->nombreabreviado) + $local;
+				$local							= DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('direccion','id')->toArray();
+				$combolocal						= array($trabajador->local_id => $trabajador->local ->nombre) + $local;
 
 				$situacionespecial 				= DB::table('situacionespeciales')->pluck('descripcionabreviada','id')->toArray();
 				$combosituacionespecial			= array($trabajador->situacionespecial_id => $trabajador->situacionespecial ->descripcionabreviada) + $situacionespecial ;
@@ -498,6 +499,7 @@ class TrabajadorController extends Controller
 						  			'comboregimenlaboral' 			=> $comboregimenlaboral,
 						  			'combocategoriaocupacional' 	=> $combocategoriaocupacional,
 						  			'comboocupacion' 				=> $comboocupacion,
+						  			'comboempresa' 					=> $comboempresa,
 						  			'combolocal' 					=> $combolocal,
 						  			'combosituacionespecial' 	  	=> $combosituacionespecial,
 						  			'comboregimeninstitucion' 	  	=> $comboregimeninstitucion,

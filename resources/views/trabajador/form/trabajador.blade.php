@@ -362,6 +362,48 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+
+                      <label class="col-sm-12 control-label labelleft">Situación Especial <span class="required">*</span></label>
+                      <div class="col-sm-7 abajocaja">
+                        {!! Form::select( 'situacionespecial_id', $combosituacionespecial, array(),
+                                          [
+                                            'class'       => 'form-control control input-sm' ,
+                                            'id'          => 'situacionespecial_id',
+                                            'required'    => '',
+                                            'data-aw'     => '21'
+                                          ]) !!}
+                      </div>
+                </div>
+
+                <div class="form-group">
+
+                      <label class="col-sm-12 control-label labelleft">Entidad Financiera <span class="required">*</span></label>
+                      <div class="col-sm-7 abajocaja">
+                        {!! Form::select( 'entidadfinanciera_id', $comboentidadfinanciera, array(),
+                                          [
+                                            'class'       => 'form-control control input-sm' ,
+                                            'id'          => 'entidadfinanciera_id',
+                                            'required'    => '',
+                                            'data-aw'     => '27'
+                                          ]) !!}
+                      </div>
+                </div>
+
+                <div class="form-group">
+
+                  <label class="col-sm-12 control-label labelleft">Horario <span class="required">*</span></label>
+                  <div class="col-sm-7 abajocaja">
+                    {!! Form::select( 'horario_id', $combohorario, array(),
+                                      [
+                                        'class'       => 'form-control control input-sm' ,
+                                        'id'          => 'horario_id',
+                                        'required'    => '',
+                                        'data-aw'     => '26'
+                                      ]) !!}
+                  </div>
+                </div>
+
           
             </div>
       
@@ -370,6 +412,30 @@
           <div class="col-sm-6">
 
                 <div class="panel-body">
+
+                  <div class="form-group">
+
+                      <label class="col-sm-12 control-label labelleft">Establecimiento donde labora <span class="required">*</span></label>
+                      <div class="col-sm-7 abajocaja">
+
+                      
+                      </div>
+                    
+                  </div>
+
+                   <div class="form-group">
+
+                      <label class="col-sm-12 control-label labelleft">Local <span class="required">*</span></label>
+                      <div class="col-sm-7 abajocaja">
+                        {!! Form::select( 'local_id', $combolocal, array(),
+                                          [
+                                            'class'       => 'form-control control input-sm' ,
+                                            'id'          => 'local_id',
+                                            'required'    => '',
+                                            'data-aw'     => '21'
+                                          ]) !!}
+                      </div>
+                   </div>
 
                    <div class="form-group abajocaja">
                       <label class="col-sm-12 control-label labelleft">¿Sindicalizado? <span class="required">*</span></label>
@@ -385,35 +451,6 @@
                       </div>
                     </div>
 
-
-                    <div class="form-group">
-
-                      <label class="col-sm-12 control-label labelleft">Situación Especial <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'situacionespecial_id', $combosituacionespecial, array(),
-                                          [
-                                            'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'situacionespecial_id',
-                                            'required'    => '',
-                                            'data-aw'     => '21'
-                                          ]) !!}
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-
-                      <label class="col-sm-12 control-label labelleft">Local <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'local_id', $combolocal, array(),
-                                          [
-                                            'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'local_id',
-                                            'required'    => '',
-                                            'data-aw'     => '21'
-                                          ]) !!}
-                      </div>
-                    </div>
-                    
 
                     <div class="form-group">
 
@@ -445,33 +482,7 @@
                     </div>
 
 
-                    <div class="form-group">
-
-                      <label class="col-sm-12 control-label labelleft">Entidad Financiera <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'entidadfinanciera_id', $comboentidadfinanciera, array(),
-                                          [
-                                            'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'entidadfinanciera_id',
-                                            'required'    => '',
-                                            'data-aw'     => '27'
-                                          ]) !!}
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-
-                      <label class="col-sm-12 control-label labelleft">Horario <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'horario_id', $combohorario, array(),
-                                          [
-                                            'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'horario_id',
-                                            'required'    => '',
-                                            'data-aw'     => '26'
-                                          ]) !!}
-                      </div>
-                    </div>
+                    
 
                 </div>
 

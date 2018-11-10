@@ -14,9 +14,9 @@ class Local extends Model
     public $keyType = 'string';
 
 
-    public function trabajador()
+    public function local()
     {
-        return $this->hasMany('App\Trabajador');
+        return $this->hasMany('App\Local');
     }
 
 

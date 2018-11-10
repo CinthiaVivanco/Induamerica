@@ -20,6 +20,11 @@ class Local extends Model
         return $this->belongsTo('App\Empresa');
     }
 
+     public function establecimientolaboral()
+    {
+        return $this->belongsTo('App\Establecimientolaboral');
+    }
+
     
 }
 
