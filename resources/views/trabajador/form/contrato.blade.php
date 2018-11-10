@@ -162,36 +162,40 @@
                               </div>
                           </div>
 
-                          <div class="form-group">
-                              <label class="col-sm-12 control-label labelleft">Estado <span class="required">*</span></label>
-                              <div class="col-sm-6 abajocaja">
 
-                                <div class="be-radio has-success inline">
-                                  <input type="radio" value="1"  
+                          @if(isset($contrato)) 
+                            <div class="form-group">
+                                <label class="col-sm-12 control-label labelleft">Estado <span class="required">*</span></label>
+                                <div class="col-sm-6 abajocaja">
 
-                                    @if(isset($contrato)) 
-                                      @if($contrato->estado == 1) 
-                                        checked  
+                                  <div class="be-radio has-success inline">
+                                    <input type="radio" value="1"  
+
+                                      @if(isset($contrato)) 
+                                        @if($contrato->estado == 1) 
+                                          checked  
+                                        @endif 
                                       @endif 
-                                    @endif 
-                                    name="estado" id="rad1">
-                                  <label for="rad1">Activo</label>
-                                </div>
+                                      name="estado" id="rad1">
+                                    <label for="rad1">Activo</label>
+                                  </div>
 
-                                <div class="be-radio has-danger inline">
-                                  <input type="radio" value='0'  
+                                  <div class="be-radio has-danger inline">
+                                    <input type="radio" value='0'  
 
-                                    @if(isset($contrato)) 
-                                      @if($contrato->estado == 0) 
-                                        checked  
+                                      @if(isset($contrato)) 
+                                        @if($contrato->estado == 0) 
+                                          checked  
+                                        @endif 
                                       @endif 
-                                    @endif 
-                                    name="estado" id="rad2">
-                                  <label for="rad2">Concluido</label>
+                                      name="estado" id="rad2">
+                                    <label for="rad2">Concluido</label>
+                                  </div>
+                                  
                                 </div>
-                                
-                              </div>
-                          </div>  
+                            </div>  
+                          @endif 
+
 
                     
                         </div>
