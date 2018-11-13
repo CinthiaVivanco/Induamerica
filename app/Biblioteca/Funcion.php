@@ -86,6 +86,8 @@ class Funcion{
 	  	//concatenar prefijo
 		$prefijo = Local::where('activo', '=', 1)->first()->prefijoLocal;
 
+		//$prefijo = Session::get('local')->prefijoLocal;
+
 		$idopcioncompleta = $prefijo.$idopcioncompleta;
 
   		return $idopcioncompleta;	

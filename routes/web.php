@@ -22,8 +22,6 @@ Route::group(['middleware' => ['guestaw']], function () {
 
 Route::get('/cerrarsession', 'UserController@actionCerrarSesion');
 
-
-
 Route::group(['middleware' => ['authaw']], function () {
 
 	Route::get('/bienvenido', 'UserController@actionBienvenido');

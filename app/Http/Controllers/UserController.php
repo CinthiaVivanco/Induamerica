@@ -55,8 +55,10 @@ class UserController extends Controller
 				if($clavedesifrada == $clave)
 				{
 					$listamenu    	= 	Grupoopcion::where('activo', '=', 1)->orderBy('orden', 'asc')->get();
+
 					Session::put('usuario', $tusuario);
 					Session::put('listamenu', $listamenu);
+
 
 					return Redirect::to('bienvenido');
 
@@ -82,6 +84,7 @@ class UserController extends Controller
 
 		Session::forget('usuario');
 		Session::forget('listamenu');
+		
 		return Redirect::to('/login');
 	}
 
