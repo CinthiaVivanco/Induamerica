@@ -310,6 +310,29 @@ $(document).ready(function(){
 
     });
 
+    $(".ajaxpersonal").on('change','#empresa_id', function() {
+        var empresa_id = $('#empresa_id').val();
+        var _token      = $('#token').val();
+
+        $.ajax({
+            
+            type    :   "POST",
+            url     :   carpeta+"/ajax-select-local",
+            data    :   {
+                            _token  : _token,
+                            empresa_id : empresa_id
+                        },
+            success: function (data) {
+
+                $(".ajaxlocal").html(data);
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+    });
+
 
 
      $(".ajaxpersonal").on('change','#gerencia_id', function() {
@@ -564,7 +587,7 @@ function gradoacademico(valor){
                 $('.ajaxtipoinstitucion #tipoinstitucion_id').attr("required", true);
                 $('.ajaxinstitucion #institucion_id').attr("required", true);
                 $('.ajaxcarrera #carrera_id').attr("required", true);
-                $('#añoegreso').attr("required", true);
+                $('#anioegreso').attr("required", true);
 
              
         }else{
@@ -577,7 +600,7 @@ function gradoacademico(valor){
                 $('.ajaxtipoinstitucion #tipoinstitucion_id').attr("required", false);
                 $('.ajaxinstitucion #institucion_id').attr("required", false);
                 $('.ajaxcarrera #carrera_id').attr("required", false);
-                $('#añoegreso').attr("required", false);
+                $('#anioegreso').attr("required", false);
 
         }
 
@@ -587,7 +610,7 @@ function gradoacademico(valor){
         $("#tipoinstitucion_id").val("").change();
         $("#institucion_id").val("").change();
         $("#carrera_id").val("").change();
-        $('#añoegreso').val('');
+        $('#anioegreso').val('');
         $('#swga').val('0');
 
 

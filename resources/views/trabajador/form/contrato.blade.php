@@ -33,7 +33,7 @@
 
                          <div class="form-group ">
 
-                            <label class="col-sm-12 control-label labelleft" > Tipo Contrato<span class="required">*</span> </label>
+                            <label class="col-sm-12 control-label labelleft">Tipo Contrato <span class="required">*</span> </label>
                             <div class="col-sm-6 abajocaja"  >
                               {!! Form::select( 'tipocontrato_id', $combotipocontrato, array(),
                                                 [
@@ -45,48 +45,57 @@
                             </div>
                           </div>
 
-
                          <div class="form-group">
-                            <label class="col-sm-12 control-label labelleft">
-                              Fecha Inicio <span class="required">*</span>
-                            </label> 
-                            <div class="col-sm-6 abajocaja">
-                              <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
-                                        <input size="16" type="text" 
-                                        value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechainicio')}}@endif" 
-                                        placeholder="Fecha Desde"
-                                        id='fechainicio' 
-                                        name='fechainicio' 
-                                        required = ""
-                                        class="form-control input-sm ">
-                                        <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
+                              <label class="col-sm-12 control-label labelleft">
+                                Fecha Inicio <span class="required">*</span>
+                              </label>
+                              <div class="col-sm-7 abajocaja">
+                                <div data-min-view="2" 
+                                     data-date-format="dd-mm-yyyy"  
+                                     class="input-group date datetimepicker">
+                                     <input size="16" 
+                                            type="text" 
+                                            value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}
+                                             @else{{old('fechafin')}}
+                                             @endif" 
+                                            placeholder="Fecha Inicio"
+                                            id='fechainicio' 
+                                            name='fechainicio' 
+                                            required = ""
+                                            class="form-control input-sm">
+                                      <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
+                                </div>
                               </div>
-                            </div>
                           </div>
 
                           <div class="form-group">
-                            <label class="col-sm-12 control-label labelleft">
-                              Fecha Fin <span class="required">*</span>
-                            </label> 
-                            <div class="col-sm-6 abajocaja">
-                              <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
-                                        <input size="16" type="text" value="@if(isset($contrato)){{old('fechafin',$contrato->fechafin)}}@else{{old('fechafin')}}@endif" placeholder="Fecha Hasta"
-                                        id='fechafin' name='fechafin' 
-                                        required = ""
-                                        class="form-control input-sm">
-                                        <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
-                              </div>
-                            </div>
+                               <label class="col-sm-12 control-label labelleft">
+                                Fecha Fin <span class="required">*</span>
+                               </label> 
+                               <div class="col-sm-7 abajocaja">
+                                 <div data-min-view="2" 
+                                      data-date-format="dd-mm-yyyy"  
+                                      class="input-group date datetimepicker">
+                                      <input size="16" 
+                                             type="text" 
+                                             value="@if(isset($contrato)){{old('fechafin',$contrato->fechafin)}}
+                                              @else{{old('fechafin')}}
+                                              @endif"  
+                                             placeholder="Fecha Fin"
+                                             id='fechafin' 
+                                             name='fechafin' 
+                                             required = ""
+                                             class="form-control input-sm">
+                                           <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
+                                  </div>
+                               </div>
                           </div>
-
-
 
                           <div class="form-group ajaxcargo">
                              @include('general.ajax.combocargo', ['combocargo' => $combocargo])
                           </div>
 
                        </div>
-              
                     </div>
 
                     <div class="col-sm-6">
@@ -131,10 +140,7 @@
                             </div>
                           </div>
 
-
-
                            <div class="form-group">
-
                                 <label class="col-sm-12 control-label labelleft">Periodicidad <span class="required">*</span></label>
                                 <div class="col-sm-7 abajocaja">
                                     {!! Form::select( 'periodicidad_id', $comboperiodicidad, array(),
@@ -152,16 +158,20 @@
                               <div class="col-sm-6 abajocaja">
 
                                 <input  type="text"
-                                        id="observacion" name='observacion' value="@if(isset($contrato)){{old('observacion',$contrato->observacion)}}@else{{old('observacion')}}@endif" placeholder="Observación"
+                                        id="observacion" 
+                                        name='observacion' 
+                                        value="@if(isset($contrato)){{old('observacion',$contrato->observacion)}} @else{{old('observacion')}} @endif"
+                                        placeholder="Observación"
                                         required = ""
-                                        autocomplete="off" class="form-control input-sm" data-aw="3"/>
+                                        autocomplete="off" 
+                                        class="form-control input-sm" 
+                                        data-aw="3"/>
                                         @include('error.erroresvalidate', [ 'id' => $errors->has('observacion')  , 
                                                                     'error' => $errors->first('observacion', ':message') , 
                                                                     'data' => '2'])
 
                               </div>
                           </div>
-
 
                           @if(isset($contrato)) 
                             <div class="form-group">
@@ -195,14 +205,10 @@
                                 </div>
                             </div>  
                           @endif 
-
-
-                    
+               
                         </div>
-
                     </div>
                 </div>
-
              </div>  
 
              <div id="menu2" class="tab-pane fade" >

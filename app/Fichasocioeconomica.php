@@ -13,7 +13,6 @@ class Fichasocioeconomica extends Model
     public $incrementing = false;
 
 
-
     public function detallefichacasaparte()
     {
         return $this->hasMany('App\Detallefichacasaparte');
@@ -29,6 +28,10 @@ class Fichasocioeconomica extends Model
         return $this->hasMany('App\Detallefichaenfermedad');
     }
 
+    public function local()
+    {
+        return $this->belongsTo('App\Local');
+    }
 
     public function tipovivienda()
     {
@@ -39,7 +42,6 @@ class Fichasocioeconomica extends Model
     {
         return $this->belongsTo('App\Construccionmaterial');
     }
-
 
      public function centromedico()
     {
@@ -55,8 +57,6 @@ class Fichasocioeconomica extends Model
     {
         return $this->belongsTo('App\Frecuenciaexamen');
     }
-
-
 
     public function trabajador()
     {

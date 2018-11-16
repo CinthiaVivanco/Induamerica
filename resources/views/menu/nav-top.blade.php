@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-default navbar-fixed-top be-top-header">
   <div class="container-fluid">
     <div class="navbar-header"><a href="index.html" class="navbar-brand"></a></div>
@@ -16,7 +17,14 @@
           </ul>
         </li>
       </ul>
-      <div class="panel-heading" align="center"><span >BIENVENIDO A INDUAMÉRICA ISL</span></div>
+      <div class="panel-heading" align="center">
+        <h3 class="media-heading">
+            <div class="ubicacion">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                {{Session::get('local')->nombreabreviado}} - ISL
+            </div>
+        </h3>  
+      </div>
 
     </div>
   </div>

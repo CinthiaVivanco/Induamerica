@@ -34,7 +34,28 @@ $(document).ready(function(){
 
     });	
 
+    $(".ajaxpersonal").on('change','#empresa_id', function() {
+        var empresa_id = $('#empresa_id').val();
+        var _token      = $('#token').val();
 
+        $.ajax({
+            
+            type    :   "POST",
+            url     :   carpeta+"/ajax-select-local",
+            data    :   {
+                            _token  : _token,
+                            empresa_id : empresa_id
+                        },
+            success: function (data) {
+
+                $(".ajaxlocal").html(data);
+            },
+            error: function (data) {
+
+                console.log('Error:', data);
+            }
+        });
+    });
 
 
     $('.selectrol').on('click', function(event){

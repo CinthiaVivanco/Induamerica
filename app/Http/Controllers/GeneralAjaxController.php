@@ -43,6 +43,21 @@ class GeneralAjaxController extends Controller
 						 ]);
 	}	
 
+	public function actionLocalAjax(Request $request)
+	{
+
+		$empresa_id   = $request['empresa_id'];
+
+		$local 		 = DB::table('locales')->where('empresa_id','=',$empresa_id)->pluck('nombreabreviado','id')->toArray();
+		$combolocal  = array(0 => "Seleccione local") + $local;
+
+		return View::make('general/ajax/combolocal',
+						 [
+						 'combolocal' => $combolocal
+
+						 ]);
+	}
+
 	public function actionAreaAjax(Request $request)
 	{
 		$gerencia_id   = $request['gerencia_id'];

@@ -15,6 +15,7 @@ use Hashids;
 
 class TrabajadorController extends Controller
 {
+
 	public function actionFichaTrabajador(Request $request){
 
 		$id 						= strtoupper($request['id']);
@@ -30,7 +31,6 @@ class TrabajadorController extends Controller
 
 	public function actionListarTrabajador($idopcion)
 	{
-
 
 		/******************* validar url **********************/
 		$validarurl = $this->funciones->getUrl($idopcion,'Ver');
@@ -50,16 +50,15 @@ class TrabajadorController extends Controller
 	public function actionAgregarTrabajador($idopcion,Request $request)
 	{
 
+		$fechaActual = date('d-m-Y');
 
-		/******************* validar url **********************/
+		/********************** validar url **********************/
 		$validarurl = $this->funciones->getUrl($idopcion,'Anadir');
 	    if($validarurl <> 'true'){return $validarurl;}
-	    /******************************************************/
-
+	    /*********************************************************/
 
 		if($_POST) 
 		{
-
 
 			/**** Validaciones laravel ****/
 			$this->validate($request, [
@@ -118,12 +117,16 @@ class TrabajadorController extends Controller
 			$cabecera->tipoinstitucion_id   	 = 	$request['tipoinstitucion_id'];
 			$cabecera->institucion_id   		 = 	$request['institucion_id'];
 			$cabecera->carrera_id   			 = 	$request['carrera_id'];
-			$cabecera->añoegreso 	        	 =  $request['añoegreso'];
+			$cabecera->anioegreso 	        	 =  $request['anioegreso'];
 			$cabecera->regimenlaboral_id   		 = 	$request['regimenlaboral_id'];
 			$cabecera->categoriaocupacional_id   = 	$request['categoriaocupacional_id'];
 			$cabecera->ocupacion_id   			 = 	$request['ocupacion_id'];
-			$cabecera->local_id 				 = 	$request['local_id'];
-			$cabecera->situacionespecial_id		 = 	$request['situacionespecial_id'];
+			$cabecera->local_id 				 = 	Session::get('local')->id; // que tenemos que guardar? el id que hemos ok
+			
+			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
+			$cabecera->FechaCrea  		         = 	$fechaActual;
+
+			$cabecera->situacionespecial_id		 = 	$request['situacionespecial_id'];	
 			$cabecera->rentaquinta 		 	 	 = 	$request['rentaquinta'];
 			$cabecera->quintaexonerada 		 	 = 	$request['quintaexonerada'];
 			$cabecera->asignacionfamiliar 		 = 	$request['asignacionfamiliar'];
@@ -204,7 +207,7 @@ class TrabajadorController extends Controller
 
 			$combocarrera				 = array('' => "Seleccione Carrera");
 
-			$regimenlaboral 			 = DB::table('regimenlaborales')->pluck('descripcionabreviada','id')->toArray();
+			$regimenlaboral 			 = DB::table('regimenlaborales')->pluck('descripcion','id')->toArray();
 			$comboregimenlaboral		 = array('' => "Seleccione Regimen Laboral") + $regimenlaboral;
 
 			$categoriaocupacional 	  	 = DB::table('categoriaocupacionales')->pluck('descripcion','id')->toArray();
@@ -214,9 +217,6 @@ class TrabajadorController extends Controller
 			$comboocupacion 		  	 = array('' => "Seleccione Ocupacion") + $ocupacion;
 
 			$empresa 					 = $this->funciones->getEmpresa();
-
-			$local	 					 = DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('direccion','id')->toArray();
-			$combolocal 				 = array('' => "Seleccione Local") + $local;
 
 			$situacionespecial			 = DB::table('situacionespeciales')->pluck('descripcionabreviada','id')->toArray();
 			$combosituacionespecial		 = array('' => "Seleccione Situación Especial") + $situacionespecial;
@@ -255,7 +255,6 @@ class TrabajadorController extends Controller
 						  	'comboregimenlaboral' 			=> $comboregimenlaboral,
 						  	'combocategoriaocupacional' 	=> $combocategoriaocupacional,
 						  	'comboocupacion' 				=> $comboocupacion,
-						  	'combolocal'   					=> $combolocal,
 						  	'combosituacionespecial'	    => $combosituacionespecial,
 						  	'combohorario'	    			=> $combohorario,
 						  	'ffin'	  					    => $ffin,						
@@ -268,18 +267,15 @@ class TrabajadorController extends Controller
 	public function actionModificarTrabajador($idopcion,$idtrabajador,Request $request)
 	{
 
+		$fechaActual = date('d-m-Y');
+
 		/******************* validar url **********************/
 		$validarurl   = $this->funciones->getUrl($idopcion,'Modificar');
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
 	    $idtrabajador = $this->funciones->decodificar($idtrabajador);
-
-	    $empresa 	  = $this->funciones->getEmpresa();
-
-	    /*$empresa 					 = $this->funciones->getEmpresa();
-			$local	 					 = DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('nombreabreviado','id')->toArray();
-			$combolocal 				 = array('' => "Seleccione Local") + $local;*/
+	    //$empresa 	  = $this->funciones->getEmpresa();
 
 		if($_POST)  
 		{
@@ -292,12 +288,12 @@ class TrabajadorController extends Controller
         	]);
 			/******************************/
 
-
 			$cargo 								= Cargo::where('id','=',$request['cargo_id'])->first();
 
 
 			$cabecera            	 	 		  =		Trabajador::find($idtrabajador);
-			$empresa            	 	 		  =		Empresa::find($empresa->id);
+			//$empresa            	 	 		  =		Empresa::find($empresa->id);
+
 			$cabecera->dni 	     		 		  =  	$request['dni'];
 			$cabecera->apellidopaterno 	 		  =  	$request['apellidopaterno'];
 			$cabecera->apellidomaterno 	 		  = 	$request['apellidomaterno'];
@@ -319,6 +315,9 @@ class TrabajadorController extends Controller
 			$cabecera->referencia  		 		  =		$request['referencia'];
 
 			$cabecera->tipotrabajador_id 		  = 	$request['tipotrabajador_id'];
+
+			$cabecera->IdUsuarioModifica 		  = 	Session::get('usuario')->id;
+			$cabecera->FechaModifica  		      = 	$fechaActual;
 			
 			$cabecera->motivobaja_id 	 		  = 	$request['motivobaja_id'];
 			$cabecera->entidadfinanciera_id 	  = 	$request['entidadfinanciera_id'];
@@ -338,11 +337,10 @@ class TrabajadorController extends Controller
 			$cabecera->situacioneducativa_id	  = 	$request['situacioneducativa_id'];
 			$cabecera->estudiosperu 			  = 	$request['estudiosperu'];
 			$cabecera->activo 	 		 		  =  	$request['activo'];
-			$cabecera->añoegreso 	        	  =   	$request['añoegreso'];
+			$cabecera->anioegreso 	        	  =   	$request['anioegreso'];
 			$cabecera->regimenlaboral_id   		  = 	$request['regimenlaboral_id'];
 			$cabecera->categoriaocupacional_id    = 	$request['categoriaocupacional_id'];
 			$cabecera->ocupacion_id   			  = 	$request['ocupacion_id'];
-			$cabecera->local_id  				  = 	$request['local_id'];
 			$cabecera->situacionespecial_id		  = 	$request['situacionespecial_id'];
 			$cabecera->rentaquinta 		 	 	  = 	$request['rentaquinta'];
 			$cabecera->quintaexonerada 		 	  = 	$request['quintaexonerada'];
@@ -429,10 +427,7 @@ class TrabajadorController extends Controller
 				$ocupacion 				  		= DB::table('ocupaciones')->pluck('descripcion','id')->toArray();
 				$comboocupacion       			= array($trabajador->ocupacion_id => $trabajador->ocupacion ->descripcion) + $ocupacion;
 
-				$empresa 					 	= $this->funciones->getEmpresa();
-
-				$local							= DB::table('locales')->where('empresa_id','=',$empresa->id)->pluck('direccion','id')->toArray();
-				$combolocal						= array($trabajador->local_id => $trabajador->local ->nombre) + $local;
+				//$empresa 					 	= $this->funciones->getEmpresa();
 
 				$situacionespecial 				= DB::table('situacionespeciales')->pluck('descripcionabreviada','id')->toArray();
 				$combosituacionespecial			= array($trabajador->situacionespecial_id => $trabajador->situacionespecial ->descripcionabreviada) + $situacionespecial ;
@@ -498,9 +493,7 @@ class TrabajadorController extends Controller
 						  			'combosituacioneducativa' 		=> $combosituacioneducativa,
 						  			'comboregimenlaboral' 			=> $comboregimenlaboral,
 						  			'combocategoriaocupacional' 	=> $combocategoriaocupacional,
-						  			'comboocupacion' 				=> $comboocupacion,
-						  			'comboempresa' 					=> $comboempresa,
-						  			'combolocal' 					=> $combolocal,
+						  			'comboocupacion' 				=> $comboocupacion,						  		
 						  			'combosituacionespecial' 	  	=> $combosituacionespecial,
 						  			'comboregimeninstitucion' 	  	=> $comboregimeninstitucion,
 						  			'combotipoinstitucion' 		  	=> $combotipoinstitucion,

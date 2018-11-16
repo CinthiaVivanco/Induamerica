@@ -17,7 +17,6 @@ class Contrato extends Model
         return $this->hasMany('App\Detallejornadalaboral');
     }
 
-
     public function tipocontratotrabajador()
     {
         return $this->belongsTo('App\Tipocontratotrabajador');
@@ -33,6 +32,10 @@ class Contrato extends Model
         return $this->belongsTo('App\Formato');
     }
 
+    public function local()
+    {
+        return $this->belongsTo('App\Local');
+    }
 
      public function area()
     {

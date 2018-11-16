@@ -17,10 +17,12 @@ Route::group(['middleware' => ['guestaw']], function () {
 
 	Route::any('/', 'UserController@actionLogin');
 	Route::any('/login', 'UserController@actionLogin');
+	Route::any('/ajax-select-local', 'GeneralAjaxController@actionLocalAjax');
 
-});
+}); 
 
 Route::get('/cerrarsession', 'UserController@actionCerrarSesion');
+
 
 Route::group(['middleware' => ['authaw']], function () {
 
@@ -30,8 +32,6 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/agregar-usuario/{idopcion}', 'UserController@actionAgregarUsuario');
 	Route::any('/modificar-usuario/{idopcion}/{idusuario}', 'UserController@actionModificarUsuario');
 	Route::any('/ajax-dato-del-trabajador', 'UserController@actionDatoTrabajador');
-
-
 
 	Route::any('/gestion-de-roles/{idopcion}', 'UserController@actionListarRoles');
 	Route::any('/agregar-rol/{idopcion}', 'UserController@actionAgregarRol');
@@ -45,30 +45,23 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/agregar-trabajador/{idopcion}', 'TrabajadorController@actionAgregarTrabajador'); 
 	Route::any('/modificar-trabajador/{idopcion}/{idtrabajador}', 'TrabajadorController@actionModificarTrabajador');
 
-
-
-
 	Route::any('/derecho-habiente-trabajador/{idopcion}/{idtrabajador}', 'DerechoHabienteController@actionDerechoHabiente');
 	Route::any('/ajax-form-derechohabiente', 'DerechoHabienteController@actionDerechoHabienteAjax');
 	Route::any('/modificar-derecho-habiente-trabajador/{idderechohabiente}/{idopcion}/{idtrabajador}', 'DerechoHabienteController@actionModificarDerechoHabiente');
-
 
 	Route::any('/ficha-socioeconomica-trabajador/{idopcion}/{idtrabajador}', 'FichaSocioeconomicaController@actionFichaSocioeconomica');
 	Route::any('/ajax-form-fichasocioeconomica', 'FichaSocioeconomicaController@actionFichaSocioeconomicaAjax');
 
 	Route::any('/modificar-ficha-socioeconomica-trabajador/{idfichasocioeconomica}/{idopcion}/{idtrabajador}', 'FichaSocioeconomicaController@actionModificarFichaSocioeconomica');
+
 	Route::any('/ajax-ficha-del-trabajador', 'UserController@actionFichaTrabajador');
-
-
 
 	Route::any('/ficha-contrato-trabajador/{idopcion}/{idtrabajador}', 'ContratoController@actionContrato');
 	Route::any('/modificar-ficha-contrato-trabajador/{idcontrato}/{idopcion}/{idtrabajador}', 'ContratoController@actionModificarContrato');
 	Route::any('/contrato-trabajador-pdf/{idcontrato}', 'ContratoReporteController@actionContratoPdf');
+
 	Route::any('/ajax-form-contrato', 'ContratoController@actionContratoAjax');
-	Route::any('/ajax-modal-contrato', 'ContratoController@actionContratoModalAjax');
-
-
-
+	Route::any('/ajax-modal-contrato', 'ContratoController@actionContratoModalAjax'); 
 
 	Route::any('/ajax-select-provincia', 'GeneralAjaxController@actionProvinciaAjax');
 	Route::any('/ajax-select-distrito', 'GeneralAjaxController@actionDistritoAjax');
@@ -81,11 +74,7 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/ajax-select-institucion', 'GeneralAjaxController@actionInstitucionAjax');
 	Route::any('/ajax-select-carrera', 'GeneralAjaxController@actionCarreraAjax');
 
-	/*Route::any('/ajax-select-vinculofamiliar', 'GeneralAjaxController@actionVinculoFamiliarAjax');*/
 	Route::any('/ajax-select-tipodocumentoacredita', 'GeneralAjaxController@actionTipoDocumentoAcreditaAjax');
-
-
-
 
 	Route::any('/gestion-de-horario/{idopcion}', 'HorarioController@actionListarSemanas');
 	Route::any('/ajax-listado-de-horario', 'HorarioController@actionAjaxListarHorario');
@@ -94,8 +83,6 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/ajax-clonar-horario', 'HorarioController@actionAjaxClonarHorario');
 	Route::any('/ajax--copiar-horario-clonado', 'HorarioController@actionAjaxCopiarHorarioClonado');
 	Route::any('/horario-semana-pdf/{idsemana}', 'HorarioReporteController@actionHorarioSemanaPdf');
-
-	
 
 });
 

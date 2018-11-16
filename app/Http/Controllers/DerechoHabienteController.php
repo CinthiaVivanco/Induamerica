@@ -17,6 +17,8 @@ class DerechoHabienteController extends Controller
 {
 	public function actionModificarDerechoHabiente($idderechohabiente,$idopcion,$idtrabajador,Request $request)
 	{
+			$fechaActual = date('d-m-Y');
+
 			$cabecera            	 	 		 =		Derechohabiente::find($idderechohabiente);
 			$cabecera->tipodocumento_id  		 = 	$request['tipodocumento_id'];
 			$cabecera->dnihabiente 	     		 =  $request['dnihabiente'];
@@ -35,6 +37,11 @@ class DerechoHabienteController extends Controller
 			$cabecera->nombrezona		 		 =	$request['nombrezona'];
 			$cabecera->referencia		 		 =	$request['referencia'];
 			$cabecera->sexo 		 	 		 = 	$request['sexo'];
+			$cabecera->local_id 				 = 	Session::get('local')->id; 
+
+			$cabecera->IdUsuarioModifica 		 = 	Session::get('usuario')->id;
+			$cabecera->FechaModifica  		     = 	$fechaActual;
+			
 			$cabecera->fechanacimiento 			 = 	$request['fechanacimiento'];
 			$cabecera->fechainicio 				 = 	$request['fechainicio'];
 			$cabecera->fechafin 				 = 	$request['fechafin'];
@@ -51,6 +58,7 @@ class DerechoHabienteController extends Controller
 
 	public function actionDerechoHabiente($idopcion,$idtrabajador,Request $request)
 	{
+		$fechaActual = date('d-m-Y');
 		$idtrabajadorsd  = $idtrabajador;
 	    $idtrabajador = $this->funciones->decodificar($idtrabajador);
 
@@ -94,6 +102,8 @@ class DerechoHabienteController extends Controller
 			$cabecera->tipobaja_id 	 			 = 	$request['tipobaja_id'];
 			$cabecera->numeroresolucion 	 	 = 	$request['numeroresolucion'];
 			$cabecera->activo 		 	 		 = 	$request['activo'];
+			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
+			$cabecera->FechaCrea  		         = 	$fechaActual;
 
 			$cabecera->save();
 

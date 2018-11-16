@@ -14,8 +14,11 @@ use Hashids;
 
 class ContratoController extends Controller
 {
+
 	public function actionModificarContrato($idcontrato,$idopcion,$idtrabajador,Request $request)
 	{
+			$fechaActual = date('d-m-Y');
+
 			$cabecera            	 	 	=	Contrato::find($idcontrato);
 			$cargo 							= 	Cargo::where('id','=',$request['cargo_id'])->first();
 			$cabecera->fechainicio 			= 	$request['fechainicio'];
@@ -32,6 +35,10 @@ class ContratoController extends Controller
 			$cabecera->numerocuenta  		=	$request['numerocuenta'];
 			$cabecera->periodicidad_id   	= 	$request['periodicidad_id'];
 			$cabecera->remuneracion  	 	=	$request['remuneracion'];
+
+			$cabecera->IdUsuarioModifica 	= 	Session::get('usuario')->id;
+			$cabecera->FechaModifica  		= 	$fechaActual;
+
 			$cabecera->save();
 
 			//////////////////////////////////// Llenamos Tabla DetalleJornadaLaborals ///////////////////
@@ -58,12 +65,14 @@ class ContratoController extends Controller
 
  			return Redirect::to('/ficha-contrato-trabajador/'.$idopcion.'/'.$idtrabajador)->with('bienhecho', 'Contrato'.$request['nombre'].' '.$request['apellidopaterno'].' Modificado con éxito');			
 	}
-
 	
 
 
 	public function actionContrato($idopcion,$idtrabajador,Request $request)
 	{
+
+		$fechaActual = date('d-m-Y');
+
 		$idtrabajadorsd  = $idtrabajador;
 	    $idtrabajador = $this->funciones->decodificar($idtrabajador);
 
@@ -79,9 +88,7 @@ class ContratoController extends Controller
 			/******************************/
 
 			$cargo 								 = Cargo::where('id','=',$request['cargo_id'])->first();
-
 			$idcontrato 		 			 	 = $this->funciones->getCreateId('contratos');
-
 
 			Contrato::where('trabajador_id','=', $idtrabajador)->update(['estado' => 0]);
 
@@ -99,19 +106,24 @@ class ContratoController extends Controller
 			$cabecera->tipocontrato_id 	 		 = 	$request['tipocontrato_id'];
 			$cabecera->tipopago_id 	 	 		 = 	$request['tipopago_id'];
 			$cabecera->formato_id 	 	 		 = 	$request['formato_id'];
+			$cabecera->local_id 				 = 	Session::get('local')->id; 
+
+			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
+			$cabecera->FechaCrea  		         = 	$fechaActual;
+			
 			$cabecera->numerocuenta  			 =	$request['numerocuenta'];
 			$cabecera->periodicidad_id   		 = 	$request['periodicidad_id'];
 			$cabecera->remuneracion  	 		 =	$request['remuneracion'];
 			$cabecera->save();
-
-
 
 			//////////// Llenamos Tabla DetalleFichaCasaPartes ///////
 
 			$jornadalaborals 						= $request['jornadalaboral']; // este es un array que nos devuelve todos los id seleccionados
 			$listajornadalaboral 					= Jornadalaboral::get(); //listamos todos los casapartes
 			foreach($listajornadalaboral as $item){
+ 
 
+				// 
 				$activo 							= 0;
 				$iddetallejornadalaborals 			= $this->funciones->getCreateId('detallejornadalaborals');
 
@@ -123,20 +135,14 @@ class ContratoController extends Controller
 			    $detalle->id 	    				=  	$iddetallejornadalaborals;
 				$detalle->contrato_id    			= 	$idcontrato;
 				$detalle->jornadalaboral_id    		=  	$item->id;
+				$cabecera->local_id 				= 	Session::get('local')->id;
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
-		       
-
 			}
-
 
  			return Redirect::to('/ficha-contrato-trabajador/'.$idopcion.'/'.$idtrabajadorsd)->with('bienhecho', 'Contrato'.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
 
-
-
 		}else{
-
-
 
 			$contrato 					 = Contrato::where('trabajador_id','=' , $idtrabajador)->first();
 
@@ -168,7 +174,7 @@ class ContratoController extends Controller
 				$jornadalaboral 				= Jornadalaboral::get();
 			}
 
-
+			//dd($trabajador);
 	        return View::make('trabajador/contratotrabajador',
 	        				[
 

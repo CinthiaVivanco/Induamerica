@@ -1,3 +1,7 @@
+.panel-body .ocultar{
+    display: none;
+}
+
 .importe{
     position: absolute;
     top: -30px;

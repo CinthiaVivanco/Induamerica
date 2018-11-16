@@ -569,8 +569,12 @@ GO
 
 CREATE TABLE regimenlaborales (
   [id] varchar(20) NOT NULL,
+  [codigo] varchar(200) NOT NULL,
   [descripcion] varchar(200) NOT NULL ,
   [descripcionabreviada] varchar(200) NOT NULL ,
+  [sectorpublico] varchar(200) NOT NULL ,
+  [sectorprivado] varchar(200) NOT NULL ,
+  [otrasentidades] varchar(200) NOT NULL ,
   [activo]  int NOT NULL default 1,
   PRIMARY KEY  ([id])
 ) ;
@@ -686,7 +690,7 @@ CREATE TABLE trabajadores (
   [regimeninstitucion_id] varchar(20) NULL,
   [tipoinstitucion_id] varchar(20) NULL,
   [institucion_id] varchar(20)  NULL,
-  [añoegreso] int  NULL,
+  [anioegreso] int  NULL,
   [asignacionfamiliar] int NOT NULL,
   [rentaquinta] int NOT NULL,
   [quintaexonerada] int  NULL,
@@ -723,10 +727,10 @@ CREATE TABLE trabajadores (
   [local_id] varchar(20) NOT NULL,
   [horario_id] varchar(20) NOT NULL,
   [otrarentaquinta] varchar(200) NULL,
-  --[IdUsuarioCrea] varchar(20) null,
-  --[FechaCrea] datetime null,
-  --[IdUsuarioModifica] varchar(20) null,
-  --[FechaModifica] datetime null
+  [IdUsuarioCrea] varchar(20) null,
+  [FechaCrea] datetime null,
+  [IdUsuarioModifica] varchar(20) null,
+  [FechaModifica] datetime null
  
 ) ;
 GO
@@ -769,10 +773,6 @@ CREATE TABLE users (
   PRIMARY KEY  ([id]),
   [rol_id] varchar(20)NOT NULL,
   [trabajador_id] varchar(20) NULL
-  --[IdUsuarioCrea] varchar(20) null,
-  --[FechaCrea] datetime null,
-  --[IdUsuarioModifica] varchar(20) null,
-  --[FechaModifica] datetime null
 );
 GO
 
@@ -873,11 +873,12 @@ CREATE TABLE derechohabientes (
   [distrito_id] varchar(20) NOT NULL,
   [tipovia_id] varchar(20) NOT NULL,
   [tipozona_id] varchar(20) NOT NULL,
-  [trabajador_id] varchar(20) NOT NULL
-  --[IdUsuarioCrea] varchar(20) null,
-  --[FechaCrea] datetime null,
-  --[IdUsuarioModifica] varchar(20) null,
-  --[FechaModifica] datetime null
+  [trabajador_id] varchar(20) NOT NULL,
+  [local_id] varchar(20) NOT NULL,
+  [IdUsuarioCrea] varchar(20) null,
+  [FechaCrea] datetime null,
+  [IdUsuarioModifica] varchar(20) null,
+  [FechaModifica] datetime null
 ) ;
 GO
 
@@ -956,11 +957,12 @@ create TABLE fichasocioeconomicas (
   [frecuenciamedico_id] varchar(20) NOT NULL,
   [frecuenciaexamen_id] varchar(20) NOT NULL,
   [activo]  int NOT NULL default 1,
-  [trabajador_id] varchar(20) NOT NULL
-  --[IdUsuarioCrea] varchar(20) null,
-  --[FechaCrea] datetime null,
-  --[IdUsuarioModifica] varchar(20) null,
-  --[FechaModifica] datetime null
+  [trabajador_id] varchar(20) NOT NULL,
+  [local_id] varchar(20) NOT NULL,
+  [IdUsuarioCrea] varchar(20) null,
+  [FechaCrea] datetime null,
+  [IdUsuarioModifica] varchar(20) null,
+  [FechaModifica] datetime null
 ) ;
 GO
 
@@ -976,6 +978,7 @@ CREATE TABLE detallefichacasapartes (
   [id] varchar(20) NOT NULL,
   [fichasocioeconomica_id] varchar(20)  NULL,
   [casaparte_id] varchar(20)  NULL,
+  [local_id] varchar(20) NULL,
   [activo]  int NOT NULL default 1
 ) ;
 GO
@@ -993,6 +996,7 @@ CREATE TABLE detallefichaenfermedades (
   PRIMARY KEY  ([id]),
   [fichasocioeconomica_id] varchar(20)  NULL,
   [enfermedad_id] varchar(20)  NULL,
+  [local_id] varchar(20)  NULL,
   [activo]  int NOT NULL default 1
 ) ;
 GO
@@ -1012,6 +1016,7 @@ CREATE TABLE detallefichaservicios (
   PRIMARY KEY  ([id]),
   [fichasocioeconomica_id] varchar(20)  NULL,
   [servicio_id] varchar(20)  NULL,
+  [local_id] varchar(20) NULL,
   [activo]  int NOT NULL default 1
 ) ;
 GO
@@ -1037,11 +1042,12 @@ create TABLE contratos(
 	[periodicidad_id] varchar(20) NOT NULL,
 	[cargo_id] varchar(20) NOT NULL,
 	[trabajador_id] varchar(20) NOT NULL,
-	[formato_id] varchar(20) NOT NULL
-  --[IdUsuarioCrea] varchar(20) null,
-  --[FechaCrea] datetime null,
-  --[IdUsuarioModifica] varchar(20) null,
-  --[FechaModifica] datetime null
+	[formato_id] varchar(20) NOT NULL,
+	[local_id] varchar(20) NOT NULL,
+    [IdUsuarioCrea] varchar(20) null,
+	[FechaCrea] datetime null,
+	[IdUsuarioModifica] varchar(20) null,
+	[FechaModifica] datetime null
 )  ;
 GO
 
@@ -1057,6 +1063,7 @@ CREATE TABLE detallejornadalaborals (
   [id] varchar(20) NOT NULL,
   [contrato_id] varchar(20)  NULL,
   [jornadalaboral_id] varchar(20)  NULL,
+  [local_id] varchar(20) NULL,
   [activo]  int NOT NULL default 1
 ) ;
 GO

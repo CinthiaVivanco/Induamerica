@@ -63,6 +63,11 @@ class Derechohabiente extends Model
         return $this->belongsTo('App\Trabajadores');
     }
 
+    public function local()
+    {
+        return $this->belongsTo('App\Local');
+    }
+
 
     
 }

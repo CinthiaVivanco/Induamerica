@@ -43,9 +43,8 @@
 
         @yield('section')
 
-        <input type='hidden' id='carpeta' value="{{$capeta}}"/>
-
-        <input type="text" id="token" name="_token"  value="{{ csrf_token() }}">
+         <input type='hidden' id='carpeta' value="{{$capeta}}"/>
+         <input type="text" id="token" name="_token"  value="{{ csrf_token() }}"> 
     </div>
 
 

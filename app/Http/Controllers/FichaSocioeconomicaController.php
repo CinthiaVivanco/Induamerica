@@ -21,6 +21,9 @@ class FichaSocioeconomicaController extends Controller
 
 	public function actionModificarFichaSocioeconomica($idfichasocioeconomica,$idopcion,$idtrabajador,Request $request)
 	{
+
+			$fechaActual = date('d-m-Y');
+
 			$cabecera            	 	 		 =	Fichasocioeconomica::find($idfichasocioeconomica);
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
 			$cabecera->otrotipovivienda  		 = 	$request['otrotipovivienda'];
@@ -38,6 +41,11 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->tallazapato		 		 =	$request['tallazapato'];
 			$cabecera->callesreferencia		 	 =	$request['callesreferencia'];
 			$cabecera->telefonofijo 		 	 = 	$request['telefonofijo'];
+			$cabecera->local_id 				 = 	Session::get('local')->id; 
+
+			$cabecera->IdUsuarioModifica 		  = 	Session::get('usuario')->id;
+			$cabecera->FechaModifica  		      = 	$fechaActual;
+
 			$cabecera->telefonoemergencia 		 = 	$request['telefonoemergencia'];
 			$cabecera->referenciafamiliar 		 = 	$request['referenciafamiliar'];
 			$cabecera->ingresomensual 			 = 	$request['ingresomensual'];
@@ -119,6 +127,7 @@ class FichaSocioeconomicaController extends Controller
 
 	public function actionFichaSocioeconomica($idopcion,$idtrabajador,Request $request)
 	{
+		$fechaActual = date('d-m-Y');
 		$idtrabajadorsd  = $idtrabajador;
 	    $idtrabajador = $this->funciones->decodificar($idtrabajador);
 
@@ -164,6 +173,8 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->estadoconstruccion 	 	 = 	$request['estadoconstruccion'];
 			$cabecera->laboratorioclinico 	 	 = 	$request['laboratorioclinico'];
 			$cabecera->observacion 	 	         = 	$request['observacion'];
+			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
+			$cabecera->FechaCrea  		         = 	$fechaActual;
 			$cabecera->trabajador_id 			 = 	$idtrabajador;
 
 
@@ -242,6 +253,8 @@ class FichaSocioeconomicaController extends Controller
 
 
  			return Redirect::to('/ficha-socioeconomica-trabajador/'.$idopcion.'/'.$idtrabajadorsd)->with('bienhecho', 'FichaSocioeconomica'.$request['nombre'].' '.$request['apellidopaterno'].' registrado con éxito');
+
+ 			
 
 		}else{
 

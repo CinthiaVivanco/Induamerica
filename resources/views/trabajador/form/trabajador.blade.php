@@ -362,48 +362,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-
-                      <label class="col-sm-12 control-label labelleft">Situación Especial <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'situacionespecial_id', $combosituacionespecial, array(),
-                                          [
-                                            'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'situacionespecial_id',
-                                            'required'    => '',
-                                            'data-aw'     => '21'
-                                          ]) !!}
-                      </div>
-                </div>
-
-                <div class="form-group">
-
-                      <label class="col-sm-12 control-label labelleft">Entidad Financiera <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'entidadfinanciera_id', $comboentidadfinanciera, array(),
-                                          [
-                                            'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'entidadfinanciera_id',
-                                            'required'    => '',
-                                            'data-aw'     => '27'
-                                          ]) !!}
-                      </div>
-                </div>
-
-                <div class="form-group">
-
-                  <label class="col-sm-12 control-label labelleft">Horario <span class="required">*</span></label>
-                  <div class="col-sm-7 abajocaja">
-                    {!! Form::select( 'horario_id', $combohorario, array(),
-                                      [
-                                        'class'       => 'form-control control input-sm' ,
-                                        'id'          => 'horario_id',
-                                        'required'    => '',
-                                        'data-aw'     => '26'
-                                      ]) !!}
-                  </div>
-                </div>
-
+               
           
             </div>
       
@@ -411,31 +370,49 @@
 
           <div class="col-sm-6">
 
-                <div class="panel-body">
+                    <div class="panel-body">
 
-                  <div class="form-group">
+                      <div class="form-group">
 
-                      <label class="col-sm-12 control-label labelleft">Establecimiento donde labora <span class="required">*</span></label>
+                          <label class="col-sm-12 control-label labelleft">Situación Especial <span class="required">*</span></label>
+                          <div class="col-sm-7 abajocaja">
+                            {!! Form::select( 'situacionespecial_id', $combosituacionespecial, array(),
+                                              [
+                                                'class'       => 'form-control control input-sm' ,
+                                                'id'          => 'situacionespecial_id',
+                                                'required'    => '',
+                                                'data-aw'     => '21'
+                                              ]) !!}
+                          </div>
+                    </div>
+
+                    <div class="form-group">
+
+                          <label class="col-sm-12 control-label labelleft">Entidad Financiera <span class="required">*</span></label>
+                          <div class="col-sm-7 abajocaja">
+                            {!! Form::select( 'entidadfinanciera_id', $comboentidadfinanciera, array(),
+                                              [
+                                                'class'       => 'form-control control input-sm' ,
+                                                'id'          => 'entidadfinanciera_id',
+                                                'required'    => '',
+                                                'data-aw'     => '27'
+                                              ]) !!}
+                          </div>
+                    </div>
+
+                    <div class="form-group">
+
+                      <label class="col-sm-12 control-label labelleft">Horario <span class="required">*</span></label>
                       <div class="col-sm-7 abajocaja">
-
-                      
-                      </div>
-                    
-                  </div>
-
-                   <div class="form-group">
-
-                      <label class="col-sm-12 control-label labelleft">Local <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'local_id', $combolocal, array(),
+                        {!! Form::select( 'horario_id', $combohorario, array(),
                                           [
                                             'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'local_id',
+                                            'id'          => 'horario_id',
                                             'required'    => '',
-                                            'data-aw'     => '21'
+                                            'data-aw'     => '26'
                                           ]) !!}
                       </div>
-                   </div>
+                    </div>
 
                    <div class="form-group abajocaja">
                       <label class="col-sm-12 control-label labelleft">¿Sindicalizado? <span class="required">*</span></label>
@@ -627,7 +604,7 @@
                                       <div class="col-sm-5 abajocaja">
 
                                         <input  type="text"
-                                                id="añoegreso" name='añoegreso' value="@if(isset($trabajador)){{old('añoegreso',$trabajador->añoegreso)}}@else{{old('añoegreso')}}@endif" placeholder="Año Egreso"
+                                                id="anioegreso" name='anioegreso' value="@if(isset($trabajador)){{old('anioegreso',$trabajador->anioegreso)}}@else{{old('anioegreso')}}@endif" placeholder="Año Egreso"
                                                 required = "" data-parsley-minlength="4" data-parsley-maxlength="4"  data-parsley-type="number"
                                                 autocomplete="off" class="form-control input-sm" data-aw="6"/>
 

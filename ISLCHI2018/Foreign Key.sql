@@ -201,6 +201,10 @@ ALTER TABLE derechohabientes
 ADD FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id);
 GO
 
+ALTER TABLE derechohabientes
+ADD FOREIGN KEY (local_id) REFERENCES locales(id);
+GO
+
 ----------------------------------------------------------------------FICHA SOCIOECONÒMICA--------------------------------------------------------------------------------------
 
 ALTER TABLE fichasocioeconomicas
@@ -227,12 +231,20 @@ ALTER TABLE fichasocioeconomicas
 ADD FOREIGN KEY (trabajador_id) REFERENCES trabajadores(id);
 GO
 
+ALTER TABLE fichasocioeconomicas
+ADD FOREIGN KEY (local_id) REFERENCES locales(id);
+GO
+
 ALTER TABLE detallefichacasapartes
 ADD FOREIGN KEY (fichasocioeconomica_id) REFERENCES fichasocioeconomicas(id);
 GO
 
 ALTER TABLE detallefichacasapartes
 ADD FOREIGN KEY (casaparte_id) REFERENCES casapartes(id);
+GO
+
+ALTER TABLE detallefichacasapartes
+ADD FOREIGN KEY (local_id) REFERENCES locales(id);
 GO
 
 ALTER TABLE detallefichaenfermedades
@@ -243,8 +255,16 @@ ALTER TABLE detallefichaenfermedades
 ADD FOREIGN KEY (enfermedad_id) REFERENCES enfermedades(id);
 GO
 
+ALTER TABLE detallefichaenfermedades
+ADD FOREIGN KEY (local_id) REFERENCES locales(id);
+GO
+
 ALTER TABLE detallefichaservicios
 ADD FOREIGN KEY (fichasocioeconomica_id) REFERENCES fichasocioeconomicas(id);
+GO
+
+ALTER TABLE detallefichaservicios
+ADD FOREIGN KEY (local_id) REFERENCES locales(id);
 GO
 
 ALTER TABLE detallefichaservicios
@@ -271,6 +291,10 @@ ADD FOREIGN KEY (periodicidad_id) REFERENCES periodicidads(id);
 GO
 
 ALTER TABLE contratos
+ADD FOREIGN KEY (local_id) REFERENCES locales(id);
+GO
+
+ALTER TABLE contratos
 ADD FOREIGN KEY (cargo_id) REFERENCES cargos(id);
 GO
 
@@ -280,6 +304,10 @@ GO
 
 ALTER TABLE detallejornadalaborals
 ADD FOREIGN KEY (jornadalaboral_id) REFERENCES jornadalaborals(id);
+GO
+
+ALTER TABLE detallejornadalaborals
+ADD FOREIGN KEY (local_id) REFERENCES locales(id);
 GO
 
 ALTER TABLE contratos

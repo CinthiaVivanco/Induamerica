@@ -7,6 +7,7 @@
     <meta name="description" content="Sistemas de Planillas">
     <meta name="author" content="Cinthia Vivanco Gonzales">
     <link rel="icon" href="{{ asset('public/img/icono/faviind.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/alfasweb.css') }} "/>
 
 
     <title>Induamérica</title>
@@ -24,7 +25,7 @@
   <body class="be-splash-screen">
 
     <div class="be-wrapper be-login">
-      <div class="be-content">
+      <div class="be-content ajaxpersonal">  
         <div class="main-content container-fluid">
           <div class="splash-container">
             <div class="panel panel-default panel-border-color panel-border-color-primary">
@@ -52,15 +53,39 @@
 
 
                   </div>
+
                   <div class="form-group">
                     <input id="password" name='password' type="password" required = ""   placeholder="Clave" class="form-control" data-aw="2"/>
                     @include('error.erroresvalidate', ['id' => $errors->has('name')  , 'error' => $errors->first('name', ':message'), 'data' => '2'])
                     @include('error.erroresbd', ['id' => Session::get('errorbd')  , 'error' => Session::get('errorbd'), 'data' => '2'])
 
                   </div>
+
+                  <div class="form-group">
+                        <div class="col-sm-14">
+                          {!! Form::select( 'empresa_id', $comboempresa, array(),
+                                            [
+                                              'class'       => 'form-control control input-sm' ,
+                                              'id'          => 'empresa_id',
+                                              'required'    => '',
+                                              'data-aw'     => '10'
+                                            ]) !!}
+                        </div>
+                  </div> 
+
+                  <div class="form-group ajaxlocal">
+
+                       @include('general.ajax.combolocal', ['combolocal' => $combolocal])
+
+                  </div>
+
                   <div class="form-group login-submit">
                     <button data-dismiss="modal" type="submit"  class="btn btn-primary btn-xl">Inicia sesión</button>
                   </div>
+
+                
+                  <input type='hidden' id='carpeta' value="{{$capeta}}"/>
+                  <input type="text" id="token"  class ="ocultar" name="_token"  value="{{ csrf_token() }}">
 
                 </form>
                 
@@ -83,5 +108,8 @@
         $('form').parsley();
       });
     </script>
+
+    <script src="{{ asset('public/js/user/user.js') }}" type="text/javascript"></script>
+
   </body>
 </html>

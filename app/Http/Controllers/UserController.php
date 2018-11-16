@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Crypt;
-use App\User,App\Grupoopcion,App\Rol,App\RolOpcion,App\Opcion,App\Documento,App\Trabajador;
+use App\User,App\Grupoopcion,App\Rol,App\RolOpcion,App\Opcion,App\Documento,App\Trabajador,App\Empresa,App\Local;
 use View;
 use Session;
 use Hashids;
@@ -32,36 +32,45 @@ class UserController extends Controller
 	
    public function actionLogin(Request $request)
     {
+
 		if($_POST)
 		{
 			/**** Validaciones laravel ****/
 			$this->validate($request, [
 	            'name' => 'required',
 	            'password' => 'required',
+
 			], [
             	'name.required' => 'El campo Usuario es obligatorio',
             	'password.required' => 'El campo Clave es obligatorio',
         	]);
 
-			/******************************/
+			/**********************************************************/
+			
 
-			$usuario = strtoupper($request['name']);
-			$clave   = strtoupper($request['password']);
-			$tusuario   		= 	User::whereRaw('UPPER(name)=?',[$usuario])->first();
-			  
+			$usuario 	 				 = strtoupper($request['name']);
+			$clave   	 				 = strtoupper($request['password']);
+			$local_id  	 				 = $request['local_id'];
+
+			$tusuario    				 = User::whereRaw('UPPER(name)=?',[$usuario])->first();
+
 			if(count($tusuario)>0)
 			{
-				$clavedesifrada = 	strtoupper(Crypt::decrypt($tusuario->password));
+				$clavedesifrada 		 = 	strtoupper(Crypt::decrypt($tusuario->password));
+
+
 				if($clavedesifrada == $clave)
 				{
-					$listamenu    	= 	Grupoopcion::where('activo', '=', 1)->orderBy('orden', 'asc')->get();
+					$listamenu    		 = 	Grupoopcion::where('activo', '=', 1)->orderBy('orden', 'asc')->get();
+					$local 				 = Local::where('id','=',$local_id)->first();
 
 					Session::put('usuario', $tusuario);
+					Session::put('local', $local); 
 					Session::put('listamenu', $listamenu);
 
-
 					return Redirect::to('bienvenido');
-
+					
+						
 				}else{
 					return Redirect::back()->withInput()->with('errorbd', 'Usuario o clave incorrecto');
 				}	
@@ -70,7 +79,17 @@ class UserController extends Controller
 			}						    
 
 		}else{
-			return view('usuario.login');
+
+			$empresa 			= DB::table('empresas')->pluck('descripcion','id')->toArray();
+			$comboempresa		= array('' => "Seleccione Empresa") + $empresa;
+
+			$combolocal			= array('' => "Seleccione Local");
+
+			return view('usuario.login', 
+						 [
+						 	'comboempresa' => $comboempresa,
+						 	'combolocal'   => $combolocal,
+						 ]);
 		}
     }
 
@@ -84,7 +103,8 @@ class UserController extends Controller
 
 		Session::forget('usuario');
 		Session::forget('listamenu');
-		
+		Session::forget('local');
+
 		return Redirect::to('/login');
 	}
 
@@ -130,11 +150,10 @@ class UserController extends Controller
 
 
 
-			$idusers 				 	=   $this->funciones->getCreateId('users');
+			$idusers 				 	=   $this->funciones->getCreateIdMaestra('users');
 			
 			$cabecera            	 	=	new User;
 			$cabecera->id 	     	 	=   $idusers;
-
 			$cabecera->nombre 	     	=   $trabajador->nombres;
 			$cabecera->apellido 	 	=   $trabajador->apellidopaterno.' '.$trabajador->apellidomaterno;
 			$cabecera->dni 	 		 	= 	$trabajador->dni;
@@ -255,7 +274,7 @@ class UserController extends Controller
         	]);
 			/******************************/
 
-			$idrol 					 = $this->funciones->getCreateId('rols');
+			$idrol 					 = $this->funciones->getCreateIdMaestra('rols');
 
 			$cabecera            	 =	new Rol;
 			$cabecera->id 	     	 =  $idrol;
@@ -267,7 +286,7 @@ class UserController extends Controller
 			foreach($listaopcion as $item){
 
 
-				$idrolopciones 		= $this->funciones->getCreateId('rolopciones');
+				$idrolopciones 		= $this->funciones->getCreateIdMaestra('rolopciones');
 
 
 			    $detalle            =	new RolOpcion;
@@ -359,7 +378,7 @@ class UserController extends Controller
 	public function actionAjaxListarOpciones(Request $request)
 	{
 		$idrol =  $request['idrol'];
-		$idrol = $this->funciones->decodificar($idrol);
+		$idrol = $this->funciones->decodificarmaestra($idrol);
 
 		$listaopciones = RolOpcion::where('rol_id','=',$idrol)->get();
 
@@ -373,7 +392,7 @@ class UserController extends Controller
 	{
 
 		$idrolopcion =  $request['idrolopcion'];
-		$idrolopcion = $this->funciones->decodificar($idrolopcion);
+		$idrolopcion = $this->funciones->decodificarmaestra($idrolopcion);
 
 		$cabecera            	 =	RolOpcion::find($idrolopcion);
 		$cabecera->ver 	     	 =  $request['ver'];
