@@ -37,7 +37,7 @@ class TrabajadorController extends Controller
 	    if($validarurl <> 'true'){return $validarurl;}
 	    /******************************************************/
 
-	    $listatrabajadores = Trabajador::orderBy('id', 'asc')->get();
+	    $listatrabajadores = Trabajador::where('local_id','=',Session::get('local')->id)->orderBy('id', 'asc')->get();
 
 		return View::make('trabajador/listatrabajadores',
 						 [
@@ -50,8 +50,7 @@ class TrabajadorController extends Controller
 	public function actionAgregarTrabajador($idopcion,Request $request)
 	{
 
-		$fechaActual = date('d-m-Y');
-
+	
 		/********************** validar url **********************/
 		$validarurl = $this->funciones->getUrl($idopcion,'Anadir');
 	    if($validarurl <> 'true'){return $validarurl;}
@@ -124,15 +123,14 @@ class TrabajadorController extends Controller
 			$cabecera->local_id 				 = 	Session::get('local')->id; // que tenemos que guardar? el id que hemos ok
 			
 			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
-			$cabecera->FechaCrea  		         = 	$fechaActual;
+
+			$cabecera->FechaCrea 				 =  $this->fechaActual;
 
 			$cabecera->situacionespecial_id		 = 	$request['situacionespecial_id'];	
 			$cabecera->rentaquinta 		 	 	 = 	$request['rentaquinta'];
 			$cabecera->quintaexonerada 		 	 = 	$request['quintaexonerada'];
 			$cabecera->asignacionfamiliar 		 = 	$request['asignacionfamiliar'];
 			$cabecera->fechanacimiento 			 = 	$request['fechanacimiento'];
-			$cabecera->fechainicio 				 = 	$request['fechainicio'];
-			$cabecera->fechafin 				 = 	$request['fechafin'];
 			$cabecera->template 		 		 = 	'';
 			$cabecera->template10 			 	 = 	'';
 			$cabecera->mar_huella 			 	 = 	'';
@@ -267,7 +265,7 @@ class TrabajadorController extends Controller
 	public function actionModificarTrabajador($idopcion,$idtrabajador,Request $request)
 	{
 
-		$fechaActual = date('d-m-Y');
+
 
 		/******************* validar url **********************/
 		$validarurl   = $this->funciones->getUrl($idopcion,'Modificar');
@@ -317,7 +315,7 @@ class TrabajadorController extends Controller
 			$cabecera->tipotrabajador_id 		  = 	$request['tipotrabajador_id'];
 
 			$cabecera->IdUsuarioModifica 		  = 	Session::get('usuario')->id;
-			$cabecera->FechaModifica  		      = 	$fechaActual;
+			$cabecera->FechaModifica 			  =     $this->fechaActual;
 			
 			$cabecera->motivobaja_id 	 		  = 	$request['motivobaja_id'];
 			$cabecera->entidadfinanciera_id 	  = 	$request['entidadfinanciera_id'];
@@ -350,8 +348,6 @@ class TrabajadorController extends Controller
 			$cabecera->tipoinstitucion_id   	  = 	$request['tipoinstitucion_id'];
 			$cabecera->institucion_id   		  = 	$request['institucion_id'];
 			$cabecera->carrera_id   			  = 	$request['carrera_id'];
-			$cabecera->fechainicio 				  = 	$request['fechainicio'];
-			$cabecera->fechafin 				  = 	$request['fechafin'];
 			$cabecera->otrarentaquinta  		  = 	$request['otrarentaquinta'];
 			$cabecera->horario_id 		  		  = 	$request['horario_id'];
 			$cabecera->save();

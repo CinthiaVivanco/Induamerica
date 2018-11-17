@@ -55,14 +55,12 @@
                                      class="input-group date datetimepicker">
                                      <input size="16" 
                                             type="text" 
-                                            value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}
-                                             @else{{old('fechafin')}}
-                                             @endif" 
+                                            value="@if(isset($contrato)){{old('fechainicio',$contrato->fechainicio)}}@else{{old('fechafin')}}@endif" 
                                             placeholder="Fecha Inicio"
                                             id='fechainicio' 
                                             name='fechainicio' 
                                             required = ""
-                                            class="form-control input-sm">
+                                            class="form-control input-sm"/>
                                       <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
                                 </div>
                               </div>
@@ -78,14 +76,12 @@
                                       class="input-group date datetimepicker">
                                       <input size="16" 
                                              type="text" 
-                                             value="@if(isset($contrato)){{old('fechafin',$contrato->fechafin)}}
-                                              @else{{old('fechafin')}}
-                                              @endif"  
                                              placeholder="Fecha Fin"
                                              id='fechafin' 
                                              name='fechafin' 
-                                             required = ""
-                                             class="form-control input-sm">
+                                             required = ""                                             
+                                             value="@if(isset($contrato)){{old('fechafin',$contrato->fechafin)}}@else{{old('fechafin')}}@endif"  
+                                             class="form-control input-sm"/>
                                            <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
                                   </div>
                                </div>
@@ -160,7 +156,7 @@
                                 <input  type="text"
                                         id="observacion" 
                                         name='observacion' 
-                                        value="@if(isset($contrato)){{old('observacion',$contrato->observacion)}} @else{{old('observacion')}} @endif"
+                                        value="@if(isset($contrato)){{old('observacion',$contrato->observacion)}}@else{{old('observacion')}}@endif"
                                         placeholder="Observación"
                                         required = ""
                                         autocomplete="off" 

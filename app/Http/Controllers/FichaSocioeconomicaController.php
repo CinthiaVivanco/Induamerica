@@ -22,7 +22,6 @@ class FichaSocioeconomicaController extends Controller
 	public function actionModificarFichaSocioeconomica($idfichasocioeconomica,$idopcion,$idtrabajador,Request $request)
 	{
 
-			$fechaActual = date('d-m-Y');
 
 			$cabecera            	 	 		 =	Fichasocioeconomica::find($idfichasocioeconomica);
 			$cabecera->tipovivienda_id  		 = 	$request['tipovivienda_id'];
@@ -41,10 +40,10 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->tallazapato		 		 =	$request['tallazapato'];
 			$cabecera->callesreferencia		 	 =	$request['callesreferencia'];
 			$cabecera->telefonofijo 		 	 = 	$request['telefonofijo'];
-			$cabecera->local_id 				 = 	Session::get('local')->id; 
+			
 
-			$cabecera->IdUsuarioModifica 		  = 	Session::get('usuario')->id;
-			$cabecera->FechaModifica  		      = 	$fechaActual;
+			$cabecera->IdUsuarioModifica 		 = Session::get('usuario')->id;
+			$cabecera->FechaModifica  		     = $this->fechaActual;
 
 			$cabecera->telefonoemergencia 		 = 	$request['telefonoemergencia'];
 			$cabecera->referenciafamiliar 		 = 	$request['referenciafamiliar'];
@@ -127,7 +126,6 @@ class FichaSocioeconomicaController extends Controller
 
 	public function actionFichaSocioeconomica($idopcion,$idtrabajador,Request $request)
 	{
-		$fechaActual = date('d-m-Y');
 		$idtrabajadorsd  = $idtrabajador;
 	    $idtrabajador = $this->funciones->decodificar($idtrabajador);
 
@@ -173,8 +171,9 @@ class FichaSocioeconomicaController extends Controller
 			$cabecera->estadoconstruccion 	 	 = 	$request['estadoconstruccion'];
 			$cabecera->laboratorioclinico 	 	 = 	$request['laboratorioclinico'];
 			$cabecera->observacion 	 	         = 	$request['observacion'];
+			$cabecera->local_id 				 = 	Session::get('local')->id; 
 			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
-			$cabecera->FechaCrea  		         = 	$fechaActual;
+			$cabecera->FechaCrea  		         = 	$this->fechaActual;
 			$cabecera->trabajador_id 			 = 	$idtrabajador;
 
 
@@ -197,6 +196,7 @@ class FichaSocioeconomicaController extends Controller
 				}
 
 			    $detalle            				=	new Detallefichaservicio;
+			    $detalle->local_id 				 	= 	Session::get('local')->id; 
 			    $detalle->id 	    				=  	$iddetallefichaservicios;
 				$detalle->fichasocioeconomica_id    = 	$idfichasocioeconomica;
 				$detalle->servicio_id    			=  	$item->id;
@@ -219,6 +219,7 @@ class FichaSocioeconomicaController extends Controller
 				}
 
 			    $detalle            				=	new Detallefichacasaparte;
+			    $detalle->local_id 				    = 	Session::get('local')->id; 
 			    $detalle->id 	    				=  	$iddetallefichacasapartes;
 				$detalle->fichasocioeconomica_id    = 	$idfichasocioeconomica;
 				$detalle->casaparte_id    			=  	$item->id;
@@ -245,6 +246,7 @@ class FichaSocioeconomicaController extends Controller
 			    $detalle->id 	    				=  	$iddetallefichaenfermedades;
 				$detalle->fichasocioeconomica_id    = 	$idfichasocioeconomica;
 				$detalle->enfermedad_id    			=  	$item->id;
+				$cabecera->local_id 				= 	Session::get('local')->id;
 				$detalle->activo     				=  	$activo;
 				$detalle->save();
 

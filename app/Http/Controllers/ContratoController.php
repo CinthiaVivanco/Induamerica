@@ -17,7 +17,6 @@ class ContratoController extends Controller
 
 	public function actionModificarContrato($idcontrato,$idopcion,$idtrabajador,Request $request)
 	{
-			$fechaActual = date('d-m-Y');
 
 			$cabecera            	 	 	=	Contrato::find($idcontrato);
 			$cargo 							= 	Cargo::where('id','=',$request['cargo_id'])->first();
@@ -37,7 +36,7 @@ class ContratoController extends Controller
 			$cabecera->remuneracion  	 	=	$request['remuneracion'];
 
 			$cabecera->IdUsuarioModifica 	= 	Session::get('usuario')->id;
-			$cabecera->FechaModifica  		= 	$fechaActual;
+			$cabecera->FechaModifica  		= 	$this->fechaActual;
 
 			$cabecera->save();
 
@@ -71,7 +70,10 @@ class ContratoController extends Controller
 	public function actionContrato($idopcion,$idtrabajador,Request $request)
 	{
 
-		$fechaActual = date('d-m-Y');
+
+		//donde esta el codigo de la peticion get? 
+
+			/***************/
 
 		$idtrabajadorsd  = $idtrabajador;
 	    $idtrabajador = $this->funciones->decodificar($idtrabajador);
@@ -109,7 +111,7 @@ class ContratoController extends Controller
 			$cabecera->local_id 				 = 	Session::get('local')->id; 
 
 			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
-			$cabecera->FechaCrea  		         = 	$fechaActual;
+			$cabecera->FechaCrea  		         = 	$this->fechaActual;
 			
 			$cabecera->numerocuenta  			 =	$request['numerocuenta'];
 			$cabecera->periodicidad_id   		 = 	$request['periodicidad_id'];
@@ -144,34 +146,58 @@ class ContratoController extends Controller
 
 		}else{
 
-			$contrato 					 = Contrato::where('trabajador_id','=' , $idtrabajador)->first();
+
+			$contrato 					 = Contrato::where('trabajador_id','=', $idtrabajador)
+								  		   ->where('estado','=',1)->first();
+
 
 			$trabajador 				 = Trabajador::where('id', $idtrabajador)->first();
 
 			$listacontrato 		    	 = Contrato::where('trabajador_id','=' , $idtrabajador)->get();
 
-			$tipocontrato 				 = DB::table('tipocontratos')->pluck('descripcion','id')->toArray();
-			$combotipocontrato  		 = array('' => "Seleccione Tipo Contrato") + $tipocontrato;
-
-			$cargo					 	 = DB::table('cargos')->pluck('nombre','id')->toArray();
-			$combocargo				 	 = array('' => "Seleccione Cargo") + $cargo;
-
-			$tipopago					 = DB::table('tipopagos')->pluck('descripcion','id')->toArray();
-			$combotipopago				 = array('' => "Seleccione Tipo Pago") + $tipopago;
-
-			$formato					 = DB::table('formatos')->pluck('descripcionabreviada','id')->toArray();
-			$comboformato				 = array('' => "Seleccione Formato") + $formato;
-			
-			$periodicidad				 = DB::table('periodicidads')->pluck('descripcion','id')->toArray();
-			$comboperiodicidad			 = array('' => "Seleccione Periodicidad") + $periodicidad;
-
-
 			if(count($contrato)>0){
+
 				$jornadalaboral 				= Detallejornadalaboral::join('jornadalaborals', 'detallejornadalaborals.jornadalaboral_id', '=', 'jornadalaborals.id')
 											  		->select('jornadalaborals.id','jornadalaborals.descripcion','detallejornadalaborals.activo')
-											  		->where('contrato_id','=',$contrato->id)->get();								
+											  		->where('contrato_id','=',$contrato->id)->get();
+
+				$tipocontrato 				 	= DB::table('tipocontratos')->pluck('descripcion','id')->toArray();
+				$combotipocontrato  		 	= array($contrato->tipocontrato_id => $contrato->tipocontrato->descripcion) + $tipocontrato;
+
+				$cargo 				 			= DB::table('cargos')->pluck('nombre','id')->toArray();
+				$combocargo  		 			= array($contrato->cargo_id => $contrato->cargo->nombre) + $cargo;
+
+				$jornadalaboral 				= Detallejornadalaboral::join('jornadalaborals', 'DetallejornadaLaborals.jornadalaboral_id', '=', 'jornadalaborals.id')
+												  ->select('jornadalaborals.id','jornadalaborals.descripcion','detallejornadalaborals.activo')
+												  ->where('contrato_id','=',$contrato->id)->get();
+
+				$periodicidad 				 	= DB::table('periodicidads')->pluck('descripcion','id')->toArray();
+				$comboperiodicidad  		 	= array($contrato->periodicidad_id => $contrato->periodicidad->descripcion) + $periodicidad;
+
+				$tipopago 				 		= DB::table('tipopagos')->pluck('descripcion','id')->toArray();
+				$combotipopago  		 		= array($contrato->tipopago_id => $contrato->tipopago->descripcion) + $tipopago;
+
+				$formato 				 		= DB::table('formatos')->pluck('descripcionabreviada','id')->toArray();
+				$comboformato 		 			= array($contrato->formato_id => $contrato->formato->descripcion) + $formato;											  		
+
 			}else{
+
 				$jornadalaboral 				= Jornadalaboral::get();
+
+				$tipocontrato 				 = DB::table('tipocontratos')->pluck('descripcion','id')->toArray();
+				$combotipocontrato  		 = array('' => "Seleccione Tipo Contrato") + $tipocontrato;
+
+				$cargo					 	 = DB::table('cargos')->pluck('nombre','id')->toArray();
+				$combocargo				 	 = array('' => "Seleccione Cargo") + $cargo;
+
+				$tipopago					 = DB::table('tipopagos')->pluck('descripcion','id')->toArray();
+				$combotipopago				 = array('' => "Seleccione Tipo Pago") + $tipopago;
+
+				$formato					 = DB::table('formatos')->pluck('descripcionabreviada','id')->toArray();
+				$comboformato				 = array('' => "Seleccione Formato") + $formato;
+				
+				$periodicidad				 = DB::table('periodicidads')->pluck('descripcion','id')->toArray();
+				$comboperiodicidad			 = array('' => "Seleccione Periodicidad") + $periodicidad;				
 			}
 
 			//dd($trabajador);
@@ -186,7 +212,9 @@ class ContratoController extends Controller
 	        					'jornadalaboral'   				=> $jornadalaboral,
 							  	'combotipopago' 				=> $combotipopago,		
 							  	'comboformato' 					=> $comboformato,				
-							  	'comboperiodicidad' 			=> $comboperiodicidad,		
+							  	'comboperiodicidad' 			=> $comboperiodicidad,
+							  	'contrato' 						=> $contrato,
+							  			
 	        				]);
 	        					
 		}

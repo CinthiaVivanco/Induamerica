@@ -261,36 +261,6 @@
           <div class="col-sm-6">
             <div class="panel-body">
 
-                <div class="form-group">
-                    <label class="col-sm-12 control-label labelleft">
-                      Fecha Inicio <span class="required">*</span>
-                    </label>
-                    <div class="col-sm-7 abajocaja">
-                      <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
-                            <input size="16" type="text" value="@if(isset($trabajador)){{old('fechainicio',$trabajador->fechainicio)}}@else{{old('fechafin')}}@endif" placeholder="Fecha Inicio"
-                            id='fechainicio' name='fechainicio' 
-                            required = ""
-                            class="form-control input-sm">
-                            <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
-                      </div>
-                    </div>
-                </div> 
-
-
-                <div class="form-group">
-                     <label class="col-sm-12 control-label labelleft">
-                      Fecha Fin <span class="required">*</span>
-                     </label> 
-                     <div class="col-sm-7 abajocaja">
-                       <div data-min-view="2" data-date-format="dd-mm-yyyy"  class="input-group date datetimepicker">
-                                <input size="16" type="text" value="@if(isset($trabajador)){{old('fechafin',$trabajador->fechafin)}}@else{{old('fechafin')}}@endif"     placeholder="Fecha Fin"
-                                id='fechafin' name='fechafin' 
-                                 required = ""
-                                 class="form-control input-sm">
-                                 <span class="input-group-addon btn btn-primary"><i class="icon-th mdi mdi-calendar"></i></span>
-                        </div>
-                     </div>
-                </div>
 
                 <div class="form-group">
                      <label class="col-sm-12 control-label labelleft">Tipo Trabajador <span class="required">*</span></label>
@@ -362,17 +332,7 @@
                     </div>
                 </div>
 
-               
-          
-            </div>
-      
-          </div>
-
-          <div class="col-sm-6">
-
-                    <div class="panel-body">
-
-                      <div class="form-group">
+                <div class="form-group">
 
                           <label class="col-sm-12 control-label labelleft">Situación Especial <span class="required">*</span></label>
                           <div class="col-sm-7 abajocaja">
@@ -384,8 +344,17 @@
                                                 'data-aw'     => '21'
                                               ]) !!}
                           </div>
-                    </div>
+                </div>
+          
+            </div>
+      
+          </div>
 
+          <div class="col-sm-6">
+
+                    <div class="panel-body">
+
+                    
                     <div class="form-group">
 
                           <label class="col-sm-12 control-label labelleft">Entidad Financiera <span class="required">*</span></label>
