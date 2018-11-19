@@ -956,7 +956,7 @@ INSERT INTO opciones (id, nombre,descripcion, pagina,activo, grupoopcion_id) VAL
 ('PRMAECEN000000000003', 'Permisos','Permisos','gestion-de-permisos', 1, 'PRMAECEN000000000001'),
 
 ('PRMAECEN000000000004', 'Ficha Trabajador','Personal','gestion-de-trabajador', 1, 'PRMAECEN000000000002'),
-('PRMAECEN000000000005', 'Baja Trabajador','Baja','gestion-de-trabajador', 1, 'PRMAECEN000000000002'),
+('PRMAECEN000000000005', 'Baja Trabajador','BajaPersonal','gestion-baja-trabajador', 1, 'PRMAECEN000000000002'),
 
 ('PRMAECEN000000000006', 'Horario','Horario','gestion-de-horario', 1, 'PRMAECEN000000000003');
 GO

@@ -123,7 +123,7 @@ class ContratoController extends Controller
 			$jornadalaborals 						= $request['jornadalaboral']; // este es un array que nos devuelve todos los id seleccionados
 			$listajornadalaboral 					= Jornadalaboral::get(); //listamos todos los casapartes
 			foreach($listajornadalaboral as $item){
- 
+
 
 				// 
 				$activo 							= 0;

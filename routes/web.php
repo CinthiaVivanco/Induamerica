@@ -45,6 +45,8 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/agregar-trabajador/{idopcion}', 'TrabajadorController@actionAgregarTrabajador'); 
 	Route::any('/modificar-trabajador/{idopcion}/{idtrabajador}', 'TrabajadorController@actionModificarTrabajador');
 
+	Route::any('/gestion-baja-trabajador/{idopcion}', 'TrabajadorController@actionBajaTrabajador');
+
 	Route::any('/derecho-habiente-trabajador/{idopcion}/{idtrabajador}', 'DerechoHabienteController@actionDerechoHabiente');
 	Route::any('/ajax-form-derechohabiente', 'DerechoHabienteController@actionDerechoHabienteAjax');
 	Route::any('/modificar-derecho-habiente-trabajador/{idderechohabiente}/{idopcion}/{idtrabajador}', 'DerechoHabienteController@actionModificarDerechoHabiente');

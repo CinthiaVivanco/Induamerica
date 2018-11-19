@@ -102,6 +102,8 @@ class DerechoHabienteController extends Controller
 			$cabecera->tipobaja_id 	 			 = 	$request['tipobaja_id'];
 			$cabecera->numeroresolucion 	 	 = 	$request['numeroresolucion'];
 			$cabecera->activo 		 	 		 = 	$request['activo'];
+			$cabecera->local_id 				 = 	Session::get('local')->id; 
+
 			$cabecera->IdUsuarioCrea 			 = 	Session::get('usuario')->id;
 			$cabecera->FechaCrea  		         = 	$this->fechaActual;
 

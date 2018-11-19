@@ -16,6 +16,28 @@ use Hashids;
 class TrabajadorController extends Controller
 {
 
+
+	public function actionBajaTrabajador($idopcion){
+
+			/******************* validar url **********************/
+		$validarurl = $this->funciones->getUrl($idopcion,'Anadir');
+	    if($validarurl <> 'true'){return $validarurl;}
+	    /******************************************************/
+
+	    $listatrabajadores = Trabajador::where('local_id','=',Session::get('local')->id)->orderBy('id', 'asc')->get();
+
+		return View::make('trabajador/listatrabajadores',
+						 [
+						 	'listatrabajadores' => $listatrabajadores,
+						 	'idopcion' => $idopcion,
+						 ]);
+
+		
+	}
+
+
+
+
 	public function actionFichaTrabajador(Request $request){
 
 		$id 						= strtoupper($request['id']);
