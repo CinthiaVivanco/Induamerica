@@ -12,25 +12,61 @@ use View;
 use Session;
 use Hashids;
 
-
 class TrabajadorController extends Controller
 {
-
-
 	public function actionBajaTrabajador($idopcion){
 
-			/******************* validar url **********************/
+		/******************* validar url **********************/
 		$validarurl = $this->funciones->getUrl($idopcion,'Anadir');
 	    if($validarurl <> 'true'){return $validarurl;}
+
 	    /******************************************************/
 
-	    $listatrabajadores = Trabajador::where('local_id','=',Session::get('local')->id)->orderBy('id', 'asc')->get();
+		if($_POST)
+		{
+			/**** Validaciones laravel ****/
+			$this->validate($request, [
+	            'name' => 'unique:users',
+	            'email' => 'unique:users'
+			], [
+            	'name.unique' => 'Trabajador ya registrado',
+            	'email.unique' => 'Correo Electronico ya registrado'
+        	]);
+			/******************************/
+			$trabajador_id 	 		 		= 	$request['trabajador_id'];
+			$trabajador     				=   Trabajador::where('id', '=', $trabajador_id)->first();
 
-		return View::make('trabajador/listatrabajadores',
-						 [
-						 	'listatrabajadores' => $listatrabajadores,
-						 	'idopcion' => $idopcion,
-						 ]);
+
+			$idusers 				 		=   $this->funciones->getCreateIdMaestra('users');
+			
+			$cabecera            	 		=	new User;
+			$cabecera->id 	     	 		=   $idusers;
+			$cabecera->nombre 	     		=   $trabajador->nombres;
+			$cabecera->apellidopaterno 	 	=   $trabajador->apellidopaterno;
+			$cabecera->apellidomaterno 	 	=   $trabajador->apellidopaterno;
+			$cabecera->dni 	 		 		= 	$trabajador->dni;
+			$cabecera->name  		 		=	$request['name'];
+			$cabecera->email 	 	 		=  	$trabajador->email;
+			$cabecera->password 	 		= 	Crypt::encrypt($request['password']);
+			$cabecera->rol_id 	 			= 	$request['rol_id'];
+			$cabecera->activo 	 			=  	$request['activo'];
+			$cabecera->trabajador_id 		= 	$trabajador->id;
+			$cabecera->save();
+ 
+ 			return Redirect::to('/gestion-baja-trabajador/'.$idopcion)->with('bienhecho', 'Usuario '.$trabajador->nombres.' '.$trabajador->apellidopaterno.' '.$trabajador->apellidomaterno.' registrado con exito');
+
+		}else{
+
+		
+			$rol 		= DB::table('Rols')->where('id','<>',$this->prefijomaestro.'000000000001')->pluck('nombre','id')->toArray();
+			$comborol  	= array('' => "Seleccione Rol") + $rol;
+
+			return View::make('trabajador/bajatrabajador',
+						[
+							'comborol' => $comborol,
+						  	'idopcion' => $idopcion
+						]);
+		}
 
 		
 	}
