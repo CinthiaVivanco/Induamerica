@@ -31,9 +31,9 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/gestion-de-usuarios/{idopcion}', 'UserController@actionListarUsuarios');
 	Route::any('/agregar-usuario/{idopcion}', 'UserController@actionAgregarUsuario');
 	Route::any('/modificar-usuario/{idopcion}/{idusuario}', 'UserController@actionModificarUsuario');
+
 	Route::any('/ajax-dato-del-trabajador', 'UserController@actionDatoTrabajador');
 
-	Route::any('/ajax-baja-del-trabajador', 'UserController@actionDatoBajaTrabajador');
 
 	Route::any('/gestion-de-roles/{idopcion}', 'UserController@actionListarRoles');
 	Route::any('/agregar-rol/{idopcion}', 'UserController@actionAgregarRol');
@@ -48,6 +48,7 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::any('/modificar-trabajador/{idopcion}/{idtrabajador}', 'TrabajadorController@actionModificarTrabajador');
 
 	Route::any('/gestion-baja-trabajador/{idopcion}', 'TrabajadorController@actionBajaTrabajador');
+	Route::any('/ajax-baja-del-trabajador', 'TrabajadorController@actionDatoBajaTrabajador');
 
 	Route::any('/derecho-habiente-trabajador/{idopcion}/{idtrabajador}', 'DerechoHabienteController@actionDerechoHabiente');
 	Route::any('/ajax-form-derechohabiente', 'DerechoHabienteController@actionDerechoHabienteAjax');

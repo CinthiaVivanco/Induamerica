@@ -21,13 +21,12 @@
           <div class="panel-body">
             <form method="POST" action="{{ url('/gestion-baja-trabajador/'.$idopcion) }}" style="border-radius: 0px;" class="form-horizontal group-border-dashed">
                   {{ csrf_field() }}
-
-              <div class="col-sm-6">        
+    
                   <div class="form-group">
                     <label class="col-sm-3 control-label labeldni">Dni</label><br>
                     <div class="col-sm-5 input-group dnibaja">
                           <input  type="text"
-                            id="dni" name='dni' placeholder="Ingrese Dni"                          
+                            id="dni" name='dni' placeholder="Ingrese Dni del Trabajador"                          
                             autocomplete="off" class="form-control input-sm" data-aw="1"/>
 
                              <span class="input-group-btn">
@@ -35,80 +34,101 @@
                       
                     </div>
                   </div>
-              </div>
-
-              <div class="col-sm-6">  
-
-                  <div class="form-group">
-                    <label class="col-sm-12 control-label labelleft">Estado</label>
-                    <div class="col-sm-7">
-                      <div class="be-radio has-success inline">
-                        <input type="radio" value='1' @if(isset($trabajador)) @if($trabajador->activo == 1) checked  @endif @else checked @endif name="activo" id="rad28">
-                        <label for="rad28">Activado</label>
-                      </div>
-                      <div class="be-radio has-danger inline ">
-                        <input type="radio" value='0'  @if(isset($trabajador)) @if($trabajador->activo == 0) checked  @endif @endif name="activo" id="rad29">
-                        <label for="rad29">Desactivado</label>
-                      </div>
-                    </div>
+            <div class="contentestudiosbaja">
+              <div class="panelestudios panel-defaultestudios">
+                  <div class="panel-headingestudios">
+                    Detalle del Trabajador
                   </div>
+                  <div class="panel-bodyestudios trabajadorencontradobaja">
+                    
+                        <div class="row">
 
-              </div>
+                              <div class="col-sm-6 "> 
+                                <div class="panel-body">
 
-              <div class="row">
-                    <div class="col-md-10 bajatrabajadordatos">
-
-                        <div class="contentestudios" id="contentestudiosid">
-                            <div class="panelestudios panel-defaultestudios">
-                                <div class="panel-headingestudios">
-                                  Datos del Trabajador
-                                </div>
-                                <div class="panel-bodyestudios">                     
-                                  <div class="row">
-                                    <div class= 'trabajadorencontradobaja'>
-
-                                      <div class="form-group">
-                                          <label class="col-sm-3 control-label">Nombre</label>
-                                          <div class="col-sm-5">
-                                            <input  type="text"
-                                                    id="nombre" name='nombre'  placeholder="Nombre del Trabajador"
-                                                    required = ""
-                                                    autocomplete="off" class="form-control input-sm" data-aw="1"/>
-                                          </div>
-                                        
-                                          <input  type="hidden" id="trabajador_id" name='trabajador_id'/>
-                                      </div>
-
-                                      <div class="form-group">
-                                          <label class="col-sm-3 control-label">Apellido Paterno</label>
-                                          <div class="col-sm-5">
-                                            <input  type="text"
-                                                    id="apellidopaterno" name='apellidopaterno'  placeholder="Apellido del Trabajador"
-                                                    required = ""
-                                                    autocomplete="off" class="form-control input-sm" data-aw="1"/>
-                                          </div>                                        
-                                          <input  type="hidden" id="trabajador_id" name='trabajador_id'/>
-                                      </div>
-
-                                      <div class="form-group">
-                                          <label class="col-sm-3 control-label">Apellido Materno</label>
-                                          <div class="col-sm-5">
-                                            <input  type="text"
-                                                    id="apellidomaterno" name='apellidomaterno'  placeholder="Apellido del Trabajador"
-                                                    required = ""
-                                                    autocomplete="off" class="form-control input-sm" data-aw="1"/>
-                                          </div>                                        
-                                          <input  type="hidden" id="trabajador_id" name='trabajador_id'/>
-                                      </div>
-
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label labelleft">Nombre</label>
+                                        <div class="col-sm-5 abajocaja">
+                                          <input  type="text"
+                                                  id="nombre" name='nombre'  placeholder="Nombre del Trabajador"
+                                                  required = ""
+                                                  autocomplete="off" class="form-control input-sm" data-aw="1"/>
+                                        </div>
+                                      
+                                        <input  type="hidden" id="trabajador_id" name='trabajador_id'/>
                                     </div>
-                                  </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label labelleft">Apellido Paterno</label>
+                                        <div class="col-sm-5 abajocaja">
+                                          <input  type="text"
+                                                  id="apellidopaterno" name='apellidopaterno'  placeholder="Apellido del Trabajador"
+                                                  required = ""
+                                                  autocomplete="off" class="form-control input-sm" data-aw="1"/>
+                                        </div>                                        
+                                        <input  type="hidden" id="trabajador_id" name='trabajador_id'/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-3 -label labelleft">Apellido Materno</label>
+                                        <div class="col-sm-5 abajocaja">
+                                          <input  type="text"
+                                                  id="apellidomaterno" name='apellidomaterno'  placeholder="Apellido del Trabajador"
+                                                  required = ""
+                                                  autocomplete="off" class="form-control input-sm" data-aw="1"/>
+                                        </div>                                        
+                                        <input  type="hidden" id="trabajador_id" name='trabajador_id'/>
+                                    </div>
+
+
                                 </div>
-                            </div>
+                              </div>
+
+                              <div class="col-sm-6 ">
+                                  <div class="panel-body">
+
+                                     <div class="form-group">
+
+                                          <label class="col-sm-3 control-label labelleft">Situación</label>
+                                          <div class="col-sm-5 abajocaja">
+                                            {!! Form::select( 'situacion_id', $combosituacion, array(),
+                                                              [
+                                                                'class'       => 'form-control control input-sm' ,
+                                                                'id'          => 'situacion_id',
+                                                                'required'    => '',
+                                                                'data-aw'     => '28'
+                                                              ]) !!}
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+
+                                        <label class="col-sm-3 control-label labelleft">Motivo Baja</label>
+                                        <div class="col-sm-5 abajocaja">
+                                          {!! Form::select( 'motivobaja_id', $combomotivobaja, array(),
+                                                            [
+                                                              'class'       => 'form-control control input-sm' ,
+                                                              'id'          => 'motivobaja_id',
+                                                              'required'    => '',
+                                                              'data-aw'     => '26'
+                                                            ]) !!}
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+
                         </div>
 
-                    </div>
+
+                  </div>
               </div>
+            </div>
+
+            <ul class="list-unstyled list-inline pull-right">
+              <p class="text-center">
+                   <li><button type="submit" id='guardarbajatrabajador' class="btn btn-space btn-primary btn btn-success "><i class="fa fa-check"></i>Guardar</button></li>             
+              </p>           
+            </ul>
 
             </form>
           </div>
@@ -148,5 +168,7 @@
       });
     </script> 
 
-    <script src="{{ asset('public/js/user/user.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('public/js/personal/personal.js') }}" type="text/javascript"></script>
+
+
 @stop

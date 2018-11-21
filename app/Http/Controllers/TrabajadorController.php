@@ -14,6 +14,27 @@ use Hashids;
 
 class TrabajadorController extends Controller
 {
+
+
+ 	public function actionDatoBajaTrabajador(Request $request){
+
+		$dni 						= strtoupper($request['dni']);
+		$trabajador     			= Trabajador::where('dni', '=', $dni)->first();
+
+		$situacion 			    	= DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
+		$combosituacion		    	= array('' => "Seleccione Situación") + $situacion;
+
+		$motivobaja					= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
+		$combomotivobaja			= array('' => "Seleccione Motivo Baja") + $motivobaja;
+
+		return View::make('usuario/ajax/bajadatotrabajador',
+						 [
+						 	'trabajador' 		    => $trabajador,
+						  	'combosituacion' 		=> $combosituacion,
+						  	'combomotivobaja' 		=> $combomotivobaja						 	
+						 ]);
+ 	}
+
 	public function actionBajaTrabajador($idopcion){
 
 		/******************* validar url **********************/
@@ -33,38 +54,45 @@ class TrabajadorController extends Controller
             	'email.unique' => 'Correo Electronico ya registrado'
         	]);
 			/******************************/
+			$cabecera            	 	 	=		Trabajador::find($idtrabajador);
+
+
 			$trabajador_id 	 		 		= 	$request['trabajador_id'];
 			$trabajador     				=   Trabajador::where('id', '=', $trabajador_id)->first();
 
+			$cabecera->situacion_id			= 	$request['situacion_id'];
+			$cabecera->motivobaja_id 	 	= 	$request['motivobaja_id'];
 
-			$idusers 				 		=   $this->funciones->getCreateIdMaestra('users');
-			
-			$cabecera            	 		=	new User;
-			$cabecera->id 	     	 		=   $idusers;
-			$cabecera->nombre 	     		=   $trabajador->nombres;
-			$cabecera->apellidopaterno 	 	=   $trabajador->apellidopaterno;
-			$cabecera->apellidomaterno 	 	=   $trabajador->apellidopaterno;
-			$cabecera->dni 	 		 		= 	$trabajador->dni;
-			$cabecera->name  		 		=	$request['name'];
-			$cabecera->email 	 	 		=  	$trabajador->email;
-			$cabecera->password 	 		= 	Crypt::encrypt($request['password']);
-			$cabecera->rol_id 	 			= 	$request['rol_id'];
-			$cabecera->activo 	 			=  	$request['activo'];
+			$cabecera->activo 	 			=  	0;
 			$cabecera->trabajador_id 		= 	$trabajador->id;
 			$cabecera->save();
+
+			dd('Hola');
  
- 			return Redirect::to('/gestion-baja-trabajador/'.$idopcion)->with('bienhecho', 'Usuario '.$trabajador->nombres.' '.$trabajador->apellidopaterno.' '.$trabajador->apellidomaterno.' registrado con exito');
+ 			return Redirect::to('/gestion-baja-trabajador/'.$idopcion)->with('bienhecho', 'Trabajador '.$trabajador->nombres.' '.$trabajador->apellidopaterno.' '.$trabajador->apellidomaterno.' está de BAJA');
 
 		}else{
 
+			 $motivobaja	 		= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
+			 $combomotivobaja 		= array($trabajador->motivobaja_id => $trabajador->motivobaja ->descripcionabreviada) + $motivobaja ;
+
+
+			 $situacion 			= DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
+			 $combosituacion		= array($trabajador->situacion_id => $trabajador->situacion ->descripcionabreviada) + $situacion ;
+
 		
-			$rol 		= DB::table('Rols')->where('id','<>',$this->prefijomaestro.'000000000001')->pluck('nombre','id')->toArray();
-			$comborol  	= array('' => "Seleccione Rol") + $rol;
+
+			// $situacion 			    = DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
+			// $combosituacion		    = array('' => "Seleccione Situación") + $situacion;
+
+			// $motivobaja				= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
+			// $combomotivobaja		= array('' => "Seleccione Motivo Baja") + $motivobaja;
 
 			return View::make('trabajador/bajatrabajador',
 						[
-							'comborol' => $comborol,
-						  	'idopcion' => $idopcion
+						  	'idopcion' 				=> $idopcion,
+						  	'combosituacion' 		=> $combosituacion,
+						  	'combomotivobaja' 		=> $combomotivobaja
 						]);
 		}
 

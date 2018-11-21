@@ -29,18 +29,7 @@ class UserController extends Controller
 						 ]);
  	}
 
- 	public function actionDatoBajaTrabajador(Request $request){
 
-		$dni 			= strtoupper($request['dni']);
-		$trabajador     = Trabajador::where('dni', '=', $dni)->first();
-		$usuario     	= User::where('dni', '=', $dni)->first();
-		
-		return View::make('usuario/ajax/bajadatotrabajador',
-						 [
-						 	'trabajador' => $trabajador,
-						 	'usuario' 	 => $usuario
-						 ]);
- 	}
 
 	
    public function actionLogin(Request $request)

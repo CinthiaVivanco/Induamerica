@@ -47,48 +47,10 @@
 					<input  type="hidden"
 					          id="trabajador_id" name='trabajador_id' value = '{{$trabajador->id}}'/>
 				</div> 
-
-
-
 			</div> 
 		</div> 
+	</div>
 
-
-
-
-
-      	<div class="col-sm-6 ">
-          <div class="panel-body">
-
-             <div class="form-group">
-
-                  <label class="col-sm-3 control-label labelleft">Situación</label>
-                  <div class="col-sm-5 abajocaja">
-                    {!! Form::select( 'situacion_id', $combosituacion, array(),
-                                      [
-                                        'class'       => 'form-control control input-sm' ,
-                                        'id'          => 'situacion_id',
-                                        'required'    => '',
-                                        'data-aw'     => '28'
-                                      ]) !!}
-                  </div>
-              </div>
-
-              <div class="form-group">
-
-                <label class="col-sm-3 control-label labelleft">Motivo Baja</label>
-                <div class="col-sm-5 abajocaja">
-                  {!! Form::select( 'motivobaja_id', $combomotivobaja, array(),
-                                    [
-                                      'class'       => 'form-control control input-sm' ,
-                                      'id'          => 'motivobaja_id',
-                                      'required'    => '',
-                                      'data-aw'     => '26'
-                                    ]) !!}
-                </div>
-              </div>
-          </div>
-      	</div>
 @else 
 
 	<div class="row">

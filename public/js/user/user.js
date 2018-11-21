@@ -34,33 +34,6 @@ $(document).ready(function(){
 
     });	
 
-    $('#buscartrabajadorbaja').on('click', function(event){
-
-    	var dni 	= $("#dni").val();
-    	var _token 	= $('#token').val();
-        abrircargando();
-		$(".trabajadorencontradobaja").html("");
-
-
-        $.ajax({
-            type	: 	"POST",
-            url		: 	carpeta+"/ajax-baja-del-trabajador",
-            data	: 	{
-            				_token	: _token,
-            				dni 	: dni
-            	 		},
-            success: function (data) {
-            	//console.log(data);
-            	cerrarcargando();
-            	$(".trabajadorencontradobaja").html(data);
-            },
-            error: function (data) {
-            	cerrarcargando();
-                console.log('Error:', data);
-            }
-        });
-
-    });	
     
 
     $(".ajaxpersonal").on('change','#empresa_id', function() {
