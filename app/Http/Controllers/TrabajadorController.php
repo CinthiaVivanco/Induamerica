@@ -35,58 +35,47 @@ class TrabajadorController extends Controller
 						 ]);
  	}
 
-	public function actionBajaTrabajador($idopcion){
+	public function actionBajaTrabajador($idopcion,Request $request)
+	{
 
-		/******************* validar url **********************/
-		$validarurl = $this->funciones->getUrl($idopcion,'Anadir');
+	    /******************* validar url **********************/
+		$validarurl   = $this->funciones->getUrl($idopcion,'Modificar');
 	    if($validarurl <> 'true'){return $validarurl;}
-
 	    /******************************************************/
+
+
 
 		if($_POST)
 		{
-			/**** Validaciones laravel ****/
-			$this->validate($request, [
-	            'name' => 'unique:users',
-	            'email' => 'unique:users'
-			], [
-            	'name.unique' => 'Trabajador ya registrado',
-            	'email.unique' => 'Correo Electronico ya registrado'
-        	]);
-			/******************************/
-			$cabecera            	 	 	=		Trabajador::find($idtrabajador);
 
 
-			$trabajador_id 	 		 		= 	$request['trabajador_id'];
-			$trabajador     				=   Trabajador::where('id', '=', $trabajador_id)->first();
 
-			$cabecera->situacion_id			= 	$request['situacion_id'];
-			$cabecera->motivobaja_id 	 	= 	$request['motivobaja_id'];
+			$idtrabajador   					= $request['trabajador_id'];
 
-			$cabecera->activo 	 			=  	0;
-			$cabecera->trabajador_id 		= 	$trabajador->id;
+
+
+			$cabecera            	 	 		  =		Trabajador::find($idtrabajador);
+			$cabecera->situacion_id				  = 	$request['situacion_id'];
+			$cabecera->motivobaja_id			  = 	$request['motivobaja_id'];
+			$cabecera->activo 	 		 		  =  	0;
+			$cabecera->IdUsuarioModifica 		  = 	Session::get('usuario')->id;
+			$cabecera->FechaModifica 			  =     $this->fechaActual;
 			$cabecera->save();
 
-			dd('Hola');
- 
- 			return Redirect::to('/gestion-baja-trabajador/'.$idopcion)->with('bienhecho', 'Trabajador '.$trabajador->nombres.' '.$trabajador->apellidopaterno.' '.$trabajador->apellidomaterno.' está de BAJA');
+
+			$trabajador 						  = 	Trabajador::where('id','=',$idtrabajador)->first();
+
+ 			return Redirect::to('/gestion-baja-trabajador/'.$idopcion)->with('bienhecho', 'Trabajador '.$trabajador->nombres.' '.$trabajador->apellidopaterno.' '.$trabajador->apellidomaterno.' dado de Baja');
 
 		}else{
 
-			 $motivobaja	 		= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
-			 $combomotivobaja 		= array($trabajador->motivobaja_id => $trabajador->motivobaja ->descripcionabreviada) + $motivobaja ;
+				$motivobaja			= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
+				$combomotivobaja		= array('' => "Seleccione Motivo Baja") + $motivobaja;
 
+				$situacion 			= DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
+				$combosituacion		        = array('' => "Seleccione Situación") + $situacion;
 
-			 $situacion 			= DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
-			 $combosituacion		= array($trabajador->situacion_id => $trabajador->situacion ->descripcionabreviada) + $situacion ;
-
-		
-
-			// $situacion 			    = DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
-			// $combosituacion		    = array('' => "Seleccione Situación") + $situacion;
-
-			// $motivobaja				= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
-			// $combomotivobaja		= array('' => "Seleccione Motivo Baja") + $motivobaja;
+			
 
 			return View::make('trabajador/bajatrabajador',
 						[
@@ -180,7 +169,7 @@ class TrabajadorController extends Controller
 
 			$cabecera->tipotrabajador_id 		 = 	$request['tipotrabajador_id'];
 
-			$cabecera->motivobaja_id 	 		 = 	$request['motivobaja_id'];
+
 			$cabecera->entidadfinanciera_id 	 = 	$request['entidadfinanciera_id'];
 			$cabecera->sexo 		 	 		 = 	$request['sexo'];
 			$cabecera->discapacidad 			 = 	$request['discapacidad'];
@@ -189,7 +178,7 @@ class TrabajadorController extends Controller
 			$cabecera->regimenpensionario_id	 = 	$request['regimenpensionario_id'];
 			$cabecera->cussp  	 				 =	$request['cussp'];
 			$cabecera->codigoeps_id 			 = 	$request['codigoeps_id'];
-			$cabecera->situacion_id				 = 	$request['situacion_id'];
+
 			$cabecera->afiliadoeps 		 		 = 	$request['afiliadoeps'];
 			$cabecera->essaludvida 		 		 = 	$request['essaludvida'];
 			$cabecera->senati 		 	 		 = 	$request['senati'];
@@ -261,8 +250,7 @@ class TrabajadorController extends Controller
 			$tipotrabajador				 = DB::table('tipotrabajadores')->pluck('descripcionabreviada','id')->toArray();
 			$combotipotrabajador		 = array('' => "Seleccione Tipo Trabajador") + $tipotrabajador;
 
-			$motivobaja					 = DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
-			$combomotivobaja			 = array('' => "Seleccione Motivo Baja") + $motivobaja;
+			
 
 			$entidadfinanciera 			 = DB::table('entidadfinancieras')->pluck('entidad','id')->toArray();
 			$comboentidadfinanciera		 = array('' => "Seleccione Entidad") + $entidadfinanciera;
@@ -276,8 +264,7 @@ class TrabajadorController extends Controller
 			$codigoeps 					 = DB::table('codigoeps')->pluck('descripcion','id')->toArray();
 			$combocodigoeps				 = array('' => "Seleccione EPS") + $codigoeps;
 
-			$situacion 					 = DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
-			$combosituacion				 = array('' => "Seleccione Situación") + $situacion;
+			
 
 			$situacioneducativa			 = DB::table('situacioneducativas')->pluck('descripcionabreviada','id')->toArray();
 			$combosituacioneducativa	 = array('' => "Nivel Instrucción") + $situacioneducativa;
@@ -325,12 +312,12 @@ class TrabajadorController extends Controller
 						  	'combotipovia' 					=> $combotipovia,						  
 						  	'combotipozona' 				=> $combotipozona,			  	
 					  		'combotipotrabajador' 			=> $combotipotrabajador,			 
-						  	'combomotivobaja' 				=> $combomotivobaja,						
+						  							
 						  	'comboentidadfinanciera'		=> $comboentidadfinanciera,
 						  	'comboregimensalud' 			=> $comboregimensalud,
 						  	'comboregimenpensionario' 		=> $comboregimenpensionario,
 						  	'combocodigoeps'		    	=> $combocodigoeps,
-						  	'combosituacion' 				=> $combosituacion,
+
 						  	'combosituacioneducativa' 		=> $combosituacioneducativa,
 						  	'comboregimeninstitucion' 		=> $comboregimeninstitucion,
 						  	'combotipoinstitucion' 			=> $combotipoinstitucion,
@@ -350,7 +337,6 @@ class TrabajadorController extends Controller
 
 	public function actionModificarTrabajador($idopcion,$idtrabajador,Request $request)
 	{
-
 
 
 		/******************* validar url **********************/
@@ -398,17 +384,19 @@ class TrabajadorController extends Controller
 			$cabecera->nombrezona  		 		  =		$request['nombrezona'];
 			$cabecera->referencia  		 		  =		$request['referencia'];
 
+			$cabecera->situacion_id				  = 	$request['situacion_id'];
+
 			$cabecera->tipotrabajador_id 		  = 	$request['tipotrabajador_id'];
 
 			$cabecera->IdUsuarioModifica 		  = 	Session::get('usuario')->id;
 			$cabecera->FechaModifica 			  =     $this->fechaActual;
 			
-			$cabecera->motivobaja_id 	 		  = 	$request['motivobaja_id'];
+			//$cabecera->situacion_id				  = 	$request['situacion_id'];
+
 			$cabecera->entidadfinanciera_id 	  = 	$request['entidadfinanciera_id'];
 			$cabecera->discapacidad 			  = 	$request['discapacidad'];
 			$cabecera->sindicalizado 			  = 	$request['sindicalizado'];
 			$cabecera->codigoeps_id 			  = 	$request['codigoeps_id'];
-			$cabecera->situacion_id				  = 	$request['situacion_id'];
 			$cabecera->afiliadoeps 		 		  = 	$request['afiliadoeps'];
 			$cabecera->regimensalud_id 			  = 	$request['regimensalud_id'];
 			$cabecera->regimenpensionario_id	  = 	$request['regimenpensionario_id'];
@@ -475,8 +463,6 @@ class TrabajadorController extends Controller
 				$tipotrabajador					= DB::table('tipotrabajadores')->pluck('descripcionabreviada','id')->toArray();
 				$combotipotrabajador			= array($trabajador->tipotrabajador_id => $trabajador->tipotrabajador ->descripcionabreviada) + $tipotrabajador ;
 
-				$motivobaja						= DB::table('motivobajas')->pluck('descripcionabreviada','id')->toArray();
-				$combomotivobaja 				= array($trabajador->motivobaja_id => $trabajador->motivobaja ->descripcionabreviada) + $motivobaja ;
 
 				$entidadfinanciera 				= DB::table('entidadfinancieras')->pluck('entidad','id')->toArray();
 				$comboentidadfinanciera 		= array($trabajador->entidadfinanciera_id => $trabajador->entidadfinanciera ->entidad) + $entidadfinanciera ;
@@ -484,8 +470,8 @@ class TrabajadorController extends Controller
 				$codigoeps 						= DB::table('codigoeps')->pluck('descripcion','id')->toArray();
 				$combocodigoeps					= array($trabajador->codigoeps_id => $trabajador->codigoeps ->descripcion) + $codigoeps ;
 
-				$situacion 						= DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
-				$combosituacion					= array($trabajador->situacion_id => $trabajador->situacion ->descripcionabreviada) + $situacion ;
+				// $situacion 						= DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
+				// $combosituacion					= array($trabajador->situacion_id => $trabajador->situacion ->descripcionabreviada) + $situacion ;
 
 				$regimensalud 					= DB::table('regimensaluds')->pluck('descripcionabreviada','id')->toArray();
 				$comboregimensalud				= array($trabajador->regimensalud_id => $trabajador->regimensalud ->descripcionabreviada) + $regimensalud ;
@@ -515,7 +501,12 @@ class TrabajadorController extends Controller
 				$combosituacionespecial			= array($trabajador->situacionespecial_id => $trabajador->situacionespecial ->descripcionabreviada) + $situacionespecial ;
 
 				$horario 				  		= DB::table('horarios')->pluck('nombre','id')->toArray();
-				$combohorario       			= array($trabajador->horario_id => $trabajador->horario ->nombre) + $horario;						
+				$combohorario       			= array($trabajador->horario_id => $trabajador->horario ->nombre) + $horario;	
+
+
+				$situacion 			= DB::table('situaciones')->pluck('descripcionabreviada','id')->toArray();
+				$combosituacion		= array($trabajador->situacion_id => $trabajador->situacion ->descripcionabreviada) + $situacion ;	
+
 
 				if(isset($trabajador->regimeninstitucion)) {
 					
@@ -565,11 +556,13 @@ class TrabajadorController extends Controller
 		        					'comboprovincia' 				=> $comboprovincia,
 		        					'combodistrito' 				=> $combodistrito,
 		        					'combotipovia' 					=> $combotipovia,        					
-		        					'combotipotrabajador' 			=> $combotipotrabajador,		        					
-		        					'combomotivobaja' 				=> $combomotivobaja,
+		        					'combotipotrabajador' 			=> $combotipotrabajador,
+
+		        					'combosituacion' 				=> $combosituacion,		        					
+
 		        					'comboentidadfinanciera'		=> $comboentidadfinanciera,
 		        					'combocodigoeps'				=> $combocodigoeps,
-						  			'combosituacion' 				=> $combosituacion,
+						  			//'combosituacion' 				=> $combosituacion,
 						  			'comboregimensalud' 			=> $comboregimensalud,
 						  			'comboregimenpensionario' 		=> $comboregimenpensionario,
 						  			'combosituacioneducativa' 		=> $combosituacioneducativa,

@@ -84,6 +84,8 @@
                                 </div>
                               </div>
 
+                         
+
                               <div class="col-sm-6 ">
                                   <div class="panel-body">
 
@@ -116,8 +118,9 @@
                                       </div>
                                   </div>
                               </div>
+                          </div>
 
-                        </div>
+                        
 
 
                   </div>
@@ -126,7 +129,7 @@
 
             <ul class="list-unstyled list-inline pull-right">
               <p class="text-center">
-                   <li><button type="submit" id='guardarbajatrabajador' class="btn btn-space btn-primary btn btn-success "><i class="fa fa-check"></i>Guardar</button></li>             
+                   <li><button type="submit" id='guardartrabajador' class="btn btn-space btn-primary btn btn-success "><i class="fa fa-check"></i>Guardar</button></li>             
               </p>           
             </ul>
 

@@ -332,19 +332,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-
-                          <label class="col-sm-12 control-label labelleft">Situación Especial <span class="required">*</span></label>
-                          <div class="col-sm-7 abajocaja">
-                            {!! Form::select( 'situacionespecial_id', $combosituacionespecial, array(),
-                                              [
-                                                'class'       => 'form-control control input-sm' ,
-                                                'id'          => 'situacionespecial_id',
-                                                'required'    => '',
-                                                'data-aw'     => '21'
-                                              ]) !!}
-                          </div>
-                </div>
+               
           
             </div>
       
@@ -352,7 +340,21 @@
 
           <div class="col-sm-6">
 
-                    <div class="panel-body">
+                <div class="panel-body">
+
+                   <div class="form-group">
+
+                              <label class="col-sm-12 control-label labelleft">Situación Especial <span class="required">*</span></label>
+                              <div class="col-sm-7 abajocaja">
+                                {!! Form::select( 'situacionespecial_id', $combosituacionespecial, array(),
+                                                  [
+                                                    'class'       => 'form-control control input-sm' ,
+                                                    'id'          => 'situacionespecial_id',
+                                                    'required'    => '',
+                                                    'data-aw'     => '21'
+                                                  ]) !!}
+                              </div>
+                    </div>
 
                     
                     <div class="form-group">
@@ -398,18 +400,21 @@
                     </div>
 
 
-                    <div class="form-group">
+                    <div class="contentbaja 
+                                @if(isset($trabajador)) 
 
-                      <label class="col-sm-12 control-label labelleft">Situación <span class="required">*</span></label>
-                      <div class="col-sm-7 abajocaja">
-                        {!! Form::select( 'situacion_id', $combosituacion, array(),
-                                          [
-                                            'class'       => 'form-control control input-sm' ,
-                                            'id'          => 'situacion_id',
-                                            'required'    => '',
-                                            'data-aw'     => '28'
-                                          ]) !!}
-                      </div>
+                                <div class="form-group abajocaja">
+                                    <label class="col-sm-12 control-label labelleft">Situación <span class="required">*</span></label>
+                                    <div class="col-sm-7 abajocaja">
+                                      {!! Form::select( 'situacion_id', $combosituacion, array(),
+                                                        [
+                                                          'class'       => 'form-control control input-sm' ,
+                                                          'id'          => 'situacion_id',
+                                                          'required'    => '',
+                                                          'data-aw'     => '28'
+                                                        ]) !!}
+                                    </div>
+                                </div>
                     </div>
 
                     
@@ -426,11 +431,13 @@
                                           ]) !!}
                       </div>
                     </div>
+                                    
+                                @else
+                                    
+                                @endif" 
+                                id="contentestudiosid">
 
-
-                    
-
-                </div>
+                    </div>
 
           </div>
 

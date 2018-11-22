@@ -714,7 +714,7 @@ CREATE TABLE trabajadores (
   [regimensalud_id] varchar(20) NOT NULL,
   [regimenpensionario_id] varchar(20) NOT NULL,
   [distrito_id] varchar(20) NOT NULL,
-  [situacion_id] varchar(20) NULL,
+  [situacion_id] varchar(20) default 'PRMAECEN000000000001' NULL,
   [codigoeps_id] varchar(20) NOT NULL,
   [situacioneducativa_id] varchar(20) NOT NULL,
   [carrera_id] varchar(20) NULL,
